@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8D49DBE-3BE9-4D2E-B3E0-9A2C3F9F487D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Power_Station_System</RootNamespace>
+    <AssemblyName>Power_Station_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="child_form\Add_Area1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Add_Area1.designer.cs">
+      <DependentUpon>Add_Area1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Add_customer_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Add_customer_window.designer.cs">
+      <DependentUpon>Add_customer_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\add_fines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\add_fines.designer.cs">
+      <DependentUpon>add_fines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Add_reading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Add_reading.designer.cs">
+      <DependentUpon>Add_reading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Add_Square1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Add_Square1.designer.cs">
+      <DependentUpon>Add_Square1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\BILL_managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\BILL_managment.designer.cs">
+      <DependentUpon>BILL_managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\customer_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\customer_management.designer.cs">
+      <DependentUpon>customer_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\fines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\fines.designer.cs">
+      <DependentUpon>fines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\centarreading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\centarreading.designer.cs">
+      <DependentUpon>centarreading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\mhasel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\mhasel.designer.cs">
+      <DependentUpon>mhasel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\opeining_read.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\opeining_read.designer.cs">
+      <DependentUpon>opeining_read.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Reading_managment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Reading_managment.designer.cs">
+      <DependentUpon>Reading_managment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Staion_Data1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Staion_Data1.designer.cs">
+      <DependentUpon>Staion_Data1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Subscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Subscription.designer.cs">
+      <DependentUpon>Subscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="child_form\Udate_subscriper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\Udate_subscriper.designer.cs">
+      <DependentUpon>Udate_subscriper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom_tool\Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\MenuColorTable.cs" />
+    <Compile Include="Custom_tool\MenuRenderer.cs" />
+    <Compile Include="Custom_tool\OurComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJCircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJDatePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJDropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\RJTextBox.Designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom_tool\RJToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\TextBox_Custom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Custom_tool\TextBox_Custom.designer.cs" />
+    <Compile Include="DataBase\Access_layer.cs" />
+    <Compile Include="DataBase\bill.cs" />
+    <Compile Include="DataBase\Block_aned_area.cs" />
+    <Compile Include="DataBase\fines.cs" />
+    <Compile Include="DataBase\mhasell.cs" />
+    <Compile Include="DataBase\reading.cs" />
+    <Compile Include="DataBase\subscriber.cs" />
+    <Compile Include="DataBase\subscription_1.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="child_form\Add_Area1.resx">
+      <DependentUpon>Add_Area1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Add_customer_window.resx">
+      <DependentUpon>Add_customer_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\add_fines.resx">
+      <DependentUpon>add_fines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Add_reading.resx">
+      <DependentUpon>Add_reading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Add_Square1.resx">
+      <DependentUpon>Add_Square1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\BILL_managment.resx">
+      <DependentUpon>BILL_managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\customer_management.resx">
+      <DependentUpon>customer_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\fines.resx">
+      <DependentUpon>fines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\NewFolder1\centarreading.resx">
+      <DependentUpon>centarreading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\NewFolder1\mhasel.resx">
+      <DependentUpon>mhasel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\NewFolder1\opeining_read.resx">
+      <DependentUpon>opeining_read.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Reading_managment.resx">
+      <DependentUpon>Reading_managment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Staion_Data1.resx">
+      <DependentUpon>Staion_Data1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Subscription.resx">
+      <DependentUpon>Subscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\Udate_subscriper.resx">
+      <DependentUpon>Udate_subscriper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom_tool\RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Custom_tool\TextBox_Custom.resx" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_26px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize_window_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
