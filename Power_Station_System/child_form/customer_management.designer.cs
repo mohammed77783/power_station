@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.search = new RJCodeAdvance.RJControls.RJTextBox();
             this.ourPanel2 = new OurComponent.OurPanel();
@@ -64,8 +65,9 @@
             this.panel2.Controls.Add(this.ourPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(792, 54);
+            this.panel2.Size = new System.Drawing.Size(924, 66);
             this.panel2.TabIndex = 12;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
@@ -79,17 +81,17 @@
             this.search.BorderSize = 1;
             this.search.Font = new System.Drawing.Font("LBC", 8.25F);
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(530, 12);
-            this.search.Margin = new System.Windows.Forms.Padding(4);
+            this.search.Location = new System.Drawing.Point(618, 15);
+            this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.search.Multiline = false;
             this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.search.PasswordChar = false;
             this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.search.PlaceholderText = "";
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(232, 31);
+            this.search.Size = new System.Drawing.Size(271, 38);
             this.search.TabIndex = 20;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
@@ -108,9 +110,10 @@
             this.ourPanel2.GardientAngle = 90F;
             this.ourPanel2.GardientBottomClor = System.Drawing.Color.MediumSlateBlue;
             this.ourPanel2.GardientTopClor = System.Drawing.Color.MediumSlateBlue;
-            this.ourPanel2.Location = new System.Drawing.Point(477, 10);
+            this.ourPanel2.Location = new System.Drawing.Point(556, 12);
+            this.ourPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ourPanel2.Name = "ourPanel2";
-            this.ourPanel2.Size = new System.Drawing.Size(45, 35);
+            this.ourPanel2.Size = new System.Drawing.Size(52, 43);
             this.ourPanel2.TabIndex = 17;
             // 
             // iconButton1
@@ -126,9 +129,10 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(0, 3);
+            this.iconButton1.Location = new System.Drawing.Point(0, 4);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(45, 35);
+            this.iconButton1.Size = new System.Drawing.Size(52, 43);
             this.iconButton1.TabIndex = 7;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.IconButton1_Click);
@@ -141,72 +145,76 @@
             this.panel1.Controls.Add(this.rjButton2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Font = new System.Drawing.Font("LBC", 8.25F);
-            this.panel1.Location = new System.Drawing.Point(0, 397);
+            this.panel1.Location = new System.Drawing.Point(0, 489);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 62);
+            this.panel1.Size = new System.Drawing.Size(924, 76);
             this.panel1.TabIndex = 17;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // rjButton3
             // 
             this.rjButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton3.BackColor = System.Drawing.Color.Crimson;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.Crimson;
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 15;
+            this.rjButton3.BorderRadius = 7;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(322, 10);
+            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Location = new System.Drawing.Point(376, 12);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(136, 40);
+            this.rjButton3.Size = new System.Drawing.Size(145, 40);
             this.rjButton3.TabIndex = 14;
             this.rjButton3.Text = "حذف";
-            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.TextColor = System.Drawing.Color.Black;
             this.rjButton3.UseVisualStyleBackColor = false;
             this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
             // 
             // rjButton1
             // 
             this.rjButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton1.BackColor = System.Drawing.Color.LimeGreen;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.LimeGreen;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 15;
+            this.rjButton1.BorderRadius = 7;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(644, 10);
+            this.rjButton1.ForeColor = System.Drawing.Color.Black;
+            this.rjButton1.Location = new System.Drawing.Point(751, 12);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(136, 40);
+            this.rjButton1.Size = new System.Drawing.Size(145, 40);
             this.rjButton1.TabIndex = 16;
             this.rjButton1.Text = "إضافة";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.TextColor = System.Drawing.Color.Black;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
             // 
             // rjButton2
             // 
             this.rjButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 15;
+            this.rjButton2.BorderRadius = 7;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(478, 10);
+            this.rjButton2.ForeColor = System.Drawing.Color.Black;
+            this.rjButton2.Location = new System.Drawing.Point(558, 12);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(136, 40);
+            this.rjButton2.Size = new System.Drawing.Size(145, 40);
             this.rjButton2.TabIndex = 15;
             this.rjButton2.Text = "تعديل";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.TextColor = System.Drawing.Color.Black;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.RjButton2_Click);
             // 
@@ -215,19 +223,18 @@
             this.datagride_view_customer.AllowUserToAddRows = false;
             this.datagride_view_customer.AllowUserToDeleteRows = false;
             this.datagride_view_customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.datagride_view_customer.BackgroundColor = System.Drawing.Color.White;
+            this.datagride_view_customer.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.datagride_view_customer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagride_view_customer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.datagride_view_customer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagride_view_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.datagride_view_customer.ColumnHeadersHeight = 50;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagride_view_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.datagride_view_customer.ColumnHeadersHeight = 40;
             this.datagride_view_customer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.name,
@@ -239,25 +246,35 @@
             this.ele_sub_number,
             this.Column2,
             this.Column3});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagride_view_customer.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagride_view_customer.DefaultCellStyle = dataGridViewCellStyle8;
             this.datagride_view_customer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagride_view_customer.EnableHeadersVisualStyles = false;
-            this.datagride_view_customer.GridColor = System.Drawing.Color.White;
+            this.datagride_view_customer.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.datagride_view_customer.Location = new System.Drawing.Point(0, 0);
+            this.datagride_view_customer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.datagride_view_customer.Name = "datagride_view_customer";
             this.datagride_view_customer.ReadOnly = true;
             this.datagride_view_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagride_view_customer.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.datagride_view_customer.RowHeadersVisible = false;
-            this.datagride_view_customer.RowTemplate.Height = 80;
+            this.datagride_view_customer.RowHeadersWidth = 51;
+            this.datagride_view_customer.RowTemplate.Height = 40;
             this.datagride_view_customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagride_view_customer.Size = new System.Drawing.Size(792, 343);
+            this.datagride_view_customer.Size = new System.Drawing.Size(924, 423);
             this.datagride_view_customer.TabIndex = 18;
             this.datagride_view_customer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datagride_view_customer_CellContentClick);
             this.datagride_view_customer.Click += new System.EventHandler(this.Datagride_view_customer_Click);
@@ -266,6 +283,7 @@
             // 
             this.Column1.DataPropertyName = "ID_Subscriber";
             this.Column1.HeaderText = "ID";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Visible = false;
@@ -274,6 +292,7 @@
             // 
             this.name.DataPropertyName = "Subscriber_name";
             this.name.HeaderText = "اسم المشترك";
+            this.name.MinimumWidth = 6;
             this.name.Name = "name";
             this.name.ReadOnly = true;
             // 
@@ -281,6 +300,7 @@
             // 
             this.phon_num.DataPropertyName = "Subscriber_Phone_Number";
             this.phon_num.HeaderText = "رقم الهاتف";
+            this.phon_num.MinimumWidth = 6;
             this.phon_num.Name = "phon_num";
             this.phon_num.ReadOnly = true;
             // 
@@ -288,6 +308,7 @@
             // 
             this.address.DataPropertyName = "Subscriber_adress";
             this.address.HeaderText = "العنوان";
+            this.address.MinimumWidth = 6;
             this.address.Name = "address";
             this.address.ReadOnly = true;
             // 
@@ -295,6 +316,7 @@
             // 
             this.iden_type.DataPropertyName = "Identification_Type";
             this.iden_type.HeaderText = "نوع الهوية";
+            this.iden_type.MinimumWidth = 6;
             this.iden_type.Name = "iden_type";
             this.iden_type.ReadOnly = true;
             // 
@@ -302,6 +324,7 @@
             // 
             this.inde_number.DataPropertyName = "Identity_number";
             this.inde_number.HeaderText = "رقم الهوية";
+            this.inde_number.MinimumWidth = 6;
             this.inde_number.Name = "inde_number";
             this.inde_number.ReadOnly = true;
             // 
@@ -309,6 +332,7 @@
             // 
             this.subtion_type.DataPropertyName = "Subscription_Type";
             this.subtion_type.HeaderText = "نوع الاشتراك";
+            this.subtion_type.MinimumWidth = 6;
             this.subtion_type.Name = "subtion_type";
             this.subtion_type.ReadOnly = true;
             // 
@@ -316,6 +340,7 @@
             // 
             this.ele_sub_number.DataPropertyName = "Subscriber_ElectricMeter_ID";
             this.ele_sub_number.HeaderText = "رقم العداد";
+            this.ele_sub_number.MinimumWidth = 6;
             this.ele_sub_number.Name = "ele_sub_number";
             this.ele_sub_number.ReadOnly = true;
             // 
@@ -323,6 +348,7 @@
             // 
             this.Column2.DataPropertyName = "Block_name";
             this.Column2.HeaderText = "المربع";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -330,6 +356,7 @@
             // 
             this.Column3.DataPropertyName = "Date_subsriber";
             this.Column3.HeaderText = "تاريخ الاشتراك";
+            this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
@@ -337,20 +364,23 @@
             // 
             this.panel3.Controls.Add(this.datagride_view_customer);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 54);
+            this.panel3.Location = new System.Drawing.Point(0, 66);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(792, 343);
+            this.panel3.Size = new System.Drawing.Size(924, 423);
             this.panel3.TabIndex = 18;
+            this.panel3.BindingContextChanged += new System.EventHandler(this.Panel3_BindingContextChanged);
             // 
             // customer_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 459);
+            this.ClientSize = new System.Drawing.Size(924, 565);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "customer_management";
             this.Activated += new System.EventHandler(this.Add_customer_1_Activated);
             this.Load += new System.EventHandler(this.Add_customer_1_Load);

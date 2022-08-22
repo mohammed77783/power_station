@@ -14,7 +14,7 @@ namespace Power_Station_System.chid_form
     {
         DataBase.subscriber cus = new DataBase.subscriber();
         int id;
-      //  string name_upd, phone, addrss, inde_type, tden_num, electronic_number, subscription_id;
+       /* string name_upd, phone, addrss, inde_type, tden_num, electronic_number, subscription_id;*/
         public customer_management()
         {
             InitializeComponent();
@@ -85,6 +85,7 @@ namespace Power_Station_System.chid_form
         private void Add_customer_1_Activated(object sender, EventArgs e)
         {
             datagride_view_customer.DataSource = cus.get_subscriber();
+            //var sql = "select_subscriper";
         }
 
         private void Add_customer_1_Load(object sender, EventArgs e)
@@ -122,6 +123,11 @@ namespace Power_Station_System.chid_form
 
             id=Convert.ToInt16( datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
            
+        }
+
+        private void Panel3_BindingContextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
