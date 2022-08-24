@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,11 @@ namespace Power_Station_System.chid_form
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
         }
         public void mod(int meter)
         {
@@ -132,7 +138,8 @@ namespace Power_Station_System.chid_form
             {
                 if (current_reading.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("القراءة الحالية فارغة يحب ادخالها");
+                    //MessageBox.Show("القراءة الحالية فارغة يحب ادخالها");
+                    this.Alert("القراءة الحالية فارغة يحب ادخالها", Form_alert.enmType.Warning);
                     current_reading.Focus();
 
                 }
@@ -140,7 +147,8 @@ namespace Power_Station_System.chid_form
                 {
                     if (Convert.ToInt16(current_reading.Texts) <= Convert.ToInt16(privosu_reading.Texts))
                     {
-                        MessageBox.Show("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة");
+                       // MessageBox.Show("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة");
+                        this.Alert("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة", Form_alert.enmType.Warning);
                         return;
                     }
                     else { 
@@ -148,7 +156,8 @@ namespace Power_Station_System.chid_form
                     rea.update_opeiningreading(meter_id.Texts.Trim(), current_reading.Texts, dateTimePicker1.Text);
                     rea.reading_doe(meter_id.Texts.Trim());
                     this.Reading_managment_Load(null, null);
-                    MessageBox.Show("تم اضاقة القراءة بنجاح");
+                    //MessageBox.Show("تم اضاقة القراءة بنجاح");
+                    this.Alert(" تتم اضاقة القراءة بنجاح", Form_alert.enmType.Success);
                         unmod();
                     }
 
@@ -184,7 +193,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 

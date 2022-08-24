@@ -16,5 +16,10 @@ namespace Power_Station_System.child_form.user
         {
             InitializeComponent();
         }
+
+        private void RjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

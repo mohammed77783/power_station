@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,11 @@ namespace Power_Station_System.chid_form
             comboBox2.DisplayMember = "Block_name";
             comboBox2.ValueMember = "ID";
         }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
+        }
         private void OurPanel1_MouseUp(object sender, MouseEventArgs e)
         {
             move = 0;
@@ -44,35 +50,41 @@ namespace Power_Station_System.chid_form
             if (subscriper_name_upd.Texts.Trim().Length < 1)
             {
                 MessageBox.Show("إسم المشترك فارغ ");
+                this.Alert("Warning Alert", Form_alert.enmType.Warning);
                 return;
             }
 
             else if (subscr_phnum_upd.Texts.Trim().Length < 3)
             {
-                MessageBox.Show("رقم المشترك فارغ ");
+              //  MessageBox.Show("رقم المشترك فارغ ");
+                this.Alert("رقم المشترك فارغ", Form_alert.enmType.Warning);
                 return;
             }
 
             else if (sub_address_upda.Texts.Trim().Length < 3)
             {
-                MessageBox.Show("عنوان المشترك فارغ ");
+                //MessageBox.Show("عنوان المشترك فارغ ");
+                this.Alert("عنوان المشترك فارغ", Form_alert.enmType.Warning);
                 return;
             }
 
             else if (indenity_number_upda.Texts.Trim().Length < 3)
             {
-                MessageBox.Show("رقم الهوية فارغ ");
+              //  MessageBox.Show("رقم الهوية فارغ ");
+                this.Alert("رقم الهوية فارغ", Form_alert.enmType.Warning);
                 return;
             }
             else if (this.identity_ty.SelectedIndex == -1)
             {
-                MessageBox.Show("نوع الهوية فارغ ");
+               // MessageBox.Show("نوع الهوية فارغ ");
+                this.Alert("نوع الهوية فارغ", Form_alert.enmType.Warning);
                 return;
             }
 
             else if (this.comboBox1.SelectedIndex == -1)
             {
-                MessageBox.Show("نوع الاشتراك فارغ ");
+                //MessageBox.Show("نوع الاشتراك فارغ ");
+                this.Alert("نوع الاشتراك فارغ", Form_alert.enmType.Warning);
                 return;
             }
             else
@@ -82,12 +94,14 @@ namespace Power_Station_System.chid_form
                     sub.update_csut(ID, subscriper_name_upd.Texts, subscr_phnum_upd.Texts, sub_address_upda.Texts,identity_ty.Texts, indenity_number_upda.Texts,
                   Convert.ToInt16(comboBox1.SelectedValue), meter_number_UP.Texts,dateTimePicker1.Text, Convert.ToInt16(comboBox2.SelectedValue));
 
-                    MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                   ///father.Add_customer_1_Load(null,null);
+                   // MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Alert(" تمت التعديل بنجاح", Form_alert.enmType.Success);
+                    ///father.Add_customer_1_Load(null,null);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                   // MessageBox.Show(ex.Message);
+                    this.Alert(ex.Message, Form_alert.enmType.Error);
                 }
             }
         }

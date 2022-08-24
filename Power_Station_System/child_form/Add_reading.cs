@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Power_Station_System.DataBase;
+using Power_Station_System.warning_code;
+
 namespace Power_Station_System.chid_form
 {
     public partial class Add_reading : Form
@@ -21,6 +23,11 @@ namespace Power_Station_System.chid_form
             InitializeComponent();
             
             
+        }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
         }
 
         private void Panel2_Paint(object sender, PaintEventArgs e)
@@ -40,7 +47,8 @@ namespace Power_Station_System.chid_form
             }
             catch(Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
 
 
@@ -84,7 +92,8 @@ namespace Power_Station_System.chid_form
         {
             if (current_reading.Texts.Trim().Length < 1)
             {
-                MessageBox.Show("القراءة الحالية فارغة يحب ادخالها");
+                //MessageBox.Show("القراءة الحالية فارغة يحب ادخالها");
+                this.Alert("القراءة الحالية فارغة يحب ادخالها", Form_alert.enmType.Warning);
                 current_reading.Focus();
 
             }
@@ -92,12 +101,14 @@ namespace Power_Station_System.chid_form
             {
                 if (Convert.ToInt16(current_reading.Texts) <= Convert.ToInt16(privosu_reading.Texts))
                 {
-                    MessageBox.Show("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة");
+                   // MessageBox.Show("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة");
+                    this.Alert("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة", Form_alert.enmType.Warning);
                     return;
                 }
                 if (current_reading.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("القراءة الحالية فاضية ");
+                    //MessageBox.Show("القراءة الحالية فاضية ");
+                    this.Alert("القراءة الحالية فاضية", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -106,7 +117,8 @@ namespace Power_Station_System.chid_form
                     rea.update_opeiningreading(meter_.Texts.Trim(), current_reading.Texts, dateTimePicker1.Text);
                     rea.reading_doe(meter_.Texts.Trim());
                     this.Add_reading_Load(null, null);
-                    MessageBox.Show("تم اضاقة القراءة بنجاح");
+                    //MessageBox.Show("تم اضاقة القراءة بنجاح");
+                    this.Alert(" تم اضاقة القراءة بنجاح", Form_alert.enmType.Success);
 
                     clear();
 
@@ -123,7 +135,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
 
         }

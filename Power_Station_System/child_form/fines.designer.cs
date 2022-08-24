@@ -71,8 +71,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 239);
+            this.panel1.Size = new System.Drawing.Size(1200, 368);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -84,9 +85,10 @@
             this.panel2.Controls.Add(this.rjButton3);
             this.panel2.Controls.Add(this.rjButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 195);
+            this.panel2.Location = new System.Drawing.Point(0, 300);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 44);
+            this.panel2.Size = new System.Drawing.Size(1200, 68);
             this.panel2.TabIndex = 5;
             // 
             // iconButton3
@@ -100,9 +102,10 @@
             this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 25;
-            this.iconButton3.Location = new System.Drawing.Point(321, 6);
+            this.iconButton3.Location = new System.Drawing.Point(482, 9);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(32, 31);
+            this.iconButton3.Size = new System.Drawing.Size(48, 48);
             this.iconButton3.TabIndex = 22;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
@@ -112,8 +115,9 @@
             this.panel3.Controls.Add(this.search);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(269, 44);
+            this.panel3.Size = new System.Drawing.Size(404, 68);
             this.panel3.TabIndex = 5;
             // 
             // iconButton1
@@ -129,9 +133,10 @@
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(230, 5);
+            this.iconButton1.Location = new System.Drawing.Point(345, 8);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(32, 31);
+            this.iconButton1.Size = new System.Drawing.Size(48, 48);
             this.iconButton1.TabIndex = 22;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -145,17 +150,17 @@
             this.search.BorderSize = 1;
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(13, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4);
+            this.search.Location = new System.Drawing.Point(20, 6);
+            this.search.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.search.Multiline = false;
             this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.search.Padding = new System.Windows.Forms.Padding(15, 12, 15, 12);
             this.search.PasswordChar = false;
             this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.search.PlaceholderText = "ابحث هنا..";
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(215, 33);
+            this.search.Size = new System.Drawing.Size(322, 49);
             this.search.TabIndex = 21;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
@@ -171,9 +176,10 @@
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(404, 6);
+            this.rjButton2.Location = new System.Drawing.Point(606, 9);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(119, 29);
+            this.rjButton2.Size = new System.Drawing.Size(178, 45);
             this.rjButton2.TabIndex = 3;
             this.rjButton2.Text = "تعديل";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -192,13 +198,15 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.ForeColor = System.Drawing.Color.Transparent;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(529, 6);
+            this.rjButton3.Location = new System.Drawing.Point(794, 9);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(119, 29);
+            this.rjButton3.Size = new System.Drawing.Size(178, 45);
             this.rjButton3.TabIndex = 4;
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.Transparent;
             this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
             // 
             // rjButton1
             // 
@@ -211,9 +219,10 @@
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(654, 6);
+            this.rjButton1.Location = new System.Drawing.Point(981, 9);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(119, 29);
+            this.rjButton1.Size = new System.Drawing.Size(178, 45);
             this.rjButton1.TabIndex = 2;
             this.rjButton1.Text = "اضافة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -233,9 +242,11 @@
             this.groupBox1.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(800, 192);
+            this.groupBox1.Size = new System.Drawing.Size(1200, 295);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "الغرامات";
@@ -244,17 +255,19 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(451, 109);
+            this.comboBox2.Location = new System.Drawing.Point(676, 168);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(223, 24);
+            this.comboBox2.Size = new System.Drawing.Size(332, 33);
             this.comboBox2.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(451, 60);
+            this.comboBox1.Location = new System.Drawing.Point(676, 92);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(223, 24);
+            this.comboBox1.Size = new System.Drawing.Size(332, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox3_SelectedIndexChanged);
             // 
@@ -264,9 +277,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(695, 59);
+            this.label1.Location = new System.Drawing.Point(1042, 91);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 21);
+            this.label1.Size = new System.Drawing.Size(121, 31);
             this.label1.TabIndex = 68;
             this.label1.Text = "اسم العميل";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -277,9 +291,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(709, 110);
+            this.label2.Location = new System.Drawing.Point(1064, 169);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 21);
+            this.label2.Size = new System.Drawing.Size(123, 31);
             this.label2.TabIndex = 65;
             this.label2.Text = "اسم الغرامة";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -287,9 +302,10 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.Location = new System.Drawing.Point(131, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(196, 92);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(204, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(304, 32);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // label3
@@ -297,9 +313,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(358, 66);
+            this.label3.Location = new System.Drawing.Point(537, 102);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 16);
+            this.label3.Size = new System.Drawing.Size(59, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "التاريخ";
             // 
@@ -308,9 +325,10 @@
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.panel4.Location = new System.Drawing.Point(0, 239);
+            this.panel4.Location = new System.Drawing.Point(0, 368);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 211);
+            this.panel4.Size = new System.Drawing.Size(1200, 324);
             this.panel4.TabIndex = 2;
             // 
             // dataGridView1
@@ -348,6 +366,7 @@
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -355,7 +374,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 80;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(800, 211);
+            this.dataGridView1.Size = new System.Drawing.Size(1200, 324);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick_1);
             this.dataGridView1.Click += new System.EventHandler(this.DataGridView1_Click);
@@ -409,7 +428,7 @@
             this.comboBox5.Location = new System.Drawing.Point(0, 0);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox5.Size = new System.Drawing.Size(247, 33);
+            this.comboBox5.Size = new System.Drawing.Size(247, 45);
             this.comboBox5.TabIndex = 0;
             // 
             // comboBox6
@@ -422,17 +441,18 @@
             this.comboBox6.Location = new System.Drawing.Point(0, 0);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox6.Size = new System.Drawing.Size(250, 33);
+            this.comboBox6.Size = new System.Drawing.Size(250, 45);
             this.comboBox6.TabIndex = 0;
             // 
             // fines
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "fines";
             this.Text = "fines";
             this.Load += new System.EventHandler(this.Fines_Load);
