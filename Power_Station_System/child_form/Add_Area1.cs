@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Power_Station_System.warning_code;
+
 
 namespace Power_Station_System.chid_form
 {
@@ -29,9 +31,13 @@ namespace Power_Station_System.chid_form
             //}
         }
 
-     
-      
-       public void clea()
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
+        }
+
+        public void clea()
         {
             rjTextBox1.Texts = String.Empty;
         }
@@ -52,7 +58,8 @@ namespace Power_Station_System.chid_form
 
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم المنطقة فارغ ");
+                    //MessageBox.Show("إسم المنطقة فارغ تمام ");
+                    this.Alert("إسم المنطقة فارغ تمام ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -60,13 +67,15 @@ namespace Power_Station_System.chid_form
                     {
                         aree.Add_area(rjTextBox1.Texts);
 
-                        MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
                         Clear();
                         this.Add_Area1_Activated(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                       // MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
             }
             if(rjButton1.Text == "حقظ التغيرات")
@@ -74,7 +83,8 @@ namespace Power_Station_System.chid_form
 
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم المنطقة فارغ ");
+                    // MessageBox.Show("إسم المنطقة فارغ ");
+                    this.Alert("إسم المنطقة فارغ تمام ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -82,14 +92,16 @@ namespace Power_Station_System.chid_form
                     {
                        aree.Update_area(rjTextBox1.Texts, id);
 
-                        MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تم التعديل بنجاح", Form_alert.enmType.Success);
                         unmod();
                         Clear();
                         this.Add_Area1_Activated(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
             }
 
@@ -142,7 +154,8 @@ namespace Power_Station_System.chid_form
                 if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                 {
                     aree.Delete_are(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                    MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //  MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
                     this.Add_Area1_Activated(null,null);
                 }
             }
@@ -163,7 +176,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
         public void ClearText()
@@ -189,7 +203,8 @@ namespace Power_Station_System.chid_form
             dd = aree.Check_if_area_exists(rjTextBox1.Texts);
             if (dd.Rows.Count > 0)
             {
-                MessageBox.Show("اسم المنطقة موجود مسبقا", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //MessageBox.Show("اسم المنطقة موجود مسبقا", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Alert("اسم المنطقة موجود مسبقا", Form_alert.enmType.Warning);
                 ClearText();
                 rjTextBox1.Focus();
                 rjTextBox1.SelectionStart = 0;

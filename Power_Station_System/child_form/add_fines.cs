@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,7 +29,8 @@ namespace Power_Station_System.chid_form
 
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 
@@ -36,6 +38,11 @@ namespace Power_Station_System.chid_form
         {
             rjTextBox1.Texts = String.Empty;
             rjTextBoxy.Texts = string.Empty;
+        }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
         }
         public void Clear()
         {
@@ -113,12 +120,14 @@ namespace Power_Station_System.chid_form
             {
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم الغرامة فارغ ");
+                   // MessageBox.Show("إسم الغرامة فارغ ");
+                    this.Alert(" إسم الغرامة فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                else if  (rjTextBoxy.Texts.Trim().Length < 1 )
                 {
-                    MessageBox.Show(" تكلفة الغرامة فارغ ");
+                   // MessageBox.Show(" تكلفة الغرامة فارغ ");
+                    this.Alert(" تكلفة الغرامة فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -126,15 +135,17 @@ namespace Power_Station_System.chid_form
                     {
                         fines.Add_fines (rjTextBox1.Texts, rjTextBoxy.Texts);
 
-                        MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        
+                       //MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
+
                         Clear();
                         this.Add_fines_Load(null, null);
 
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                       // MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
 
             }
@@ -143,12 +154,14 @@ namespace Power_Station_System.chid_form
 
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم الغرامة فارغ ");
+                    //MessageBox.Show("إسم الغرامة فارغ ");
+                    this.Alert(" إسم الغرامة فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (rjTextBoxy.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show(" تكلفة الغرامة فارغ ");
+                    //MessageBox.Show(" تكلفة الغرامة فارغ ");
+                    this.Alert(" تكلفة الغرامة فارغ ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -156,14 +169,16 @@ namespace Power_Station_System.chid_form
                     {
                         fines.Update_fines_add(rjTextBox1.Texts,rjTextBoxy.Texts, id);
 
-                        MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت التعديل بنجاح", Form_alert.enmType.Success);
                         unmod();
                         Clear();
                         this.Add_fines_Load(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
             }
 
@@ -211,7 +226,8 @@ namespace Power_Station_System.chid_form
 
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 
@@ -242,7 +258,8 @@ namespace Power_Station_System.chid_form
                     if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                     {
                         fines.Delete_fines_add(this.datagride_view_fines.CurrentRow.Cells[0].Value.ToString());
-                        MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert("تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
                         this.Add_fines_Load(null, null);
                     }
                 }

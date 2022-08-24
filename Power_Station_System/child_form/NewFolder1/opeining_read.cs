@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,6 +22,11 @@ namespace Power_Station_System.chid_form
         {
 
         }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
+        }
 
         private void Read_Load(object sender, EventArgs e)
         {
@@ -30,7 +36,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 
@@ -96,7 +103,8 @@ namespace Power_Station_System.chid_form
                     if (textBox_Custom2.Texts.Trim().Length < 1)  
 
                     {
-                        MessageBox.Show("القراءة الافتتاحية فارغة ");
+                       // MessageBox.Show("القراءة الافتتاحية فارغة ");
+                        this.Alert("القراءة الافتتاحية فارغة", Form_alert.enmType.Warning);
                         return;
                     }
                     else
@@ -105,7 +113,8 @@ namespace Power_Station_System.chid_form
                         {
                             cus.update_opeiningreading(textBox_Custom3.Texts, textBox_Custom2.Texts, dateTimePicker1.Text);
 
-                            MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                           // MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Alert(" تمت التعديل بنجاح", Form_alert.enmType.Success);
                             unmod();
                             Clear();
                             this.Read_Load(null, null); 
@@ -115,7 +124,8 @@ namespace Power_Station_System.chid_form
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show(ex.Message);
+                           // MessageBox.Show(ex.Message);
+                            this.Alert(ex.Message, Form_alert.enmType.Error);
                         }
                     }
 
