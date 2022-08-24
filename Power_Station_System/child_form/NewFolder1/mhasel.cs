@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,6 +32,11 @@ namespace Power_Station_System.chid_form
 
         
 
+        }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
         }
         public void clea()
         {
@@ -73,22 +79,26 @@ namespace Power_Station_System.chid_form
             {
                 if (textBox_name.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم المحصل فارغ ");
+                    //MessageBox.Show("إسم المحصل فارغ ");
+                    this.Alert("إسم المحصل فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (textBox_adres.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("  عنوان المحصل فارغ ");
+                   // MessageBox.Show("  عنوان المحصل فارغ ");
+                    this.Alert("عنوان المحصل فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (comboBox1.SelectedIndex == -1)
                 {
-                    MessageBox.Show(" إسم المريع   فارغ ");
+                   // MessageBox.Show(" إسم المريع   فارغ ");
+                    this.Alert("إسم المريع   فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (textBox_numbr.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("  رقم الجوال   فارغ ");
+                    //MessageBox.Show("  رقم الجوال   فارغ ");
+                    this.Alert("رقم الجوال   فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -96,7 +106,8 @@ namespace Power_Station_System.chid_form
                     {
                         mhasell.Add_mhasel(Convert.ToInt16(comboBox1.SelectedValue), textBox_name.Texts,textBox_adres.Texts, textBox_numbr.Texts);
 
-                        MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       // MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
 
                         Clear();
                         this.Mhasel_Load(null, null);
@@ -104,7 +115,8 @@ namespace Power_Station_System.chid_form
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                       // MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
 
             }
@@ -114,22 +126,26 @@ namespace Power_Station_System.chid_form
 
                 if (textBox_name.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم المحصل فارغ ");
+                  //  MessageBox.Show("إسم المحصل فارغ ");
+                    this.Alert("إسم المحصل فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (textBox_adres.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("  عنوان المحصل فارغ ");
+                   // MessageBox.Show("  عنوان المحصل فارغ ");
+                    this.Alert("عنوان المحصل فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (comboBox1.SelectedIndex == -1)
                 {
-                    MessageBox.Show(" إسم المريع   فارغ ");
+                   // MessageBox.Show(" إسم المريع   فارغ ");
+                    this.Alert("إسم المريع   فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (textBox_numbr.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("  رقم الجوال   فارغ ");
+                  //  MessageBox.Show("  رقم الجوال   فارغ ");
+                    this.Alert("رقم الجوال   فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -137,14 +153,16 @@ namespace Power_Station_System.chid_form
                     {
                         mhasell.Update_mhsdel_add(Convert.ToInt16(comboBox1.SelectedValue), textBox_name.Texts, textBox_adres.Texts,  textBox_numbr.Text,id);
 
-                        MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تم التعديل بنجاح", Form_alert.enmType.Success);
                         unmod();
                         Clear();
                         this.Mhasel_Load(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
             }
         }
@@ -157,7 +175,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 
@@ -175,7 +194,8 @@ namespace Power_Station_System.chid_form
                     if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                     {
                         mhasell.Delete_mhsesel(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                        MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
                         this.Mhasel_Load(null, null);
                     }
                 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,11 @@ namespace Power_Station_System.chid_form
             comboBox2.ValueMember = "id";
             comboBox2.Text = "";
         }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
+        }
 
         public void clea()
         {
@@ -62,17 +68,20 @@ namespace Power_Station_System.chid_form
             {
                 if (this.comboBox1.SelectedIndex==-1)
                 {
-                    MessageBox.Show("إسم المشترك فارغ ");
+                    //MessageBox.Show("إسم المشترك فارغ ");
+                    this.Alert("إسم المشترك فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (this.comboBox2.SelectedIndex == -1)
                 {
-                    MessageBox.Show(" إسم الغرامة فارغ ");
+                   // MessageBox.Show(" إسم الغرامة فارغ ");
+                    this.Alert("إسم الغرامة فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (dateTimePicker1.Text.Trim().Length < 1)
                 {
-                    MessageBox.Show("  التقويم فارغ ");
+                   // MessageBox.Show("  التقويم فارغ ");
+                    this.Alert("التقويم فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -80,7 +89,8 @@ namespace Power_Station_System.chid_form
                     {
                         finess.Add_fines_reales(Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(comboBox2.SelectedValue), dateTimePicker1.Text);
 
-                        MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       // MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
 
                         Clear();
                         this.Fines_Load(null, null);
@@ -88,7 +98,8 @@ namespace Power_Station_System.chid_form
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                      // MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
 
             }
@@ -97,17 +108,20 @@ namespace Power_Station_System.chid_form
 
                 if (comboBox1.SelectedIndex == -1)
                 {
-                    MessageBox.Show("إسم المشترك فارغ ");
+                    //MessageBox.Show("إسم المشترك فارغ ");
+                    this.Alert("إسم المشترك فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (comboBox2.SelectedIndex == -1)
                 {
-                    MessageBox.Show(" إسم الغرامة فارغ ");
+                   // MessageBox.Show(" إسم الغرامة فارغ ");
+                    this.Alert("إسم الغرامة فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else if (dateTimePicker1.Text.Trim().Length < 1)
                 {
-                    MessageBox.Show("  التقويم فارغ ");
+                   // MessageBox.Show("  التقويم فارغ ");
+                    this.Alert("التقويم فارغ", Form_alert.enmType.Warning);
                     return;
                 }
                 else
@@ -115,14 +129,16 @@ namespace Power_Station_System.chid_form
                     {
                         finess.ubdate_fines_reales( Convert.ToInt16(comboBox1.SelectedValue), Convert.ToInt16(comboBox2.SelectedValue), dateTimePicker1.Text,id);
 
-                        MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       // MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تم التعديل بنجاح", Form_alert.enmType.Success);
                         unmod();
                         Clear();
                         this.Fines_Load(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                       // MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
             }
 
@@ -183,7 +199,8 @@ namespace Power_Station_System.chid_form
 
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 
@@ -203,6 +220,11 @@ namespace Power_Station_System.chid_form
             fine_data = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             fines_type_ID = Convert.ToInt16(dataGridView1.CurrentRow.Cells[2].Value.ToString());
             ID_Subscriber = Convert.ToInt16(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+        }
+
+        private void RjButton3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

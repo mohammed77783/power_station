@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,9 +26,14 @@ namespace Power_Station_System.chid_form
             comboBox1.Text = "";
           
         }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
+        }
 
-      
-       
+
+
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -54,13 +60,15 @@ namespace Power_Station_System.chid_form
             {
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم المربع فارغ ");
+                    //MessageBox.Show("إسم المربع فارغ ");
+                    this.Alert("إسم المربع فارغ", Form_alert.enmType.Warning);
                     return;
                 }
 
                 else if (this.comboBox1.SelectedIndex == -1)
                 {
-                    MessageBox.Show("المنطقة فارغة ");
+                   // MessageBox.Show("المنطقة فارغة ");
+                    this.Alert("إالمنطقة فارغة", Form_alert.enmType.Warning);
                     return;
                 }
 
@@ -72,13 +80,15 @@ namespace Power_Station_System.chid_form
                         block.Add_Block(rjTextBox1.Texts, Convert.ToInt16(comboBox1.SelectedValue), rjTextBox2.Texts);
 
 
-                        MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
                         Clear();
                         this.Add_Square1_Load(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
                 }
 
@@ -88,7 +98,8 @@ namespace Power_Station_System.chid_form
 
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("إسم المنطقة فارغ ");
+                    //MessageBox.Show("إسم المنطقة فارغ ");
+                    this.Alert("إسم المنطقة فارغ", Form_alert.enmType.Warning);
                     return;
                 }
 
@@ -97,14 +108,16 @@ namespace Power_Station_System.chid_form
                     {
                         block.update_Block(id, rjTextBox1.Texts, Convert.ToInt32(comboBox1.SelectedValue), rjTextBox2.Texts);
 
-                        MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت التعديل بنجاح", Form_alert.enmType.Success);
                         unmod();
                         Clear();
                         this.Add_Square1_Load(null, null);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show(ex.Message);
+                        //MessageBox.Show(ex.Message);
+                        this.Alert(ex.Message, Form_alert.enmType.Error);
                     }
                 }
 
@@ -148,7 +161,8 @@ namespace Power_Station_System.chid_form
                 if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                 {
                     block.Delete_block(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                    MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Alert("تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
                     this.Add_Square1_Load(null, null);
                 }
 
@@ -175,7 +189,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
 
@@ -200,7 +215,8 @@ namespace Power_Station_System.chid_form
             dd = block.Check_if_block_exists(rjTextBox1.Texts);
             if (dd.Rows.Count > 0)
             {
-                MessageBox.Show("إسم المربع موجود مسبقا", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+               // MessageBox.Show("إسم المربع موجود مسبقا", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                this.Alert("إسم المربع موجود مسبقا", Form_alert.enmType.Warning);
                 ClearText();
                 rjTextBox1.Focus();
                 rjTextBox1.SelectionStart = 0;

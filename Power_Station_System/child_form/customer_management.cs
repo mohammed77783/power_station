@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Power_Station_System.warning_code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,11 @@ namespace Power_Station_System.chid_form
         {
             InitializeComponent();
 
+        }
+        public void Alert(string msg, Form_alert.enmType type)
+        {
+            Form_alert frm = new Form_alert();
+            frm.showAlert(msg, type);
         }
 
         private void RjButton1_Click(object sender, EventArgs e)
@@ -96,7 +102,8 @@ namespace Power_Station_System.chid_form
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
             }
 
         }
@@ -107,7 +114,8 @@ namespace Power_Station_System.chid_form
             if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
                 cus.Delete_Sub(this.datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
-                MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK,MessageBoxIcon.Information);
+               // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
                 datagride_view_customer.Refresh(); 
                
             }

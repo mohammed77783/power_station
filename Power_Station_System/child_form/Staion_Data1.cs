@@ -16,5 +16,20 @@ namespace Power_Station_System.chid_form
         {
             InitializeComponent();
         }
+
+        private void RjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RjButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RjButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
