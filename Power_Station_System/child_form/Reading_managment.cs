@@ -41,6 +41,7 @@ namespace Power_Station_System.chid_form
             meter_id.Texts= row.Cells[4].Value.ToString();
             current_reading.Texts= row.Cells[1].Value.ToString();
             privosu_reading.Texts= row.Cells[2].Value.ToString();
+            privosu_reading.Enabled = true;
             // meternum = datagride_view_customer.CurrentRow.Cells[4].Value.ToString();
             //  custo_name.Texts = tb.Rows[0][1].ToString();
             //   meter_id.Texts = meter;
@@ -48,8 +49,8 @@ namespace Power_Station_System.chid_form
             datagride_view_customer.Enabled = false;
          //   block = Convert.ToInt16(tb.Rows[0][2].ToString());
             rjButton3.Text = "الغاء";
-           // id = Convert.ToInt16(tb.Rows[0][0].ToString());
-
+            // id = Convert.ToInt16(tb.Rows[0][0].ToString());
+            
         }
         public void unmod()
         {
@@ -58,12 +59,13 @@ namespace Power_Station_System.chid_form
             rjButton3.Enabled = true;
             rjButton1.Text = "اضافة";
             rjButton3.Text = "حذف";
-            rjButton2.Enabled = false;
             meternum = null;
              tb = null;
+            privosu_reading.Enabled = false;
             custo_name.Texts = String.Empty;
             meter_id.Texts = String.Empty;
             privosu_reading.Texts = String.Empty;
+            current_reading.Texts = String.Empty;
             datagride_view_customer.Enabled = true;
             block = -1;
         }
@@ -118,17 +120,17 @@ namespace Power_Station_System.chid_form
 
         private void RjButton3_Click(object sender, EventArgs e)
         {
-
+            unmod();
         }
 
         private void RjButton1_Click_1(object sender, EventArgs e)
         {
-           
-            if(rjButton1.Text== "اضافة" && meternum!=null)
+
+            if (rjButton1.Text == "اضافة" && meternum != null)
             {
                 add(meternum);
             }
-            else if(rjButton1.Text == "حفظ" && meternum != null)
+            else if (rjButton1.Text == "حفظ" && meternum != null)
             {
                 if (current_reading.Texts.Trim().Length < 1)
                 {
@@ -138,25 +140,52 @@ namespace Power_Station_System.chid_form
                 }
                 else
                 {
-                    if (Convert.ToInt16(current_reading.Texts) <= Convert.ToInt16(privosu_reading.Texts))
+                    if (Convert.ToInt32(current_reading.Texts) <= Convert.ToInt32(privosu_reading.Texts))
                     {
                         MessageBox.Show("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة");
                         return;
                     }
-                    else { 
-                    rea.Add_reading(current_reading.Texts, privosu_reading.Texts, dateTimePicker1.Text, meter_id.Texts, id, block);
-                    rea.update_opeiningreading(meter_id.Texts.Trim(), current_reading.Texts, dateTimePicker1.Text);
-                    rea.reading_doe(meter_id.Texts.Trim());
-                    this.Reading_managment_Load(null, null);
-                    MessageBox.Show("تم اضاقة القراءة بنجاح");
+                    else
+                    {
+                        rea.Add_reading(current_reading.Texts, privosu_reading.Texts, dateTimePicker1.Text, meter_id.Texts, id, block);
+                        rea.update_opeiningreading(meter_id.Texts.Trim(), current_reading.Texts, dateTimePicker1.Text);
+                        rea.reading_doe(meter_id.Texts.Trim());
+                        this.Reading_managment_Load(null, null);
+                        MessageBox.Show("تم اضاقة القراءة بنجاح");
                         unmod();
                     }
 
                 }
             }
-            else if(rjButton1.Text== "حفظ التغيرات")
+            else if (rjButton1.Text == "حفظ التغيرات")
             {
+                if (current_reading.Texts.Trim().Length < -1)
+                {
+                    MessageBox.Show("القراءة الحالية فارغة يحب ادخالها");
+                    current_reading.Focus();
 
+                }
+                else if (privosu_reading.Texts.Trim().Length < -1)
+                {
+                    MessageBox.Show("القراءة السابقة فارغة يحب ادخالها");
+                    privosu_reading.Focus();
+
+                }
+                else
+                {
+
+                    if (Convert.ToInt32(current_reading.Texts) <= Convert.ToInt32(privosu_reading.Texts))
+                    {
+                        MessageBox.Show("هناك خطأ ما لا ينبغي ان تكون القراءة الحالية اقل من السابقة");
+                        return;
+                    }
+                    rea.udate_reading(id_res, current_reading.Texts, privosu_reading.Texts, dateTimePicker1.Text, meter_id.Texts);
+                    rea.update_opeiningreading(meter_id.Texts.Trim(), current_reading.Texts, dateTimePicker1.Text);
+                    rea.reading_doe(meter_id.Texts.Trim());
+                    this.Reading_managment_Load(null, null);
+                    MessageBox.Show("تمت عملية التعديل بنجاح");
+                    unmod();
+                }
             }
         }
 

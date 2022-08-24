@@ -460,3 +460,4 @@ C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Deb
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.csproj.CopyComplete
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.exe
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.pdb
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.login.resources

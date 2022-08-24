@@ -34,35 +34,35 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.meter_id = new RJCodeAdvance.RJControls.RJTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.current_reading = new RJCodeAdvance.RJControls.RJTextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.privosu_reading = new RJCodeAdvance.RJControls.RJTextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.custo_name = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.datagride_view_customer = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.Column5 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ele_sub_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Subscriber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.search = new RJCodeAdvance.RJControls.RJTextBox();
-            this.meter_id = new RJCodeAdvance.RJControls.RJTextBox();
-            this.current_reading = new RJCodeAdvance.RJControls.RJTextBox();
-            this.privosu_reading = new RJCodeAdvance.RJControls.RJTextBox();
-            this.custo_name = new RJCodeAdvance.RJControls.RJTextBox();
+            this.datagride_view_customer = new System.Windows.Forms.DataGridView();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_Subscriber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ele_sub_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -135,6 +135,32 @@
             this.label4.Text = "رقم العداد";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // meter_id
+            // 
+            this.meter_id.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.meter_id.BackColor = System.Drawing.Color.White;
+            this.meter_id.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.meter_id.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.meter_id.BorderRadius = 0;
+            this.meter_id.BorderSize = 1;
+            this.meter_id.Enabled = false;
+            this.meter_id.Font = new System.Drawing.Font("LBC", 8F);
+            this.meter_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.meter_id.Location = new System.Drawing.Point(424, 81);
+            this.meter_id.Margin = new System.Windows.Forms.Padding(4);
+            this.meter_id.Multiline = false;
+            this.meter_id.Name = "meter_id";
+            this.meter_id.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.meter_id.PasswordChar = false;
+            this.meter_id.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.meter_id.PlaceholderText = "";
+            this.meter_id.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.meter_id.SelectionStart = 0;
+            this.meter_id.Size = new System.Drawing.Size(260, 31);
+            this.meter_id.TabIndex = 68;
+            this.meter_id.Texts = "";
+            this.meter_id.UnderlinedStyle = true;
+            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -144,6 +170,31 @@
             this.checkBox1.TabIndex = 67;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
+            // 
+            // current_reading
+            // 
+            this.current_reading.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.current_reading.BackColor = System.Drawing.Color.White;
+            this.current_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.current_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.current_reading.BorderRadius = 0;
+            this.current_reading.BorderSize = 1;
+            this.current_reading.Font = new System.Drawing.Font("LBC", 8F);
+            this.current_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.current_reading.Location = new System.Drawing.Point(424, 136);
+            this.current_reading.Margin = new System.Windows.Forms.Padding(4);
+            this.current_reading.Multiline = false;
+            this.current_reading.Name = "current_reading";
+            this.current_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.current_reading.PasswordChar = false;
+            this.current_reading.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.current_reading.PlaceholderText = "";
+            this.current_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.current_reading.SelectionStart = 0;
+            this.current_reading.Size = new System.Drawing.Size(260, 31);
+            this.current_reading.TabIndex = 66;
+            this.current_reading.Texts = "";
+            this.current_reading.UnderlinedStyle = true;
             // 
             // comboBox2
             // 
@@ -186,6 +237,31 @@
             this.label2.Text = "القراءة السابقة";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // privosu_reading
+            // 
+            this.privosu_reading.BackColor = System.Drawing.Color.White;
+            this.privosu_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.privosu_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.privosu_reading.BorderRadius = 0;
+            this.privosu_reading.BorderSize = 1;
+            this.privosu_reading.Enabled = false;
+            this.privosu_reading.Font = new System.Drawing.Font("LBC", 8F);
+            this.privosu_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.privosu_reading.Location = new System.Drawing.Point(33, 81);
+            this.privosu_reading.Margin = new System.Windows.Forms.Padding(4);
+            this.privosu_reading.Multiline = false;
+            this.privosu_reading.Name = "privosu_reading";
+            this.privosu_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.privosu_reading.PasswordChar = false;
+            this.privosu_reading.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.privosu_reading.PlaceholderText = "";
+            this.privosu_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.privosu_reading.SelectionStart = 0;
+            this.privosu_reading.Size = new System.Drawing.Size(232, 31);
+            this.privosu_reading.TabIndex = 61;
+            this.privosu_reading.Texts = "";
+            this.privosu_reading.UnderlinedStyle = true;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
@@ -227,6 +303,32 @@
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
+            // custo_name
+            // 
+            this.custo_name.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.custo_name.BackColor = System.Drawing.Color.White;
+            this.custo_name.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.custo_name.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.custo_name.BorderRadius = 0;
+            this.custo_name.BorderSize = 1;
+            this.custo_name.Font = new System.Drawing.Font("LBC", 8F);
+            this.custo_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.custo_name.Location = new System.Drawing.Point(424, 33);
+            this.custo_name.Margin = new System.Windows.Forms.Padding(4);
+            this.custo_name.Multiline = false;
+            this.custo_name.Name = "custo_name";
+            this.custo_name.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.custo_name.PasswordChar = false;
+            this.custo_name.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.custo_name.PlaceholderText = "";
+            this.custo_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.custo_name.SelectionStart = 0;
+            this.custo_name.Size = new System.Drawing.Size(260, 31);
+            this.custo_name.TabIndex = 21;
+            this.custo_name.Texts = "";
+            this.custo_name.UnderlinedStyle = true;
+            this.custo_name._TextChanged += new System.EventHandler(this.Search__TextChanged);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
@@ -250,160 +352,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 48);
             this.panel2.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.iconButton1);
-            this.panel3.Controls.Add(this.search);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(269, 48);
-            this.panel3.TabIndex = 22;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(230, 8);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(32, 32);
-            this.iconButton1.TabIndex = 22;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // datagride_view_customer
-            // 
-            this.datagride_view_customer.AllowUserToAddRows = false;
-            this.datagride_view_customer.AllowUserToDeleteRows = false;
-            this.datagride_view_customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.datagride_view_customer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.datagride_view_customer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.datagride_view_customer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagride_view_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.datagride_view_customer.ColumnHeadersHeight = 40;
-            this.datagride_view_customer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.ID_Subscriber,
-            this.name,
-            this.address,
-            this.ele_sub_number,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagride_view_customer.DefaultCellStyle = dataGridViewCellStyle2;
-            this.datagride_view_customer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.datagride_view_customer.EnableHeadersVisualStyles = false;
-            this.datagride_view_customer.GridColor = System.Drawing.SystemColors.ButtonFace;
-            this.datagride_view_customer.Location = new System.Drawing.Point(0, 0);
-            this.datagride_view_customer.Name = "datagride_view_customer";
-            this.datagride_view_customer.ReadOnly = true;
-            this.datagride_view_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.datagride_view_customer.RowHeadersVisible = false;
-            this.datagride_view_customer.RowHeadersWidth = 51;
-            this.datagride_view_customer.RowTemplate.Height = 80;
-            this.datagride_view_customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagride_view_customer.Size = new System.Drawing.Size(800, 211);
-            this.datagride_view_customer.TabIndex = 19;
-            this.datagride_view_customer.Click += new System.EventHandler(this.Datagride_view_customer_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.datagride_view_customer);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.panel4.Location = new System.Drawing.Point(0, 239);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 211);
-            this.panel4.TabIndex = 4;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "invoice_state_relace";
-            this.Column5.HeaderText = "حاله اصدار الفاتورة";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "Block_name";
-            this.Column4.HeaderText = "المربع";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "Subscriber_ElectricMeter_ID";
-            this.Column3.HeaderText = "رقم العداد";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // ele_sub_number
-            // 
-            this.ele_sub_number.DataPropertyName = "Data_time";
-            this.ele_sub_number.HeaderText = "التاريخ والوقت";
-            this.ele_sub_number.MinimumWidth = 6;
-            this.ele_sub_number.Name = "ele_sub_number";
-            this.ele_sub_number.ReadOnly = true;
-            // 
-            // address
-            // 
-            this.address.DataPropertyName = "Previous_Reading";
-            this.address.HeaderText = "القراءه السابقة";
-            this.address.MinimumWidth = 6;
-            this.address.Name = "address";
-            this.address.ReadOnly = true;
-            // 
-            // name
-            // 
-            this.name.DataPropertyName = "Current_Reading";
-            this.name.HeaderText = "القراءه الحالية";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // ID_Subscriber
-            // 
-            this.ID_Subscriber.DataPropertyName = "Subscriber_name";
-            this.ID_Subscriber.HeaderText = "اسم المشترك";
-            this.ID_Subscriber.MinimumWidth = 6;
-            this.ID_Subscriber.Name = "ID_Subscriber";
-            this.ID_Subscriber.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "ID";
-            this.Column2.HeaderText = "ID";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Visible = false;
             // 
             // rjButton2
             // 
@@ -466,6 +414,35 @@
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click_1);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.iconButton1);
+            this.panel3.Controls.Add(this.search);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(269, 48);
+            this.panel3.TabIndex = 22;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.Location = new System.Drawing.Point(230, 8);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(32, 32);
+            this.iconButton1.TabIndex = 22;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
             // search
             // 
             this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -491,107 +468,130 @@
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
             // 
-            // meter_id
+            // datagride_view_customer
             // 
-            this.meter_id.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.meter_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.meter_id.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.meter_id.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.meter_id.BorderRadius = 0;
-            this.meter_id.BorderSize = 1;
-            this.meter_id.Enabled = false;
-            this.meter_id.Font = new System.Drawing.Font("LBC", 8F);
-            this.meter_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.meter_id.Location = new System.Drawing.Point(424, 81);
-            this.meter_id.Margin = new System.Windows.Forms.Padding(4);
-            this.meter_id.Multiline = false;
-            this.meter_id.Name = "meter_id";
-            this.meter_id.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.meter_id.PasswordChar = false;
-            this.meter_id.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.meter_id.PlaceholderText = "";
-            this.meter_id.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.meter_id.SelectionStart = 0;
-            this.meter_id.Size = new System.Drawing.Size(260, 31);
-            this.meter_id.TabIndex = 68;
-            this.meter_id.Texts = "";
-            this.meter_id.UnderlinedStyle = true;
+            this.datagride_view_customer.AllowUserToAddRows = false;
+            this.datagride_view_customer.AllowUserToDeleteRows = false;
+            this.datagride_view_customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.datagride_view_customer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.datagride_view_customer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.datagride_view_customer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagride_view_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.datagride_view_customer.ColumnHeadersHeight = 40;
+            this.datagride_view_customer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.ID_Subscriber,
+            this.name,
+            this.address,
+            this.ele_sub_number,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagride_view_customer.DefaultCellStyle = dataGridViewCellStyle2;
+            this.datagride_view_customer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.datagride_view_customer.EnableHeadersVisualStyles = false;
+            this.datagride_view_customer.GridColor = System.Drawing.SystemColors.ButtonFace;
+            this.datagride_view_customer.Location = new System.Drawing.Point(0, 0);
+            this.datagride_view_customer.Name = "datagride_view_customer";
+            this.datagride_view_customer.ReadOnly = true;
+            this.datagride_view_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.datagride_view_customer.RowHeadersVisible = false;
+            this.datagride_view_customer.RowHeadersWidth = 51;
+            this.datagride_view_customer.RowTemplate.Height = 80;
+            this.datagride_view_customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.datagride_view_customer.Size = new System.Drawing.Size(800, 211);
+            this.datagride_view_customer.TabIndex = 19;
+            this.datagride_view_customer.Click += new System.EventHandler(this.Datagride_view_customer_Click);
             // 
-            // current_reading
+            // Column2
             // 
-            this.current_reading.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.current_reading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.current_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.current_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.current_reading.BorderRadius = 0;
-            this.current_reading.BorderSize = 1;
-            this.current_reading.Font = new System.Drawing.Font("LBC", 8F);
-            this.current_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.current_reading.Location = new System.Drawing.Point(424, 136);
-            this.current_reading.Margin = new System.Windows.Forms.Padding(4);
-            this.current_reading.Multiline = false;
-            this.current_reading.Name = "current_reading";
-            this.current_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.current_reading.PasswordChar = false;
-            this.current_reading.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.current_reading.PlaceholderText = "";
-            this.current_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.current_reading.SelectionStart = 0;
-            this.current_reading.Size = new System.Drawing.Size(260, 31);
-            this.current_reading.TabIndex = 66;
-            this.current_reading.Texts = "";
-            this.current_reading.UnderlinedStyle = true;
+            this.Column2.DataPropertyName = "ID";
+            this.Column2.HeaderText = "ID";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Visible = false;
             // 
-            // privosu_reading
+            // ID_Subscriber
             // 
-            this.privosu_reading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.privosu_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.privosu_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.privosu_reading.BorderRadius = 0;
-            this.privosu_reading.BorderSize = 1;
-            this.privosu_reading.Enabled = false;
-            this.privosu_reading.Font = new System.Drawing.Font("LBC", 8F);
-            this.privosu_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.privosu_reading.Location = new System.Drawing.Point(33, 81);
-            this.privosu_reading.Margin = new System.Windows.Forms.Padding(4);
-            this.privosu_reading.Multiline = false;
-            this.privosu_reading.Name = "privosu_reading";
-            this.privosu_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.privosu_reading.PasswordChar = false;
-            this.privosu_reading.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.privosu_reading.PlaceholderText = "";
-            this.privosu_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.privosu_reading.SelectionStart = 0;
-            this.privosu_reading.Size = new System.Drawing.Size(232, 31);
-            this.privosu_reading.TabIndex = 61;
-            this.privosu_reading.Texts = "";
-            this.privosu_reading.UnderlinedStyle = true;
+            this.ID_Subscriber.DataPropertyName = "Subscriber_name";
+            this.ID_Subscriber.HeaderText = "اسم المشترك";
+            this.ID_Subscriber.MinimumWidth = 6;
+            this.ID_Subscriber.Name = "ID_Subscriber";
+            this.ID_Subscriber.ReadOnly = true;
             // 
-            // custo_name
+            // name
             // 
-            this.custo_name.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.custo_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.custo_name.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.custo_name.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.custo_name.BorderRadius = 0;
-            this.custo_name.BorderSize = 1;
-            this.custo_name.Font = new System.Drawing.Font("LBC", 8F);
-            this.custo_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.custo_name.Location = new System.Drawing.Point(424, 33);
-            this.custo_name.Margin = new System.Windows.Forms.Padding(4);
-            this.custo_name.Multiline = false;
-            this.custo_name.Name = "custo_name";
-            this.custo_name.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.custo_name.PasswordChar = false;
-            this.custo_name.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.custo_name.PlaceholderText = "";
-            this.custo_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.custo_name.SelectionStart = 0;
-            this.custo_name.Size = new System.Drawing.Size(260, 31);
-            this.custo_name.TabIndex = 21;
-            this.custo_name.Texts = "";
-            this.custo_name.UnderlinedStyle = true;
-            this.custo_name._TextChanged += new System.EventHandler(this.Search__TextChanged);
+            this.name.DataPropertyName = "Current_Reading";
+            this.name.HeaderText = "القراءه الحالية";
+            this.name.MinimumWidth = 6;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // address
+            // 
+            this.address.DataPropertyName = "Previous_Reading";
+            this.address.HeaderText = "القراءه السابقة";
+            this.address.MinimumWidth = 6;
+            this.address.Name = "address";
+            this.address.ReadOnly = true;
+            // 
+            // ele_sub_number
+            // 
+            this.ele_sub_number.DataPropertyName = "Data_time";
+            this.ele_sub_number.HeaderText = "التاريخ والوقت";
+            this.ele_sub_number.MinimumWidth = 6;
+            this.ele_sub_number.Name = "ele_sub_number";
+            this.ele_sub_number.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "Subscriber_ElectricMeter_ID";
+            this.Column3.HeaderText = "رقم العداد";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "Block_name";
+            this.Column4.HeaderText = "المربع";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "invoice_state_relace";
+            this.Column5.HeaderText = "حاله اصدار الفاتورة";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.datagride_view_customer);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.panel4.Location = new System.Drawing.Point(0, 239);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(800, 211);
+            this.panel4.TabIndex = 4;
             // 
             // Reading_managment
             // 

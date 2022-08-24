@@ -53,10 +53,10 @@ namespace Power_Station_System.DataBase
                 access.executor("insert_reading", pr);
                 access.close();
             }
-        public void udate_reading(int id, string cur,string privous, string date, string subscriper_metrer)
+        public void udate_reading(int id, string cur,string privous, string date, string meter__number)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
-            SqlParameter[] pr = new SqlParameter[6];
+            SqlParameter[] pr = new SqlParameter[5];
             access.open();
             pr[0] = new SqlParameter("@i_d", SqlDbType.BigInt);
             pr[0].Value = id;
@@ -66,8 +66,8 @@ namespace Power_Station_System.DataBase
             pr[2].Value = privous;
             pr[3] = new SqlParameter("@d_ate", SqlDbType.Date);
             pr[3].Value = date;
-            pr[4] = new SqlParameter("@meter_number", SqlDbType.Int);
-            pr[4].Value = subscriper_metrer;
+            pr[4] = new SqlParameter("@meter_number", SqlDbType.VarChar, 200);
+            pr[4].Value = meter__number;
             access.executor("update_elect_meter", pr);
             access.close();
         }

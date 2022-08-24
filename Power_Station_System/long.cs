@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Power_Station_System
 {
-    public partial class @long : Form
+    public partial class login : Form
     {
-        public @long()
+        public login()
         {
             InitializeComponent();
         }
