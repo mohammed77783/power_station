@@ -105,7 +105,7 @@ namespace Power_Station_System.DataBase
             DataTable dt = new DataTable();
             SqlParameter[] pr = new SqlParameter[1];
             access.open();
-            pr[0] = new SqlParameter("@serch", SqlDbType.Int);
+            pr[0] = new SqlParameter("@serch", SqlDbType.VarChar,150);
             pr[0].Value = s; ;
             dt = access.selec_table("[search_subscriper]", pr);
             access.close();

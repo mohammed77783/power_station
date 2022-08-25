@@ -4,9 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
-using System.Data;
-using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
 
 namespace Power_Station_System.DataBase
