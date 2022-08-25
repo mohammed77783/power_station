@@ -20,7 +20,7 @@ namespace Power_Station_System.chid_form
         DataBase.subscriber subs = new DataBase.subscriber();
         DataBase.reading red = new DataBase.reading();
         DataBase.Block_aned_area block=new DataBase.Block_aned_area();
-        
+        customer_management f;
         public Add_customer_window(customer_management fa)
         {
             InitializeComponent();
@@ -108,7 +108,7 @@ namespace Power_Station_System.chid_form
                     //MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
                 Clear();
-                   // father.Add_customer_1_Load(null, null);
+                  father.upGrid();
              //   }
               // catch (Exception ex)
              //  {

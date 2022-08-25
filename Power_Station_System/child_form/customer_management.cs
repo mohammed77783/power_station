@@ -15,10 +15,12 @@ namespace Power_Station_System.chid_form
     {
         DataBase.subscriber cus = new DataBase.subscriber();
         int id;
+      
        /* string name_upd, phone, addrss, inde_type, tden_num, electronic_number, subscription_id;*/
-        public customer_management()
+        public customer_management( )
         {
             InitializeComponent();
+        
 
         }
         public void Alert(string msg, Form_alert.enmType type)
@@ -93,6 +95,11 @@ namespace Power_Station_System.chid_form
             datagride_view_customer.DataSource = cus.get_subscriber();
             //var sql = "select_subscriper";
         }
+        public void upGrid()
+        {
+            datagride_view_customer.DataSource = cus.get_subscriber();
+            //var sql = "select_subscriper";
+        }
 
         private void Add_customer_1_Load(object sender, EventArgs e)
         {
@@ -116,8 +123,10 @@ namespace Power_Station_System.chid_form
                 cus.Delete_Sub(this.datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
                // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
-                datagride_view_customer.Refresh(); 
-               
+                datagride_view_customer.Refresh();
+             
+
+
             }
         }
 

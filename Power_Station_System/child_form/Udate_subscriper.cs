@@ -96,6 +96,8 @@ namespace Power_Station_System.chid_form
 
                    // MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Alert(" تمت التعديل بنجاح", Form_alert.enmType.Success);
+                    customer_management dd = new customer_management();
+                    father.upGrid();
                     ///father.Add_customer_1_Load(null,null);
                 }
                 catch (Exception ex)
@@ -128,13 +130,25 @@ namespace Power_Station_System.chid_form
 
         private void Udate_subscriper_Load(object sender, EventArgs e)
         {
+            try
+            {
+                subscriper_name_upd.Texts = table.Rows[0][1].ToString();
+                subscr_phnum_upd.Texts = table.Rows[0][2].ToString();
+                sub_address_upda.Texts = table.Rows[0][3].ToString();
+                identity_ty.Texts = table.Rows[0][4].ToString();
+                indenity_number_upda.Texts = table.Rows[0][5].ToString();
+                comboBox1.Text = table.Rows[0][6].ToString();
+                meter_number_UP.Texts = table.Rows[0][7].ToString();
+                dateTimePicker1.Text = table.Rows[0][9].ToString();
 
-            subscriper_name_upd.Texts = table.Rows[0][1].ToString();
-            subscr_phnum_upd.Texts = table.Rows[0][2].ToString();
-            sub_address_upda.Texts = table.Rows[0][3].ToString();
-            indenity_number_upda.Texts = table.Rows[0][4].ToString();
-            meter_number_UP.Texts = table.Rows[0][7].ToString();
-            dateTimePicker1.Text = table.Rows[0][9].ToString();
+                
+            }
+            catch (Exception )
+            {
+                this.Alert(" يجب اختيار احد المشتركين", Form_alert.enmType.Success);
+                //this.Alert(ex.Message, Form_alert.enmType.Error);
+            }
+          
 
         }
 
@@ -155,6 +169,21 @@ namespace Power_Station_System.chid_form
         }
 
         private void Subscriper_name_upd__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
