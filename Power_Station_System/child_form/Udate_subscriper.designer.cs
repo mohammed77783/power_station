@@ -60,21 +60,21 @@
             // 
             // rjButton1
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.LimeGreen;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.LimeGreen;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton1.BorderRadius = 7;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("LBC", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(467, 481);
+            this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton1.ForeColor = System.Drawing.Color.Black;
+            this.rjButton1.Location = new System.Drawing.Point(505, 480);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(136, 46);
+            this.rjButton1.Size = new System.Drawing.Size(95, 42);
             this.rjButton1.TabIndex = 51;
             this.rjButton1.Text = "حفظ";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.TextColor = System.Drawing.Color.Black;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
             // 
@@ -84,16 +84,17 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(364, 34);
+            this.label1.Location = new System.Drawing.Point(398, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 25);
+
+            this.label1.Size = new System.Drawing.Size(206, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "تعديل مشترك";
+            this.label1.Text = "تعديل بيانات مشترك";
             // 
             // ourPanel1
             // 
             this.ourPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.ourPanel1.BorderRaduis = 30;
+            this.ourPanel1.BorderRaduis = 5;
             this.ourPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.ourPanel1.Controls.Add(this.label1);
             this.ourPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -113,35 +114,35 @@
             // rjButton3
             // 
             this.rjButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton3.BackColor = System.Drawing.Color.Crimson;
-            this.rjButton3.BackgroundColor = System.Drawing.Color.Crimson;
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.rjButton3.BorderRadius = 7;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(225, 480);
+            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Location = new System.Drawing.Point(368, 480);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(136, 43);
+            this.rjButton3.Size = new System.Drawing.Size(95, 42);
             this.rjButton3.TabIndex = 52;
             this.rjButton3.Text = "الغاء";
-            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.TextColor = System.Drawing.Color.Black;
             this.rjButton3.UseVisualStyleBackColor = false;
             this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
             // 
             // meter_number_UP
             // 
-            this.meter_number_UP.BackColor = System.Drawing.Color.White;
-            this.meter_number_UP.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.meter_number_UP.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.meter_number_UP.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.meter_number_UP.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.meter_number_UP.BorderRadius = 0;
-            this.meter_number_UP.BorderSize = 1;
+            this.meter_number_UP.BorderSize = 2;
             this.meter_number_UP.Enabled = false;
-            this.meter_number_UP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.meter_number_UP.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.meter_number_UP.Location = new System.Drawing.Point(537, 376);
+            this.meter_number_UP.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.meter_number_UP.ForeColor = System.Drawing.Color.Black;
+            this.meter_number_UP.Location = new System.Drawing.Point(86, 309);
             this.meter_number_UP.Margin = new System.Windows.Forms.Padding(4);
             this.meter_number_UP.Multiline = false;
             this.meter_number_UP.Name = "meter_number_UP";
@@ -151,8 +152,10 @@
             this.meter_number_UP.PlaceholderText = "";
             this.meter_number_UP.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.meter_number_UP.SelectionStart = 0;
-            this.meter_number_UP.Size = new System.Drawing.Size(290, 35);
-            this.meter_number_UP.TabIndex = 78;
+
+            this.meter_number_UP.Size = new System.Drawing.Size(290, 41);
+            this.meter_number_UP.TabIndex = 8;
+
             this.meter_number_UP.Texts = "";
             this.meter_number_UP.UnderlinedStyle = true;
             // 
@@ -161,24 +164,28 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(839, 390);
+            this.label10.Location = new System.Drawing.Point(400, 322);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 21);
+
+            this.label10.Size = new System.Drawing.Size(101, 26);
+
             this.label10.TabIndex = 77;
-            this.label10.Text = "رقم العداد";
+            this.label10.Text = "رقم العداد :";
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(84, 327);
+            this.dateTimePicker1.Location = new System.Drawing.Point(515, 394);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(271, 22);
-            this.dateTimePicker1.TabIndex = 76;
+
+            this.dateTimePicker1.Size = new System.Drawing.Size(271, 25);
+            this.dateTimePicker1.TabIndex = 9;
             // 
             // ourPanel3
             // 
-            this.ourPanel3.BackColor = System.Drawing.Color.White;
+            this.ourPanel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ourPanel3.BorderRaduis = 20;
             this.ourPanel3.Controls.Add(this.comboBox2);
             this.ourPanel3.Enabled = false;
@@ -186,34 +193,40 @@
             this.ourPanel3.GardientAngle = 90F;
             this.ourPanel3.GardientBottomClor = System.Drawing.Color.MediumSlateBlue;
             this.ourPanel3.GardientTopClor = System.Drawing.Color.MediumSlateBlue;
-            this.ourPanel3.Location = new System.Drawing.Point(527, 309);
+            this.ourPanel3.Location = new System.Drawing.Point(527, 322);
             this.ourPanel3.Name = "ourPanel3";
-            this.ourPanel3.Size = new System.Drawing.Size(301, 31);
-            this.ourPanel3.TabIndex = 75;
+            this.ourPanel3.Size = new System.Drawing.Size(301, 26);
+            this.ourPanel3.TabIndex = 7;
             // 
             // comboBox2
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.Silver;
+            this.comboBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox2.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.ForeColor = System.Drawing.Color.Yellow;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(0, 0);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox2.Size = new System.Drawing.Size(301, 33);
-            this.comboBox2.TabIndex = 0;
+
+            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboBox2.Size = new System.Drawing.Size(301, 30);
+            this.comboBox2.TabIndex = 7;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
+
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(841, 318);
+            this.label8.Location = new System.Drawing.Point(847, 322);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 21);
+
+            this.label8.Size = new System.Drawing.Size(68, 26);
+
             this.label8.TabIndex = 74;
-            this.label8.Text = "المربع";
+            this.label8.Text = "المربع :";
             // 
             // ourPanel2
             // 
@@ -224,23 +237,26 @@
             this.ourPanel2.GardientAngle = 90F;
             this.ourPanel2.GardientBottomClor = System.Drawing.Color.MediumSlateBlue;
             this.ourPanel2.GardientTopClor = System.Drawing.Color.MediumSlateBlue;
-            this.ourPanel2.Location = new System.Drawing.Point(73, 196);
+            this.ourPanel2.Location = new System.Drawing.Point(84, 204);
             this.ourPanel2.Name = "ourPanel2";
-            this.ourPanel2.Size = new System.Drawing.Size(301, 32);
-            this.ourPanel2.TabIndex = 73;
+            this.ourPanel2.Size = new System.Drawing.Size(292, 26);
+            this.ourPanel2.TabIndex = 4;
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
+            this.comboBox1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox1.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(0, 0);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(301, 33);
-            this.comboBox1.TabIndex = 0;
+
+            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboBox1.Size = new System.Drawing.Size(292, 30);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+
             // 
             // label7
             // 
@@ -249,20 +265,21 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(394, 204);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 21);
+
+            this.label7.Size = new System.Drawing.Size(119, 26);
             this.label7.TabIndex = 72;
-            this.label7.Text = "نوع الاشتراك";
+            this.label7.Text = "نوع الاشتراك :";
             // 
             // indenity_number_upda
             // 
-            this.indenity_number_upda.BackColor = System.Drawing.Color.White;
-            this.indenity_number_upda.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.indenity_number_upda.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.indenity_number_upda.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.indenity_number_upda.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.indenity_number_upda.BorderRadius = 0;
-            this.indenity_number_upda.BorderSize = 1;
-            this.indenity_number_upda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.indenity_number_upda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.indenity_number_upda.Location = new System.Drawing.Point(530, 250);
+            this.indenity_number_upda.BorderSize = 2;
+            this.indenity_number_upda.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.indenity_number_upda.ForeColor = System.Drawing.Color.Black;
+            this.indenity_number_upda.Location = new System.Drawing.Point(86, 247);
             this.indenity_number_upda.Margin = new System.Windows.Forms.Padding(4);
             this.indenity_number_upda.Multiline = false;
             this.indenity_number_upda.Name = "indenity_number_upda";
@@ -272,8 +289,10 @@
             this.indenity_number_upda.PlaceholderText = "";
             this.indenity_number_upda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.indenity_number_upda.SelectionStart = 0;
-            this.indenity_number_upda.Size = new System.Drawing.Size(290, 35);
-            this.indenity_number_upda.TabIndex = 71;
+
+            this.indenity_number_upda.Size = new System.Drawing.Size(290, 41);
+            this.indenity_number_upda.TabIndex = 6;
+
             this.indenity_number_upda.Texts = "";
             this.indenity_number_upda.UnderlinedStyle = true;
             // 
@@ -282,35 +301,38 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(832, 264);
+            this.label6.Location = new System.Drawing.Point(394, 261);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 21);
+
+            this.label6.Size = new System.Drawing.Size(102, 26);
+
             this.label6.TabIndex = 70;
-            this.label6.Text = "رقم الهوية";
+            this.label6.Text = "رقم الهوية :";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // identity_ty
             // 
             this.identity_ty.AutoCompleteCustomSource.AddRange(new string[] {
             "بطاقة شخصية ",
             "جواز"});
-            this.identity_ty.BackColor = System.Drawing.Color.White;
+            this.identity_ty.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.identity_ty.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.identity_ty.BorderSize = 1;
             this.identity_ty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.identity_ty.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identity_ty.ForeColor = System.Drawing.Color.DimGray;
+            this.identity_ty.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.identity_ty.ForeColor = System.Drawing.Color.Black;
             this.identity_ty.IconColor = System.Drawing.Color.MediumSlateBlue;
             this.identity_ty.Items.AddRange(new object[] {
             "جواز",
             "بطاقة شخصية"});
             this.identity_ty.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.identity_ty.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.identity_ty.Location = new System.Drawing.Point(79, 251);
+            this.identity_ty.Location = new System.Drawing.Point(527, 261);
             this.identity_ty.MinimumSize = new System.Drawing.Size(200, 34);
             this.identity_ty.Name = "identity_ty";
             this.identity_ty.Padding = new System.Windows.Forms.Padding(1);
             this.identity_ty.Size = new System.Drawing.Size(290, 36);
-            this.identity_ty.TabIndex = 69;
+            this.identity_ty.TabIndex = 5;
             this.identity_ty.Texts = "";
             // 
             // label9
@@ -318,22 +340,26 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(388, 332);
+            this.label9.Location = new System.Drawing.Point(819, 393);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 21);
+
+            this.label9.Size = new System.Drawing.Size(125, 26);
+
             this.label9.TabIndex = 67;
-            this.label9.Text = "تاريخ الاشتراك";
+            this.label9.Text = "تاريخ الاشتراك :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(398, 267);
+            this.label5.Location = new System.Drawing.Point(841, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 21);
+
+            this.label5.Size = new System.Drawing.Size(103, 26);
+
             this.label5.TabIndex = 66;
-            this.label5.Text = "نوع الهوية";
+            this.label5.Text = "نوع الهوية :";
             // 
             // label4
             // 
@@ -342,19 +368,21 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(841, 204);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 21);
+
+            this.label4.Size = new System.Drawing.Size(74, 26);
+
             this.label4.TabIndex = 65;
-            this.label4.Text = "العنوان";
+            this.label4.Text = "العنوان :";
             // 
             // subscr_phnum_upd
             // 
-            this.subscr_phnum_upd.BackColor = System.Drawing.Color.White;
-            this.subscr_phnum_upd.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.subscr_phnum_upd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.subscr_phnum_upd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.subscr_phnum_upd.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.subscr_phnum_upd.BorderRadius = 0;
-            this.subscr_phnum_upd.BorderSize = 1;
-            this.subscr_phnum_upd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subscr_phnum_upd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.subscr_phnum_upd.BorderSize = 2;
+            this.subscr_phnum_upd.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.subscr_phnum_upd.ForeColor = System.Drawing.Color.Black;
             this.subscr_phnum_upd.Location = new System.Drawing.Point(84, 124);
             this.subscr_phnum_upd.Margin = new System.Windows.Forms.Padding(4);
             this.subscr_phnum_upd.Multiline = false;
@@ -365,8 +393,10 @@
             this.subscr_phnum_upd.PlaceholderText = "";
             this.subscr_phnum_upd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscr_phnum_upd.SelectionStart = 0;
-            this.subscr_phnum_upd.Size = new System.Drawing.Size(290, 35);
-            this.subscr_phnum_upd.TabIndex = 64;
+
+            this.subscr_phnum_upd.Size = new System.Drawing.Size(290, 41);
+            this.subscr_phnum_upd.TabIndex = 2;
+
             this.subscr_phnum_upd.Texts = "";
             this.subscr_phnum_upd.UnderlinedStyle = true;
             // 
@@ -375,32 +405,36 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(409, 135);
+            this.label3.Location = new System.Drawing.Point(388, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 21);
+
+            this.label3.Size = new System.Drawing.Size(113, 26);
+
             this.label3.TabIndex = 63;
-            this.label3.Text = "الرقم";
+            this.label3.Text = "رقم التواصل :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("LBC", 11.75F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(840, 138);
+            this.label2.Location = new System.Drawing.Point(852, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 21);
+
+            this.label2.Size = new System.Drawing.Size(65, 26);
+
             this.label2.TabIndex = 62;
-            this.label2.Text = "الإسم";
+            this.label2.Text = "الإسم :";
             // 
             // subscriper_name_upd
             // 
-            this.subscriper_name_upd.BackColor = System.Drawing.Color.White;
-            this.subscriper_name_upd.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.subscriper_name_upd.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.subscriper_name_upd.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.subscriper_name_upd.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.subscriper_name_upd.BorderRadius = 0;
-            this.subscriper_name_upd.BorderSize = 1;
-            this.subscriper_name_upd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subscriper_name_upd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.subscriper_name_upd.BorderSize = 2;
+            this.subscriper_name_upd.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.subscriper_name_upd.ForeColor = System.Drawing.Color.Black;
             this.subscriper_name_upd.Location = new System.Drawing.Point(530, 124);
             this.subscriper_name_upd.Margin = new System.Windows.Forms.Padding(4);
             this.subscriper_name_upd.Multiline = false;
@@ -411,21 +445,23 @@
             this.subscriper_name_upd.PlaceholderText = "";
             this.subscriper_name_upd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscriper_name_upd.SelectionStart = 0;
-            this.subscriper_name_upd.Size = new System.Drawing.Size(290, 35);
-            this.subscriper_name_upd.TabIndex = 61;
+
+            this.subscriper_name_upd.Size = new System.Drawing.Size(290, 41);
+            this.subscriper_name_upd.TabIndex = 1;
+
             this.subscriper_name_upd.Texts = "";
             this.subscriper_name_upd.UnderlinedStyle = true;
             this.subscriper_name_upd._TextChanged += new System.EventHandler(this.Subscriper_name_upd__TextChanged);
             // 
             // sub_address_upda
             // 
-            this.sub_address_upda.BackColor = System.Drawing.Color.White;
-            this.sub_address_upda.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.sub_address_upda.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.sub_address_upda.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.sub_address_upda.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.sub_address_upda.BorderRadius = 0;
-            this.sub_address_upda.BorderSize = 1;
-            this.sub_address_upda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sub_address_upda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.sub_address_upda.BorderSize = 2;
+            this.sub_address_upda.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.sub_address_upda.ForeColor = System.Drawing.Color.Black;
             this.sub_address_upda.Location = new System.Drawing.Point(530, 190);
             this.sub_address_upda.Margin = new System.Windows.Forms.Padding(4);
             this.sub_address_upda.Multiline = false;
@@ -436,31 +472,37 @@
             this.sub_address_upda.PlaceholderText = "";
             this.sub_address_upda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.sub_address_upda.SelectionStart = 0;
-            this.sub_address_upda.Size = new System.Drawing.Size(290, 35);
-            this.sub_address_upda.TabIndex = 68;
+
+            this.sub_address_upda.Size = new System.Drawing.Size(290, 41);
+            this.sub_address_upda.TabIndex = 3;
+
             this.sub_address_upda.Texts = "";
             this.sub_address_upda.UnderlinedStyle = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(916, 392);
+            this.checkBox2.Location = new System.Drawing.Point(44, 331);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
             this.checkBox2.TabIndex = 79;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
             // 
             // Udate_subscriper
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(987, 603);
+            this.Controls.Add(this.ourPanel3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.meter_number_UP);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.ourPanel3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ourPanel2);
             this.Controls.Add(this.label7);
@@ -482,6 +524,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Udate_subscriper";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Udate_subscriper";
             this.Load += new System.EventHandler(this.Udate_subscriper_Load);
             this.ourPanel1.ResumeLayout(false);
