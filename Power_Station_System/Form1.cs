@@ -340,7 +340,9 @@ namespace Power_Station_System
 
         private void Button11_Click(object sender, EventArgs e)
         {
-
+            Form addbill = new child_form.Add_bill();
+            Loadpage(addbill);
+            
         }
 
         private void Button13_Click(object sender, EventArgs e)
