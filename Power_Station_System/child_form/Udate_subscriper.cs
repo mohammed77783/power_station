@@ -140,12 +140,10 @@ namespace Power_Station_System.chid_form
                 comboBox1.Text = table.Rows[0][6].ToString();
                 meter_number_UP.Texts = table.Rows[0][7].ToString();
                 dateTimePicker1.Text = table.Rows[0][9].ToString();
-
-                
             }
-            catch (Exception )
+            catch (Exception)
             {
-                this.Alert(" يجب اختيار احد المشتركين", Form_alert.enmType.Success);
+                this.Alert(" يجب اختيار احد المشتركين", Form_alert.enmType.Error);
                 //this.Alert(ex.Message, Form_alert.enmType.Error);
             }
           

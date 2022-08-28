@@ -100,9 +100,11 @@
             this.groupBox1.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(800, 185);
+            this.groupBox1.Size = new System.Drawing.Size(933, 228);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات القراءة";
@@ -110,34 +112,35 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(290, 146);
+            this.label5.Location = new System.Drawing.Point(338, 180);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 16);
+            this.label5.Size = new System.Drawing.Size(88, 22);
             this.label5.TabIndex = 70;
-            this.label5.Text = "نوع البحث";
+            this.label5.Text = "نوع البحث :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(710, 81);
+            this.label4.Location = new System.Drawing.Point(828, 100);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.Size = new System.Drawing.Size(89, 22);
             this.label4.TabIndex = 69;
-            this.label4.Text = "رقم العداد";
+            this.label4.Text = "رقم العداد :";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // meter_id
             // 
-            this.meter_id.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.meter_id.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.meter_id.BackColor = System.Drawing.Color.White;
             this.meter_id.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.meter_id.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -146,34 +149,36 @@
             this.meter_id.Enabled = false;
             this.meter_id.Font = new System.Drawing.Font("LBC", 8F);
             this.meter_id.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.meter_id.Location = new System.Drawing.Point(424, 81);
-            this.meter_id.Margin = new System.Windows.Forms.Padding(4);
+            this.meter_id.Location = new System.Drawing.Point(495, 100);
+            this.meter_id.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.meter_id.Multiline = false;
             this.meter_id.Name = "meter_id";
-            this.meter_id.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.meter_id.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.meter_id.PasswordChar = false;
             this.meter_id.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.meter_id.PlaceholderText = "";
             this.meter_id.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.meter_id.SelectionStart = 0;
-            this.meter_id.Size = new System.Drawing.Size(260, 31);
+            this.meter_id.Size = new System.Drawing.Size(303, 38);
             this.meter_id.TabIndex = 68;
             this.meter_id.Texts = "";
             this.meter_id.UnderlinedStyle = true;
             // 
             // checkBox1
             // 
+            this.checkBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 89);
+            this.checkBox1.Location = new System.Drawing.Point(14, 110);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 67;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
             // 
             // current_reading
             // 
-            this.current_reading.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.current_reading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.current_reading.BackColor = System.Drawing.Color.White;
             this.current_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.current_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -181,64 +186,68 @@
             this.current_reading.BorderSize = 1;
             this.current_reading.Font = new System.Drawing.Font("LBC", 8F);
             this.current_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.current_reading.Location = new System.Drawing.Point(424, 136);
-            this.current_reading.Margin = new System.Windows.Forms.Padding(4);
+            this.current_reading.Location = new System.Drawing.Point(495, 167);
+            this.current_reading.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.current_reading.Multiline = false;
             this.current_reading.Name = "current_reading";
-            this.current_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.current_reading.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.current_reading.PasswordChar = false;
             this.current_reading.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.current_reading.PlaceholderText = "";
             this.current_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.current_reading.SelectionStart = 0;
-            this.current_reading.Size = new System.Drawing.Size(260, 31);
+            this.current_reading.Size = new System.Drawing.Size(303, 38);
             this.current_reading.TabIndex = 66;
             this.current_reading.Texts = "";
             this.current_reading.UnderlinedStyle = true;
             // 
             // comboBox2
             // 
+            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "التاريخ",
             "حالة الفاتورة",
             "الاسم"});
-            this.comboBox2.Location = new System.Drawing.Point(26, 143);
+            this.comboBox2.Location = new System.Drawing.Point(38, 176);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(236, 24);
+            this.comboBox2.Size = new System.Drawing.Size(267, 29);
             this.comboBox2.TabIndex = 65;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(710, 33);
+            this.label3.Location = new System.Drawing.Point(828, 41);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 16);
+            this.label3.Size = new System.Drawing.Size(57, 22);
             this.label3.TabIndex = 64;
-            this.label3.Text = "الأسم";
+            this.label3.Text = "الأسم :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(282, 88);
+            this.label2.Location = new System.Drawing.Point(329, 108);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 16);
+            this.label2.Size = new System.Drawing.Size(120, 22);
             this.label2.TabIndex = 62;
-            this.label2.Text = "القراءة السابقة";
+            this.label2.Text = "القراءة السابقة :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // privosu_reading
             // 
+            this.privosu_reading.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.privosu_reading.BackColor = System.Drawing.Color.White;
             this.privosu_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.privosu_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -247,30 +256,32 @@
             this.privosu_reading.Enabled = false;
             this.privosu_reading.Font = new System.Drawing.Font("LBC", 8F);
             this.privosu_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.privosu_reading.Location = new System.Drawing.Point(33, 81);
-            this.privosu_reading.Margin = new System.Windows.Forms.Padding(4);
+            this.privosu_reading.Location = new System.Drawing.Point(38, 100);
+            this.privosu_reading.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.privosu_reading.Multiline = false;
             this.privosu_reading.Name = "privosu_reading";
-            this.privosu_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.privosu_reading.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.privosu_reading.PasswordChar = false;
             this.privosu_reading.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.privosu_reading.PlaceholderText = "";
             this.privosu_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.privosu_reading.SelectionStart = 0;
-            this.privosu_reading.Size = new System.Drawing.Size(232, 31);
+            this.privosu_reading.Size = new System.Drawing.Size(271, 38);
             this.privosu_reading.TabIndex = 61;
             this.privosu_reading.Texts = "";
             this.privosu_reading.UnderlinedStyle = true;
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(29, 25);
+            this.dateTimePicker1.Location = new System.Drawing.Point(38, 31);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.dateTimePicker1.Size = new System.Drawing.Size(241, 24);
+            this.dateTimePicker1.Size = new System.Drawing.Size(271, 28);
             this.dateTimePicker1.TabIndex = 60;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
@@ -281,31 +292,32 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(304, 26);
+            this.label9.Location = new System.Drawing.Point(338, 31);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 16);
+            this.label9.Size = new System.Drawing.Size(97, 22);
             this.label9.TabIndex = 59;
-            this.label9.Text = "تاريخ القراءة";
+            this.label9.Text = "تاريخ القراءة :";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(695, 136);
+            this.label1.Location = new System.Drawing.Point(811, 167);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 16);
+            this.label1.Size = new System.Drawing.Size(111, 22);
             this.label1.TabIndex = 22;
-            this.label1.Text = "القراءة الحالية";
+            this.label1.Text = "القراءة الحالية :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // custo_name
             // 
-            this.custo_name.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.custo_name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.custo_name.BackColor = System.Drawing.Color.White;
             this.custo_name.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.custo_name.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -313,17 +325,17 @@
             this.custo_name.BorderSize = 1;
             this.custo_name.Font = new System.Drawing.Font("LBC", 8F);
             this.custo_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.custo_name.Location = new System.Drawing.Point(424, 33);
-            this.custo_name.Margin = new System.Windows.Forms.Padding(4);
+            this.custo_name.Location = new System.Drawing.Point(495, 41);
+            this.custo_name.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.custo_name.Multiline = false;
             this.custo_name.Name = "custo_name";
-            this.custo_name.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.custo_name.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.custo_name.PasswordChar = false;
             this.custo_name.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.custo_name.PlaceholderText = "";
             this.custo_name.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.custo_name.SelectionStart = 0;
-            this.custo_name.Size = new System.Drawing.Size(260, 31);
+            this.custo_name.Size = new System.Drawing.Size(303, 38);
             this.custo_name.TabIndex = 21;
             this.custo_name.Texts = "";
             this.custo_name.UnderlinedStyle = true;
@@ -336,8 +348,9 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 239);
+            this.panel1.Size = new System.Drawing.Size(933, 294);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -348,9 +361,10 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.panel2.Location = new System.Drawing.Point(0, 191);
+            this.panel2.Location = new System.Drawing.Point(0, 235);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 48);
+            this.panel2.Size = new System.Drawing.Size(933, 59);
             this.panel2.TabIndex = 2;
             // 
             // rjButton2
@@ -359,17 +373,19 @@
             this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderRadius = 7;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(492, 8);
+            this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(616, 10);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(119, 29);
+            this.rjButton2.Size = new System.Drawing.Size(134, 37);
             this.rjButton2.TabIndex = 24;
             this.rjButton2.Text = "تعديل";
-            this.rjButton2.TextColor = System.Drawing.Color.Black;
+            this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
             this.rjButton2.Click += new System.EventHandler(this.RjButton2_Click);
             // 
@@ -379,18 +395,20 @@
             this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 0;
+            this.rjButton3.BorderRadius = 7;
             this.rjButton3.BorderSize = 0;
             this.rjButton3.FlatAppearance.BorderSize = 0;
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.ForeColor = System.Drawing.Color.Black;
+            this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(351, 8);
+            this.rjButton3.Location = new System.Drawing.Point(476, 10);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(119, 29);
+            this.rjButton3.Size = new System.Drawing.Size(134, 37);
             this.rjButton3.TabIndex = 25;
             this.rjButton3.Text = "حذف";
-            this.rjButton3.TextColor = System.Drawing.Color.Black;
+            this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
             this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
             // 
@@ -400,17 +418,19 @@
             this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderRadius = 7;
             this.rjButton1.BorderSize = 0;
             this.rjButton1.FlatAppearance.BorderSize = 0;
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.Black;
-            this.rjButton1.Location = new System.Drawing.Point(625, 8);
+            this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(756, 10);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(119, 29);
+            this.rjButton1.Size = new System.Drawing.Size(134, 37);
             this.rjButton1.TabIndex = 23;
             this.rjButton1.Text = "اضافة";
-            this.rjButton1.TextColor = System.Drawing.Color.Black;
+            this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
             this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click_1);
             // 
@@ -420,8 +440,9 @@
             this.panel3.Controls.Add(this.search);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(269, 48);
+            this.panel3.Size = new System.Drawing.Size(314, 59);
             this.panel3.TabIndex = 22;
             // 
             // iconButton1
@@ -437,9 +458,10 @@
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(230, 8);
+            this.iconButton1.Location = new System.Drawing.Point(269, 8);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(32, 32);
+            this.iconButton1.Size = new System.Drawing.Size(37, 39);
             this.iconButton1.TabIndex = 22;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -453,17 +475,17 @@
             this.search.BorderSize = 1;
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(13, 6);
-            this.search.Margin = new System.Windows.Forms.Padding(4);
+            this.search.Location = new System.Drawing.Point(15, 8);
+            this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.search.Multiline = false;
             this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.search.PasswordChar = false;
             this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.search.PlaceholderText = "ابحث هنا..";
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(215, 33);
+            this.search.Size = new System.Drawing.Size(251, 41);
             this.search.TabIndex = 21;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
@@ -506,6 +528,7 @@
             this.datagride_view_customer.EnableHeadersVisualStyles = false;
             this.datagride_view_customer.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.datagride_view_customer.Location = new System.Drawing.Point(0, 0);
+            this.datagride_view_customer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.datagride_view_customer.Name = "datagride_view_customer";
             this.datagride_view_customer.ReadOnly = true;
             this.datagride_view_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -513,7 +536,7 @@
             this.datagride_view_customer.RowHeadersWidth = 51;
             this.datagride_view_customer.RowTemplate.Height = 80;
             this.datagride_view_customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagride_view_customer.Size = new System.Drawing.Size(800, 211);
+            this.datagride_view_customer.Size = new System.Drawing.Size(933, 260);
             this.datagride_view_customer.TabIndex = 19;
             this.datagride_view_customer.Click += new System.EventHandler(this.Datagride_view_customer_Click);
             // 
@@ -521,6 +544,7 @@
             // 
             this.Column2.DataPropertyName = "ID";
             this.Column2.HeaderText = "ID";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.Visible = false;
@@ -588,19 +612,21 @@
             this.panel4.Controls.Add(this.datagride_view_customer);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.panel4.Location = new System.Drawing.Point(0, 239);
+            this.panel4.Location = new System.Drawing.Point(0, 294);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(800, 211);
+            this.panel4.Size = new System.Drawing.Size(933, 260);
             this.panel4.TabIndex = 4;
             // 
             // Reading_managment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(933, 554);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Reading_managment";
             this.Text = "Reading_managment";
             this.Load += new System.EventHandler(this.Reading_managment_Load);

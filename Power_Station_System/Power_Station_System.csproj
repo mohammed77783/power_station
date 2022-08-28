@@ -126,6 +126,12 @@
     <Compile Include="child_form\NewFolder1\opeining_read.designer.cs">
       <DependentUpon>opeining_read.cs</DependentUpon>
     </Compile>
+    <Compile Include="child_form\NewFolder1\Staion_Name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\NewFolder1\Staion_Name.Designer.cs">
+      <DependentUpon>Staion_Name.cs</DependentUpon>
+    </Compile>
     <Compile Include="child_form\Reading_managment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="child_form\NewFolder1\opeining_read.resx">
       <DependentUpon>opeining_read.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="child_form\NewFolder1\Staion_Name.resx">
+      <DependentUpon>Staion_Name.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="child_form\Reading_managment.resx">
       <DependentUpon>Reading_managment.cs</DependentUpon>

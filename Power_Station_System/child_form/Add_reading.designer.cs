@@ -69,17 +69,18 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label3.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(834, 34);
+            this.label3.Location = new System.Drawing.Point(834, 43);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 26);
+            this.label3.Size = new System.Drawing.Size(57, 22);
             this.label3.TabIndex = 64;
-            this.label3.Text = "الأسم";
+            this.label3.Text = "الأسم :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(48, 31);
@@ -93,13 +94,13 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label1.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(794, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 26);
+            this.label1.Size = new System.Drawing.Size(111, 22);
             this.label1.TabIndex = 22;
-            this.label1.Text = "القراءة الحالية";
+            this.label1.Text = "القراءة الحالية :";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel1
@@ -177,12 +178,12 @@
             this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
             this.search.PasswordChar = false;
             this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.search.PlaceholderText = "";
+            this.search.PlaceholderText = "ابحث هنا..";
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
             this.search.Size = new System.Drawing.Size(251, 41);
             this.search.TabIndex = 21;
-            this.search.Texts = "ابحث هنا..";
+            this.search.Texts = "";
             this.search.UnderlinedStyle = true;
             // 
             // rjButton2
@@ -283,19 +284,21 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(327, 89);
+            this.label6.Location = new System.Drawing.Point(342, 90);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 26);
+            this.label6.Size = new System.Drawing.Size(89, 22);
             this.label6.TabIndex = 67;
-            this.label6.Text = "رقم العداد";
+            this.label6.Text = "رقم العداد :";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // meter_
             // 
+            this.meter_.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.meter_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.meter_.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.meter_.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -347,19 +350,21 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label5.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(328, 159);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 26);
+            this.label5.Size = new System.Drawing.Size(120, 22);
             this.label5.TabIndex = 62;
-            this.label5.Text = "القراءة السابقة";
+            this.label5.Text = "القراءة السابقة :";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // privosu_reading
             // 
+            this.privosu_reading.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.privosu_reading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.privosu_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.privosu_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -385,15 +390,16 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(334, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 22);
+            this.label4.Size = new System.Drawing.Size(97, 22);
             this.label4.TabIndex = 59;
-            this.label4.Text = "تاريخ القراءة";
+            this.label4.Text = "تاريخ القراءة :";
             // 
             // current_reading
             // 
@@ -435,19 +441,18 @@
             this.datagride_view_customer.AllowUserToAddRows = false;
             this.datagride_view_customer.AllowUserToDeleteRows = false;
             this.datagride_view_customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.datagride_view_customer.BackgroundColor = System.Drawing.Color.White;
+            this.datagride_view_customer.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.datagride_view_customer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagride_view_customer.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.datagride_view_customer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 10.25F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.datagride_view_customer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.datagride_view_customer.ColumnHeadersHeight = 30;
+            this.datagride_view_customer.ColumnHeadersHeight = 40;
             this.datagride_view_customer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.name,
@@ -472,7 +477,7 @@
             this.datagride_view_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.datagride_view_customer.RowHeadersVisible = false;
             this.datagride_view_customer.RowHeadersWidth = 51;
-            this.datagride_view_customer.RowTemplate.Height = 80;
+            this.datagride_view_customer.RowTemplate.Height = 40;
             this.datagride_view_customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagride_view_customer.Size = new System.Drawing.Size(933, 262);
             this.datagride_view_customer.TabIndex = 20;

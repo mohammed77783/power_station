@@ -208,7 +208,7 @@ namespace Power_Station_System
 
         private void IconButton2_Click(object sender, EventArgs e)
         {
-      
+           
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -346,6 +346,23 @@ namespace Power_Station_System
         private void Button13_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Home_btn_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+            
+        }
+
+        private void Panel_contener_Enter(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Button28_Click(object sender, EventArgs e)
+        {
+            Form page = new child_form.NewFolder1.Staion_Name();
+
+            Loadpage(page);
         }
 
         private void IconButton5_Click(object sender, EventArgs e)
