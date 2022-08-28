@@ -98,7 +98,7 @@ namespace Power_Station_System.chid_form
         public void upGrid()
         {
             datagride_view_customer.DataSource = cus.get_subscriber();
-            //var sql = "select_subscriper";
+            
         }
 
         private void Add_customer_1_Load(object sender, EventArgs e)

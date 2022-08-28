@@ -34,6 +34,7 @@ C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Deb
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.centarreading.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.mhasel.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.read.resources
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.NewFolder1.Staion_Name.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Reading_managment.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Subscription.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Udate_subscriper.resources
