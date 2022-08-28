@@ -91,7 +91,7 @@ namespace Power_Station_System.chid_form
             {
                 try
                 {
-                    sub.update_csut(ID, subscriper_name_upd.Texts, subscr_phnum_upd.Texts, sub_address_upda.Texts,identity_ty.Texts, indenity_number_upda.Texts,
+                    sub.update_csut(ID, subscriper_name_upd.Texts, subscr_phnum_upd.Texts, sub_address_upda.Texts,identity_ty.Text, indenity_number_upda.Texts,
                   Convert.ToInt16(comboBox1.SelectedValue), meter_number_UP.Texts,dateTimePicker1.Text, Convert.ToInt16(comboBox2.SelectedValue));
 
                    // MessageBox.Show("تمت التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -135,7 +135,7 @@ namespace Power_Station_System.chid_form
                 subscriper_name_upd.Texts = table.Rows[0][1].ToString();
                 subscr_phnum_upd.Texts = table.Rows[0][2].ToString();
                 sub_address_upda.Texts = table.Rows[0][3].ToString();
-                identity_ty.Texts = table.Rows[0][4].ToString();
+                identity_ty.Text = table.Rows[0][4].ToString();
                 indenity_number_upda.Texts = table.Rows[0][5].ToString();
                 comboBox1.Text = table.Rows[0][6].ToString();
                 meter_number_UP.Texts = table.Rows[0][7].ToString();

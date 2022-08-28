@@ -19,7 +19,9 @@ C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\bi
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\bin\Debug\stdole.dll
+C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_Area1.resources
+C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.Add_bill.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_customer_window.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.add_fines.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_reading.resources
@@ -32,7 +34,6 @@ C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\ob
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.read.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.NewFolder1.Staion_Name.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Reading_managment.resources
-C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Staion_Data1.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Subscription.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Udate_subscriper.resources
 C:\Users\The Black Man\Desktop\Git Uploads\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.user.add_user.resources
