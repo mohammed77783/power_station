@@ -99,6 +99,8 @@ namespace Power_Station_System.DataBase
             dt = access.selec_table("select_subscriper", null);
             return dt;
         }
+       
+
         public DataTable search(String s)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();

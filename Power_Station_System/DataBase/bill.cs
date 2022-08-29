@@ -35,5 +35,27 @@ namespace Power_Station_System.DataBase
             access.close();
             return dt;
         }
+        public DataTable get_debit(string m)
+        {
+
+              DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            SqlParameter[] pr = new SqlParameter[1];
+            access.open();
+            pr[0] = new SqlParameter("@meter", SqlDbType.NVarChar,100);
+            pr[0].Value = m; 
+            dt = access.selec_table("get_debit", pr);
+            access.close();
+            return dt;
+
+        }
+        public DataTable get_subscriber_for_bill()
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            dt = access.selec_table("select_manth_customerto_bill", null);
+            return dt;
+        }
+
     }
 }
