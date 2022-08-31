@@ -114,6 +114,32 @@ namespace Power_Station_System.DataBase
             dt = access.selec_table("get_data_to_grid", null);
             return dt;
         }
+
+
+        public DataTable get_togr_block(string id)
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            SqlParameter[] pr = new SqlParameter[1];
+            access.open();
+            pr[0] = new SqlParameter("@ar_bock", SqlDbType.NVarChar,100);
+            pr[0].Value = id;
+            dt = access.selec_table("get_data_to_grid_block", pr);
+            return dt;
+        }
+        public DataTable get_togr_are(int id)
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            SqlParameter[] pr = new SqlParameter[1];
+            access.open();
+            pr[0] = new SqlParameter("@ar_area", SqlDbType.Int);
+            pr[0].Value = id;
+            dt = access.selec_table("get_data_to_grid_are", pr);
+            return dt;
+        }
+
+
         public void update_depet(string meter_number,string new_many)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();

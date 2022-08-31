@@ -580,7 +580,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private RJCodeAdvance.RJControls.RJCircularPictureBox rjCircularPictureBox1;
-        private System.Windows.Forms.Panel panel_contener;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button11;
@@ -603,6 +602,7 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
+        public System.Windows.Forms.Panel panel_contener;
     }
 }
 
