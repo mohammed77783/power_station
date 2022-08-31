@@ -129,11 +129,11 @@ namespace Power_Station_System.DataBase
             access.executor("insert_opening_reading", prr);
             access.close();
         }
-        public void insert_manth_customer_name (string meter_num, string reading, string s)
+        public void insert_manth_customer_name ()
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
             access.open();
-            access.executor("insert_manth_customer_name", null);
+            access.executor("upadate_manth_customer_name", null);
             access.close();
         }
 

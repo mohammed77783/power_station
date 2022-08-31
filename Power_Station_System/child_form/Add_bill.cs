@@ -13,18 +13,21 @@ namespace Power_Station_System.child_form
 {
     public partial class Add_bill : Form
     {
+
+
+        int index = -1;
         DataBase.subscriber su = new DataBase.subscriber();
         DataBase.reading rea = new DataBase.reading();
         DataBase.bill bill = new DataBase.bill();
-        DataTable tb,kwpric;
-        string address=null;
+        DataTable tb, kwpric;
+        string address = null;
         other_class.number_to_text numb = new other_class.number_to_text();
-        int Block,subscriber_id;
+        int Block, subscriber_id;
         public Add_bill()
         {
             InitializeComponent();
             comboBox1.DataSource = bill.get_subscriber_for_bill();
-            comboBox1.DisplayMember = "name";
+            comboBox1.DisplayMember = "Subscriber_name";
             comboBox1.ValueMember = "Subscriber_ElectricMeter_ID";
 
         }
@@ -43,6 +46,7 @@ namespace Power_Station_System.child_form
                 tb = rea.get_name_and_privious(comboBox1.SelectedValue.ToString());
                 meter_ber.Text = comboBox1.SelectedValue.ToString();
                 kwpric = bill.killoWat(meter_ber.Text);
+
                 manth_fee.Text = kwpric.Rows[0][2].ToString();
                 meter_ber.Text = comboBox1.SelectedValue.ToString();
                 kW_pric.Text = kwpric.Rows[0][1].ToString();
@@ -107,7 +111,7 @@ namespace Power_Station_System.child_form
 
         private void Current_reading_TextChanged(object sender, EventArgs e)
         {
-            
+            if (privious_reding.Text.Length < 0) return;
             try
             {
                 
@@ -164,7 +168,7 @@ namespace Power_Station_System.child_form
 
         private void Checkbo_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkbo.Checked) { 
+            if (checkbo.Checked && manth_fee.Text.Length<0 && amout.Text.Length<0) { 
             int y = int.Parse(manth_fee.Text)+int.Parse(amout.Text);
             ho_money.Text = Convert.ToString(y);
             }
@@ -181,7 +185,65 @@ namespace Power_Station_System.child_form
 
         private void RjButton1_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.Rows.Count > -1)
+            {
+                try
+                {
+                    for (int item = 0; item < dataGridView1.Rows.Count; item++)
+                    {
+                        int sub_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["ID"].Value.ToString());
+                        string name = dataGridView1.Rows[item].Cells["gr_name"].Value.ToString();
+                        string meter_number = dataGridView1.Rows[item].Cells["gr_meter"].Value.ToString();
+                        string privi_reading = dataGridView1.Rows[item].Cells["gr_privio"].Value.ToString();
+                        string current_reading = dataGridView1.Rows[item].Cells["gr_current"].Value.ToString();
+                        string date = dataGridView1.Rows[item].Cells["gr_date"].Value.ToString();
+                        //   string month_flos= dataGridView1.Rows[item].Cells["gr_mony"].Value.ToString();
+                        string month_flos = dataGridView1.Rows[item].Cells["gr_mony"].Value.ToString();
+                        int bloc_k = Convert.ToInt32(dataGridView1.Rows[item].Cells["blok"].Value.ToString());
+                        rea.Add_reading(current_reading, privi_reading, date, meter_number, sub_id, bloc_k);
+                        rea.update_opeiningreading(meter_number, current_reading, date);
+                        rea.reading_doe(meter_number);
+                        DataTable tb = bill.getreading_id(meter_number);
+                        if (tb.Rows.Count < 0)
+                        {
+                            MessageBox.Show("error");
+                            return;
+                        }
+                        //
+                        int reading_id = int.Parse(tb.Rows[0][0].ToString());
+                        //
+                        string kw_used = dataGridView1.Rows[item].Cells["gr_alistihlak"].Value.ToString();
+                        string kw_price = dataGridView1.Rows[item].Cells["Kw_price"].Value.ToString();
+                        //
+                        string amonut_maony = dataGridView1.Rows[item].Cells["gr_hol_mony"].Value.ToString();
+                        int block_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["blok"].Value.ToString());
+                        //
+                        string gr_almtikhrat = dataGridView1.Rows[item].Cells["gr_almtikhrat"].Value.ToString();
 
+                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos);
+
+                        bill.update_depet(meter_number, amonut_maony);
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+
+                }
+                finally
+                {
+                    for (int item = dataGridView1.Rows.Count - 1; item >= 0; item--)
+                    {
+                        dataGridView1.Rows.RemoveAt(item);
+                    }
+                    MessageBox.Show("done");
+                    comboBox1.DataSource = bill.get_subscriber_for_bill();
+
+                }
+
+            }
         }
 
         private void RjButton4_Click(object sender, EventArgs e)
@@ -209,7 +271,7 @@ namespace Power_Station_System.child_form
 
         public void addtogridview()
         {
-
+          //  string i =Convert.ToInt32( subscriber_id);
             string name = comboBox1.Text;
             string meter_nu = meter_ber.Text;
             string prvi = privious_reding.Text;
@@ -225,7 +287,7 @@ namespace Power_Station_System.child_form
             double all_mney = x + y;
             string date = dateTimePicker1.Text;
 
-            Object[] row = { name,address ,meter_nu, cuu , prvi, manth_f, use_kw, kw_pric, all_mny, debit, all_mney, date };
+            Object[] row = { subscriber_id, name,address ,meter_nu, cuu , prvi, manth_f, use_kw, kw_pric, all_mny, debit, all_mney, date, Block };
             dataGridView1.Rows.Add(row);
             clear();
         }
@@ -239,7 +301,7 @@ namespace Power_Station_System.child_form
             alisthlak.Text = String.Empty;
             kW_pric.Text = String.Empty;
             ho_money.Text = String.Empty;
-
+            rjButton3.Text = "حذف";
 
         }
         private void Current_reading_Enter(object sender, EventArgs e)
@@ -259,10 +321,11 @@ namespace Power_Station_System.child_form
         string oldcu;
         private void DataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
-          if (dataGridView1.CurrentRow != null) {
+            if (dataGridView1.CurrentRow != null)
+            {
                 oldcu = dataGridView1.CurrentRow.Cells["gr_current"].Value.ToString();
 
-                    }
+            }
         }
 
         private void DataGridView1_KeyPress(object sender, KeyPressEventArgs e)
@@ -317,16 +380,16 @@ namespace Power_Station_System.child_form
 
         private void DataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-             if (dataGridView1.CurrentRow != null)
+            if (dataGridView1.CurrentRow != null)
             {
-              
+
                 string newcur = dataGridView1.CurrentRow.Cells["gr_current"].Value.ToString();
                 int x = int.Parse(newcur);
                 if (newcur == oldcu) return;
-             
+
                 if (!Regex.IsMatch(newcur, "^\\d+$"))
                 {
-                  
+
                     dataGridView1.CurrentRow.Cells["gr_current"].Value = oldcu;
                 }
                 else
@@ -334,26 +397,28 @@ namespace Power_Station_System.child_form
                     MessageBox.Show(x + "ee");
                     double curre = double.Parse(dataGridView1.CurrentRow.Cells["gr_current"].Value.ToString());
                     double pri = double.Parse(dataGridView1.CurrentRow.Cells["gr_privio"].Value.ToString());
-                    if (x > pri) { 
-                 
-                    double _manthe_fes = double.Parse(dataGridView1.CurrentRow.Cells["gr_manthe_fes"].Value.ToString());
-                    double kwpr = double.Parse(dataGridView1.CurrentRow.Cells["Kw_price"].Value.ToString());
-                   
-                    double almti = double.Parse(dataGridView1.CurrentRow.Cells["gr_almtikhrat"].Value.ToString());
-                    double _hol_mony;
-                    double alistih = curre- pri ;
-                    dataGridView1.CurrentRow.Cells["gr_alistihlak"].Value = alistih.ToString();
-                    if(MessageBox.Show("هل ترشد فاتور معا اشتراك","", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes) { 
-                    _hol_mony = alistih * kwpr+ almti;
-                        _hol_mony += _manthe_fes;
-                    }
-                    else
+                    if (x > pri)
                     {
-                        _hol_mony = alistih * kwpr+ almti;
-                    }
 
-                    dataGridView1.CurrentRow.Cells["gr_hol_mony"].Value=_hol_mony.ToString();
-                }
+                        double _manthe_fes = double.Parse(dataGridView1.CurrentRow.Cells["gr_manthe_fes"].Value.ToString());
+                        double kwpr = double.Parse(dataGridView1.CurrentRow.Cells["Kw_price"].Value.ToString());
+
+                        double almti = double.Parse(dataGridView1.CurrentRow.Cells["gr_almtikhrat"].Value.ToString());
+                        double _hol_mony;
+                        double alistih = curre - pri;
+                        dataGridView1.CurrentRow.Cells["gr_alistihlak"].Value = alistih.ToString();
+                        if (MessageBox.Show("هل ترشد فاتور معا اشتراك", "", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                        {
+                            _hol_mony = alistih * kwpr + almti;
+                            _hol_mony += _manthe_fes;
+                        }
+                        else
+                        {
+                            _hol_mony = alistih * kwpr + almti;
+                        }
+
+                        dataGridView1.CurrentRow.Cells["gr_hol_mony"].Value = _hol_mony.ToString();
+                    }
                 }
             }
         }
@@ -364,6 +429,30 @@ namespace Power_Station_System.child_form
         }
 
         private void DataGridView1_CellLeave(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void RjButton3_Click(object sender, EventArgs e)
+        {
+
+            if (rjButton3.Text == "حذف")
+            {
+                if (index == -1)
+                {
+                    index = dataGridView1.CurrentCell.RowIndex;
+                    dataGridView1.Rows.RemoveAt(index);
+                    index = -1;
+                }
+            }
+            if (rjButton3.Text == "الغاء")
+            {
+                clear();
+            }
+
+        }
+
+        private void IconButton3_Click(object sender, EventArgs e)
         {
 
         }

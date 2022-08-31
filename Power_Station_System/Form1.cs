@@ -18,6 +18,15 @@ namespace Power_Station_System
         bool iscolapsed;
         int x, y, move;
         private Size formSize;
+        Form page=null;
+
+        void endform(Form pag)
+        {
+            if (pag != null)
+            {
+                pag.Close();
+            }
+        }
         public Form1()
         {
             InitializeComponent();
@@ -26,8 +35,8 @@ namespace Power_Station_System
             this.BackColor = Color.FromArgb(240, 245, 249);
             if (DateTime.Now.Day==21)
             {
-
-
+                DataBase.reading re = new DataBase.reading();
+                    re.insert_manth_customer_name();
             }
             
         }
@@ -208,7 +217,7 @@ namespace Power_Station_System
 
         private void IconButton2_Click(object sender, EventArgs e)
         {
-           
+            endform(page);
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -254,13 +263,13 @@ namespace Power_Station_System
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.Add_Area1();
+             page = new chid_form.Add_Area1();
             Loadpage(page);
         }
 
         private void Button4_Click_2(object sender, EventArgs e)
         {
-            Form page = new chid_form.Add_Square1();
+            page = new chid_form.Add_Square1();
             Loadpage(page);
         }
 
@@ -328,14 +337,15 @@ namespace Power_Station_System
 
         private void Button18_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.Add_reading();
+            page = new chid_form.Add_reading();
             Loadpage(page);
 
         }
 
         private void Button12_Click(object sender, EventArgs e)
         {
-
+            page = new child_form.bill_quacliy_rease();
+            Loadpage(page);
         }
 
         private void Button11_Click(object sender, EventArgs e)
@@ -362,7 +372,7 @@ namespace Power_Station_System
 
         private void Button28_Click(object sender, EventArgs e)
         {
-            Form page = new child_form.NewFolder1.Staion_Name();
+             page = new child_form.NewFolder1.Staion_Name();
 
             Loadpage(page);
         }

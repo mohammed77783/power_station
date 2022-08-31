@@ -104,7 +104,7 @@ namespace Power_Station_System.chid_form
                  Convert.ToInt16(comboBox1.SelectedValue), meter_number.Texts, dateTimePicker1.Text, Convert.ToInt16(comboBox2.SelectedValue));
                     
                     red.insert_opening_first_time(meter_number.Texts, "0", dateTimePicker1.Text);
-
+             //   red.insert_manth_customer_name()
                     //MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
                 Clear();

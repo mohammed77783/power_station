@@ -28,7 +28,6 @@ C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Deb
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.add_fines.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_reading.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_Square1.resources
-C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.BILL_managment.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.customer_management.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.fines.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.centarreading.resources
@@ -52,3 +51,9 @@ C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Deb
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.csproj.CopyComplete
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.exe
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.pdb
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\bin\Debug\ar-EG\Power_Station_System.resources.dll
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\bin\Debug\MetroFramework.dll
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.Form1.ar-EG.resources
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\ar-EG\Power_Station_System.resources.dll
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.bill_quacliy_rease.resources
