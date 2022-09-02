@@ -148,6 +148,12 @@
     <Compile Include="child_form\NewFolder1\Staion_Name.Designer.cs">
       <DependentUpon>Staion_Name.cs</DependentUpon>
     </Compile>
+    <Compile Include="child_form\pringBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="child_form\pringBill.Designer.cs">
+      <DependentUpon>pringBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="child_form\Reading_managment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,11 +249,17 @@
     <Compile Include="other_class\number_to_text.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reports\Report_viewer.cs">
+    <Compile Include="Reports\BILL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BILL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\reort_viwer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports\Report_viewer.Designer.cs">
-      <DependentUpon>Report_viewer.cs</DependentUpon>
+    <Compile Include="Reports\reort_viwer.Designer.cs">
+      <DependentUpon>reort_viwer.cs</DependentUpon>
     </Compile>
     <Compile Include="warning_code\Form1.cs">
       <SubType>Form</SubType>
@@ -300,6 +312,9 @@
     <EmbeddedResource Include="child_form\NewFolder1\Staion_Name.resx">
       <DependentUpon>Staion_Name.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="child_form\pringBill.resx">
+      <DependentUpon>pringBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="child_form\Reading_managment.resx">
       <DependentUpon>Reading_managment.cs</DependentUpon>
     </EmbeddedResource>
@@ -338,8 +353,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reports\Report_viewer.resx">
-      <DependentUpon>Report_viewer.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\BILL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BILL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\reort_viwer.resx">
+      <DependentUpon>reort_viwer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warning_code\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

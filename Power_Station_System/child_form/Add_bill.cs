@@ -457,6 +457,12 @@ namespace Power_Station_System.child_form
 
         }
 
+        private void RjButton2_Click(object sender, EventArgs e)
+        {
+            child_form.pringBill pr_bil = new child_form.pringBill();
+            pr_bil. ShowDialog();
+        }
+
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)
         {
 

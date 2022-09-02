@@ -48,6 +48,18 @@ namespace Power_Station_System.DataBase
             access.close();
             return dt;
         }
+
+
+        public void relase_update(int  id)
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            SqlParameter[] pr = new SqlParameter[1];
+            access.open();
+            pr[0] = new SqlParameter("@id", SqlDbType.Int);
+            pr[0].Value = id;
+            access.executor("relace_bill", pr);
+            access.close();
+        }
         public DataTable get_debit(string m)
         {
 
@@ -153,5 +165,23 @@ namespace Power_Station_System.DataBase
             access.close();
         
         }
+        public DataTable get_bill_to_print()
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            dt = access.selec_table("slect_bill_to_print", null);
+            return dt;
+        }
+        public DataTable get_bill_to_print_by_id(int id)
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            SqlParameter[] pr = new SqlParameter[2];
+            pr[0] = new SqlParameter("@bill_id/", SqlDbType.Int);
+            pr[0].Value = id;
+            dt = access.selec_table("slect_bill_to_print_By_id", pr);
+            return dt;
+        }
+
     }
 }

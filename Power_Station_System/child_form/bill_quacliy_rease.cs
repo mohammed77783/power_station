@@ -18,15 +18,14 @@ namespace Power_Station_System.child_form
         public bill_quacliy_rease()
         {
             InitializeComponent();
-            comboBox3.DataSource = BA.get_Block();
             comboBox3.DisplayMember = "Block_name";
             comboBox3.ValueMember = "ID";
-
-            comboBox2.DataSource = BA.get_area();
             comboBox2.DisplayMember = "are_name";
             comboBox2.ValueMember = "ID";
-            comboBox3.Text = "";
-            comboBox2.Text = "";
+            comboBox3.DataSource = BA.get_Block();
+            comboBox2.DataSource = BA.get_area();
+        
+          
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
@@ -149,7 +148,7 @@ namespace Power_Station_System.child_form
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox2.Text != null)
+            if (comboBox2.Text!= null)
            {
             dataGridView1.DataSource = bill.get_togr_are(Convert.ToInt32(comboBox2.SelectedValue));
            }

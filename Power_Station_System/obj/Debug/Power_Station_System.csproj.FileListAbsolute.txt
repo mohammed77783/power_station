@@ -57,4 +57,5 @@ C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\bin\Deb
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.Form1.ar-EG.resources
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\ar-EG\Power_Station_System.resources.dll
 C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.bill_quacliy_rease.resources
-C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.Reports.Report_viewer.resources
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.pringBill.resources
+C:\Users\Mohammed\source\repos\projec\power_station\Power_Station_System\obj\Debug\Power_Station_System.Reports.reort_viwer.resources

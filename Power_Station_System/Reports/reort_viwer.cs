@@ -7,19 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace Power_Station_System.Reports
 {
-    public partial class Report_viewer : Form
-    { 
-        public Report_viewer()
+    public partial class reort_viwer : Form
+    {
+    
+
+        public reort_viwer()
         {
             InitializeComponent();
-        }
-
-        private void Report_viewer_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
