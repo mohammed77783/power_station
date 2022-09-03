@@ -83,9 +83,9 @@ namespace Power_Station_System.DataBase
         }
 
         public void inset_Bill(string name,string meter_number,string amonut_maony,int sub_id,string date,int reading_id,string privi_reading,
-            string current_reading,string kw_used,string kw_price,int block_id,string privio_mony,string month_flos) { 
+            string current_reading,string kw_used,string kw_price,int block_id,string privio_mony,string month_flos,string mony_write) { 
             DataBase.Access_layer access = new DataBase.Access_layer();
-            SqlParameter[] pr = new SqlParameter[13];
+            SqlParameter[] pr = new SqlParameter[14];
             access.open();
             pr[0] = new SqlParameter("@name", SqlDbType.NVarChar, 200);
             pr[0].Value = name;
@@ -115,7 +115,8 @@ namespace Power_Station_System.DataBase
             //pr[11].Value = id;
             pr[12] = new SqlParameter("@manth_manth", SqlDbType.NVarChar,50);
             pr[12].Value = month_flos;
-
+            pr[13] = new SqlParameter("@mony_write", SqlDbType.NVarChar, 300);
+            pr[13].Value = mony_write;
             access.executor("insert_bill", pr);
             access.close();
         }

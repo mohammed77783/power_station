@@ -9,7 +9,7 @@ namespace Power_Station_System.other_class
     class number_to_text
     { 
 
-        public string convertcurrency(string Money, string Fullcurency, string partcurrency)
+  static   public string convertcurrency(string Money, string Fullcurency, string partcurrency)
         {
             string MA = " " + Fullcurency;
             string MI = " " + partcurrency;
@@ -24,7 +24,7 @@ namespace Power_Station_System.other_class
         }
 
 
-        public string SConvertCurrency(double Money)
+        static public string SConvertCurrency(double Money)
         {
             string C = Money.ToString();
             char[] MoneyChars = C.ToCharArray();
@@ -208,7 +208,7 @@ namespace Power_Station_System.other_class
             }
             return R;
         }
-        public string MoneyOnes(params char[] c)
+        static public string MoneyOnes(params char[] c)
         {
             switch (int.Parse(c[0].ToString()))
             {
@@ -234,7 +234,7 @@ namespace Power_Station_System.other_class
                     return "";
             }
         }
-        public string MoneyTens(params char[] c)
+        static public string MoneyTens(params char[] c)
         {
             switch (int.Parse(c[1].ToString()))
             {
@@ -260,7 +260,7 @@ namespace Power_Station_System.other_class
                     return "";
             }
         }
-        public string MoneyHundreds(params char[] c)
+        static public string MoneyHundreds(params char[] c)
         {
             switch (int.Parse(c[2].ToString()))
             {
@@ -282,7 +282,7 @@ namespace Power_Station_System.other_class
                     return "";
             }
         }
-        public string MoneyThousands(params char[] c)
+        static public string MoneyThousands(params char[] c)
         {
             switch (int.Parse(c[3].ToString()))
             {
@@ -304,7 +304,7 @@ namespace Power_Station_System.other_class
                     return "";
             }
         }
-        public string MoneyMillions(params char[] c)
+        static public string MoneyMillions(params char[] c)
         {
             switch (int.Parse(c[6].ToString()))
             {
@@ -326,7 +326,7 @@ namespace Power_Station_System.other_class
                     return "";
             }
         }
-        public string MoneyBillions(params char[] c)
+        static public string MoneyBillions(params char[] c)
         {
             switch (int.Parse(c[9].ToString()))
             {
@@ -348,21 +348,21 @@ namespace Power_Station_System.other_class
                     return "";
             }
         }
-        public double OtherUnits(params char[] c)
+        static public double OtherUnits(params char[] c)
         {
             string t = "";
             for (int j = c.Length; j > 1; --j)
                 t += c[j - 2].ToString();
             return double.Parse(t);
         }
-        public double OtherUnits2(params char[] c)
+        static public double OtherUnits2(params char[] c)
         {
             string t = "";
             for (int j = c.Length; j > 2; --j)
                 t += c[j - 3].ToString();
             return double.Parse(t);
         }
-        public double OtherUnits3(params char[] c)
+        static public double OtherUnits3(params char[] c)
         {
             string t = "";
             for (int j = c.Length; j > 3; --j)

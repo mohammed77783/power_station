@@ -8,6 +8,10 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO.Ports;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace Power_Station_System.child_form
 {
@@ -21,7 +25,7 @@ namespace Power_Station_System.child_form
         DataBase.bill bill = new DataBase.bill();
         DataTable tb, kwpric;
         string address = null;
-        other_class.number_to_text numb = new other_class.number_to_text();
+        //   other_class.number_to_text numb = new other_class.number_to_text();
         int Block, subscriber_id;
         public Add_bill()
         {
@@ -31,7 +35,16 @@ namespace Power_Station_System.child_form
             comboBox1.ValueMember = "Subscriber_ElectricMeter_ID";
 
         }
+        public string send(string pone) {
+            string accountsid = Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID");
+            string authToken = Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN");
+            TwilioClient.Init(accountsid, authToken);
+            var to = new PhoneNumber(Environment.GetEnvironmentVariable("MY_PHONE_NUMBER"));
+            var from = new PhoneNumber("+967777837932");
+            var message = MessageResource.Create(to: to, from: from, body: "you have bill");
 
+
+        }
         private void Label1_Click(object sender, EventArgs e)
         {
 
@@ -220,7 +233,34 @@ namespace Power_Station_System.child_form
                         //
                         string gr_almtikhrat = dataGridView1.Rows[item].Cells["gr_almtikhrat"].Value.ToString();
 
-                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos);
+                        string mang_writing = other_class.number_to_text.convertcurrency(amonut_maony, " ", " ريال ");
+                        string messag = "عزيزي العميل لدي فاتورة كهرباء بمبلغ مقدارة" + block_id + " عليك الاسراع بسداد المبلغ حتى لا يعرضك للفصل /n ولكم جزيل الشكر";
+                        //serialPort1.PortName = "COM4";
+                        //serialPort1.ReadTimeout = 2000;
+                        
+                        //serialPort1.Open();
+                        //serialPort1.Write("AT\r");
+                        //serialPort1.Write("AT+CMGF=1\r");
+                        //System.Threading.Thread.Sleep(2000);
+                        //serialPort1.WriteLine("AT+CSCS=\"CDMA\"" + Environment.NewLine);
+                        //serialPort1.Write("AT+CMGF=\""+"774373601"+"\""+ Environment.NewLine);
+                        //System.Threading.Thread.Sleep(2000);
+                        //serialPort1.Write(messag +Environment.NewLine);
+                        //System.Threading.Thread.Sleep(2000);
+                        //serialPort1.Write(new Byte[] { 26 }, 0, 1);
+                        //System.Threading.Thread.Sleep(2000);
+                        //var dd = serialPort1.ReadExisting();
+                        //if (dd.Contains("ERRCR"))
+                        //{
+                        //    MessageBox.Show("faild");
+                        //}
+                        //MessageBox.Show("Sucsse");
+                        //serialPort1.Close();
+
+
+
+
+                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing);
 
                         bill.update_depet(meter_number, amonut_maony);
 
@@ -345,7 +385,7 @@ namespace Power_Station_System.child_form
         {
             try
             {
-                textBox2.Text = numb.convertcurrency(ho_money.Text, " ", " ريال ");
+                textBox2.Text = other_class.number_to_text.convertcurrency(ho_money.Text, " ", " ريال ");
             }
             catch (Exception ex)
             {
@@ -461,6 +501,21 @@ namespace Power_Station_System.child_form
         {
             child_form.pringBill pr_bil = new child_form.pringBill();
             pr_bil. ShowDialog();
+        }
+
+        private void Add_bill_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                string [] ports = SerialPort.GetPortNames();
+                comboBox2.Items.AddRange(ports);
+                comboBox2.SelectedIndex = 0;
+                comboBox2.Enabled = true;
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show("عليك ان تقوم توصيل الهاتف حتى يتم ارسال الرسائل النصية");
+            }
         }
 
         private void RadioButton1_CheckedChanged(object sender, EventArgs e)

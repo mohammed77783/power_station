@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.search = new RJCodeAdvance.RJControls.RJTextBox();
             this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -67,7 +65,6 @@
             this.blok = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -119,57 +116,11 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.iconButton1);
-            this.panel3.Controls.Add(this.search);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(269, 43);
             this.panel3.TabIndex = 5;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(230, 8);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(32, 29);
-            this.iconButton1.TabIndex = 22;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // search
-            // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.search.BackColor = System.Drawing.Color.White;
-            this.search.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.search.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.search.BorderRadius = 0;
-            this.search.BorderSize = 1;
-            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(13, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4);
-            this.search.Multiline = false;
-            this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.search.PasswordChar = false;
-            this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.search.PlaceholderText = "ابحث هنا..";
-            this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(215, 33);
-            this.search.TabIndex = 21;
-            this.search.Texts = "";
-            this.search.UnderlinedStyle = true;
             // 
             // rjButton3
             // 
@@ -209,6 +160,7 @@
             this.rjButton1.Text = "حفظ";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
             // 
             // groupBox1
             // 
@@ -360,7 +312,7 @@
             this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.panel4.Location = new System.Drawing.Point(0, 172);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1003, 266);
+            this.panel4.Size = new System.Drawing.Size(1003, 167);
             this.panel4.TabIndex = 5;
             // 
             // dataGridView1
@@ -371,14 +323,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -395,14 +347,14 @@
             this.gr_hol_mony,
             this.gr_date,
             this.blok});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
@@ -413,7 +365,7 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 80;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1003, 266);
+            this.dataGridView1.Size = new System.Drawing.Size(1003, 167);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DataGridView1_CellBeginEdit);
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellEndEdit);
@@ -530,7 +482,6 @@
             this.Text = "Bill_managment";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -547,8 +498,6 @@
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.Panel panel3;
-        private FontAwesome.Sharp.IconButton iconButton1;
-        private RJCodeAdvance.RJControls.RJTextBox search;
         private RJCodeAdvance.RJControls.RJButton rjButton3;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         private System.Windows.Forms.GroupBox groupBox1;

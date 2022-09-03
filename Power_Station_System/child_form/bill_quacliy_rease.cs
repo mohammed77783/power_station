@@ -153,6 +153,11 @@ namespace Power_Station_System.child_form
             dataGridView1.DataSource = bill.get_togr_are(Convert.ToInt32(comboBox2.SelectedValue));
            }
         }
+
+        private void RjButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
