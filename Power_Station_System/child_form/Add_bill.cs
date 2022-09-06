@@ -33,18 +33,8 @@ namespace Power_Station_System.child_form
             comboBox1.DataSource = bill.get_subscriber_for_bill();
             comboBox1.DisplayMember = "Subscriber_name";
             comboBox1.ValueMember = "Subscriber_ElectricMeter_ID";
-
         }
-        public string send(string pone) {
-            string accountsid = Environment.GetEnvironmentVariable("TWILIO_ACCOUNT_SID");
-            string authToken = Environment.GetEnvironmentVariable("TWILIO_AUTH_TOKEN");
-            TwilioClient.Init(accountsid, authToken);
-            var to = new PhoneNumber(Environment.GetEnvironmentVariable("MY_PHONE_NUMBER"));
-            var from = new PhoneNumber("+967777837932");
-            var message = MessageResource.Create(to: to, from: from, body: "you have bill");
-
-
-        }
+      
         private void Label1_Click(object sender, EventArgs e)
         {
 
@@ -237,7 +227,7 @@ namespace Power_Station_System.child_form
                         string messag = "عزيزي العميل لدي فاتورة كهرباء بمبلغ مقدارة" + block_id + " عليك الاسراع بسداد المبلغ حتى لا يعرضك للفصل /n ولكم جزيل الشكر";
                         //serialPort1.PortName = "COM4";
                         //serialPort1.ReadTimeout = 2000;
-                        
+
                         //serialPort1.Open();
                         //serialPort1.Write("AT\r");
                         //serialPort1.Write("AT+CMGF=1\r");
@@ -256,7 +246,7 @@ namespace Power_Station_System.child_form
                         //}
                         //MessageBox.Show("Sucsse");
                         //serialPort1.Close();
-
+                      //  send();
 
 
 

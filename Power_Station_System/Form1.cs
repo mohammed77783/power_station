@@ -1,44 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-//using PSS.chid_form;
 namespace Power_Station_System
 {
     public partial class Form1 : Form
+
     {
-       
+        public bool IsOpen = false; //التأكد من ان الفورم مفتوح 
+
+
+
+
+        TabPage tabCont;
         int panal_width;
         bool iscolapsed;
         int x, y, move;
         private Size formSize;
-        Form page=null;
-
-        void endform(Form pag)
+        Form page = null;
+        void endform(Form pag, TabPage tab)//دالة لاغلاق كل الصفحات والعودة الى الصفحة الرئيسية
         {
-            if (pag != null)
+            if (pag != null && tab != null)
             {
                 pag.Close();
+                foreach (TabPage s in tabControlZ1.TabPages)
+                {
+                    tabControlZ1.Controls.Remove(s);
+                }
+                
             }
         }
+
         public Form1()
         {
             InitializeComponent();
             panal_width = side_panal.Width;
             iscolapsed = false;
             this.BackColor = Color.FromArgb(240, 245, 249);
-            if (DateTime.Now.Day==21)
+            if (DateTime.Now.Day == 21)
             {
-                DataBase.reading re = new DataBase.reading();
-                    re.insert_manth_customer_name();
+
+
             }
-            
+
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -73,7 +77,7 @@ namespace Power_Station_System
         {
             if (iscolapsed)
             {
-               side_panal.Width += 10;
+                side_panal.Width += 10;
                 if (side_panal.Width >= panal_width)
                 {
                     menu_timer.Stop();
@@ -82,7 +86,8 @@ namespace Power_Station_System
                 }
             }
             else
-            {   side_panal.Width -= 10;
+            {
+                side_panal.Width -= 10;
                 if (side_panal.Width <= 59)
                 {
                     menu_timer.Stop();
@@ -94,29 +99,29 @@ namespace Power_Station_System
             }
         }
 
-       
-    
 
-       
+
+
+
 
         private void Panel5_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-       
+
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
             showsubmenu(panel_system_prepar);
-           
+
 
         }
         void showsubmenu(Panel sube)
         {
             if (sube.Visible == false)
             {
-             
+
                 sube.Visible = true;
             }
             else
@@ -150,7 +155,7 @@ namespace Power_Station_System
 
         private void Panel5_Paint_1(object sender, PaintEventArgs e)
         {
-            
+
         }
 
         private void Panel3_Paint(object sender, PaintEventArgs e)
@@ -163,9 +168,9 @@ namespace Power_Station_System
             move = 1;
             x = e.X;
             y = e.Y;
-           
+
         }
-       
+
 
         private void Button3_Click(object sender, EventArgs e)
         {
@@ -182,13 +187,18 @@ namespace Power_Station_System
         {
             try
             {
-                panel_contener.Controls.Clear();
+
+
                 page.Dock = DockStyle.Fill;
-          
+
                 page.TopLevel = false;
-                panel_contener.Controls.Add(page);
+                tabCont.Controls.Add(page);
                 page.Show();
+
+
             }
+
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -197,7 +207,7 @@ namespace Power_Station_System
 
         private void Form1_Resize(object sender, EventArgs e)
         {
-           
+
         }
 
         private void Button7_Click(object sender, EventArgs e)
@@ -217,7 +227,15 @@ namespace Power_Station_System
 
         private void IconButton2_Click(object sender, EventArgs e)
         {
-            endform(page);
+            label2.Show();
+            endform(page, tabCont);
+            label3.Hide();
+
+
+
+
+
+
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -227,7 +245,7 @@ namespace Power_Station_System
 
         private void Button2_Click_1(object sender, EventArgs e)
         {
-           
+
 
         }
 
@@ -240,6 +258,13 @@ namespace Power_Station_System
         private void Form1_Load_1(object sender, EventArgs e)
         {
             hidesubmenu();
+            label3.Hide();
+
+
+
+
+
+
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -259,24 +284,147 @@ namespace Power_Station_System
         private void Panel3_MouseUp(object sender, MouseEventArgs e)
         {
             move = 0;
+
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-             page = new chid_form.Add_Area1();
-            Loadpage(page);
+            foreach (TabPage f in tabControlZ1.TabPages)
+            {
+                if (f.Text == "بيانات المناطق")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(f);
+                    label3.Text = "بيانات المناطق";
+
+
+
+                }
+            }
+
+
+
+
+            if (IsOpen == false)
+            {
+
+
+                label3.Text = "بيانات المناطق";
+                page = new chid_form.Add_Area1();
+                tabCont = new TabPage("بيانات المناطق");
+
+
+
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+
+
+
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+            }
+
+
+
+
+
+
+
+
+
         }
+
 
         private void Button4_Click_2(object sender, EventArgs e)
         {
-            page = new chid_form.Add_Square1();
-            Loadpage(page);
+
+            foreach (TabPage x in tabControlZ1.TabPages)
+            {
+                if (x.Text == "بيانات المربعات")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(x);
+                    label3.Text = "بيانات المربعات";
+
+                    break;
+
+
+                }
+            }
+
+
+
+            if (IsOpen == false)
+            {
+
+
+
+                page = new chid_form.Add_Square1();
+                tabCont = new TabPage("بيانات المربعات");
+
+
+                label3.Text = "بيانات المربعات";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+
+
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
+
         }
 
         private void Button9_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.fines();
-            Loadpage(page);
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إصدار غرامة")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إصدار غرامة";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إصدار غرامة");
+                page = new chid_form.fines();
+
+
+
+                label3.Text = "إصدار غرامة";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
         }
 
         private void Button10_Click(object sender, EventArgs e)
@@ -291,7 +439,9 @@ namespace Power_Station_System
 
         private void Button20_Click(object sender, EventArgs e)
         {
-
+            label2.Hide();
+            label3.Show();
+            label3.Text = ("إضافة قراءة مركزية");
         }
 
         private void Button21_Click(object sender, EventArgs e)
@@ -301,80 +451,595 @@ namespace Power_Station_System
 
         private void Button26_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.add_fines();
-            Loadpage(page);
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إضافة غرامة")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إضافة غرامة";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new chid_form.add_fines();
+                tabCont = new TabPage("إضافة غرامة");
+
+
+
+                label3.Text = "بيانات غرامة";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
         }
 
         private void Button15_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.Subscription();
-            Loadpage(page);
+
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إضافة اشتراكات")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إضافة اشتراكات";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new chid_form.Subscription();
+                tabCont = new TabPage("إضافة اشتراكات");
+
+
+
+                label3.Text = "إضافة اشتراكات";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
         }
+
+
 
         private void Button17_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.centarreading();
-            Loadpage(page);
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إدارة القراءات المركزية")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إدارة القراءات المركزية";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إدارة القراءات المركزية");
+                page = new chid_form.centarreading();
+
+
+
+
+                label3.Text = "إدارة القراءات المركزية";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
         }
 
         private void Button14_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.mhasel();
-            Loadpage(page);
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إضافة محصلين")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إضافة محصلين";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إضافة محصلين");
+
+                page = new chid_form.mhasel();
+
+
+
+                label3.Text = "إضافة محصلين";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
         }
+
+
 
         private void Button27_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.read();
-            Loadpage(page);
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إضافة رصيد إفتتاحي")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إضافة رصيد إفتتاحي";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إضافة رصيد إفتتاحي");
+                page = new chid_form.read();
+
+
+
+
+                label3.Text = "إضافة رصيد إفتتاحي";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
         }
 
         private void Button19_Click(object sender, EventArgs e)
         {
-            Form page = new chid_form.Reading_managment();
-            Loadpage(page);
+
+
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إدارة القراءات")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إدارة القراءات";
+                    break;
+
+                }
+            }
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إدارة القراءات");
+                page = new chid_form.Reading_managment();
+
+
+
+                label3.Text = "إدارة القراءات";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
         }
 
         private void Button18_Click(object sender, EventArgs e)
         {
-            page = new chid_form.Add_reading();
-            Loadpage(page);
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إضافة قراءة")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إضافة قراءة";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إضافة قراءة");
+                page = new chid_form.Add_reading();
+
+
+
+
+                label3.Text = "إضافة قراءة";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
 
         }
 
         private void Button12_Click(object sender, EventArgs e)
         {
-            page = new child_form.bill_quacliy_rease();
-            Loadpage(page);
+            label2.Hide();
+            label3.Show();
+            label3.Text = ("إدارة الفواتير");
         }
 
         private void Button11_Click(object sender, EventArgs e)
         {
-            Form addbill = new child_form.Add_bill();
-            Loadpage(addbill);
-            
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إصدار فاتورة")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إصدار فاتورة";
+                    break;
+
+                }
+            }
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("إصدار فاتورة");
+                page = new child_form.Add_bill();
+
+
+
+
+                label3.Text = "إصدار فاتورة";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
+
         }
 
         private void Button13_Click(object sender, EventArgs e)
         {
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "الاصدار السريع للفاتورة")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "الاصدار السريع للفاتورة";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new child_form.bill_quacliy_rease();
+                tabCont = new TabPage("الاصدار السريع للفاتورة");
+
+
+
+                label3.Text = ("الاصدار السريع للفاتورة");
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
 
         }
 
         private void Home_btn_ChangeUICues(object sender, UICuesEventArgs e)
         {
-            
+
         }
 
         private void Panel_contener_Enter(object sender, EventArgs e)
         {
-           
+
         }
+
+
+
+
+
 
         private void Button28_Click(object sender, EventArgs e)
         {
-             page = new child_form.NewFolder1.Staion_Name();
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "بيانات المحطة")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "بيانات المحطة";
+                    break;
 
-            Loadpage(page);
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new child_form.NewFolder1.Staion_Name();
+                tabCont = new TabPage("بيانات المحطة");
+
+
+
+                label3.Text = "بيانات المحطة";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+        }
+
+
+        private void Button25_Click(object sender, EventArgs e)
+        {
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "فواتير المشتركين")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "فواتير المشتركين";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new child_form.Add_bill();
+                tabCont = new TabPage("فواتير المشتركين");
+
+                label3.Text = ("فواتير المشتركين");
+
+
+
+
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
+        }
+
+        private void Button24_Click(object sender, EventArgs e)
+        {
+            label2.Hide();
+            label3.Show();
+            label3.Text = ("تقرير النزول الميداني لتسجيل القراءات");
+        }
+
+        private void Button23_Click(object sender, EventArgs e)
+        {
+            label2.Hide();
+            label3.Show();
+            label3.Text = ("اجمالي استهلاك المشتركين");
+        }
+
+        private void TabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControl1_DpiChangedBeforeParent(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public void TabControl1_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void TabControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+
+
+        }
+
+
+        private void TabControl1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+
+
+
+        }
+
+        private void Button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void Button28_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void TabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+
+
+
+
+        }
+
+        private void TabControl1_Selecting_1(object sender, TabControlCancelEventArgs e)
+        {
+
+
+
+
+        }
+
+        private void TabControlZ1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControlZ1_Selected(object sender, TabControlEventArgs e)
+        {
+
+        }
+
+        private void TabControlZ1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            try
+            {
+                label3.Text = e.TabPage.Text;
+            }
+            catch (Exception) { }
+        }
+
+        private void TabControlZ1_MouseHover(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void TabControlZ1_MouseLeave(object sender, EventArgs e)
+        {
+            //foreach (TabPage s in tabControlZ1.TabPages)
+            //{
+            //    if (s.MouseLeave += true)
+            //    {
+            //        tabControlZ1.NonActiveTabEndColor = Color.FromArgb(51, 55, 66);
+            //        tabControlZ1.NonActiveTabStartColor = Color.FromArgb(51, 55, 66);
+            //    }
+            //}
+           
+        }
+
+        private void TabControlZ1_MouseEnter(object sender, EventArgs e)
+        //{   foreach(TabPage s in tabControlZ1.TabPages)
+        //    {
+        //        if(s.Capture == true)
+        //        {
+        //            tabControlZ1.NonActiveTabEndColor = Color.DodgerBlue;
+        //            tabControlZ1.NonActiveTabStartColor = Color.DodgerBlue;
+        //        }
+        //    }
+           
         }
 
         private void IconButton5_Click(object sender, EventArgs e)
@@ -384,11 +1049,47 @@ namespace Power_Station_System
 
         private void Button8_Click_1(object sender, EventArgs e)
         {
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "إدارة العملاء")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "إدارة العملاء";
+                    break;
+
+                }
+            }
 
 
-          Form page = new chid_form.customer_management();
+            if (IsOpen == false)
+            {
 
-            Loadpage(page);
+
+
+                page = new chid_form.customer_management();
+                tabCont = new TabPage("إدارة العملاء");
+
+
+
+                label3.Text = ("إدارة العملاء");
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page);
+
+
+
+            }
+
+
+
+
         }
     }
-}
+} 
+

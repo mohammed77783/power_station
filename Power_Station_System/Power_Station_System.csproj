@@ -278,6 +278,9 @@
     <Compile Include="Reports\reort_viwer.Designer.cs">
       <DependentUpon>reort_viwer.cs</DependentUpon>
     </Compile>
+    <Compile Include="TabControlZ.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="warning_code\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
