@@ -7,7 +7,7 @@ namespace Power_Station_System
     public partial class Form1 : Form
 
     {
-        public bool IsOpen = false; //التأكد من ان الفورم مفتوح 
+        
 
 
 
@@ -183,17 +183,17 @@ namespace Power_Station_System
                 WindowState = FormWindowState.Normal;
             }
         }
-        private void Loadpage(Form page)
+        private void Loadpage(Form pagee ,TabPage tab)
         {
             try
             {
 
 
-                page.Dock = DockStyle.Fill;
+                pagee.Dock = DockStyle.Fill;
 
-                page.TopLevel = false;
-                tabCont.Controls.Add(page);
-                page.Show();
+                pagee.TopLevel = false;
+                tab.Controls.Add(pagee);
+                pagee.Show();
 
 
             }
@@ -227,6 +227,7 @@ namespace Power_Station_System
 
         private void IconButton2_Click(object sender, EventArgs e)
         {
+            
             label2.Show();
             endform(page, tabCont);
             label3.Hide();
@@ -289,6 +290,7 @@ namespace Power_Station_System
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage f in tabControlZ1.TabPages)
             {
                 if (f.Text == "بيانات المناطق")
@@ -296,6 +298,7 @@ namespace Power_Station_System
                     IsOpen = true;
                     tabControlZ1.SelectTab(f);
                     label3.Text = "بيانات المناطق";
+                    break; 
 
 
 
@@ -310,7 +313,7 @@ namespace Power_Station_System
 
 
                 label3.Text = "بيانات المناطق";
-                page = new chid_form.Add_Area1();
+               page = new chid_form.Add_Area1();
                 tabCont = new TabPage("بيانات المناطق");
 
 
@@ -325,7 +328,7 @@ namespace Power_Station_System
 
 
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
             }
@@ -343,7 +346,7 @@ namespace Power_Station_System
 
         private void Button4_Click_2(object sender, EventArgs e)
         {
-
+            bool IsOpen = false;
             foreach (TabPage x in tabControlZ1.TabPages)
             {
                 if (x.Text == "بيانات المربعات")
@@ -353,7 +356,6 @@ namespace Power_Station_System
                     label3.Text = "بيانات المربعات";
 
                     break;
-
 
                 }
             }
@@ -365,8 +367,8 @@ namespace Power_Station_System
 
 
 
-                page = new chid_form.Add_Square1();
-                tabCont = new TabPage("بيانات المربعات");
+              Form  page1 = new chid_form.Add_Square1();
+               TabPage tabCont1 = new TabPage("بيانات المربعات");
 
 
                 label3.Text = "بيانات المربعات";
@@ -375,11 +377,11 @@ namespace Power_Station_System
 
 
 
-                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.TabPages.Add(tabCont1);
 
 
-                tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                tabControlZ1.SelectTab(tabCont1);
+                Loadpage(page1 , tabCont1);
 
 
 
@@ -390,6 +392,7 @@ namespace Power_Station_System
 
         private void Button9_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إصدار غرامة")
@@ -419,7 +422,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -451,6 +454,7 @@ namespace Power_Station_System
 
         private void Button26_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إضافة غرامة")
@@ -480,7 +484,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -490,13 +494,13 @@ namespace Power_Station_System
 
         private void Button15_Click(object sender, EventArgs e)
         {
-
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إضافة اشتراكات")
                 {
                     IsOpen = true;
-                    tabControlZ1.SelectTab(s);
+                    this.tabControlZ1.SelectTab(s);
                     label3.Text = "إضافة اشتراكات";
                     break;
 
@@ -520,7 +524,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -531,6 +535,7 @@ namespace Power_Station_System
 
         private void Button17_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إدارة القراءات المركزية")
@@ -561,7 +566,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                  Loadpage(page , tabCont);
 
 
 
@@ -571,6 +576,7 @@ namespace Power_Station_System
 
         private void Button14_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إضافة محصلين")
@@ -601,7 +607,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -613,6 +619,7 @@ namespace Power_Station_System
 
         private void Button27_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إضافة رصيد إفتتاحي")
@@ -643,7 +650,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -653,10 +660,10 @@ namespace Power_Station_System
 
         private void Button19_Click(object sender, EventArgs e)
         {
-
+            bool IsOpen = false;
 
             foreach (TabPage s in tabControlZ1.TabPages)
-            {
+            {  
                 if (s.Text == "إدارة القراءات")
                 {
                     IsOpen = true;
@@ -683,7 +690,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -693,6 +700,7 @@ namespace Power_Station_System
 
         private void Button18_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إضافة قراءة")
@@ -723,7 +731,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -741,6 +749,7 @@ namespace Power_Station_System
 
         private void Button11_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "إصدار فاتورة")
@@ -770,7 +779,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page ,tabCont);
 
 
 
@@ -781,6 +790,7 @@ namespace Power_Station_System
 
         private void Button13_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "الاصدار السريع للفاتورة")
@@ -810,7 +820,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -835,12 +845,14 @@ namespace Power_Station_System
 
         private void Button28_Click(object sender, EventArgs e)
         {
+           bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "بيانات المحطة")
                 {
                     IsOpen = true;
-                    tabControlZ1.SelectTab(s);
+                     tabControlZ1.SelectTab(s);
+                   
                     label3.Text = "بيانات المحطة";
                     break;
 
@@ -851,9 +863,9 @@ namespace Power_Station_System
             if (IsOpen == false)
             {
 
-                page = new child_form.NewFolder1.Staion_Name();
-                tabCont = new TabPage("بيانات المحطة");
-
+               page = new child_form.NewFolder1.Staion_Name();
+                tabCont= new TabPage("بيانات المحطة");
+                
 
 
                 label3.Text = "بيانات المحطة";
@@ -864,7 +876,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -874,6 +886,7 @@ namespace Power_Station_System
 
         private void Button25_Click(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
                 if (s.Text == "فواتير المشتركين")
@@ -891,7 +904,7 @@ namespace Power_Station_System
             {
 
                 page = new child_form.Add_bill();
-                tabCont = new TabPage("فواتير المشتركين");
+               tabCont = new TabPage("فواتير المشتركين");
 
                 label3.Text = ("فواتير المشتركين");
 
@@ -905,7 +918,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
@@ -1019,38 +1032,37 @@ namespace Power_Station_System
 
         private void TabControlZ1_MouseLeave(object sender, EventArgs e)
         {
-            //foreach (TabPage s in tabControlZ1.TabPages)
-            //{
-            //    if (s.MouseLeave += true)
-            //    {
-            //        tabControlZ1.NonActiveTabEndColor = Color.FromArgb(51, 55, 66);
-            //        tabControlZ1.NonActiveTabStartColor = Color.FromArgb(51, 55, 66);
-            //    }
-            //}
-           
+            if (tabCont.Capture == true)
+            {
+                    tabControlZ1.NonActiveTabEndColor = Color.FromArgb(51, 55, 66);
+                    tabControlZ1.NonActiveTabStartColor = Color.FromArgb(51, 55, 66);
+                
+            }
+
         }
 
         private void TabControlZ1_MouseEnter(object sender, EventArgs e)
-        //{   foreach(TabPage s in tabControlZ1.TabPages)
-        //    {
-        //        if(s.Capture == true)
-        //        {
-        //            tabControlZ1.NonActiveTabEndColor = Color.DodgerBlue;
-        //            tabControlZ1.NonActiveTabStartColor = Color.DodgerBlue;
-        //        }
-        //    }
-           
+        {
+
+           //if( tabCont.Capture == true) 
+           //     {
+           //         tabControlZ1.NonActiveTabEndColor = Color.DodgerBlue;
+           //         tabControlZ1.NonActiveTabStartColor = Color.DodgerBlue;
+           //     }
+            
+
         }
 
-        private void IconButton5_Click(object sender, EventArgs e)
+    private void IconButton5_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
         private void Button8_Click_1(object sender, EventArgs e)
         {
+            bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
-            {
+            {   
                 if (s.Text == "إدارة العملاء")
                 {
                     IsOpen = true;
@@ -1080,7 +1092,7 @@ namespace Power_Station_System
 
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
-                Loadpage(page);
+                Loadpage(page , tabCont);
 
 
 
