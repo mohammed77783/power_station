@@ -1041,18 +1041,7 @@ namespace Power_Station_System
 
         }
 
-<<<<<<< HEAD
-        private void TabControlZ1_MouseEnter(object sender, EventArgs e) { 
-        //{   foreach(TabPage s in tabControlZ1.TabPages)
-        //    {
-        //        if(s.Capture == true)
-        //        {
-        //            tabControlZ1.NonActiveTabEndColor = Color.DodgerBlue;
-        //            tabControlZ1.NonActiveTabStartColor = Color.DodgerBlue;
-        //        }
-        //    }
-           
-=======
+
         private void TabControlZ1_MouseEnter(object sender, EventArgs e)
         {
 
@@ -1062,8 +1051,6 @@ namespace Power_Station_System
            //         tabControlZ1.NonActiveTabStartColor = Color.DodgerBlue;
            //     }
             
-
->>>>>>> 88baa03dada93bb3f08ce7582fb6ea8f8db2c698
         }
 
     private void IconButton5_Click(object sender, EventArgs e)
