@@ -863,7 +863,7 @@ namespace Power_Station_System
             if (IsOpen == false)
             {
 
-               page = new child_form.NewFolder1.Staion_Name();
+               page = new child_form.NewFolder1.Station_Name();
                 tabCont= new TabPage("بيانات المحطة");
                 
 

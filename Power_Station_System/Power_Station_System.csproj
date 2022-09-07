@@ -158,11 +158,11 @@
     <Compile Include="child_form\NewFolder1\opeining_read.designer.cs">
       <DependentUpon>opeining_read.cs</DependentUpon>
     </Compile>
-    <Compile Include="child_form\NewFolder1\Staion_Name.cs">
+    <Compile Include="child_form\NewFolder1\Station_Name.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="child_form\NewFolder1\Staion_Name.Designer.cs">
-      <DependentUpon>Staion_Name.cs</DependentUpon>
+    <Compile Include="child_form\NewFolder1\Station_Name.designer.cs">
+      <DependentUpon>Station_Name.cs</DependentUpon>
     </Compile>
     <Compile Include="child_form\pringBill.cs">
       <SubType>Form</SubType>
@@ -248,6 +248,7 @@
     <Compile Include="DataBase\fines.cs" />
     <Compile Include="DataBase\mhasell.cs" />
     <Compile Include="DataBase\reading.cs" />
+    <Compile Include="DataBase\Station_Data.cs" />
     <Compile Include="DataBase\subscriber.cs" />
     <Compile Include="DataBase\subscription_1.cs" />
     <Compile Include="Form1.cs">
@@ -329,8 +330,8 @@
     <EmbeddedResource Include="child_form\NewFolder1\opeining_read.resx">
       <DependentUpon>opeining_read.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="child_form\NewFolder1\Staion_Name.resx">
-      <DependentUpon>Staion_Name.cs</DependentUpon>
+    <EmbeddedResource Include="child_form\NewFolder1\Station_Name.resx">
+      <DependentUpon>Station_Name.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="child_form\pringBill.resx">
       <DependentUpon>pringBill.cs</DependentUpon>
