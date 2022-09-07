@@ -271,3 +271,4 @@ C:\Users\Yasir\Documents\project4\power_station\Power_Station_System\obj\Debug\a
 C:\Users\Yasir\Documents\project4\power_station\Power_Station_System\obj\Debug\Power_Station_System.csproj.CopyComplete
 C:\Users\Yasir\Documents\project4\power_station\Power_Station_System\obj\Debug\Power_Station_System.long.resources
 >>>>>>> 90f7364d68cc802410efd6b102c22c82d5b2874d
+C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\obj\Debug\Power_Station_System.long.resources
