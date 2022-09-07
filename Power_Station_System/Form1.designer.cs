@@ -66,7 +66,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_user = new System.Windows.Forms.Label();
             this.menu_timer = new System.Windows.Forms.Timer(this.components);
             this.button6 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -632,7 +632,7 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(42)))), ((int)(((byte)(81)))));
             this.panel2.Controls.Add(this.rjCircularPictureBox1);
             this.panel2.Controls.Add(this.iconButton1);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.lb_user);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -671,17 +671,17 @@
             this.iconButton1.UseVisualStyleBackColor = true;
             this.iconButton1.Click += new System.EventHandler(this.IconButton1_Click);
             // 
-            // label1
+            // lb_user
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
-            this.label1.Location = new System.Drawing.Point(58, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "اسم المستخدم";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.lb_user.AutoSize = true;
+            this.lb_user.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
+            this.lb_user.Location = new System.Drawing.Point(58, 92);
+            this.lb_user.Name = "lb_user";
+            this.lb_user.Size = new System.Drawing.Size(98, 16);
+            this.lb_user.TabIndex = 2;
+            this.lb_user.Text = "اسم المستخدم";
+            this.lb_user.Click += new System.EventHandler(this.Label1_Click);
             // 
             // menu_timer
             // 
@@ -882,7 +882,6 @@
         private System.Windows.Forms.Panel side_panal;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button system_prepa;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer menu_timer;
         private FontAwesome.Sharp.IconButton iconButton1;
         private FontAwesome.Sharp.IconButton iconButton5;
@@ -927,6 +926,7 @@
         private System.Windows.Forms.Panel panel_contener;
         public FontAwesome.Sharp.IconButton home_btn;
         private TabControlZ.TabControlZ tabControlZ1;
+        public System.Windows.Forms.Label lb_user;
     }
 }
 

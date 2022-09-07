@@ -1041,6 +1041,7 @@ namespace Power_Station_System
 
         }
 
+
         private void TabControlZ1_MouseEnter(object sender, EventArgs e)
         {
 
@@ -1050,7 +1051,6 @@ namespace Power_Station_System
            //         tabControlZ1.NonActiveTabStartColor = Color.DodgerBlue;
            //     }
             
-
         }
 
     private void IconButton5_Click(object sender, EventArgs e)

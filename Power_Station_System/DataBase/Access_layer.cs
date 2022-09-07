@@ -16,8 +16,13 @@ namespace Power_Station_System.DataBase
         public Access_layer()
         {
 
+<<<<<<< HEAD
          
             con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
+=======
+
+            con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+>>>>>>> 90f7364d68cc802410efd6b102c22c82d5b2874d
 
         }
         //opent the connection to the database
