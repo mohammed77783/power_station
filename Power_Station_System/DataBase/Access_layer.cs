@@ -16,8 +16,8 @@ namespace Power_Station_System.DataBase
         public Access_layer()
         {
 
-         
-            con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=pss;Integrated Security=true");
+
+            con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
 
         }
         //opent the connection to the database

@@ -250,6 +250,7 @@
     <Compile Include="DataBase\reading.cs" />
     <Compile Include="DataBase\subscriber.cs" />
     <Compile Include="DataBase\subscription_1.cs" />
+    <Compile Include="DataBase\users.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

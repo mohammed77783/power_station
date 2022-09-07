@@ -1030,7 +1030,7 @@ namespace Power_Station_System
            
         }
 
-        private void TabControlZ1_MouseEnter(object sender, EventArgs e)
+        private void TabControlZ1_MouseEnter(object sender, EventArgs e) { 
         //{   foreach(TabPage s in tabControlZ1.TabPages)
         //    {
         //        if(s.Capture == true)
