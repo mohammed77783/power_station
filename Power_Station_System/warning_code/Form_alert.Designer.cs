@@ -43,9 +43,10 @@
             this.lblMsg.ForeColor = System.Drawing.Color.White;
             this.lblMsg.Location = new System.Drawing.Point(179, 52);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(172, 29);
+            this.lblMsg.Size = new System.Drawing.Size(113, 20);
             this.lblMsg.TabIndex = 0;
             this.lblMsg.Text = "Message_Text";
+            this.lblMsg.Click += new System.EventHandler(this.LblMsg_Click);
             // 
             // timer1
             // 
@@ -88,6 +89,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_alert";
             this.Text = "Form_alert";
+            this.Load += new System.EventHandler(this.Form_alert_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

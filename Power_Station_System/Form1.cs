@@ -193,6 +193,7 @@ namespace Power_Station_System
 
                 pagee.TopLevel = false;
                 tab.Controls.Add(pagee);
+                
                 pagee.Show();
 
 
@@ -231,6 +232,7 @@ namespace Power_Station_System
             label2.Show();
             endform(page, tabCont);
             label3.Hide();
+            hidesubmenu();
 
 
 
@@ -1053,7 +1055,49 @@ namespace Power_Station_System
             
         }
 
-    private void IconButton5_Click(object sender, EventArgs e)
+        private void Button29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button30_Click(object sender, EventArgs e)
+        {
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "اضافه مستخدم")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "اضافه مستخدم";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new child_form.user.add_user();
+                tabCont = new TabPage("اضافه مستخدم");
+
+
+
+                label3.Text = ("اضافه مستخدم");
+                label2.Hide();
+                label3.Show();
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+
+
+            }
+        }
+
+        private void IconButton5_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

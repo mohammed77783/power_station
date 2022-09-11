@@ -14,7 +14,9 @@ namespace Power_Station_System.child_form.user
 {
     public partial class pre : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+       // SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=power_state_station;Integrated Security=true");
+
         SqlDataAdapter Da;
         DataTable Dts = new DataTable();
         public pre()
@@ -244,6 +246,33 @@ namespace Power_Station_System.child_form.user
         private void RjButton6_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Search__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -215,6 +215,11 @@ namespace Power_Station_System.chid_form
         {
 
         }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     }
 

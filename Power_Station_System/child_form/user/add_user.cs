@@ -17,7 +17,8 @@ namespace Power_Station_System.child_form.user
     public partial class add_user : Form
 
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+       // SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=power_state_station;Integrated Security=true");
 
         DataBase.users users = new DataBase.users();
         string ful_name;
@@ -45,7 +46,7 @@ namespace Power_Station_System.child_form.user
 
         public void clea()
         {
-            textBox_Custom1.Text = String.Empty;
+            textBox_Custom1.Text =  String.Empty;
             textBox_Custom2.Texts = String.Empty;
             textBox_Custom7.Texts = String.Empty;
             textBox_Custom4.Texts = String.Empty;
@@ -141,35 +142,36 @@ namespace Power_Station_System.child_form.user
                     return;
                 }
                 else
+                {
                     try
                     {
 
 
-                        SqlCommand cmd = new SqlCommand("insert into add_user values(@user_ID,@ful_name,@number,@user_name,@pass,@adres) "+
+                        SqlCommand cmd = new SqlCommand("insert into add_user values(@user_ID,@ful_name,@number,@user_name,@pass,@adres) " +
                              "insert into tb_priv(priv_screen_ID,priv_user_ID) select screen_ID,@user_ID from tb_screen ", con);
-                         cmd.Parameters.Add(new SqlParameter("@user_ID", SqlDbType.Int)).Value = Convert.ToInt32(textBox_Custom3.Texts);
-                         cmd.Parameters.Add(new SqlParameter("@ful_name", SqlDbType.VarChar)).Value = textBox_Custom1.Texts;
-                         cmd.Parameters.Add(new SqlParameter("@number", SqlDbType.VarChar)).Value = textBox_Custom2.Texts;
+                        cmd.Parameters.Add(new SqlParameter("@user_ID", SqlDbType.Int)).Value = Convert.ToInt32(textBox_Custom3.Texts);
+                        cmd.Parameters.Add(new SqlParameter("@ful_name", SqlDbType.NVarChar, (50))).Value = textBox_Custom1.Texts;
+                        cmd.Parameters.Add(new SqlParameter("@number", SqlDbType.NVarChar, (50))).Value = textBox_Custom2.Texts;
 
-                         cmd.Parameters.Add(new SqlParameter("@user_name", SqlDbType.VarChar)).Value = textBox_Custom5.Texts;
+                        cmd.Parameters.Add(new SqlParameter("@user_name", SqlDbType.NVarChar, (50))).Value = textBox_Custom5.Texts;
 
-                         cmd.Parameters.Add(new SqlParameter("@pass", SqlDbType.VarChar)).Value = pass;
-                         cmd.Parameters.Add(new SqlParameter("@adres", SqlDbType.VarChar)).Value = textBox_Custom7.Texts;
-                         con.Open();
-                         cmd.ExecuteNonQuery();
-                         con.Close();
-                         MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                         
-                        
+                        cmd.Parameters.Add(new SqlParameter("@pass", SqlDbType.NVarChar, (50))).Value = pass;
+                        cmd.Parameters.Add(new SqlParameter("@adres", SqlDbType.NVarChar, (50))).Value = textBox_Custom7.Texts;
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
 
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
                     }
-
+                }
             }
-            if (rjButton1.Text == "حقظ التغيرات")
+                if (rjButton1.Text == "حقظ التغيرات")
             {
 
                 if (textBox_Custom1.Texts.Trim().Length < 1)
@@ -200,18 +202,18 @@ namespace Power_Station_System.child_form.user
                 else
                     try
                     {
-                      users.Update_add_user(textBox_Custom1.Texts, textBox_Custom2.Texts, textBox_Custom7.Texts, textBox_Custom5.Texts, passw.Texts, user_ID);
+                        users.Update_add_user(textBox_Custom1.Texts, textBox_Custom2.Texts, textBox_Custom7.Texts, textBox_Custom5.Texts, passw.Texts, user_ID);
 
                         MessageBox.Show("تم التعديل بنجاح", "عملية التعديل", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         unmod();
                         Clear();
                         this.Add_user_Load(null, null);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
             }
+                    catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         }
 
         private void Add_user_Load(object sender, EventArgs e)
@@ -299,6 +301,18 @@ namespace Power_Station_System.child_form.user
         private void TextBox_Custom7__TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void GroupBox3_Enter(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void RjButton5_Click(object sender, EventArgs e)
+        {
+            child_form.user.pre add = new child_form.user.pre();
+            add.ShowDialog();
         }
     }
 }

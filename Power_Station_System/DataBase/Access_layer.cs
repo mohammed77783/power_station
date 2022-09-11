@@ -19,7 +19,7 @@ namespace Power_Station_System.DataBase
 
 
 
-            con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
+            con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=power_state_station;Integrated Security=true");
 
         }
         //opent the connection to the database
