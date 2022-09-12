@@ -19,9 +19,15 @@ namespace Power_Station_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
            Application.Run(new @long());
            
            //Application.Run(new Form1());
+=======
+            //Application.Run(new @long());
+            //Application.Run(new add_user());
+            Application.Run(new Form1());
+>>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
         }
     }
 }
