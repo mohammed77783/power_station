@@ -38,6 +38,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             this.textBox_adres = new TextBox_Custom.AD_Controls.TextBox_Custom();
             this.textBox_numbr = new TextBox_Custom.AD_Controls.TextBox_Custom();
             this.textBox_name = new TextBox_Custom.AD_Controls.TextBox_Custom();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -157,7 +157,7 @@
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(291, 29);
-            this.comboBox1.TabIndex = 14;
+            this.comboBox1.TabIndex = 4;
             // 
             // listView1
             // 
@@ -177,9 +177,20 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(323, 96);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 22);
+            this.label6.Size = new System.Drawing.Size(81, 22);
             this.label6.TabIndex = 11;
-            this.label6.Text = "الملاحظة ";
+            this.label6.Text = "الملاحظة :";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(797, 159);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 22);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "المربع :";
             // 
             // label5
             // 
@@ -188,9 +199,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(797, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 22);
+            this.label5.Size = new System.Drawing.Size(66, 22);
             this.label5.TabIndex = 8;
-            this.label5.Text = "العنوان";
+            this.label5.Text = "العنوان :";
             // 
             // label4
             // 
@@ -199,9 +210,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(323, 31);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 22);
+            this.label4.Size = new System.Drawing.Size(89, 22);
             this.label4.TabIndex = 7;
-            this.label4.Text = "رقم الجوال";
+            this.label4.Text = "رقم الجوال :";
             // 
             // label2
             // 
@@ -210,9 +221,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(786, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 22);
+            this.label2.Size = new System.Drawing.Size(104, 22);
             this.label2.TabIndex = 1;
-            this.label2.Text = "اسم المحصل ";
+            this.label2.Text = "اسم المحصل :";
             // 
             // panel4
             // 
@@ -421,7 +432,7 @@
             this.textBox_adres.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_adres.PasswordChar = false;
             this.textBox_adres.Size = new System.Drawing.Size(292, 38);
-            this.textBox_adres.TabIndex = 13;
+            this.textBox_adres.TabIndex = 3;
             this.textBox_adres.Texts = "";
             this.textBox_adres.UnderlinedStyle = false;
             // 
@@ -441,7 +452,7 @@
             this.textBox_numbr.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_numbr.PasswordChar = false;
             this.textBox_numbr.Size = new System.Drawing.Size(293, 38);
-            this.textBox_numbr.TabIndex = 10;
+            this.textBox_numbr.TabIndex = 2;
             this.textBox_numbr.Texts = "";
             this.textBox_numbr.UnderlinedStyle = false;
             // 
@@ -461,20 +472,9 @@
             this.textBox_name.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_name.PasswordChar = false;
             this.textBox_name.Size = new System.Drawing.Size(292, 38);
-            this.textBox_name.TabIndex = 9;
+            this.textBox_name.TabIndex = 1;
             this.textBox_name.Texts = "";
             this.textBox_name.UnderlinedStyle = false;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(797, 159);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 22);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "المنطقة :";
             // 
             // mhasel
             // 

@@ -73,6 +73,7 @@ namespace Power_Station_System.chid_form
             string t = search.Texts;
             dt = cus.search(t);
             this.datagride_view_customer.DataSource = dt;
+           
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -103,6 +104,7 @@ namespace Power_Station_System.chid_form
 
         private void Add_customer_1_Load(object sender, EventArgs e)
         {
+            
             try
             {
                 datagride_view_customer.DataSource = cus.get_subscriber();
@@ -123,6 +125,10 @@ namespace Power_Station_System.chid_form
                 cus.Delete_Sub(this.datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
                // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
+
+
+                datagride_view_customer.DataSource = cus.get_subscriber();
+
                 datagride_view_customer.Refresh();
              
 
@@ -137,12 +143,26 @@ namespace Power_Station_System.chid_form
 
         private void Datagride_view_customer_Click(object sender, EventArgs e)
         {
+            try
+            {
 
-            id=Convert.ToInt16( datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
-           
+
+
+                id = Convert.ToInt16(datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
+            }
+
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+                //  this.Alert(ex.Message, Form_alert.enmType.Error);
+            }
+        }
+    private void Panel3_BindingContextChanged(object sender, EventArgs e)
+        {
+            
         }
 
-        private void Panel3_BindingContextChanged(object sender, EventArgs e)
+        private void Customer_management_Enter(object sender, EventArgs e)
         {
             
         }

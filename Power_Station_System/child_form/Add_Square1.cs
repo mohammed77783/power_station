@@ -183,6 +183,8 @@ namespace Power_Station_System.chid_form
 
         private void Add_Square1_Load(object sender, EventArgs e)
         {
+            rjTextBox1.Focus();
+
             try
             {
                 dataGridView1.DataSource = block.get_Block();
@@ -241,6 +243,11 @@ namespace Power_Station_System.chid_form
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Add_Square1_Activated(object sender, EventArgs e)
+        {
+           
         }
 
         private void RjButton2_Click(object sender, EventArgs e)

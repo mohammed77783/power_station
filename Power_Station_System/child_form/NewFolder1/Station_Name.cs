@@ -198,12 +198,9 @@ namespace Power_Station_System.child_form.NewFolder1
 
             if (rjButton3.Text == "الغاء ")
                 {
-                    unmod();
+                   unmod();
 
-
-
-
-                
+               
 
             }
 

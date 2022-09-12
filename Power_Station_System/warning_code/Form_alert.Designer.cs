@@ -43,9 +43,10 @@
             this.lblMsg.ForeColor = System.Drawing.Color.White;
             this.lblMsg.Location = new System.Drawing.Point(179, 52);
             this.lblMsg.Name = "lblMsg";
-            this.lblMsg.Size = new System.Drawing.Size(172, 29);
+            this.lblMsg.Size = new System.Drawing.Size(143, 25);
             this.lblMsg.TabIndex = 0;
             this.lblMsg.Text = "Message_Text";
+            this.lblMsg.Click += new System.EventHandler(this.LblMsg_Click);
             // 
             // timer1
             // 
@@ -68,9 +69,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Power_Station_System.Properties.Resources.success11;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 79);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -87,7 +88,10 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_alert";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form_alert";
+            this.Load += new System.EventHandler(this.Form_alert_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

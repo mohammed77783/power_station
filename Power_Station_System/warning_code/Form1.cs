@@ -20,10 +20,14 @@ namespace Power_Station_System.warning_code
         {
             Form_alert frm = new Form_alert();
             frm.showAlert(msg, type);
+            frm.TopMost = true; 
+          
+
         }
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
+           
         }
 
         private void Button2_Click(object sender, EventArgs e)

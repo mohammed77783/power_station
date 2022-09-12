@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rjTextBoxy = new RJCodeAdvance.RJControls.RJTextBox();
@@ -103,11 +103,11 @@
             this.rjTextBoxy.BorderFocusColor = System.Drawing.Color.White;
             this.rjTextBoxy.BorderRadius = 0;
             this.rjTextBoxy.BorderSize = 2;
-            this.rjTextBoxy.Font = new System.Drawing.Font("LBC", 8F);
+            this.rjTextBoxy.Font = new System.Drawing.Font("LBC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBoxy.ForeColor = System.Drawing.Color.Black;
             this.rjTextBoxy.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.rjTextBoxy.Location = new System.Drawing.Point(68, 65);
-            this.rjTextBoxy.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rjTextBoxy.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBoxy.Multiline = false;
             this.rjTextBoxy.Name = "rjTextBoxy";
             this.rjTextBoxy.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -115,8 +115,8 @@
             this.rjTextBoxy.PlaceholderColor = System.Drawing.Color.White;
             this.rjTextBoxy.PlaceholderText = "";
             this.rjTextBoxy.SelectionStart = 0;
-            this.rjTextBoxy.Size = new System.Drawing.Size(250, 32);
-            this.rjTextBoxy.TabIndex = 11;
+            this.rjTextBoxy.Size = new System.Drawing.Size(250, 31);
+            this.rjTextBoxy.TabIndex = 2;
             this.rjTextBoxy.Texts = "";
             this.rjTextBoxy.UnderlinedStyle = true;
             this.rjTextBoxy._TextChanged += new System.EventHandler(this.RjTextBox2__TextChanged);
@@ -145,11 +145,11 @@
             this.rjTextBox1.BorderFocusColor = System.Drawing.Color.White;
             this.rjTextBox1.BorderRadius = 0;
             this.rjTextBox1.BorderSize = 2;
-            this.rjTextBox1.Font = new System.Drawing.Font("LBC", 8F);
+            this.rjTextBox1.Font = new System.Drawing.Font("LBC", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.Black;
             this.rjTextBox1.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.rjTextBox1.Location = new System.Drawing.Point(488, 65);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
             this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -157,8 +157,8 @@
             this.rjTextBox1.PlaceholderColor = System.Drawing.Color.White;
             this.rjTextBox1.PlaceholderText = "";
             this.rjTextBox1.SelectionStart = 0;
-            this.rjTextBox1.Size = new System.Drawing.Size(250, 32);
-            this.rjTextBox1.TabIndex = 9;
+            this.rjTextBox1.Size = new System.Drawing.Size(250, 31);
+            this.rjTextBox1.TabIndex = 1;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = true;
             this.rjTextBox1._TextChanged += new System.EventHandler(this.RjTextBox1__TextChanged);
@@ -205,11 +205,11 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(437, 10);
+            this.rjButton2.Location = new System.Drawing.Point(589, 10);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(134, 37);
-            this.rjButton2.TabIndex = 24;
+            this.rjButton2.TabIndex = 5;
             this.rjButton2.Text = "تعديل";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
@@ -228,11 +228,11 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(583, 10);
+            this.rjButton3.Location = new System.Drawing.Point(449, 10);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(134, 37);
-            this.rjButton3.TabIndex = 25;
+            this.rjButton3.TabIndex = 4;
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
@@ -254,7 +254,7 @@
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(134, 37);
-            this.rjButton1.TabIndex = 23;
+            this.rjButton1.TabIndex = 3;
             this.rjButton1.Text = "اضافة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
@@ -302,7 +302,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(15, 5);
-            this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.search.Margin = new System.Windows.Forms.Padding(5);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
@@ -312,7 +312,7 @@
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
             this.search.Size = new System.Drawing.Size(251, 41);
-            this.search.TabIndex = 21;
+            this.search.TabIndex = 6;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
             // 
@@ -372,27 +372,27 @@
             this.datagride_view_fines.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.datagride_view_fines.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagride_view_fines.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagride_view_fines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagride_view_fines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.datagride_view_fines.ColumnHeadersHeight = 40;
             this.datagride_view_fines.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column4,
             this.name,
             this.Column1});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagride_view_fines.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagride_view_fines.DefaultCellStyle = dataGridViewCellStyle4;
             this.datagride_view_fines.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagride_view_fines.EnableHeadersVisualStyles = false;
             this.datagride_view_fines.GridColor = System.Drawing.SystemColors.ButtonFace;

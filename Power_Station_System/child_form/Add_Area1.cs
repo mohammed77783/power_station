@@ -149,16 +149,28 @@ namespace Power_Station_System.chid_form
 
         private void RjButton3_Click(object sender, EventArgs e)
         {
-            if (rjButton3.Text == "حذف")
+            try
             {
-                if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+
+
+                if (rjButton3.Text == "حذف")
                 {
-                    aree.Delete_are(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                    //  MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
-                    this.Add_Area1_Activated(null,null);
+                    if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    {
+                        aree.Delete_are(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                        //  MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
+                        this.Add_Area1_Activated(null, null);
+                    }
                 }
+
             }
+            catch (Exception ex)
+            {
+                this.Alert(" يرجى حذف البيانات المتعلقة اولا", Form_alert.enmType.Error);
+
+            }
+
             if (rjButton3.Text == "الغاء")
                 {
                     unmod();
@@ -166,7 +178,8 @@ namespace Power_Station_System.chid_form
                     id =-1;
                     name ="";
                 }
-            }
+            
+        }
 
         private void Add_Area1_Activated(object sender, EventArgs e)
         {
@@ -212,6 +225,11 @@ namespace Power_Station_System.chid_form
         }
 
         private void Panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -218,6 +218,7 @@ namespace Power_Station_System.chid_form
 
         private void Add_fines_Load(object sender, EventArgs e)
         {
+            rjTextBox1.Focus();
             try
             {
                 datagride_view_fines.DataSource = fines.get_fines();

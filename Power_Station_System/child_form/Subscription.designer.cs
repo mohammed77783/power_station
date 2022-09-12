@@ -109,8 +109,8 @@
             this.rjTextBox6.BorderSize = 2;
             this.rjTextBox6.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.rjTextBox6.ForeColor = System.Drawing.Color.Black;
-            this.rjTextBox6.Location = new System.Drawing.Point(27, 121);
-            this.rjTextBox6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rjTextBox6.Location = new System.Drawing.Point(45, 121);
+            this.rjTextBox6.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBox6.Multiline = false;
             this.rjTextBox6.Name = "rjTextBox6";
             this.rjTextBox6.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -119,7 +119,7 @@
             this.rjTextBox6.PlaceholderText = "";
             this.rjTextBox6.SelectionStart = 0;
             this.rjTextBox6.Size = new System.Drawing.Size(260, 37);
-            this.rjTextBox6.TabIndex = 10;
+            this.rjTextBox6.TabIndex = 4;
             this.rjTextBox6.Texts = "";
             this.rjTextBox6.UnderlinedStyle = true;
             // 
@@ -133,8 +133,8 @@
             this.rjTextBox4.BorderSize = 2;
             this.rjTextBox4.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.rjTextBox4.ForeColor = System.Drawing.Color.Black;
-            this.rjTextBox4.Location = new System.Drawing.Point(27, 47);
-            this.rjTextBox4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rjTextBox4.Location = new System.Drawing.Point(45, 47);
+            this.rjTextBox4.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBox4.Multiline = false;
             this.rjTextBox4.Name = "rjTextBox4";
             this.rjTextBox4.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -143,7 +143,7 @@
             this.rjTextBox4.PlaceholderText = "";
             this.rjTextBox4.SelectionStart = 0;
             this.rjTextBox4.Size = new System.Drawing.Size(260, 37);
-            this.rjTextBox4.TabIndex = 9;
+            this.rjTextBox4.TabIndex = 2;
             this.rjTextBox4.Texts = "";
             this.rjTextBox4.UnderlinedStyle = true;
             this.rjTextBox4._TextChanged += new System.EventHandler(this.RjTextBox4__TextChanged);
@@ -159,7 +159,7 @@
             this.rjTextBox1.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.rjTextBox1.ForeColor = System.Drawing.Color.Black;
             this.rjTextBox1.Location = new System.Drawing.Point(475, 43);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
             this.rjTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -168,7 +168,7 @@
             this.rjTextBox1.PlaceholderText = "";
             this.rjTextBox1.SelectionStart = 0;
             this.rjTextBox1.Size = new System.Drawing.Size(260, 37);
-            this.rjTextBox1.TabIndex = 3;
+            this.rjTextBox1.TabIndex = 1;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = true;
             // 
@@ -179,7 +179,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(755, 58);
+            this.label1.Location = new System.Drawing.Point(755, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 26);
             this.label1.TabIndex = 6;
@@ -197,7 +197,7 @@
             this.rjTextBox2.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.Black;
             this.rjTextBox2.Location = new System.Drawing.Point(475, 119);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(5);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
             this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -206,7 +206,7 @@
             this.rjTextBox2.PlaceholderText = "";
             this.rjTextBox2.SelectionStart = 0;
             this.rjTextBox2.Size = new System.Drawing.Size(260, 37);
-            this.rjTextBox2.TabIndex = 4;
+            this.rjTextBox2.TabIndex = 3;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = true;
             this.rjTextBox2._TextChanged += new System.EventHandler(this.RjTextBox2__TextChanged);
@@ -218,7 +218,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(300, 132);
+            this.label4.Location = new System.Drawing.Point(300, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 26);
             this.label4.TabIndex = 7;
@@ -232,7 +232,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(755, 130);
+            this.label2.Location = new System.Drawing.Point(755, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 26);
             this.label2.TabIndex = 5;
@@ -246,7 +246,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(307, 58);
+            this.label3.Location = new System.Drawing.Point(328, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(121, 26);
             this.label3.TabIndex = 8;
@@ -309,7 +309,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(15, 5);
-            this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.search.Margin = new System.Windows.Forms.Padding(5);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
@@ -319,7 +319,7 @@
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
             this.search.Size = new System.Drawing.Size(251, 41);
-            this.search.TabIndex = 21;
+            this.search.TabIndex = 8;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
             // 
@@ -339,7 +339,7 @@
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(134, 37);
-            this.rjButton1.TabIndex = 20;
+            this.rjButton1.TabIndex = 5;
             this.rjButton1.Text = "إضافة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;
@@ -361,7 +361,7 @@
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(134, 37);
-            this.rjButton3.TabIndex = 19;
+            this.rjButton3.TabIndex = 7;
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
@@ -383,7 +383,7 @@
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(134, 37);
-            this.rjButton2.TabIndex = 21;
+            this.rjButton2.TabIndex = 6;
             this.rjButton2.Text = "تعديل";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;

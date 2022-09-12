@@ -32,8 +32,8 @@ namespace Power_Station_System.chid_form
             {
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
-                    MessageBox.Show("مدة الاشتراك فارغة ");
-                    this.Alert("Warning Alert", Form_alert.enmType.Warning);
+                    //MessageBox.Show("مدة الاشتراك فارغة ");
+                    this.Alert("مدة الاشتراك فارغة", Form_alert.enmType.Warning);
                     return;
                 }
 
@@ -162,17 +162,26 @@ namespace Power_Station_System.chid_form
 
         private void RjButton3_Click(object sender, EventArgs e)
         {
-            if (rjButton3.Text == "حذف")
+            try
             {
-                if (id != null) { 
-                if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                if (rjButton3.Text == "حذف")
                 {
-                    sub.Delete_subscrip(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
-                   // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
-                        this.Subscription_Load(null, null);
+                    if (id != null)
+                    {
+                        if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                        {
+                            sub.Delete_subscrip(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                            // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
+                            this.Subscription_Load(null, null);
+                        }
+                    }
                 }
-                 }
+            }
+            catch (Exception ex)
+            {
+                this.Alert(" يرجى حذف البيانات المتعلقة اولا", Form_alert.enmType.Error);
+
             }
             if (rjButton3.Text == "الغاء")
             {
@@ -226,6 +235,7 @@ namespace Power_Station_System.chid_form
 
         private void Subscription_Load(object sender, EventArgs e)
         {
+            rjTextBox1.Focus();
             try
             {
                 dataGridView1.DataSource = sub.get_subscrip();

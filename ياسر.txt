@@ -1,0 +1,129 @@
+USE [power_state_station]
+GO
+
+/****** Object:  Table [dbo].[Station_Data]    Script Date: 9/7/2022 4:05:24 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Station_Data](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Station_name] [nvarchar](100) NOT NULL,
+	[Owner_name] [nvarchar](100) NOT NULL,
+	[addres_Station] [nvarchar](100) NOT NULL,
+	[phone_number] [nvarchar](100) NOT NULL,
+	[phone_number2] [nvarchar](100) NOT NULL,
+	[Logo_Station] [image] NULL,
+ CONSTRAINT [PK_Station_Data] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
+
+
+
+
+
+USE [power_state_station]
+GO
+
+/****** Object:  StoredProcedure [dbo].[Insert_Station_Data]    Script Date: 9/7/2022 4:06:03 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE proc [dbo].[Insert_Station_Data]
+@Station_name nvarchar(100),
+@Owner_name nvarchar(100),
+@addres_Station nvarchar(100),
+@phone_number nvarchar(100),
+@phone_number2 nvarchar(100),
+@Logo_Station Image  
+
+AS 
+BEGIN 
+
+INSERT INTO station_Data
+           (Station_name,Owner_name,addres_Station,phone_number,phone_number2,Logo_Station)
+     VALUES
+           (@Station_name,@Owner_name,@addres_Station,@phone_number,@phone_number2,@Logo_Station)
+END
+GO
+
+
+
+
+
+USE [power_state_station]
+GO
+
+/****** Object:  StoredProcedure [dbo].[Selecte_Station_Data]    Script Date: 9/7/2022 4:06:24 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE proc [dbo].[Selecte_Station_Data]
+
+As
+
+BEGIN
+
+SELECT 
+      [Station_name]
+      ,[Owner_name]
+      ,[addres_Station]
+      ,[phone_number]
+      ,[phone_number2]
+      ,[Logo_Station]
+  FROM Station_Data
+
+END
+GO
+
+
+
+
+
+
+
+USE [power_state_station]
+GO
+
+/****** Object:  StoredProcedure [dbo].[Update_Station_Data]    Script Date: 9/7/2022 4:07:15 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE proc [dbo].[Update_Station_Data]
+(@Station_name nvarchar(100),
+@Owner_name nvarchar(100),
+@addres_Station nvarchar(100),
+@phone_number nvarchar(100),
+@phone_number2 nvarchar(100),
+@Logo_Station Image 
+)
+AS
+BEGIN
+UPDATE Station_Data
+   SET 
+      [Station_name] = @Station_name
+      ,[Owner_name] = @Owner_name
+      ,[addres_Station] = @addres_Station
+      ,[phone_number] = @phone_number
+      ,[phone_number2] = @phone_number2
+      ,[Logo_Station] = @Logo_Station
+END
+GO
+

@@ -17,15 +17,15 @@ namespace Power_Station_System.DataBase
             access.open();
             pr[0] = new SqlParameter("@user_ID", SqlDbType.Int);
             pr[0].Value = user_ID;
-            pr[1] = new SqlParameter("@ful_name", SqlDbType.VarChar, 50);
+            pr[1] = new SqlParameter("@ful_name", SqlDbType.NVarChar, 50);
             pr[1].Value = ful_name;
-            pr[2] = new SqlParameter("@number", SqlDbType.VarChar, 50);
+            pr[2] = new SqlParameter("@number", SqlDbType.NVarChar, 50);
             pr[2].Value = number;
-            pr[3] = new SqlParameter("@adres", SqlDbType.VarChar, 50);
+            pr[3] = new SqlParameter("@adres", SqlDbType.NVarChar, 50);
             pr[3].Value = adres;
-            pr[4] = new SqlParameter("@user_name", SqlDbType.VarChar, 50);
+            pr[4] = new SqlParameter("@user_name", SqlDbType.NVarChar, 50);
             pr[4].Value = user_name;
-            pr[5] = new SqlParameter("@pass", SqlDbType.VarChar, 50);
+            pr[5] = new SqlParameter("@pass", SqlDbType.NVarChar, 50);
             pr[5].Value = pass;
 
             access.executor("insert_add_user", pr);
@@ -57,15 +57,15 @@ namespace Power_Station_System.DataBase
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
             SqlParameter[] pr = new SqlParameter[5];
-            pr[0] = new SqlParameter("@ful_name", SqlDbType.VarChar, 50);
+            pr[0] = new SqlParameter("@ful_name", SqlDbType.NVarChar, 50);
             pr[0].Value = ful_name;
-            pr[1] = new SqlParameter("@number", SqlDbType.VarChar, 50);
+            pr[1] = new SqlParameter("@number", SqlDbType.NVarChar, 50);
             pr[1].Value = number;
-            pr[2] = new SqlParameter("@adres", SqlDbType.VarChar, 50);
+            pr[2] = new SqlParameter("@adres", SqlDbType.NVarChar, 50);
             pr[2].Value = adres;
-            pr[3] = new SqlParameter("@user_name", SqlDbType.VarChar, 50);
+            pr[3] = new SqlParameter("@user_name", SqlDbType.NVarChar, 50);
             pr[3].Value = user_name;
-            pr[4] = new SqlParameter("@pass",SqlDbType.VarChar, 50);
+            pr[4] = new SqlParameter("@pass",SqlDbType.NVarChar, 50);
             pr[4].Value = pass;
             pr[5] = new SqlParameter("@user_ID", SqlDbType.Int);
             pr[5].Value = user_ID;

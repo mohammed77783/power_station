@@ -88,7 +88,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.label1.Location = new System.Drawing.Point(398, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 25);
+            this.label1.Size = new System.Drawing.Size(206, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "تعديل بيانات مشترك";
             // 
@@ -153,7 +153,7 @@
             this.meter_number_UP.PlaceholderText = "";
             this.meter_number_UP.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.meter_number_UP.SelectionStart = 0;
-            this.meter_number_UP.Size = new System.Drawing.Size(290, 36);
+            this.meter_number_UP.Size = new System.Drawing.Size(290, 41);
             this.meter_number_UP.TabIndex = 8;
             this.meter_number_UP.Texts = "";
             this.meter_number_UP.UnderlinedStyle = true;
@@ -165,7 +165,7 @@
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label10.Location = new System.Drawing.Point(400, 322);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(83, 21);
+            this.label10.Size = new System.Drawing.Size(101, 26);
             this.label10.TabIndex = 77;
             this.label10.Text = "رقم العداد :";
             // 
@@ -176,7 +176,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(515, 394);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(271, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(271, 25);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // ourPanel3
@@ -205,7 +205,7 @@
             this.comboBox2.Location = new System.Drawing.Point(0, 0);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox2.Size = new System.Drawing.Size(301, 25);
+            this.comboBox2.Size = new System.Drawing.Size(301, 30);
             this.comboBox2.TabIndex = 7;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
@@ -216,7 +216,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(847, 322);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 21);
+            this.label8.Size = new System.Drawing.Size(68, 26);
             this.label8.TabIndex = 74;
             this.label8.Text = "المربع :";
             // 
@@ -244,7 +244,7 @@
             this.comboBox1.Location = new System.Drawing.Point(0, 0);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox1.Size = new System.Drawing.Size(292, 25);
+            this.comboBox1.Size = new System.Drawing.Size(292, 30);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
@@ -255,7 +255,7 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(394, 204);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 21);
+            this.label7.Size = new System.Drawing.Size(119, 26);
             this.label7.TabIndex = 72;
             this.label7.Text = "نوع الاشتراك :";
             // 
@@ -278,7 +278,7 @@
             this.indenity_number_upda.PlaceholderText = "";
             this.indenity_number_upda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.indenity_number_upda.SelectionStart = 0;
-            this.indenity_number_upda.Size = new System.Drawing.Size(290, 36);
+            this.indenity_number_upda.Size = new System.Drawing.Size(290, 41);
             this.indenity_number_upda.TabIndex = 6;
             this.indenity_number_upda.Texts = "";
             this.indenity_number_upda.UnderlinedStyle = true;
@@ -290,7 +290,7 @@
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(394, 261);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 21);
+            this.label6.Size = new System.Drawing.Size(102, 26);
             this.label6.TabIndex = 70;
             this.label6.Text = "رقم الهوية :";
             this.label6.Click += new System.EventHandler(this.Label6_Click);
@@ -302,7 +302,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(819, 393);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 21);
+            this.label9.Size = new System.Drawing.Size(125, 26);
             this.label9.TabIndex = 67;
             this.label9.Text = "تاريخ الاشتراك :";
             // 
@@ -313,7 +313,7 @@
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(841, 261);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 21);
+            this.label5.Size = new System.Drawing.Size(103, 26);
             this.label5.TabIndex = 66;
             this.label5.Text = "نوع الهوية :";
             // 
@@ -324,7 +324,7 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(841, 204);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
+            this.label4.Size = new System.Drawing.Size(74, 26);
             this.label4.TabIndex = 65;
             this.label4.Text = "العنوان :";
             // 
@@ -347,7 +347,7 @@
             this.subscr_phnum_upd.PlaceholderText = "";
             this.subscr_phnum_upd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscr_phnum_upd.SelectionStart = 0;
-            this.subscr_phnum_upd.Size = new System.Drawing.Size(290, 36);
+            this.subscr_phnum_upd.Size = new System.Drawing.Size(290, 41);
             this.subscr_phnum_upd.TabIndex = 2;
             this.subscr_phnum_upd.Texts = "";
             this.subscr_phnum_upd.UnderlinedStyle = true;
@@ -359,7 +359,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(388, 138);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 21);
+            this.label3.Size = new System.Drawing.Size(113, 26);
             this.label3.TabIndex = 63;
             this.label3.Text = "رقم التواصل :";
             // 
@@ -370,7 +370,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(852, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 21);
+            this.label2.Size = new System.Drawing.Size(65, 26);
             this.label2.TabIndex = 62;
             this.label2.Text = "الإسم :";
             // 
@@ -393,7 +393,7 @@
             this.subscriper_name_upd.PlaceholderText = "";
             this.subscriper_name_upd.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.subscriper_name_upd.SelectionStart = 0;
-            this.subscriper_name_upd.Size = new System.Drawing.Size(290, 36);
+            this.subscriper_name_upd.Size = new System.Drawing.Size(290, 41);
             this.subscriper_name_upd.TabIndex = 1;
             this.subscriper_name_upd.Texts = "";
             this.subscriper_name_upd.UnderlinedStyle = true;
@@ -418,7 +418,7 @@
             this.sub_address_upda.PlaceholderText = "";
             this.sub_address_upda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.sub_address_upda.SelectionStart = 0;
-            this.sub_address_upda.Size = new System.Drawing.Size(290, 36);
+            this.sub_address_upda.Size = new System.Drawing.Size(290, 41);
             this.sub_address_upda.TabIndex = 3;
             this.sub_address_upda.Texts = "";
             this.sub_address_upda.UnderlinedStyle = true;
@@ -428,7 +428,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(44, 331);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
             this.checkBox2.TabIndex = 79;
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.CheckBox2_CheckedChanged);
@@ -462,12 +462,12 @@
             this.identity_ty.Location = new System.Drawing.Point(0, 0);
             this.identity_ty.Name = "identity_ty";
             this.identity_ty.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.identity_ty.Size = new System.Drawing.Size(292, 25);
+            this.identity_ty.Size = new System.Drawing.Size(292, 30);
             this.identity_ty.TabIndex = 4;
             // 
             // Udate_subscriper
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(987, 603);

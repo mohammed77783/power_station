@@ -94,6 +94,17 @@ namespace Power_Station_System.warning_code
 
         }
 
+        private void LblMsg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_alert_Load_1(object sender, EventArgs e)
+        {
+            this.TopMost = true;
+           
+        }
+
         public void showAlert(string msg, enmType type)
         {
             this.Opacity = 0.0;
@@ -122,6 +133,7 @@ namespace Power_Station_System.warning_code
                 case enmType.Success:
                     this.pictureBox1.Image = Resources.success11;
                     this.BackColor = Color.SeaGreen;
+                    
                     break;
                 case enmType.Error:
                     this.pictureBox1.Image = Resources.error11;
@@ -140,11 +152,27 @@ namespace Power_Station_System.warning_code
             }
 
             this.lblMsg.Text = msg;
+            bool IsOpen = false;
+            foreach (Form x in Application.OpenForms)
+            {
+                if (x.Text == "Form_alert")
+                {
+                    IsOpen = true;
+                    x.Focus();
 
+                    break;
+
+                }
+            }
+            if (IsOpen == false)
+            {
+
+            
             this.Show();
             this.action = enmAction.start;
             this.timer1.Interval = 1;
             timer1.Start();
+            }
         }
     }
 }

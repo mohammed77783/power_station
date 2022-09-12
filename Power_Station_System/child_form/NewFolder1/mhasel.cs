@@ -169,6 +169,7 @@ namespace Power_Station_System.chid_form
 
         private void Mhasel_Load(object sender, EventArgs e)
         {
+            textBox_name.Focus();
             try
             {
                 dataGridView1.DataSource = mhasell.get_mhasel();
