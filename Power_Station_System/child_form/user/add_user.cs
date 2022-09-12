@@ -18,11 +18,9 @@ namespace Power_Station_System.child_form.user
 
     {
        // SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
-<<<<<<< HEAD
+
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
-=======
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=power_state_station;Integrated Security=true");
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
 
         DataBase.users users = new DataBase.users();
         string ful_name;
@@ -319,7 +317,7 @@ namespace Power_Station_System.child_form.user
             child_form.user.pre add = new child_form.user.pre();
             add.ShowDialog();
         }
-<<<<<<< HEAD
+
 
         private void DataGridView2_Click(object sender, EventArgs e)
         {
@@ -331,7 +329,6 @@ namespace Power_Station_System.child_form.user
             pass = dataGridView2.CurrentRow.Cells[5].Value.ToString();
 
         }
-=======
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
     }
 }

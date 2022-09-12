@@ -15,11 +15,9 @@ namespace Power_Station_System.child_form.user
     public partial class pre : Form
     {
        // SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
-<<<<<<< HEAD
+
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
-=======
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=power_state_station;Integrated Security=true");
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
 
         SqlDataAdapter Da;
         DataTable Dts = new DataTable();

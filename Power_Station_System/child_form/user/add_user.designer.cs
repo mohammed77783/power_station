@@ -141,11 +141,9 @@
             this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton4.Name = "rjButton4";
             this.rjButton4.Size = new System.Drawing.Size(93, 36);
-<<<<<<< HEAD
+
             this.rjButton4.TabIndex = 8;
-=======
-            this.rjButton4.TabIndex = 3;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.rjButton4.Text = "اضافة";
             this.rjButton4.TextColor = System.Drawing.Color.Black;
             this.rjButton4.UseVisualStyleBackColor = false;
@@ -158,10 +156,9 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(110, 98);
-<<<<<<< HEAD
+
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-=======
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -202,11 +199,9 @@
             this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_Custom4.PasswordChar = true;
             this.textBox_Custom4.Size = new System.Drawing.Size(240, 38);
-<<<<<<< HEAD
+
             this.textBox_Custom4.TabIndex = 7;
-=======
-            this.textBox_Custom4.TabIndex = 13;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.textBox_Custom4.Texts = "";
             this.textBox_Custom4.UnderlinedStyle = false;
             this.textBox_Custom4._TextChanged += new System.EventHandler(this.TextBox_Custom4__TextChanged_1);
@@ -228,11 +223,9 @@
             this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_Custom5.PasswordChar = false;
             this.textBox_Custom5.Size = new System.Drawing.Size(240, 38);
-<<<<<<< HEAD
+
             this.textBox_Custom5.TabIndex = 5;
-=======
-            this.textBox_Custom5.TabIndex = 13;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.textBox_Custom5.Texts = "";
             this.textBox_Custom5.UnderlinedStyle = false;
             // 
@@ -252,11 +245,9 @@
             this.passw.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.passw.PasswordChar = true;
             this.passw.Size = new System.Drawing.Size(240, 38);
-<<<<<<< HEAD
+
             this.passw.TabIndex = 6;
-=======
-            this.passw.TabIndex = 12;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.passw.Texts = "";
             this.passw.UnderlinedStyle = false;
             // 
@@ -329,11 +320,9 @@
             this.textBox_Custom7.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_Custom7.PasswordChar = false;
             this.textBox_Custom7.Size = new System.Drawing.Size(261, 38);
-<<<<<<< HEAD
+
             this.textBox_Custom7.TabIndex = 4;
-=======
-            this.textBox_Custom7.TabIndex = 13;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.textBox_Custom7.Texts = "";
             this.textBox_Custom7.UnderlinedStyle = false;
             this.textBox_Custom7._TextChanged += new System.EventHandler(this.TextBox_Custom7__TextChanged);
@@ -354,11 +343,9 @@
             this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_Custom3.PasswordChar = false;
             this.textBox_Custom3.Size = new System.Drawing.Size(166, 38);
-<<<<<<< HEAD
+
             this.textBox_Custom3.TabIndex = 1;
-=======
-            this.textBox_Custom3.TabIndex = 13;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.textBox_Custom3.Texts = "";
             this.textBox_Custom3.UnderlinedStyle = false;
             this.textBox_Custom3.Load += new System.EventHandler(this.TextBox_Custom3_Load);
@@ -379,11 +366,9 @@
             this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_Custom2.PasswordChar = false;
             this.textBox_Custom2.Size = new System.Drawing.Size(261, 38);
-<<<<<<< HEAD
+
             this.textBox_Custom2.TabIndex = 3;
-=======
-            this.textBox_Custom2.TabIndex = 13;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.textBox_Custom2.Texts = "";
             this.textBox_Custom2.UnderlinedStyle = false;
             // 
@@ -403,11 +388,9 @@
             this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.textBox_Custom1.PasswordChar = false;
             this.textBox_Custom1.Size = new System.Drawing.Size(261, 38);
-<<<<<<< HEAD
+
             this.textBox_Custom1.TabIndex = 2;
-=======
-            this.textBox_Custom1.TabIndex = 12;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.textBox_Custom1.Texts = "";
             this.textBox_Custom1.UnderlinedStyle = false;
             // 
@@ -484,11 +467,9 @@
             this.rjButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton5.Name = "rjButton5";
             this.rjButton5.Size = new System.Drawing.Size(139, 36);
-<<<<<<< HEAD
+
             this.rjButton5.TabIndex = 12;
-=======
-            this.rjButton5.TabIndex = 6;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.rjButton5.Text = "إضافة صلاحيات";
             this.rjButton5.TextColor = System.Drawing.Color.White;
             this.rjButton5.UseVisualStyleBackColor = false;
@@ -518,11 +499,9 @@
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-<<<<<<< HEAD
+
             this.iconButton1.Location = new System.Drawing.Point(269, 7);
-=======
-            this.iconButton1.Location = new System.Drawing.Point(268, 7);
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(37, 38);
@@ -550,11 +529,9 @@
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
             this.search.Size = new System.Drawing.Size(251, 41);
-<<<<<<< HEAD
+
             this.search.TabIndex = 13;
-=======
-            this.search.TabIndex = 21;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
             // 
@@ -570,19 +547,13 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
+
             this.rjButton2.Location = new System.Drawing.Point(666, 7);
             this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(115, 36);
             this.rjButton2.TabIndex = 10;
-=======
-            this.rjButton2.Location = new System.Drawing.Point(671, 7);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(115, 36);
-            this.rjButton2.TabIndex = 3;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.rjButton2.Text = "تعديل";
             this.rjButton2.TextColor = System.Drawing.Color.White;
             this.rjButton2.UseVisualStyleBackColor = false;
@@ -601,19 +572,13 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-<<<<<<< HEAD
+
             this.rjButton3.Location = new System.Drawing.Point(545, 8);
             this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(115, 36);
             this.rjButton3.TabIndex = 11;
-=======
-            this.rjButton3.Location = new System.Drawing.Point(555, 7);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(115, 36);
-            this.rjButton3.TabIndex = 4;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.White;
             this.rjButton3.UseVisualStyleBackColor = false;
@@ -635,11 +600,9 @@
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(115, 36);
-<<<<<<< HEAD
+
             this.rjButton1.TabIndex = 9;
-=======
-            this.rjButton1.TabIndex = 2;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.rjButton1.Text = "اضافة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
             this.rjButton1.UseVisualStyleBackColor = false;

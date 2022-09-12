@@ -80,13 +80,10 @@
             this.search.BorderSize = 1;
             this.search.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-<<<<<<< HEAD
+
             this.search.Location = new System.Drawing.Point(618, 15);
             this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-=======
-            this.search.Location = new System.Drawing.Point(530, 12);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);

@@ -102,10 +102,7 @@ namespace Power_Station_System.warning_code
         private void Form_alert_Load_1(object sender, EventArgs e)
         {
             this.TopMost = true;
-<<<<<<< HEAD
-           
-=======
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
         }
 
         public void showAlert(string msg, enmType type)

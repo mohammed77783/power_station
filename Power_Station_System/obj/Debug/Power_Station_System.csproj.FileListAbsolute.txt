@@ -206,7 +206,6 @@ C:\Users\اسامه\Desktop\Our Project\power_station\power_station\Power_Statio
 C:\Users\اسامه\Desktop\Our Project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.exe
 C:\Users\اسامه\Desktop\Our Project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.pdb
 C:\Users\اسامه\Desktop\Our Project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
-<<<<<<< HEAD
 C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\bin\Debug\Power_Station_System.exe.config
 C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\bin\Debug\Power_Station_System.exe
 C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\bin\Debug\Power_Station_System.pdb
@@ -275,7 +274,6 @@ C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Statio
 C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\obj\Debug\Power_Station_System.pdb
 C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.NewFolder1.Station_Name.resources
 C:\Users\The Black Man\Desktop\Git Uploads\New folder\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
-=======
 C:\Users\Yasir\Documents\project4\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
 C:\Users\Yasir\Documents\project4\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_Area1.resources
 C:\Users\Yasir\Documents\project4\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.Add_bill.resources

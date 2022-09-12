@@ -31,10 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(@long));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-<<<<<<< HEAD
+
             this.button6 = new System.Windows.Forms.Button();
-=======
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -44,10 +43,7 @@
             this.rjTextBox2 = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
-=======
-            this.button6 = new System.Windows.Forms.Button();
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -77,7 +73,7 @@
             this.panel3.Size = new System.Drawing.Size(57, 54);
             this.panel3.TabIndex = 1;
             // 
-<<<<<<< HEAD
+
             // button6
             // 
             this.button6.FlatAppearance.BorderSize = 0;
@@ -94,8 +90,7 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
-=======
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -124,7 +119,7 @@
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // comboBox1
-<<<<<<< HEAD
+
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("LBC", 12.25F);
@@ -135,106 +130,106 @@
             this.comboBox1.Size = new System.Drawing.Size(291, 34);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
-=======
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("LBC", 12.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(49, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 29);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 7;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("LBC", 12.25F);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(115, 183);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(147, 40);
-            this.rjButton1.TabIndex = 2;
-            this.rjButton1.Text = "تسجيل دخول";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("LBC", 12.25F);
-            this.label3.Location = new System.Drawing.Point(306, 126);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 22);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "كلمة المرور";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("LBC", 12.25F);
-            this.label2.Location = new System.Drawing.Point(306, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "اسم المستخدم";
-            // 
-            // rjTextBox2
-            // 
-            this.rjTextBox2.BackColor = System.Drawing.SystemColors.Window;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox2.BorderRadius = 0;
-            this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.rjTextBox2.Location = new System.Drawing.Point(49, 124);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox2.PasswordChar = true;
-            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.SelectionStart = 0;
-            this.rjTextBox2.Size = new System.Drawing.Size(250, 31);
-            this.rjTextBox2.TabIndex = 1;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
-            this.rjTextBox2._TextChanged += new System.EventHandler(this.RjTextBox2__TextChanged);
-            this.rjTextBox2.Load += new System.EventHandler(this.RjTextBox2_Load);
-            this.rjTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RjTextBox2_KeyDown);
-            this.rjTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBox2_KeyPress);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Location = new System.Drawing.Point(146, 50);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(132, 128);
-            this.panel4.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+//=======
+//            // 
+//            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+//            this.comboBox1.Font = new System.Drawing.Font("LBC", 12.25F);
+//            this.comboBox1.FormattingEnabled = true;
+//            this.comboBox1.Location = new System.Drawing.Point(49, 70);
+//            this.comboBox1.Name = "comboBox1";
+//            this.comboBox1.Size = new System.Drawing.Size(250, 29);
+//            this.comboBox1.TabIndex = 5;
+//            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+//            // 
+//            // rjButton1
+//            // 
+//            this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+//            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+//            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+//            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+//            this.rjButton1.BorderRadius = 7;
+//            this.rjButton1.BorderSize = 0;
+//            this.rjButton1.FlatAppearance.BorderSize = 0;
+//            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+//            this.rjButton1.Font = new System.Drawing.Font("LBC", 12.25F);
+//            this.rjButton1.ForeColor = System.Drawing.Color.White;
+//            this.rjButton1.Location = new System.Drawing.Point(115, 183);
+//            this.rjButton1.Name = "rjButton1";
+//            this.rjButton1.Size = new System.Drawing.Size(147, 40);
+//            this.rjButton1.TabIndex = 2;
+//            this.rjButton1.Text = "تسجيل دخول";
+//            this.rjButton1.TextColor = System.Drawing.Color.White;
+//            this.rjButton1.UseVisualStyleBackColor = false;
+//            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
+//            // 
+//            // label3
+//            // 
+//            this.label3.AutoSize = true;
+//            this.label3.Font = new System.Drawing.Font("LBC", 12.25F);
+//            this.label3.Location = new System.Drawing.Point(306, 126);
+//            this.label3.Name = "label3";
+//            this.label3.Size = new System.Drawing.Size(86, 22);
+//            this.label3.TabIndex = 3;
+//            this.label3.Text = "كلمة المرور";
+//            // 
+//            // label2
+//            // 
+//            this.label2.AutoSize = true;
+//            this.label2.Font = new System.Drawing.Font("LBC", 12.25F);
+//            this.label2.Location = new System.Drawing.Point(306, 70);
+//            this.label2.Name = "label2";
+//            this.label2.Size = new System.Drawing.Size(113, 22);
+//            this.label2.TabIndex = 2;
+//            this.label2.Text = "اسم المستخدم";
+//            // 
+//            // rjTextBox2
+//            // 
+//            this.rjTextBox2.BackColor = System.Drawing.SystemColors.Window;
+//            this.rjTextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+//            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
+//            this.rjTextBox2.BorderRadius = 0;
+//            this.rjTextBox2.BorderSize = 2;
+//            this.rjTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+//            this.rjTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+//            this.rjTextBox2.Location = new System.Drawing.Point(49, 124);
+//            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+//            this.rjTextBox2.Multiline = false;
+//            this.rjTextBox2.Name = "rjTextBox2";
+//            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+//            this.rjTextBox2.PasswordChar = true;
+//            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
+//            this.rjTextBox2.PlaceholderText = "";
+//            this.rjTextBox2.SelectionStart = 0;
+//            this.rjTextBox2.Size = new System.Drawing.Size(250, 31);
+//            this.rjTextBox2.TabIndex = 1;
+//            this.rjTextBox2.Texts = "";
+//            this.rjTextBox2.UnderlinedStyle = false;
+//            this.rjTextBox2._TextChanged += new System.EventHandler(this.RjTextBox2__TextChanged);
+//            this.rjTextBox2.Load += new System.EventHandler(this.RjTextBox2_Load);
+//            this.rjTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RjTextBox2_KeyDown);
+//            this.rjTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.RjTextBox2_KeyPress);
+//            // 
+//            // panel4
+//            // 
+//            this.panel4.Controls.Add(this.pictureBox1);
+//            this.panel4.Location = new System.Drawing.Point(146, 50);
+//            this.panel4.Name = "panel4";
+//            this.panel4.Size = new System.Drawing.Size(132, 128);
+//            this.panel4.TabIndex = 2;
+//            // 
+//            // pictureBox1
+//            // 
+//            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+//            this.pictureBox1.Location = new System.Drawing.Point(16, 14);
+//            this.pictureBox1.Name = "pictureBox1";
+//            this.pictureBox1.Size = new System.Drawing.Size(100, 111);
+//            this.pictureBox1.TabIndex = 0;
+//            this.pictureBox1.TabStop = false;
+//>>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
             // 
             // button6
             // 
-<<<<<<< HEAD
+
             this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
@@ -320,29 +315,27 @@
             this.pictureBox1.Size = new System.Drawing.Size(117, 137);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-=======
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(8, 12);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(38, 23);
-            this.button6.TabIndex = 6;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+//=======
+//            this.button6.FlatAppearance.BorderSize = 0;
+//            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+//            this.button6.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+//            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
+//            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+//            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+//            this.button6.Location = new System.Drawing.Point(8, 12);
+//            this.button6.Name = "button6";
+//            this.button6.Size = new System.Drawing.Size(38, 23);
+//            this.button6.TabIndex = 6;
+//            this.button6.UseVisualStyleBackColor = true;
+//            this.button6.Click += new System.EventHandler(this.Button6_Click);
+//>>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
             // 
             // @long
             // 
             this.AcceptButton = this.rjButton1;
-<<<<<<< HEAD
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
-=======
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(516, 554);

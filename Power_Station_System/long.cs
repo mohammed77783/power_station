@@ -19,11 +19,9 @@ namespace Power_Station_System
 
 
        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
-<<<<<<< HEAD
+
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
-=======
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SDKSRTB;Initial Catalog=power_state_station;Integrated Security=true");
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
 
         public @long()
         {
@@ -67,11 +65,9 @@ namespace Power_Station_System
             if (ra.HasRows)
             {
                 Program.user_ID = ra[0].ToString();
-<<<<<<< HEAD
+
                // this.Alert(" تم الدخول بنجاح", Form_alert.enmType.Success);
-=======
-                this.Alert(" تم الدخول بنجاح", Form_alert.enmType.Success);
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
                
                 /* Program.user_ID.ToString()*/
                 Form1 main = new Form1();
@@ -91,11 +87,7 @@ namespace Power_Station_System
 
         private void long_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-            
-=======
-           
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
         }
 
         private void Panel2_Paint(object sender, PaintEventArgs e)
@@ -141,13 +133,12 @@ namespace Power_Station_System
         {
             this.Close();
         }
-<<<<<<< HEAD
+
 
         private void long_Activated(object sender, EventArgs e)
         {
             rjTextBox2.Focus();
         }
-=======
->>>>>>> 5e38ade13c9e8577da92a910f28c0284ef4ed254
+
     }
 }
