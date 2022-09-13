@@ -29,15 +29,22 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.search = new RJCodeAdvance.RJControls.RJTextBox();
+            this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
+            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             this.manth_fee = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -77,14 +84,7 @@
             this.gr_hol_mony = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gr_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.blok = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.label12 = new System.Windows.Forms.Label();
-            this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
-            this.search = new RJCodeAdvance.RJControls.RJTextBox();
-            this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
-            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
-            this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -121,6 +121,27 @@
             this.panel2.Size = new System.Drawing.Size(1128, 43);
             this.panel2.TabIndex = 5;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 0;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton2.Location = new System.Drawing.Point(824, 8);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(154, 29);
+            this.rjButton2.TabIndex = 23;
+            this.rjButton2.Text = "طباعة جميع الفواتير";
+            this.rjButton2.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.RjButton2_Click);
             // 
             // iconButton3
             // 
@@ -169,6 +190,72 @@
             this.iconButton1.TabIndex = 22;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
+            // search
+            // 
+            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.search.BackColor = System.Drawing.Color.White;
+            this.search.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.search.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.search.BorderRadius = 0;
+            this.search.BorderSize = 1;
+            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.search.Location = new System.Drawing.Point(13, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4);
+            this.search.Multiline = false;
+            this.search.Name = "search";
+            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.search.PasswordChar = false;
+            this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.search.PlaceholderText = "ابحث هنا..";
+            this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.search.SelectionStart = 0;
+            this.search.Size = new System.Drawing.Size(215, 33);
+            this.search.TabIndex = 21;
+            this.search.Texts = "";
+            this.search.UnderlinedStyle = true;
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 0;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.ForeColor = System.Drawing.Color.Transparent;
+            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton3.Location = new System.Drawing.Point(692, 8);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(119, 29);
+            this.rjButton3.TabIndex = 4;
+            this.rjButton3.Text = "حذف";
+            this.rjButton3.TextColor = System.Drawing.Color.Transparent;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 0;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(991, 8);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(119, 29);
+            this.rjButton1.TabIndex = 2;
+            this.rjButton1.Text = "حفظ";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -212,6 +299,28 @@
             this.groupBox1.Text = "بيانات الفاتورة";
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(250, 202);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(72, 16);
+            this.label12.TabIndex = 97;
+            this.label12.Text = "منفذ الهاتف";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Enabled = false;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(18, 196);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(223, 22);
+            this.comboBox2.TabIndex = 96;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -222,6 +331,26 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(223, 22);
             this.dateTimePicker1.TabIndex = 87;
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton4.BorderRadius = 0;
+            this.rjButton4.BorderSize = 0;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.ForeColor = System.Drawing.Color.White;
+            this.rjButton4.Location = new System.Drawing.Point(901, 221);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(119, 29);
+            this.rjButton4.TabIndex = 95;
+            this.rjButton4.Text = "اضافة";
+            this.rjButton4.TextColor = System.Drawing.Color.White;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            this.rjButton4.Click += new System.EventHandler(this.RjButton4_Click);
             // 
             // manth_fee
             // 
@@ -526,14 +655,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -550,14 +679,14 @@
             this.gr_hol_mony,
             this.gr_date,
             this.blok});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
@@ -655,135 +784,6 @@
             this.blok.HeaderText = "المربع";
             this.blok.Name = "blok";
             this.blok.Visible = false;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Enabled = false;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(18, 196);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(223, 22);
-            this.comboBox2.TabIndex = 96;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(250, 202);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(72, 16);
-            this.label12.TabIndex = 97;
-            this.label12.Text = "منفذ الهاتف";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 0;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton2.Location = new System.Drawing.Point(824, 8);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(154, 29);
-            this.rjButton2.TabIndex = 23;
-            this.rjButton2.Text = "طباعة جميع الفواتير";
-            this.rjButton2.TextColor = System.Drawing.Color.Transparent;
-            this.rjButton2.UseVisualStyleBackColor = false;
-            this.rjButton2.Click += new System.EventHandler(this.RjButton2_Click);
-            // 
-            // search
-            // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.search.BackColor = System.Drawing.Color.White;
-            this.search.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.search.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.search.BorderRadius = 0;
-            this.search.BorderSize = 1;
-            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(13, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4);
-            this.search.Multiline = false;
-            this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
-            this.search.PasswordChar = false;
-            this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.search.PlaceholderText = "ابحث هنا..";
-            this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(215, 33);
-            this.search.TabIndex = 21;
-            this.search.Texts = "";
-            this.search.UnderlinedStyle = true;
-            // 
-            // rjButton3
-            // 
-            this.rjButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 0;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.ForeColor = System.Drawing.Color.Transparent;
-            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(692, 8);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(119, 29);
-            this.rjButton3.TabIndex = 4;
-            this.rjButton3.Text = "حذف";
-            this.rjButton3.TextColor = System.Drawing.Color.Transparent;
-            this.rjButton3.UseVisualStyleBackColor = false;
-            this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 0;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(991, 8);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(119, 29);
-            this.rjButton1.TabIndex = 2;
-            this.rjButton1.Text = "حفظ";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
-            // 
-            // rjButton4
-            // 
-            this.rjButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.White;
-            this.rjButton4.Location = new System.Drawing.Point(901, 221);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(119, 29);
-            this.rjButton4.TabIndex = 95;
-            this.rjButton4.Text = "اضافة";
-            this.rjButton4.TextColor = System.Drawing.Color.White;
-            this.rjButton4.UseVisualStyleBackColor = false;
-            this.rjButton4.Click += new System.EventHandler(this.RjButton4_Click);
             // 
             // Add_bill
             // 

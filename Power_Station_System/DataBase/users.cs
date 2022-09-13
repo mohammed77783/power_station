@@ -72,6 +72,20 @@ namespace Power_Station_System.DataBase
             access.executor("udete_add_user", pr);
             access.close();
         }
+        public DataTable login_user(string ID, string PWd)
+        {
+            DataBase.Access_layer dA = new DataBase.Access_layer();
+            SqlParameter[] pr = new SqlParameter[2];
+            pr[0] = new SqlParameter("@user_name", SqlDbType.VarChar, 50);
+            pr[0].Value = ID;
+            pr[1] = new SqlParameter("@pass", SqlDbType.VarChar, 50);
+            pr[1].Value = PWd;
+            DataTable dt = new DataTable();
+            dA.open();
+            dt = dA.selec_table("usser_login", pr);
+            dA.close();
+            return dt;
 
+        }
     }
 }

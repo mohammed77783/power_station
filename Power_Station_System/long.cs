@@ -17,12 +17,6 @@ namespace Power_Station_System
     {
         DataBase.users us = new DataBase.users();
 
-
-       //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
-
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
-
-
         public @long()
         {
             InitializeComponent();
@@ -52,37 +46,23 @@ namespace Power_Station_System
 
         private void RjButton1_Click(object sender, EventArgs e)
         {
-
-
-            SqlCommand cmd = new SqlCommand("select user_ID,pass,ful_name from add_user where user_name=@user_name and pass=@pass ",con);
-            
-            cmd.Parameters.Add(new SqlParameter("@user_name", SqlDbType.VarChar)).Value = comboBox1.Text;
-            cmd.Parameters.Add(new SqlParameter("@pass", SqlDbType.VarChar)).Value = rjTextBox2.Texts;
-
-            con.Open();
-            SqlDataReader ra = cmd.ExecuteReader();
-            ra.Read();
-            if (ra.HasRows)
+            DataTable DD = us.login_user(comboBox1.Text, rjTextBox2.Texts);
+            if (DD.Rows.Count > 0)
             {
-                Program.user_ID = ra[0].ToString();
-
-               // this.Alert(" تم الدخول بنجاح", Form_alert.enmType.Success);
-
-               
-                /* Program.user_ID.ToString()*/
                 Form1 main = new Form1();
-                main.lb_user.Text = ra[2].ToString();
+                main.lb_user.Text = DD.Rows[0][2].ToString();
                 main.Show();
-               
-                
+
                 this.Hide();
+
             }
             else
-                this.Alert("تاكد من كتابة كلمة المرور  ", Form_alert.enmType.Error);
+            {
+                MessageBox.Show("اسم المستخدم أو كلمة المرور خاطئة", "خطأ", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
+            
           
-            con.Close();
-            ra.Close();
         }
 
         private void long_Load(object sender, EventArgs e)
