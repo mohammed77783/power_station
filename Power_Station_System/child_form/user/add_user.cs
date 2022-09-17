@@ -17,9 +17,9 @@ namespace Power_Station_System.child_form.user
     public partial class add_user : Form
 
     {
-       // SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
-
         SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
+
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");
 
 
         DataBase.users users = new DataBase.users();
@@ -128,11 +128,7 @@ namespace Power_Station_System.child_form.user
                     MessageBox.Show(" إسم العنوان المستخدم   فارغ ");
                     return;
                 }
-                else if (textBox_Custom3.Texts.Trim().Length < 1)
-                {
-                    MessageBox.Show(" إسم العنوان رقم المستخدم   فارغ ");
-                    return;
-                }
+
                 else if (textBox_Custom5.Texts.Trim().Length < 1)
                 {
                     MessageBox.Show("  اسم الدخول    فارغ ");
@@ -148,30 +144,38 @@ namespace Power_Station_System.child_form.user
                     try
                     {
 
+                        users.Add_user(Convert.ToInt16(textBox_Custom3.Texts),textBox_Custom1.Texts, textBox_Custom2.Texts, textBox_Custom7.Texts, textBox_Custom5.Texts, pass);
 
-                        SqlCommand cmd = new SqlCommand("insert into add_user values(@user_ID,@ful_name,@number,@user_name,@pass,@adres) " +
-                             "insert into tb_priv(priv_screen_ID,priv_user_ID) select screen_ID,@user_ID from tb_screen ", con);
-                        cmd.Parameters.Add(new SqlParameter("@user_ID", SqlDbType.Int)).Value = Convert.ToInt32(textBox_Custom3.Texts);
-                        cmd.Parameters.Add(new SqlParameter("@ful_name", SqlDbType.NVarChar, (50))).Value = textBox_Custom1.Texts;
-                        cmd.Parameters.Add(new SqlParameter("@number", SqlDbType.NVarChar, (50))).Value = textBox_Custom2.Texts;
-
-                        cmd.Parameters.Add(new SqlParameter("@user_name", SqlDbType.NVarChar, (50))).Value = textBox_Custom5.Texts;
-
-                        cmd.Parameters.Add(new SqlParameter("@pass", SqlDbType.NVarChar, (50))).Value = pass;
-                        cmd.Parameters.Add(new SqlParameter("@adres", SqlDbType.NVarChar, (50))).Value = textBox_Custom7.Texts;
-                        con.Open();
-                        cmd.ExecuteNonQuery();
-                        con.Close();
                         MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        //this.Alert(" تمت الإضافة بنجاح", Form_alert.enmType.Success);
 
+                        Clear();
+                        this.Passw_Load(null, null);
+                        
+                        //dataGridView2.DataSource = users.get_user();
+                        //SqlCommand cmd = new SqlCommand("insert into add_user values(@user_ID,@ful_name,@number,@user_name,@pass,@adres) " +
+                        //     "insert into tb_priv(priv_screen_ID,priv_user_ID) select screen_ID,@user_ID from tb_screen ", con);
+                        //cmd.Parameters.Add(new SqlParameter("@user_ID", SqlDbType.Int)).Value = Convert.ToInt32(textBox_Custom3.Texts);
+                        //cmd.Parameters.Add(new SqlParameter("@ful_name", SqlDbType.NVarChar, (50))).Value = textBox_Custom1.Texts;
+                        //cmd.Parameters.Add(new SqlParameter("@number", SqlDbType.NVarChar, (50))).Value = textBox_Custom2.Texts;
 
+                        //cmd.Parameters.Add(new SqlParameter("@user_name", SqlDbType.NVarChar, (50))).Value = textBox_Custom5.Texts;
+
+                        //cmd.Parameters.Add(new SqlParameter("@pass", SqlDbType.NVarChar, (50))).Value = pass;
+                        //cmd.Parameters.Add(new SqlParameter("@adres", SqlDbType.NVarChar, (50))).Value = textBox_Custom7.Texts;
+                        //con.Open();
+                        //cmd.ExecuteNonQuery();
+                        //con.Close();
+                        //MessageBox.Show("تمت الاضافة بنجاح", "عملية الاضافة", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
                     catch (Exception ex)
                     {
                         MessageBox.Show(ex.Message);
+                        
                     }
                 }
+                dataGridView2.DataSource = users.get_user();
             }
                 if (rjButton1.Text == "حقظ التغيرات")
             {
@@ -191,6 +195,7 @@ namespace Power_Station_System.child_form.user
                     MessageBox.Show(" إسم العنوان المستخدم   فارغ ");
                     return;
                 }
+
                 else if (textBox_Custom5.Texts.Trim().Length < 1)
                 {
                     MessageBox.Show("  اسم الدخول    فارغ ");
@@ -215,7 +220,10 @@ namespace Power_Station_System.child_form.user
             {
                 MessageBox.Show(ex.Message);
             }
-        }
+
+
+            }
+            
         }
 
         private void Add_user_Load(object sender, EventArgs e)
@@ -324,11 +332,25 @@ namespace Power_Station_System.child_form.user
             user_ID = Convert.ToInt16(dataGridView2.CurrentRow.Cells[0].Value.ToString());
              ful_name =dataGridView2.CurrentRow.Cells[1].Value.ToString();
             number = dataGridView2.CurrentRow.Cells[2].Value.ToString();
-            adres = dataGridView2.CurrentRow.Cells[3].Value.ToString();
-            user_name = dataGridView2.CurrentRow.Cells[4].Value.ToString();
-            pass = dataGridView2.CurrentRow.Cells[5].Value.ToString();
+            adres = dataGridView2.CurrentRow.Cells[5].Value.ToString();
+            user_name = dataGridView2.CurrentRow.Cells[3].Value.ToString();
+            pass = dataGridView2.CurrentRow.Cells[4].Value.ToString();
+           
+        }
+
+        private void TextBox_Custom1__TextChanged(object sender, EventArgs e)
+        {
 
         }
 
+        private void Passw_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

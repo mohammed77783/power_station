@@ -22,7 +22,7 @@ namespace Power_Station_System
 
            Application.Run(new @long());
            
-           //Application.Run(new Form1());
+         //Application.Run(new Form1());
 
         }
     }

@@ -71,6 +71,12 @@ namespace Power_Station_System.chid_form
                     this.Alert("إالمنطقة فارغة", Form_alert.enmType.Warning);
                     return;
                 }
+                else if (rjTextBox2.Texts.Trim().Length < 1)
+                {
+                    // MessageBox.Show("العداد المركزي فارغ ");
+                    this.Alert("العداد المركزي فارغ", Form_alert.enmType.Warning);
+                    return;
+                }
 
 
                 else

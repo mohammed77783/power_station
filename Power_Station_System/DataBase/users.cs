@@ -10,13 +10,13 @@ namespace Power_Station_System.DataBase
     class users
     {
 
-        public void Add_user( int user_ID, string ful_name, string number, string adres,string user_name,string pass)
+        public void Add_user( int Id ,string ful_name, string number, string adres,string user_name,string pass)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
-            SqlParameter[] pr = new SqlParameter[5];
+            SqlParameter[] pr = new SqlParameter[6];
             access.open();
             pr[0] = new SqlParameter("@user_ID", SqlDbType.Int);
-            pr[0].Value = user_ID;
+            pr[0].Value = Id;
             pr[1] = new SqlParameter("@ful_name", SqlDbType.NVarChar, 50);
             pr[1].Value = ful_name;
             pr[2] = new SqlParameter("@number", SqlDbType.NVarChar, 50);
@@ -56,7 +56,8 @@ namespace Power_Station_System.DataBase
         public void Update_add_user(string ful_name, string number, string adres, string user_name, string pass,int user_ID)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
-            SqlParameter[] pr = new SqlParameter[5];
+            SqlParameter[] pr = new SqlParameter[6];
+            access.open();
             pr[0] = new SqlParameter("@ful_name", SqlDbType.NVarChar, 50);
             pr[0].Value = ful_name;
             pr[1] = new SqlParameter("@number", SqlDbType.NVarChar, 50);

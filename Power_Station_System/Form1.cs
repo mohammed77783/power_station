@@ -141,6 +141,8 @@ namespace Power_Station_System
                 panel5.Visible = false;
             if (panel6.Visible == true)
                 panel6.Visible = false;
+            if (panel7.Visible == true)
+                panel7.Visible = false;
         }
         private void IconButton1_Click(object sender, EventArgs e)
         {
@@ -1090,6 +1092,180 @@ namespace Power_Station_System
 
 
             }
+        }
+
+        private void Button34_Click(object sender, EventArgs e)
+        {
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "سند قبض")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "سند قبض";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+
+
+                page = new child_form.receiptt();
+                tabCont = new TabPage("سند قبض");
+
+
+
+                label3.Text = ("سند قبض");
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+
+
+            }
+        }
+
+        private void Button33_Click(object sender, EventArgs e)
+        {
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "كشف حساب")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "كشف حساب";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+
+
+                page = new child_form.acconting();
+                tabCont = new TabPage("كشف حساب");
+
+
+
+                label3.Text = ("إدارة العملاء");
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+
+
+            }
+        }
+
+        private void Button35_Click(object sender, EventArgs e)
+        {
+            showsubmenu(panel7);
+        }
+
+        private void Button31_Click(object sender, EventArgs e)
+        {
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "سند قبض")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "سند قبض";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+
+
+                page = new child_form.receiptt();
+                tabCont = new TabPage("سند قبض");
+
+
+
+                label3.Text = ("سند قبض");
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+
+
+            }
+        }
+
+        private void Button29_Click_1(object sender, EventArgs e)
+        {
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "كشف حساب")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "كشف حساب";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+
+
+                page = new child_form.acconting();
+                tabCont = new TabPage("كشف حساب");
+
+
+
+                label3.Text = ("إدارة العملاء");
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+
+
+            }
+        }
+
+        private void Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void IconButton5_Click(object sender, EventArgs e)

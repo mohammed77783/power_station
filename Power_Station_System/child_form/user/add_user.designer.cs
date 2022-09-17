@@ -35,32 +35,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox_Custom4 = new TextBox_Custom.AD_Controls.TextBox_Custom();
-            this.textBox_Custom5 = new TextBox_Custom.AD_Controls.TextBox_Custom();
-            this.passw = new TextBox_Custom.AD_Controls.TextBox_Custom();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox_Custom7 = new TextBox_Custom.AD_Controls.TextBox_Custom();
-            this.textBox_Custom3 = new TextBox_Custom.AD_Controls.TextBox_Custom();
-            this.textBox_Custom2 = new TextBox_Custom.AD_Controls.TextBox_Custom();
-            this.textBox_Custom1 = new TextBox_Custom.AD_Controls.TextBox_Custom();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.search = new RJCodeAdvance.RJControls.RJTextBox();
-            this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
-            this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
-            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +56,19 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
+            this.textBox_Custom4 = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.textBox_Custom5 = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.passw = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.textBox_Custom7 = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.textBox_Custom3 = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.textBox_Custom2 = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.textBox_Custom1 = new TextBox_Custom.AD_Controls.TextBox_Custom();
+            this.rjButton5 = new RJCodeAdvance.RJControls.RJButton();
+            this.search = new RJCodeAdvance.RJControls.RJTextBox();
+            this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
+            this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
+            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -126,28 +126,6 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "صورة المستخدم";
             // 
-            // rjButton4
-            // 
-            this.rjButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.rjButton4.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.Black;
-            this.rjButton4.Location = new System.Drawing.Point(17, 150);
-            this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(93, 36);
-
-            this.rjButton4.TabIndex = 8;
-
-            this.rjButton4.Text = "اضافة";
-            this.rjButton4.TextColor = System.Drawing.Color.Black;
-            this.rjButton4.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -156,9 +134,7 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(110, 98);
-
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -182,74 +158,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "بيانات الحساب";
             this.groupBox3.Enter += new System.EventHandler(this.GroupBox3_Enter);
-            // 
-            // textBox_Custom4
-            // 
-            this.textBox_Custom4.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox_Custom4.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox_Custom4.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_Custom4.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox_Custom4.BorderSize = 2;
-            this.textBox_Custom4.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.textBox_Custom4.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom4.Location = new System.Drawing.Point(8, 165);
-            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_Custom4.Multiline = false;
-            this.textBox_Custom4.Name = "textBox_Custom4";
-            this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.textBox_Custom4.PasswordChar = true;
-            this.textBox_Custom4.Size = new System.Drawing.Size(240, 38);
-
-            this.textBox_Custom4.TabIndex = 7;
-
-            this.textBox_Custom4.Texts = "";
-            this.textBox_Custom4.UnderlinedStyle = false;
-            this.textBox_Custom4._TextChanged += new System.EventHandler(this.TextBox_Custom4__TextChanged_1);
-            this.textBox_Custom4.Validated += new System.EventHandler(this.TextBox_Custom4_Validated);
-            // 
-            // textBox_Custom5
-            // 
-            this.textBox_Custom5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox_Custom5.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox_Custom5.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_Custom5.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox_Custom5.BorderSize = 2;
-            this.textBox_Custom5.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.textBox_Custom5.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom5.Location = new System.Drawing.Point(8, 74);
-            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_Custom5.Multiline = false;
-            this.textBox_Custom5.Name = "textBox_Custom5";
-            this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.textBox_Custom5.PasswordChar = false;
-            this.textBox_Custom5.Size = new System.Drawing.Size(240, 38);
-
-            this.textBox_Custom5.TabIndex = 5;
-
-            this.textBox_Custom5.Texts = "";
-            this.textBox_Custom5.UnderlinedStyle = false;
-            // 
-            // passw
-            // 
-            this.passw.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.passw.BackColor = System.Drawing.Color.GhostWhite;
-            this.passw.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.passw.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.passw.BorderSize = 2;
-            this.passw.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.passw.ForeColor = System.Drawing.Color.DimGray;
-            this.passw.Location = new System.Drawing.Point(8, 119);
-            this.passw.Margin = new System.Windows.Forms.Padding(5);
-            this.passw.Multiline = false;
-            this.passw.Name = "passw";
-            this.passw.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.passw.PasswordChar = true;
-            this.passw.Size = new System.Drawing.Size(240, 38);
-
-            this.passw.TabIndex = 6;
-
-            this.passw.Texts = "";
-            this.passw.UnderlinedStyle = false;
             // 
             // label4
             // 
@@ -303,96 +211,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "بيانات شخصية";
             this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
-            // 
-            // textBox_Custom7
-            // 
-            this.textBox_Custom7.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox_Custom7.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox_Custom7.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_Custom7.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox_Custom7.BorderSize = 2;
-            this.textBox_Custom7.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.textBox_Custom7.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom7.Location = new System.Drawing.Point(15, 167);
-            this.textBox_Custom7.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_Custom7.Multiline = false;
-            this.textBox_Custom7.Name = "textBox_Custom7";
-            this.textBox_Custom7.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.textBox_Custom7.PasswordChar = false;
-            this.textBox_Custom7.Size = new System.Drawing.Size(261, 38);
-
-            this.textBox_Custom7.TabIndex = 4;
-
-            this.textBox_Custom7.Texts = "";
-            this.textBox_Custom7.UnderlinedStyle = false;
-            this.textBox_Custom7._TextChanged += new System.EventHandler(this.TextBox_Custom7__TextChanged);
-            // 
-            // textBox_Custom3
-            // 
-            this.textBox_Custom3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox_Custom3.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox_Custom3.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_Custom3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox_Custom3.BorderSize = 2;
-            this.textBox_Custom3.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.textBox_Custom3.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom3.Location = new System.Drawing.Point(108, 25);
-            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_Custom3.Multiline = false;
-            this.textBox_Custom3.Name = "textBox_Custom3";
-            this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.textBox_Custom3.PasswordChar = false;
-            this.textBox_Custom3.Size = new System.Drawing.Size(166, 38);
-
-            this.textBox_Custom3.TabIndex = 1;
-
-            this.textBox_Custom3.Texts = "";
-            this.textBox_Custom3.UnderlinedStyle = false;
-            this.textBox_Custom3.Load += new System.EventHandler(this.TextBox_Custom3_Load);
-            // 
-            // textBox_Custom2
-            // 
-            this.textBox_Custom2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox_Custom2.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox_Custom2.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_Custom2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox_Custom2.BorderSize = 2;
-            this.textBox_Custom2.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.textBox_Custom2.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom2.Location = new System.Drawing.Point(15, 119);
-            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_Custom2.Multiline = false;
-            this.textBox_Custom2.Name = "textBox_Custom2";
-            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.textBox_Custom2.PasswordChar = false;
-            this.textBox_Custom2.Size = new System.Drawing.Size(261, 38);
-
-            this.textBox_Custom2.TabIndex = 3;
-
-            this.textBox_Custom2.Texts = "";
-            this.textBox_Custom2.UnderlinedStyle = false;
-            // 
-            // textBox_Custom1
-            // 
-            this.textBox_Custom1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBox_Custom1.BackColor = System.Drawing.Color.GhostWhite;
-            this.textBox_Custom1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox_Custom1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBox_Custom1.BorderSize = 2;
-            this.textBox_Custom1.Font = new System.Drawing.Font("Tahoma", 9.5F);
-            this.textBox_Custom1.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom1.Location = new System.Drawing.Point(15, 73);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox_Custom1.Multiline = false;
-            this.textBox_Custom1.Name = "textBox_Custom1";
-            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.textBox_Custom1.PasswordChar = false;
-            this.textBox_Custom1.Size = new System.Drawing.Size(261, 38);
-
-            this.textBox_Custom1.TabIndex = 2;
-
-            this.textBox_Custom1.Texts = "";
-            this.textBox_Custom1.UnderlinedStyle = false;
             // 
             // label9
             // 
@@ -450,31 +268,6 @@
             this.panel2.TabIndex = 6;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
-            // rjButton5
-            // 
-            this.rjButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton5.BorderRadius = 7;
-            this.rjButton5.BorderSize = 0;
-            this.rjButton5.FlatAppearance.BorderSize = 0;
-            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton5.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.rjButton5.ForeColor = System.Drawing.Color.White;
-            this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton5.Location = new System.Drawing.Point(346, 8);
-            this.rjButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton5.Name = "rjButton5";
-            this.rjButton5.Size = new System.Drawing.Size(139, 36);
-
-            this.rjButton5.TabIndex = 12;
-
-            this.rjButton5.Text = "إضافة صلاحيات";
-            this.rjButton5.TextColor = System.Drawing.Color.White;
-            this.rjButton5.UseVisualStyleBackColor = false;
-            this.rjButton5.Click += new System.EventHandler(this.RjButton5_Click);
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.iconButton1);
@@ -499,114 +292,12 @@
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-
             this.iconButton1.Location = new System.Drawing.Point(269, 7);
-
             this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Size = new System.Drawing.Size(37, 38);
             this.iconButton1.TabIndex = 22;
             this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // search
-            // 
-            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.search.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.search.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.search.BorderRadius = 0;
-            this.search.BorderSize = 1;
-            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(15, 6);
-            this.search.Margin = new System.Windows.Forms.Padding(5);
-            this.search.Multiline = false;
-            this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
-            this.search.PasswordChar = false;
-            this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.search.PlaceholderText = "ابحث هنا..";
-            this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(251, 41);
-
-            this.search.TabIndex = 13;
-
-            this.search.Texts = "";
-            this.search.UnderlinedStyle = true;
-            // 
-            // rjButton2
-            // 
-            this.rjButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 7;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-
-            this.rjButton2.Location = new System.Drawing.Point(666, 7);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(115, 36);
-            this.rjButton2.TabIndex = 10;
-
-            this.rjButton2.Text = "تعديل";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
-            this.rjButton2.Click += new System.EventHandler(this.RjButton2_Click);
-            // 
-            // rjButton3
-            // 
-            this.rjButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton3.BorderRadius = 7;
-            this.rjButton3.BorderSize = 0;
-            this.rjButton3.FlatAppearance.BorderSize = 0;
-            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-
-            this.rjButton3.Location = new System.Drawing.Point(545, 8);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(115, 36);
-            this.rjButton3.TabIndex = 11;
-
-            this.rjButton3.Text = "حذف";
-            this.rjButton3.TextColor = System.Drawing.Color.White;
-            this.rjButton3.UseVisualStyleBackColor = false;
-            this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
-            // 
-            // rjButton1
-            // 
-            this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 7;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(787, 7);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(115, 36);
-
-            this.rjButton1.TabIndex = 9;
-
-            this.rjButton1.Text = "اضافة";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
-            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
             // 
             // panel4
             // 
@@ -668,6 +359,7 @@
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(933, 227);
             this.dataGridView2.TabIndex = 22;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView2_CellClick);
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView2_CellContentClick);
             this.dataGridView2.Click += new System.EventHandler(this.DataGridView2_Click);
             // 
@@ -718,6 +410,287 @@
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // rjButton4
+            // 
+            this.rjButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.rjButton4.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton4.BorderRadius = 0;
+            this.rjButton4.BorderSize = 0;
+            this.rjButton4.FlatAppearance.BorderSize = 0;
+            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton4.ForeColor = System.Drawing.Color.Black;
+            this.rjButton4.Location = new System.Drawing.Point(17, 150);
+            this.rjButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton4.Name = "rjButton4";
+            this.rjButton4.Size = new System.Drawing.Size(93, 36);
+            this.rjButton4.TabIndex = 8;
+            this.rjButton4.Text = "اضافة";
+            this.rjButton4.TextColor = System.Drawing.Color.Black;
+            this.rjButton4.UseVisualStyleBackColor = false;
+            // 
+            // textBox_Custom4
+            // 
+            this.textBox_Custom4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom4.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox_Custom4.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_Custom4.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_Custom4.BorderSize = 2;
+            this.textBox_Custom4.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.textBox_Custom4.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox_Custom4.Location = new System.Drawing.Point(8, 165);
+            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox_Custom4.Multiline = false;
+            this.textBox_Custom4.Name = "textBox_Custom4";
+            this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.textBox_Custom4.PasswordChar = true;
+            this.textBox_Custom4.Size = new System.Drawing.Size(240, 38);
+            this.textBox_Custom4.TabIndex = 7;
+            this.textBox_Custom4.Texts = "";
+            this.textBox_Custom4.UnderlinedStyle = false;
+            this.textBox_Custom4._TextChanged += new System.EventHandler(this.TextBox_Custom4__TextChanged_1);
+            this.textBox_Custom4.Validated += new System.EventHandler(this.TextBox_Custom4_Validated);
+            // 
+            // textBox_Custom5
+            // 
+            this.textBox_Custom5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom5.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox_Custom5.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_Custom5.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_Custom5.BorderSize = 2;
+            this.textBox_Custom5.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.textBox_Custom5.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox_Custom5.Location = new System.Drawing.Point(8, 74);
+            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox_Custom5.Multiline = false;
+            this.textBox_Custom5.Name = "textBox_Custom5";
+            this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.textBox_Custom5.PasswordChar = false;
+            this.textBox_Custom5.Size = new System.Drawing.Size(240, 38);
+            this.textBox_Custom5.TabIndex = 5;
+            this.textBox_Custom5.Texts = "";
+            this.textBox_Custom5.UnderlinedStyle = false;
+            // 
+            // passw
+            // 
+            this.passw.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.passw.BackColor = System.Drawing.Color.GhostWhite;
+            this.passw.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.passw.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.passw.BorderSize = 2;
+            this.passw.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.passw.ForeColor = System.Drawing.Color.DimGray;
+            this.passw.Location = new System.Drawing.Point(8, 119);
+            this.passw.Margin = new System.Windows.Forms.Padding(5);
+            this.passw.Multiline = false;
+            this.passw.Name = "passw";
+            this.passw.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.passw.PasswordChar = true;
+            this.passw.Size = new System.Drawing.Size(240, 38);
+            this.passw.TabIndex = 6;
+            this.passw.Texts = "";
+            this.passw.UnderlinedStyle = false;
+            this.passw.Load += new System.EventHandler(this.Passw_Load);
+            // 
+            // textBox_Custom7
+            // 
+            this.textBox_Custom7.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom7.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox_Custom7.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_Custom7.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_Custom7.BorderSize = 2;
+            this.textBox_Custom7.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.textBox_Custom7.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox_Custom7.Location = new System.Drawing.Point(15, 167);
+            this.textBox_Custom7.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox_Custom7.Multiline = false;
+            this.textBox_Custom7.Name = "textBox_Custom7";
+            this.textBox_Custom7.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.textBox_Custom7.PasswordChar = false;
+            this.textBox_Custom7.Size = new System.Drawing.Size(261, 38);
+            this.textBox_Custom7.TabIndex = 4;
+            this.textBox_Custom7.Texts = "";
+            this.textBox_Custom7.UnderlinedStyle = false;
+            this.textBox_Custom7._TextChanged += new System.EventHandler(this.TextBox_Custom7__TextChanged);
+            // 
+            // textBox_Custom3
+            // 
+            this.textBox_Custom3.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom3.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox_Custom3.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_Custom3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_Custom3.BorderSize = 2;
+            this.textBox_Custom3.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.textBox_Custom3.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox_Custom3.Location = new System.Drawing.Point(108, 25);
+            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox_Custom3.Multiline = false;
+            this.textBox_Custom3.Name = "textBox_Custom3";
+            this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.textBox_Custom3.PasswordChar = false;
+            this.textBox_Custom3.Size = new System.Drawing.Size(166, 38);
+            this.textBox_Custom3.TabIndex = 1;
+            this.textBox_Custom3.Texts = "";
+            this.textBox_Custom3.UnderlinedStyle = false;
+            this.textBox_Custom3.Load += new System.EventHandler(this.TextBox_Custom3_Load);
+            // 
+            // textBox_Custom2
+            // 
+            this.textBox_Custom2.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom2.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox_Custom2.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_Custom2.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_Custom2.BorderSize = 2;
+            this.textBox_Custom2.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.textBox_Custom2.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox_Custom2.Location = new System.Drawing.Point(15, 119);
+            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox_Custom2.Multiline = false;
+            this.textBox_Custom2.Name = "textBox_Custom2";
+            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.textBox_Custom2.PasswordChar = false;
+            this.textBox_Custom2.Size = new System.Drawing.Size(261, 38);
+            this.textBox_Custom2.TabIndex = 3;
+            this.textBox_Custom2.Texts = "";
+            this.textBox_Custom2.UnderlinedStyle = false;
+            // 
+            // textBox_Custom1
+            // 
+            this.textBox_Custom1.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom1.BackColor = System.Drawing.Color.GhostWhite;
+            this.textBox_Custom1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_Custom1.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textBox_Custom1.BorderSize = 2;
+            this.textBox_Custom1.Font = new System.Drawing.Font("Tahoma", 9.5F);
+            this.textBox_Custom1.ForeColor = System.Drawing.Color.DimGray;
+            this.textBox_Custom1.Location = new System.Drawing.Point(15, 73);
+            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(5);
+            this.textBox_Custom1.Multiline = false;
+            this.textBox_Custom1.Name = "textBox_Custom1";
+            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.textBox_Custom1.PasswordChar = false;
+            this.textBox_Custom1.Size = new System.Drawing.Size(261, 38);
+            this.textBox_Custom1.TabIndex = 2;
+            this.textBox_Custom1.Texts = "";
+            this.textBox_Custom1.UnderlinedStyle = false;
+            this.textBox_Custom1._TextChanged += new System.EventHandler(this.TextBox_Custom1__TextChanged);
+            // 
+            // rjButton5
+            // 
+            this.rjButton5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton5.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton5.BorderRadius = 7;
+            this.rjButton5.BorderSize = 0;
+            this.rjButton5.FlatAppearance.BorderSize = 0;
+            this.rjButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton5.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton5.ForeColor = System.Drawing.Color.White;
+            this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton5.Location = new System.Drawing.Point(346, 8);
+            this.rjButton5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton5.Name = "rjButton5";
+            this.rjButton5.Size = new System.Drawing.Size(139, 36);
+            this.rjButton5.TabIndex = 12;
+            this.rjButton5.Text = "إضافة صلاحيات";
+            this.rjButton5.TextColor = System.Drawing.Color.White;
+            this.rjButton5.UseVisualStyleBackColor = false;
+            this.rjButton5.Click += new System.EventHandler(this.RjButton5_Click);
+            // 
+            // search
+            // 
+            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.search.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.search.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.search.BorderRadius = 0;
+            this.search.BorderSize = 1;
+            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.search.Location = new System.Drawing.Point(15, 6);
+            this.search.Margin = new System.Windows.Forms.Padding(5);
+            this.search.Multiline = false;
+            this.search.Name = "search";
+            this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.search.PasswordChar = false;
+            this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.search.PlaceholderText = "ابحث هنا..";
+            this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.search.SelectionStart = 0;
+            this.search.Size = new System.Drawing.Size(251, 41);
+            this.search.TabIndex = 13;
+            this.search.Texts = "";
+            this.search.UnderlinedStyle = true;
+            // 
+            // rjButton2
+            // 
+            this.rjButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton2.BorderRadius = 7;
+            this.rjButton2.BorderSize = 0;
+            this.rjButton2.FlatAppearance.BorderSize = 0;
+            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton2.ForeColor = System.Drawing.Color.White;
+            this.rjButton2.Location = new System.Drawing.Point(666, 7);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton2.Name = "rjButton2";
+            this.rjButton2.Size = new System.Drawing.Size(115, 36);
+            this.rjButton2.TabIndex = 10;
+            this.rjButton2.Text = "تعديل";
+            this.rjButton2.TextColor = System.Drawing.Color.White;
+            this.rjButton2.UseVisualStyleBackColor = false;
+            this.rjButton2.Click += new System.EventHandler(this.RjButton2_Click);
+            // 
+            // rjButton3
+            // 
+            this.rjButton3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton3.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton3.BorderRadius = 7;
+            this.rjButton3.BorderSize = 0;
+            this.rjButton3.FlatAppearance.BorderSize = 0;
+            this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton3.ForeColor = System.Drawing.Color.White;
+            this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton3.Location = new System.Drawing.Point(545, 8);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton3.Name = "rjButton3";
+            this.rjButton3.Size = new System.Drawing.Size(115, 36);
+            this.rjButton3.TabIndex = 11;
+            this.rjButton3.Text = "حذف";
+            this.rjButton3.TextColor = System.Drawing.Color.White;
+            this.rjButton3.UseVisualStyleBackColor = false;
+            this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
+            // 
+            // rjButton1
+            // 
+            this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton1.BorderRadius = 7;
+            this.rjButton1.BorderSize = 0;
+            this.rjButton1.FlatAppearance.BorderSize = 0;
+            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton1.ForeColor = System.Drawing.Color.White;
+            this.rjButton1.Location = new System.Drawing.Point(787, 7);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton1.Name = "rjButton1";
+            this.rjButton1.Size = new System.Drawing.Size(115, 36);
+            this.rjButton1.TabIndex = 9;
+            this.rjButton1.Text = "اضافة";
+            this.rjButton1.TextColor = System.Drawing.Color.White;
+            this.rjButton1.UseVisualStyleBackColor = false;
+            this.rjButton1.Click += new System.EventHandler(this.RjButton1_Click);
             // 
             // add_user
             // 
