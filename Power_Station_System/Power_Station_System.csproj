@@ -522,6 +522,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\icons8_lock.ico" />
+    <None Include="Resources\user_40px.png" />
+    <None Include="Resources\lock_40px.png" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

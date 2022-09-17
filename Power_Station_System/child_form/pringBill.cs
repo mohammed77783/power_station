@@ -48,7 +48,6 @@ namespace Power_Station_System.child_form
                 else
                 {
                     checkBox1.Enabled = false;
-
                     DataTable DT = other_class.other_function.gridview_to_datatabel(dataGridView1);
                   //  dataGridView1.DataSource = DT;
                     Reports.BILL all_bill = new Reports.BILL();

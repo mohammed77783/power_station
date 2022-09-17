@@ -175,6 +175,7 @@ namespace Power_Station_System.child_form.user
                         
                     }
                 }
+                //this command just to refresh the data Graid
                 dataGridView2.DataSource = users.get_user();
             }
                 if (rjButton1.Text == "حقظ التغيرات")

@@ -24,7 +24,7 @@ namespace Power_Station_System.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+        internal static Image CalendarWhite;
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
@@ -32,9 +32,7 @@ namespace Power_Station_System.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-
-        public static Image CalendarWhite { get; internal set; }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -166,6 +164,16 @@ namespace Power_Station_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock {
+            get {
+                object obj = ResourceManager.GetObject("icons8_lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info {
             get {
                 object obj = ResourceManager.GetObject("info", resourceCulture);
@@ -209,6 +217,16 @@ namespace Power_Station_System.Properties {
         internal static System.Drawing.Bitmap info3 {
             get {
                 object obj = ResourceManager.GetObject("info3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lock_40px {
+            get {
+                object obj = ResourceManager.GetObject("lock_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -319,6 +337,16 @@ namespace Power_Station_System.Properties {
         internal static System.Drawing.Bitmap success4 {
             get {
                 object obj = ResourceManager.GetObject("success4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_40px {
+            get {
+                object obj = ResourceManager.GetObject("user_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
