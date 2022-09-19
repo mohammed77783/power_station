@@ -21,17 +21,17 @@ namespace Power_Station_System.chid_form
         public add_fines()
         {
             InitializeComponent();
-            try
-            {
+           // try
+            //{
                 datagride_view_fines.DataSource = fines.get_fines();
 
-            }
+           // }
 
-            catch (Exception ex)
-            {
-               // MessageBox.Show(ex.Message);
-                this.Alert(ex.Message, Form_alert.enmType.Error);
-            }
+            //catch (Exception ex)
+            //{
+            //   // MessageBox.Show(ex.Message);
+            //    this.Alert(ex.Message, Form_alert.enmType.Error);
+            //}
         }
 
         public void clea()
@@ -116,8 +116,10 @@ namespace Power_Station_System.chid_form
 
         private void RjButton1_Click_1(object sender, EventArgs e)
         {
+
             if(rjButton1.Text =="اضافة")
             {
+
                 if (rjTextBox1.Texts.Trim().Length < 1)
                 {
                    // MessageBox.Show("إسم الغرامة فارغ ");
@@ -189,7 +191,7 @@ namespace Power_Station_System.chid_form
 
         public void mod()
         {
-            if (id != null)
+            if (id != null && type != null && fines_cost != null)
             {
                 datagride_view_fines.Enabled = false;
                 rjTextBox1.Texts = type;
@@ -206,7 +208,7 @@ namespace Power_Station_System.chid_form
             rjButton1.Enabled = true;
             rjButton2.Enabled = true;
             rjButton3.Enabled = true;
-            rjButton1.Text = "إضافة";
+            rjButton1.Text = "اضافة";
             rjButton3.Text = "حذف";
         }
 
@@ -227,9 +229,10 @@ namespace Power_Station_System.chid_form
 
             catch (Exception ex)
             {
-               // MessageBox.Show(ex.Message);
+                // MessageBox.Show(ex.Message);
                 this.Alert(ex.Message, Form_alert.enmType.Error);
             }
+
         }
 
         private void Datagride_view_fines_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -239,9 +242,15 @@ namespace Power_Station_System.chid_form
 
         private void Datagride_view_fines_Click(object sender, EventArgs e)
         {
+            try { 
             id = Convert.ToInt16(datagride_view_fines.CurrentRow.Cells[0].Value.ToString());
             type = datagride_view_fines.CurrentRow.Cells[1].Value.ToString();
             fines_cost = datagride_view_fines.CurrentRow.Cells[2].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
         }
 
@@ -274,6 +283,16 @@ namespace Power_Station_System.chid_form
             }
 
 
+        }
+
+        private void RjTextBoxy_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Add_fines_Activated(object sender, EventArgs e)
+        {
+            
         }
     }
 }

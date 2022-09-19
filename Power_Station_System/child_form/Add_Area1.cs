@@ -233,6 +233,11 @@ namespace Power_Station_System.chid_form
         {
 
         }
+
+        private void Add_Area1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

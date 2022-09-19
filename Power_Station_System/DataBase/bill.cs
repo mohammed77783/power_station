@@ -60,14 +60,14 @@ namespace Power_Station_System.DataBase
             access.executor("relace_bill", pr);
             access.close();
         }
-        public DataTable get_debit(string m)
+        public DataTable get_debit(int m)
         {
 
               DataBase.Access_layer access = new DataBase.Access_layer();
             DataTable dt = new DataTable();
             SqlParameter[] pr = new SqlParameter[1];
             access.open();
-            pr[0] = new SqlParameter("@meter", SqlDbType.NVarChar,100);
+            pr[0] = new SqlParameter("@meter", SqlDbType.BigInt);
             pr[0].Value = m; 
             dt = access.selec_table("get_debit", pr);
             access.close();
@@ -83,9 +83,9 @@ namespace Power_Station_System.DataBase
         }
 
         public void inset_Bill(string name,string meter_number,string amonut_maony,int sub_id,string date,int reading_id,string privi_reading,
-            string current_reading,string kw_used,string kw_price,int block_id,string privio_mony,string month_flos,string mony_write) { 
+            string current_reading,string kw_used,string kw_price,int block_id,string privio_mony,string month_flos,string mony_write,int Bill_id) { 
             DataBase.Access_layer access = new DataBase.Access_layer();
-            SqlParameter[] pr = new SqlParameter[14];
+            SqlParameter[] pr = new SqlParameter[15];
             access.open();
             pr[0] = new SqlParameter("@name", SqlDbType.NVarChar, 200);
             pr[0].Value = name;
@@ -117,6 +117,8 @@ namespace Power_Station_System.DataBase
             pr[12].Value = month_flos;
             pr[13] = new SqlParameter("@mony_write", SqlDbType.NVarChar, 300);
             pr[13].Value = mony_write;
+            pr[14] = new SqlParameter("@Bill_ID", SqlDbType.NVarChar, 300);
+            pr[14].Value = Bill_id;
             access.executor("insert_bill", pr);
             access.close();
         }

@@ -250,9 +250,9 @@ namespace Power_Station_System.child_form
 
 
 
-                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing);
+                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,2);
 
-                        bill.update_depet(meter_number, amonut_maony);
+                      //  bill.update_depet(meter_number, amonut_maony);
 
 
                     }
@@ -310,9 +310,15 @@ namespace Power_Station_System.child_form
             string use_kw = alisthlak.Text;
             string kw_pric = kW_pric.Text;
             string all_mny = ho_money.Text;
-            DataTable tbb = bill.get_debit(meter_nu);
+            DataTable tbb = bill.get_debit(subscriber_id);
             string debit=tbb.Rows[0][0].ToString();
-            double x = Double.Parse(debit);
+            double x=-1;
+            if (debit =="") {
+              x= 0; }
+            else
+            {
+             x=Double.Parse(debit);
+            }
             double y= Double.Parse(all_mny);
             double all_mney = x + y;
             string date = dateTimePicker1.Text;

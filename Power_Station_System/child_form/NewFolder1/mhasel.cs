@@ -16,7 +16,7 @@ namespace Power_Station_System.chid_form
         DataBase.mhasell mhasell = new DataBase.mhasell();
         DataBase.Block_aned_area aree = new DataBase.Block_aned_area();
         int id;
-        string id_block;
+        string Block_name;
         string adres;
         string number;
         string name;
@@ -70,7 +70,7 @@ namespace Power_Station_System.chid_form
             rjButton1.Enabled = true;
             rjButton2.Enabled = true;
             rjButton3.Enabled = true;
-            rjButton1.Text = "إضافة";
+            rjButton1.Text = "اضافة";
             rjButton3.Text = "حذف";
         }
         private void RjButton1_Click(object sender, EventArgs e)
@@ -222,11 +222,16 @@ namespace Power_Station_System.chid_form
 
         private void DataGridView1_Click(object sender, EventArgs e)
         {
-            id = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            id_block = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            Block_name = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             adres = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             number = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

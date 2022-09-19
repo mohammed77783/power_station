@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 namespace Power_Station_System
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
 
     {
         
@@ -31,7 +31,7 @@ namespace Power_Station_System
             }
         }
 
-        public Form1()
+        public form1()
         {
             InitializeComponent();
             panal_width = side_panal.Width;
@@ -807,27 +807,16 @@ namespace Power_Station_System
                 }
             }
 
-
             if (IsOpen == false)
             {
-
                 page = new child_form.bill_quacliy_rease();
                 tabCont = new TabPage("الاصدار السريع للفاتورة");
-
-
-
                 label3.Text = ("الاصدار السريع للفاتورة");
                 label2.Hide();
                 label3.Show();
-
-
-
                 tabControlZ1.TabPages.Add(tabCont);
                 tabControlZ1.SelectTab(tabCont);
                 Loadpage(page , tabCont);
-
-
-
             }
 
         }

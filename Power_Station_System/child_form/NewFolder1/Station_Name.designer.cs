@@ -78,6 +78,7 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بيانات المحطة";
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // textBox_Custom5
             // 
@@ -89,10 +90,10 @@
             this.textBox_Custom5.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.textBox_Custom5.ForeColor = System.Drawing.Color.Black;
             this.textBox_Custom5.Location = new System.Drawing.Point(41, 296);
-            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom5.Multiline = false;
             this.textBox_Custom5.Name = "textBox_Custom5";
-            this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom5.PasswordChar = false;
             this.textBox_Custom5.Size = new System.Drawing.Size(249, 36);
             this.textBox_Custom5.TabIndex = 5;
@@ -109,10 +110,10 @@
             this.textBox_Custom4.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.textBox_Custom4.ForeColor = System.Drawing.Color.Black;
             this.textBox_Custom4.Location = new System.Drawing.Point(41, 236);
-            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom4.Multiline = false;
             this.textBox_Custom4.Name = "textBox_Custom4";
-            this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom4.PasswordChar = false;
             this.textBox_Custom4.Size = new System.Drawing.Size(249, 36);
             this.textBox_Custom4.TabIndex = 4;
@@ -129,10 +130,10 @@
             this.textBox_Custom3.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.textBox_Custom3.ForeColor = System.Drawing.Color.Black;
             this.textBox_Custom3.Location = new System.Drawing.Point(41, 171);
-            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom3.Multiline = false;
             this.textBox_Custom3.Name = "textBox_Custom3";
-            this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom3.PasswordChar = false;
             this.textBox_Custom3.Size = new System.Drawing.Size(249, 36);
             this.textBox_Custom3.TabIndex = 3;
@@ -149,10 +150,10 @@
             this.textBox_Custom2.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.textBox_Custom2.ForeColor = System.Drawing.Color.Black;
             this.textBox_Custom2.Location = new System.Drawing.Point(41, 111);
-            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom2.Multiline = false;
             this.textBox_Custom2.Name = "textBox_Custom2";
-            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom2.PasswordChar = false;
             this.textBox_Custom2.Size = new System.Drawing.Size(249, 36);
             this.textBox_Custom2.TabIndex = 2;
@@ -169,10 +170,10 @@
             this.textBox_Custom1.Font = new System.Drawing.Font("LBC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.textBox_Custom1.ForeColor = System.Drawing.Color.Black;
             this.textBox_Custom1.Location = new System.Drawing.Point(41, 51);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom1.Multiline = false;
             this.textBox_Custom1.Name = "textBox_Custom1";
-            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom1.PasswordChar = false;
             this.textBox_Custom1.Size = new System.Drawing.Size(249, 36);
             this.textBox_Custom1.TabIndex = 1;

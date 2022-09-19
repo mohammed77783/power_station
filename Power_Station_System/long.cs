@@ -49,7 +49,7 @@ namespace Power_Station_System
             DataTable DD = us.login_user(comboBox1.Text, rjTextBox2.Texts);
             if (DD.Rows.Count > 0)
             {
-                Form1 main = new Form1();
+                form1 main = new form1();
                 main.lb_user.Text = DD.Rows[0][2].ToString();
                 main.Show();
 

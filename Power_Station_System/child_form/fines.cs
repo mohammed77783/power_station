@@ -167,7 +167,7 @@ namespace Power_Station_System.chid_form
             rjButton1.Enabled = true;
             rjButton2.Enabled = true;
             rjButton3.Enabled = true;
-            rjButton1.Text = "إضافة";
+            rjButton1.Text = "اضافة";
             rjButton3.Text = "حذف";
         }
 

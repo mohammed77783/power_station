@@ -256,6 +256,16 @@ namespace Power_Station_System.chid_form
            
         }
 
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void RjButton2_Click(object sender, EventArgs e)
         {
             mod();

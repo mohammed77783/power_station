@@ -48,13 +48,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -71,9 +71,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("LBC", 9.749999F);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(933, 294);
+            this.panel1.Size = new System.Drawing.Size(800, 239);
             this.panel1.TabIndex = 1;
             // 
             // panel2
@@ -85,10 +84,9 @@
             this.panel2.Controls.Add(this.rjButton3);
             this.panel2.Controls.Add(this.rjButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 240);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(0, 195);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(933, 54);
+            this.panel2.Size = new System.Drawing.Size(800, 44);
             this.panel2.TabIndex = 5;
             // 
             // iconButton3
@@ -102,10 +100,9 @@
             this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 25;
-            this.iconButton3.Location = new System.Drawing.Point(375, 7);
-            this.iconButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton3.Location = new System.Drawing.Point(321, 6);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(37, 38);
+            this.iconButton3.Size = new System.Drawing.Size(32, 31);
             this.iconButton3.TabIndex = 22;
             this.iconButton3.UseVisualStyleBackColor = false;
             // 
@@ -115,9 +112,8 @@
             this.panel3.Controls.Add(this.search);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(314, 54);
+            this.panel3.Size = new System.Drawing.Size(269, 44);
             this.panel3.TabIndex = 5;
             // 
             // iconButton1
@@ -133,10 +129,9 @@
             this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(268, 6);
-            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconButton1.Location = new System.Drawing.Point(230, 5);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(37, 38);
+            this.iconButton1.Size = new System.Drawing.Size(32, 31);
             this.iconButton1.TabIndex = 22;
             this.iconButton1.UseVisualStyleBackColor = false;
             // 
@@ -150,17 +145,17 @@
             this.search.BorderSize = 1;
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.search.Location = new System.Drawing.Point(16, 5);
-            this.search.Margin = new System.Windows.Forms.Padding(5);
+            this.search.Location = new System.Drawing.Point(14, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.search.Multiline = false;
             this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
             this.search.PasswordChar = false;
             this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.search.PlaceholderText = "ابحث هنا..";
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(250, 41);
+            this.search.Size = new System.Drawing.Size(214, 33);
             this.search.TabIndex = 21;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
@@ -177,10 +172,9 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(471, 7);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton2.Location = new System.Drawing.Point(404, 6);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(138, 36);
+            this.rjButton2.Size = new System.Drawing.Size(118, 29);
             this.rjButton2.TabIndex = 3;
             this.rjButton2.Text = "تعديل";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -200,10 +194,9 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.Transparent;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(618, 7);
-            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton3.Location = new System.Drawing.Point(530, 6);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(138, 36);
+            this.rjButton3.Size = new System.Drawing.Size(118, 29);
             this.rjButton3.TabIndex = 4;
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.Transparent;
@@ -222,10 +215,9 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(763, 7);
-            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton1.Location = new System.Drawing.Point(654, 6);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(138, 36);
+            this.rjButton1.Size = new System.Drawing.Size(118, 29);
             this.rjButton1.TabIndex = 2;
             this.rjButton1.Text = "اضافة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -245,11 +237,9 @@
             this.groupBox1.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox1.Size = new System.Drawing.Size(933, 236);
+            this.groupBox1.Size = new System.Drawing.Size(800, 192);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "الغرامات";
@@ -259,20 +249,18 @@
             // 
             this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(526, 134);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox2.Location = new System.Drawing.Point(451, 109);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(259, 29);
+            this.comboBox2.Size = new System.Drawing.Size(223, 24);
             this.comboBox2.TabIndex = 0;
             // 
             // comboBox1
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(526, 74);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox1.Location = new System.Drawing.Point(451, 60);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(259, 29);
+            this.comboBox1.Size = new System.Drawing.Size(223, 24);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox3_SelectedIndexChanged);
             // 
@@ -283,9 +271,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LBC", 11.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(810, 73);
+            this.label1.Location = new System.Drawing.Point(694, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 68;
             this.label1.Text = "اسم العميل";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -297,9 +285,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(810, 137);
+            this.label2.Location = new System.Drawing.Point(694, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 25);
+            this.label2.Size = new System.Drawing.Size(75, 20);
             this.label2.TabIndex = 65;
             this.label2.Text = "اسم الغرامة";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -307,10 +295,9 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.Location = new System.Drawing.Point(152, 74);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(130, 60);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(237, 28);
+            this.dateTimePicker1.Size = new System.Drawing.Size(204, 24);
             this.dateTimePicker1.TabIndex = 6;
             // 
             // label3
@@ -319,9 +306,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(416, 74);
+            this.label3.Location = new System.Drawing.Point(357, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 25);
+            this.label3.Size = new System.Drawing.Size(43, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "التاريخ";
             // 
@@ -330,10 +317,9 @@
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.panel4.Location = new System.Drawing.Point(0, 294);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel4.Location = new System.Drawing.Point(0, 239);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(933, 260);
+            this.panel4.Size = new System.Drawing.Size(800, 211);
             this.panel4.TabIndex = 2;
             // 
             // dataGridView1
@@ -371,7 +357,6 @@
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -379,10 +364,36 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 80;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(933, 260);
+            this.dataGridView1.Size = new System.Drawing.Size(800, 211);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick_1);
             this.dataGridView1.Click += new System.EventHandler(this.DataGridView1_Click);
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.Color.White;
+            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox5.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(0, 0);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox5.Size = new System.Drawing.Size(247, 33);
+            this.comboBox5.TabIndex = 0;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.BackColor = System.Drawing.Color.White;
+            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox6.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(0, 0);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox6.Size = new System.Drawing.Size(250, 33);
+            this.comboBox6.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -394,7 +405,7 @@
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "ID_Subscriber";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Subscriber_name";
             this.dataGridViewTextBoxColumn7.HeaderText = "اسم العميل";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
@@ -402,7 +413,7 @@
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "fines_type_ID";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "type";
             this.dataGridViewTextBoxColumn4.HeaderText = "اسم الغرامة";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
@@ -423,41 +434,14 @@
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
-            // comboBox5
-            // 
-            this.comboBox5.BackColor = System.Drawing.Color.White;
-            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox5.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(0, 0);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox5.Size = new System.Drawing.Size(247, 39);
-            this.comboBox5.TabIndex = 0;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.BackColor = System.Drawing.Color.White;
-            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox6.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(0, 0);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox6.Size = new System.Drawing.Size(250, 39);
-            this.comboBox6.TabIndex = 0;
-            // 
             // fines
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "fines";
             this.Text = "fines";
             this.Load += new System.EventHandler(this.Fines_Load);

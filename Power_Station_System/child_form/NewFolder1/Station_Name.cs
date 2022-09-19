@@ -208,5 +208,10 @@ namespace Power_Station_System.child_form.NewFolder1
 
 
         }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
     }

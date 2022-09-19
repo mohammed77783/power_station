@@ -212,6 +212,12 @@
     <Compile Include="child_form\user\pre.designer.cs">
       <DependentUpon>pre.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Custom_tool\Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -261,15 +267,16 @@
     <Compile Include="DataBase\fines.cs" />
     <Compile Include="DataBase\mhasell.cs" />
     <Compile Include="DataBase\reading.cs" />
+    <Compile Include="DataBase\RPT_DB.cs" />
     <Compile Include="DataBase\Station_Data.cs" />
     <Compile Include="DataBase\subscriber.cs" />
     <Compile Include="DataBase\subscription_1.cs" />
     <Compile Include="DataBase\users.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="form1.designer.cs">
+      <DependentUpon>form1.cs</DependentUpon>
     </Compile>
     <Compile Include="long.cs">
       <SubType>Form</SubType>
@@ -292,6 +299,24 @@
     </Compile>
     <Compile Include="Reports\reort_viwer.Designer.cs">
       <DependentUpon>reort_viwer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\RPTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\RPTForm.Designer.cs">
+      <DependentUpon>RPTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\RPT_ACCOUNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\RPT_ACCOUNT.Designer.cs">
+      <DependentUpon>RPT_ACCOUNT.cs</DependentUpon>
     </Compile>
     <Compile Include="TabControlZ.cs">
       <SubType>Component</SubType>
@@ -371,15 +396,19 @@
     <EmbeddedResource Include="child_form\user\pre.resx">
       <DependentUpon>pre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Custom_tool\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Custom_tool\TextBox_Custom.resx" />
-    <EmbeddedResource Include="Form1.ar-EG.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="form1.ar-EG.resx">
+      <DependentUpon>form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="form1.resx">
+      <DependentUpon>form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="long.resx">
       <DependentUpon>long.cs</DependentUpon>
@@ -400,6 +429,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\reort_viwer.resx">
       <DependentUpon>reort_viwer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\RPTForm.resx">
+      <DependentUpon>RPTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\RPT_ACCOUNT.resx">
+      <DependentUpon>RPT_ACCOUNT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="warning_code\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

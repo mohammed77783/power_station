@@ -165,7 +165,7 @@
             this.rjTextBox1.ForeColor = System.Drawing.Color.Black;
             this.rjTextBox1.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.rjTextBox1.Location = new System.Drawing.Point(261, 91);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
             this.rjTextBox1.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
@@ -248,7 +248,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(8, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -355,6 +355,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Area1";
             this.Activated += new System.EventHandler(this.Add_Area1_Activated);
+            this.Load += new System.EventHandler(this.Add_Area1_Load);
             this.Validated += new System.EventHandler(this.Add_Area1_Validated);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
