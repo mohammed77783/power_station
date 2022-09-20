@@ -30,9 +30,10 @@ namespace Power_Station_System.child_form
         public Add_bill()
         {
             InitializeComponent();
-            comboBox1.DataSource = bill.get_subscriber_for_bill();
             comboBox1.DisplayMember = "Subscriber_name";
             comboBox1.ValueMember = "Subscriber_ElectricMeter_ID";
+            comboBox1.DataSource = bill.get_subscriber_for_bill();
+          
         }
       
         private void Label1_Click(object sender, EventArgs e)
@@ -250,7 +251,7 @@ namespace Power_Station_System.child_form
 
 
 
-                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,2);
+                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, date, reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,3);
 
                       //  bill.update_depet(meter_number, amonut_maony);
 
