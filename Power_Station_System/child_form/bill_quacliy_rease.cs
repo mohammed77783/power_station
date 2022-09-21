@@ -157,12 +157,15 @@ namespace Power_Station_System.child_form
 
         private void RjButton1_Click(object sender, EventArgs e)
         {
+            DataTable t = bill.gei_id_to_bill();
+            int j = Convert.ToInt32(t.Rows[0][0].ToString());
             if (dataGridView1.Rows.Count > -1)
             {
                 try
                 {
                     for (int item = 0; item < dataGridView1.Rows.Count; item++)
                     {
+                        ++j;
                     if (dataGridView1.Rows[item].Cells["gr_current"].Value==null) continue;
                         int sub_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["ID"].Value.ToString());
                         string name = dataGridView1.Rows[item].Cells["gr_name"].Value.ToString();
@@ -220,7 +223,8 @@ namespace Power_Station_System.child_form
 
 
 
-                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, DateTime.Now.ToString(), reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,8);
+                        bill.inset_Bill(name, meter_number, amonut_maony, sub_id, DateTime.Now.ToString(), 
+                            reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,j);
 
                         //  bill.update_depet(meter_number, amonut_maony);
 

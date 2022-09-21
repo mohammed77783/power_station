@@ -13,6 +13,9 @@ namespace Power_Station_System.child_form
 {
     public partial class pringBill : Form
     {
+        int move;
+        int movx;
+        int movy;
         DataBase.bill bill = new DataBase.bill();
         public pringBill()
         {
@@ -86,6 +89,27 @@ namespace Power_Station_System.child_form
                 }
             }
             }
+
+        private void OurPanel1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            move = 1;
+            movx = e.X;
+            movy = e.Y;
         }
+
+        private void OurPanel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movx, MousePosition.Y - movy);
+            }
+        }
+
+        private void OurPanel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move = 0;
+        }
+    }
     }
 

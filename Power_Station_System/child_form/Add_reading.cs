@@ -113,7 +113,7 @@ namespace Power_Station_System.chid_form
                 }
                 else
                 {
-                    rea.Add_reading(current_reading.Texts, privosu_reading.Texts, dateTimePicker1.Text, meter_.Texts, id, block);
+                    rea.Add_reading_withoutbill(current_reading.Texts, privosu_reading.Texts, dateTimePicker1.Text, meter_.Texts, id, block);
                     rea.update_opeiningreading(meter_.Texts.Trim(), current_reading.Texts, dateTimePicker1.Text);
                     rea.reading_doe(meter_.Texts.Trim());
                     this.Add_reading_Load(null, null);

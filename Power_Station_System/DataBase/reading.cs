@@ -32,6 +32,7 @@ namespace Power_Station_System.DataBase
             access.close();
             return dt;
         }
+
        
             public void Add_reading(string current,string privous,string date,string subscriper_metrer,int id,int block)
             {
@@ -53,6 +54,31 @@ namespace Power_Station_System.DataBase
                 access.executor("insert_reading", pr);
                 access.close();
             }
+
+
+
+
+
+        public void Add_reading_withoutbill(string current, string privous, string date, string subscriper_metrer, int id, int block)
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            SqlParameter[] pr = new SqlParameter[6];
+            access.open();
+            pr[0] = new SqlParameter("@current_read", SqlDbType.VarChar, 200);
+            pr[0].Value = current;
+            pr[1] = new SqlParameter("@privos_reading", SqlDbType.VarChar, 200);
+            pr[1].Value = privous;
+            pr[2] = new SqlParameter("@Dat_e", SqlDbType.Date);
+            pr[2].Value = date;
+            pr[3] = new SqlParameter("@meter_ID", SqlDbType.VarChar, 200);
+            pr[3].Value = subscriper_metrer;
+            pr[4] = new SqlParameter("@ID_subscriper", SqlDbType.Int);
+            pr[4].Value = id;
+            pr[5] = new SqlParameter("@ID_block", SqlDbType.VarChar, 200);
+            pr[5].Value = block;
+            access.executor("insert_reading_without_bill", pr);
+            access.close();
+        }
         public void udate_reading(int id, string cur,string privous, string date, string meter__number)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
@@ -71,8 +97,19 @@ namespace Power_Station_System.DataBase
             access.executor("update_elect_meter", pr);
             access.close();
         }
+        public void udate_reading_date_of_bill(int id)
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            SqlParameter[] pr = new SqlParameter[1];
+            access.open();
+            pr[0] = new SqlParameter("@ID", SqlDbType.BigInt);
+            pr[0].Value = id;
+            access.executor("update_read_bill_rease", pr);
+            access.close();
 
-        public void update_opeiningreading(string meter_num,string reading,string s)
+        }
+
+            public void update_opeiningreading(string meter_num,string reading,string s)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
             SqlParameter[] pr = new SqlParameter[3];

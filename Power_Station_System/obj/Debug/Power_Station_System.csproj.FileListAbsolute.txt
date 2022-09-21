@@ -104,7 +104,6 @@ C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\bin\Debug\M
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\bin\Debug\Twilio.xml
-C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.acconting.resources
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_Area1.resources
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.Add_bill.resources
@@ -216,3 +215,5 @@ C:\Users\Yasir\Desktop\power_station\Power_Station_System\obj\Debug\Power_Statio
 C:\Users\Yasir\Desktop\power_station\Power_Station_System\obj\Debug\Power_Station_System.RPT.RPTForm.resources
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.RPT.RPTForm.resources
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.RPT.RPT_ACCOUNT.resources
+C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.Biil_managment.resources
+C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache

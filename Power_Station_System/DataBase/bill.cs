@@ -175,6 +175,24 @@ namespace Power_Station_System.DataBase
             dt = access.selec_table("slect_bill_to_print", null);
             return dt;
         }
+
+        public DataTable get_reading_to_relase_bill()
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            dt = access.selec_table("get_readingto_rease_bill", null);
+            return dt;
+        }
+        public DataTable gei_id_to_bill()
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            dt = access.selec_table("autoIncment_of_bill_ID", null);
+            return dt;
+        }
+
+
+
         public DataTable get_bill_to_print_by_id(int id)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
