@@ -63,6 +63,7 @@ namespace Power_Station_System.chid_form
             {
                 if (meter_iD != null)
                 {
+                    try { 
                     tb = rea.get_name_and_privious(meter_iD);
                     name_sub.Texts = tb.Rows[0][1].ToString();
                     meter_.Texts = meter_iD;
@@ -72,6 +73,11 @@ namespace Power_Station_System.chid_form
                     datagride_view_customer.Enabled = false;
                     id = Convert.ToInt16(tb.Rows[0][0].ToString());
                     block = Convert.ToInt16(tb.Rows[0][2].ToString());
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("هناك خطأ في ادخال بيانات العملاء عليك حذف العميل واذخال بيانات بشكل صحيح");
+                    }
                 }
             }
          

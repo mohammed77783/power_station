@@ -51,7 +51,7 @@ namespace Power_Station_System.DataBase
                 pr[4].Value = id;
                 pr[5] = new SqlParameter("@ID_block", SqlDbType.VarChar, 200);
                 pr[5].Value = block;
-                access.executor("insert_reading", pr);
+                access.executor("insert_reading_without_bill", pr);
                 access.close();
             }
 
@@ -118,7 +118,7 @@ namespace Power_Station_System.DataBase
             pr[0].Value = meter_num;
             pr[1] = new SqlParameter("@reading", SqlDbType.VarChar, 200);
             pr[1].Value = reading;
-            pr[2] = new SqlParameter("@Dat_e", SqlDbType.VarChar, 200);
+            pr[2] = new SqlParameter("@Dat_e", SqlDbType.Date);
             pr[2].Value = s;
             access.executor("update_opening_reading", pr);
             access.close();

@@ -227,6 +227,14 @@ namespace Power_Station_System.child_form
         {
            
         }
-       
+
+        private void IconButton3_Click(object sender, EventArgs e)
+        {
+            RPT.Recepit myrpt = new RPT.Recepit();
+            myrpt.SetParameterValue("@ID_Catch", this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            RPT.RPTForm myform = new RPT.RPTForm();
+            myform.crystalReportViewer1.ReportSource = myrpt;
+            myform.ShowDialog();
+        }
     }
 }
