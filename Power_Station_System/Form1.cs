@@ -746,9 +746,44 @@ namespace Power_Station_System
 
         private void Button12_Click(object sender, EventArgs e)
         {
-            label2.Hide();
-            label3.Show();
-            label3.Text = ("إدارة الفواتير");
+
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "ادارة الفواتير")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "ادارة الفواتير";
+                    break;
+
+                }
+            }
+
+            if (IsOpen == false)
+            {
+
+                tabCont = new TabPage("ادارة الفواتير");
+                page = new child_form.Biil_managment();
+
+
+
+
+                label3.Text = "ادارة الفواتير";
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+
+
+            }
+
+
         }
 
         private void Button11_Click(object sender, EventArgs e)
