@@ -1,3 +1,4 @@
+
 ﻿using System;
 
 namespace Power_Station_System.child_form
@@ -374,7 +375,7 @@ namespace Power_Station_System.child_form
             this.dataGridView1.Size = new System.Drawing.Size(1003, 347);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DataGridView1_CellBeginEdit);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellEndEdit);
             // 
             // ID
@@ -508,10 +509,6 @@ namespace Power_Station_System.child_form
 
         }
 
-        private void RjButton3_Click(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
 

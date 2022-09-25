@@ -26,6 +26,7 @@ namespace Power_Station_System.chid_form
             InitializeComponent();
             this.ID = ID;
             this.father = fat;
+
             comboBox1.DataSource = sub.get_subscription();
             comboBox1.DisplayMember = "Subscription_Type";
             comboBox1.ValueMember = "ID_Subscription";
@@ -34,6 +35,7 @@ namespace Power_Station_System.chid_form
             comboBox2.ValueMember = "ID";
             comboBox2.DataSource = block.get_Block();
          
+
         }
         public void Alert(string msg, Form_alert.enmType type)
         {
