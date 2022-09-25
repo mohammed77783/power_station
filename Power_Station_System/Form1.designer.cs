@@ -259,7 +259,7 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(257, 44);
             this.button25.TabIndex = 10;
-            this.button25.Text = "فواتير المشتركين";
+            this.button25.Text = "تقارير  حسابات العملاء";
             this.button25.UseVisualStyleBackColor = false;
             this.button25.Click += new System.EventHandler(this.Button25_Click);
             // 

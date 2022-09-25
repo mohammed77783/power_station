@@ -141,6 +141,10 @@
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.Transparent;
             this.rjButton3.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
+>>>>>>> 29776d4f85cb64eed97e59dd01624a7793988ea6
             // 
             // rjButton1
             // 

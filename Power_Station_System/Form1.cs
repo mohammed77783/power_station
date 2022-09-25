@@ -917,11 +917,11 @@ namespace Power_Station_System
             bool IsOpen = false;
             foreach (TabPage s in tabControlZ1.TabPages)
             {
-                if (s.Text == "فواتير المشتركين")
+                if (s.Text == "تقارير  حسابات العملاء")
                 {
                     IsOpen = true;
                     tabControlZ1.SelectTab(s);
-                    label3.Text = "فواتير المشتركين";
+                    label3.Text = "تقارير  حسابات العملاء";
                     break;
 
                 }
@@ -931,10 +931,10 @@ namespace Power_Station_System
             if (IsOpen == false)
             {
 
-                page = new child_form.Add_bill();
-               tabCont = new TabPage("فواتير المشتركين");
+                page = new RPT.RPT_ACCOUNT();
+               tabCont = new TabPage("");
 
-                label3.Text = ("فواتير المشتركين");
+                label3.Text = ("تقارير  حسابات العملاء");
 
 
 
@@ -958,10 +958,46 @@ namespace Power_Station_System
         {
             label2.Hide();
             label3.Show();
-            label3.Text = ("تقرير النزول الميداني لتسجيل القراءات");
+            label3.Text = ("");
+
+            bool IsOpen = false;
+            foreach (TabPage s in tabControlZ1.TabPages)
+            {
+                if (s.Text == "تقرير النزول الميداني لتسجيل القراءات")
+                {
+                    IsOpen = true;
+                    tabControlZ1.SelectTab(s);
+                    label3.Text = "تقرير النزول الميداني لتسجيل القراءات";
+                    break;
+
+                }
+            }
+
+
+            if (IsOpen == false)
+            {
+
+                page = new RPT.RPT_survey();
+                tabCont = new TabPage("");
+
+                label3.Text = ("تقرير النزول الميداني لتسجيل القراءات");
+
+
+
+
+                label2.Hide();
+                label3.Show();
+
+
+
+                tabControlZ1.TabPages.Add(tabCont);
+                tabControlZ1.SelectTab(tabCont);
+                Loadpage(page, tabCont);
+
+            }
         }
 
-        private void Button23_Click(object sender, EventArgs e)
+            private void Button23_Click(object sender, EventArgs e)
         {
             label2.Hide();
             label3.Show();

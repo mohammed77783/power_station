@@ -250,7 +250,11 @@ namespace Power_Station_System.child_form
         }
         }
 
+<<<<<<< HEAD
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+=======
+        private void RjButton3_Click(object sender, EventArgs e)
+>>>>>>> 29776d4f85cb64eed97e59dd01624a7793988ea6
         {
 
         }

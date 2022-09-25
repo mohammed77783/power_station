@@ -174,5 +174,10 @@ namespace Power_Station_System.child_form
 
             }
         }
+
+        private void RjButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

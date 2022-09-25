@@ -218,12 +218,6 @@
     <Compile Include="child_form\user\pre.designer.cs">
       <DependentUpon>pre.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrystalReport2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Custom_tool\Button_WOC.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -306,10 +300,28 @@
     <Compile Include="Reports\reort_viwer.Designer.cs">
       <DependentUpon>reort_viwer.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPT\CrystalReport1.cs">
+    <Compile Include="RPT\collectedMoney.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <DependentUpon>collectedMoney.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\collectMoneyByblock.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>collectMoneyByblock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\ReadingDet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReadingDet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\Recepit.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recepit.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\RPTForm.cs">
@@ -321,8 +333,32 @@
     <Compile Include="RPT\RPT_ACCOUNT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RPT\RPT_ACCOUNT.Designer.cs">
+    <Compile Include="RPT\RPT_ACCOUNT.designer.cs">
       <DependentUpon>RPT_ACCOUNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\RPT_survey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPT\RPT_survey.designer.cs">
+      <DependentUpon>RPT_survey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\Servay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Servay.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\Sub_Money_Det.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sub_Money_Det.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\Unpaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Unpaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="TabControlZ.cs">
       <SubType>Component</SubType>
@@ -405,10 +441,6 @@
     <EmbeddedResource Include="child_form\user\pre.resx">
       <DependentUpon>pre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Custom_tool\RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
     </EmbeddedResource>
@@ -439,15 +471,42 @@
     <EmbeddedResource Include="Reports\reort_viwer.resx">
       <DependentUpon>reort_viwer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPT\CrystalReport1.rpt">
+    <EmbeddedResource Include="RPT\collectedMoney.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+      <LastGenOutput>collectedMoney.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\collectMoneyByblock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>collectMoneyByblock.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ReadingDet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReadingDet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Recepit.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Recepit.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\RPTForm.resx">
       <DependentUpon>RPTForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RPT\RPT_ACCOUNT.resx">
       <DependentUpon>RPT_ACCOUNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\RPT_survey.resx">
+      <DependentUpon>RPT_survey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Servay.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Servay.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Sub_Money_Det.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Sub_Money_Det.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\Unpaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Unpaid.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="warning_code\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -21,7 +21,7 @@ namespace Power_Station_System
             Application.SetCompatibleTextRenderingDefault(false);
 
              Application.Run(new @long());
-         //   Application.Run(new RPT.RPT_ACCOUNT());
+           // Application.Run(new RPT.RPT_ACCOUNT());
             //Application.Run(new Form1());
 
         }
