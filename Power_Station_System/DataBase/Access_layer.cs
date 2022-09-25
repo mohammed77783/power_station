@@ -17,17 +17,17 @@ namespace Power_Station_System.DataBase
         {
 
 
-<<<<<<< HEAD
+
            con = new SqlConnection(@"Data Source=DESKTOP-A7NS7CI;Initial Catalog=power_state_station;Integrated Security=true");
 
 
          // con = new SqlConnection(@"Data Source=DESKTOP-A7NS7CI;Initial Catalog=power_state_station;Integrated Security=true");
-=======
-            con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+
+         //   con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
 
 
             //  con = new SqlConnection(@"Data Source=DESKTOP-A7NS7CI;Initial Catalog=power_state_station;Integrated Security=true");
->>>>>>> 29776d4f85cb64eed97e59dd01624a7793988ea6
+
 
         }
         //opent the connection to the database

@@ -1,4 +1,6 @@
-﻿namespace Power_Station_System.child_form
+﻿using System;
+
+namespace Power_Station_System.child_form
 {
     partial class bill_quacliy_rease
     {
@@ -141,10 +143,8 @@
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.Transparent;
             this.rjButton3.UseVisualStyleBackColor = false;
-<<<<<<< HEAD
-=======
+
             this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
->>>>>>> 29776d4f85cb64eed97e59dd01624a7793988ea6
             // 
             // rjButton1
             // 
@@ -506,6 +506,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
+        }
+
+        private void RjButton3_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
