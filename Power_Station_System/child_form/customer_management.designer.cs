@@ -80,10 +80,8 @@
             this.search.BorderSize = 1;
             this.search.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-
             this.search.Location = new System.Drawing.Point(618, 15);
-            this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-
+            this.search.Margin = new System.Windows.Forms.Padding(5);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -111,7 +109,7 @@
             this.ourPanel2.GardientAngle = 90F;
             this.ourPanel2.GardientBottomClor = System.Drawing.Color.MediumSlateBlue;
             this.ourPanel2.GardientTopClor = System.Drawing.Color.MediumSlateBlue;
-            this.ourPanel2.Location = new System.Drawing.Point(477, 10);
+            this.ourPanel2.Location = new System.Drawing.Point(24, 12);
             this.ourPanel2.Name = "ourPanel2";
             this.ourPanel2.Size = new System.Drawing.Size(45, 35);
             this.ourPanel2.TabIndex = 17;

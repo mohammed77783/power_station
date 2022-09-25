@@ -292,3 +292,4 @@ C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\bin\Debug\Twil
 C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\obj\Debug\ar-EG\Power_Station_System.resources.dll
 C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.csproj.CopyComplete
 C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.RPT.RPT_survey.resources
+C:\Users\Mohammed\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
