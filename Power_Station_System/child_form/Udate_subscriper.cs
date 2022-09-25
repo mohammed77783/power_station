@@ -26,13 +26,16 @@ namespace Power_Station_System.chid_form
             InitializeComponent();
             this.ID = ID;
             this.father = fat;
-            this.table = sub.get_spacific_subscription(ID);
+
             comboBox1.DataSource = sub.get_subscription();
             comboBox1.DisplayMember = "Subscription_Type";
             comboBox1.ValueMember = "ID_Subscription";
-            comboBox2.DataSource = block.get_Block();
+            this.table = sub.get_spacific_subscription(ID);
             comboBox2.DisplayMember = "Block_name";
             comboBox2.ValueMember = "ID";
+            comboBox2.DataSource = block.get_Block();
+         
+
         }
         public void Alert(string msg, Form_alert.enmType type)
         {

@@ -1,4 +1,7 @@
-﻿namespace Power_Station_System.child_form
+
+﻿using System;
+
+namespace Power_Station_System.child_form
 {
     partial class bill_quacliy_rease
     {
@@ -141,6 +144,7 @@
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.Transparent;
             this.rjButton3.UseVisualStyleBackColor = false;
+
             this.rjButton3.Click += new System.EventHandler(this.RjButton3_Click);
             // 
             // rjButton1
@@ -371,6 +375,7 @@
             this.dataGridView1.Size = new System.Drawing.Size(1003, 347);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.DataGridView1_CellBeginEdit);
+
             this.dataGridView1.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellEndEdit);
             // 
             // ID
@@ -503,6 +508,7 @@
             this.ResumeLayout(false);
 
         }
+
 
         #endregion
 

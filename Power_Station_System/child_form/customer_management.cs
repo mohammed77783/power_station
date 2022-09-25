@@ -44,7 +44,7 @@ namespace Power_Station_System.chid_form
 
         private void IconButton1_Click(object sender, EventArgs e)
         {
-      
+
         }
 
         private void Button1_Click(object sender, EventArgs e)

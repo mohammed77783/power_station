@@ -111,6 +111,7 @@ namespace Power_Station_System.child_form
             move = 0;
         }
 
+
         private void Panel2_Paint(object sender, PaintEventArgs e)
         {
 
@@ -142,6 +143,7 @@ namespace Power_Station_System.child_form
         {
 
         }
+
     }
     }
 

@@ -131,7 +131,9 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 1460);
             this.panel7.Name = "panel7";
+
             this.panel7.Size = new System.Drawing.Size(253, 221);
+
             this.panel7.TabIndex = 20;
             // 
             // button29
@@ -144,7 +146,9 @@
             this.button29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button29.Location = new System.Drawing.Point(0, 48);
             this.button29.Name = "button29";
+
             this.button29.Size = new System.Drawing.Size(253, 53);
+
             this.button29.TabIndex = 13;
             this.button29.Text = "كشف حساب";
             this.button29.UseVisualStyleBackColor = false;
@@ -160,7 +164,9 @@
             this.button31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button31.Location = new System.Drawing.Point(0, 0);
             this.button31.Name = "button31";
+
             this.button31.Size = new System.Drawing.Size(253, 48);
+
             this.button31.TabIndex = 12;
             this.button31.Text = "سند قبض";
             this.button31.UseVisualStyleBackColor = false;
@@ -179,7 +185,9 @@
             this.button35.Location = new System.Drawing.Point(0, 1418);
             this.button35.Name = "button35";
             this.button35.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+
             this.button35.Size = new System.Drawing.Size(253, 42);
+
             this.button35.TabIndex = 19;
             this.button35.Text = "                      الحسابات";
             this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,7 +204,9 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 1197);
             this.panel6.Name = "panel6";
+
             this.panel6.Size = new System.Drawing.Size(253, 221);
+
             this.panel6.TabIndex = 15;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel6_Paint);
             // 
@@ -210,7 +220,9 @@
             this.button22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button22.Location = new System.Drawing.Point(0, 136);
             this.button22.Name = "button22";
+
             this.button22.Size = new System.Drawing.Size(253, 53);
+
             this.button22.TabIndex = 13;
             this.button22.Text = "اضاقة قراءة مركزية";
             this.button22.UseVisualStyleBackColor = false;
@@ -225,7 +237,9 @@
             this.button23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button23.Location = new System.Drawing.Point(0, 88);
             this.button23.Name = "button23";
+
             this.button23.Size = new System.Drawing.Size(253, 48);
+
             this.button23.TabIndex = 12;
             this.button23.Text = "اجمالي استهلاك المشتركين";
             this.button23.UseVisualStyleBackColor = false;
@@ -241,7 +255,9 @@
             this.button24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button24.Location = new System.Drawing.Point(0, 44);
             this.button24.Name = "button24";
+
             this.button24.Size = new System.Drawing.Size(253, 44);
+
             this.button24.TabIndex = 11;
             this.button24.Text = "تقرير النزول الميداني لتسجيل القراءات";
             this.button24.UseVisualStyleBackColor = false;
@@ -257,7 +273,9 @@
             this.button25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button25.Location = new System.Drawing.Point(0, 0);
             this.button25.Name = "button25";
+
             this.button25.Size = new System.Drawing.Size(253, 44);
+
             this.button25.TabIndex = 10;
             this.button25.Text = "تقارير  حسابات العملاء";
             this.button25.UseVisualStyleBackColor = false;
@@ -276,7 +294,9 @@
             this.button21.Location = new System.Drawing.Point(0, 1151);
             this.button21.Name = "button21";
             this.button21.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+
             this.button21.Size = new System.Drawing.Size(253, 46);
+
             this.button21.TabIndex = 14;
             this.button21.Text = "                       التقارير";
             this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -293,7 +313,9 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 972);
             this.panel5.Name = "panel5";
+
             this.panel5.Size = new System.Drawing.Size(253, 179);
+
             this.panel5.TabIndex = 13;
             // 
             // button20
@@ -306,7 +328,9 @@
             this.button20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button20.Location = new System.Drawing.Point(0, 132);
             this.button20.Name = "button20";
+
             this.button20.Size = new System.Drawing.Size(253, 44);
+
             this.button20.TabIndex = 13;
             this.button20.Text = "اضاقة قراءة مركزية";
             this.button20.UseVisualStyleBackColor = false;
@@ -322,7 +346,9 @@
             this.button17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button17.Location = new System.Drawing.Point(0, 88);
             this.button17.Name = "button17";
+
             this.button17.Size = new System.Drawing.Size(253, 44);
+
             this.button17.TabIndex = 12;
             this.button17.Text = "ادارة القراءات المركزية";
             this.button17.UseVisualStyleBackColor = false;
@@ -338,7 +364,9 @@
             this.button18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button18.Location = new System.Drawing.Point(0, 44);
             this.button18.Name = "button18";
+
             this.button18.Size = new System.Drawing.Size(253, 44);
+
             this.button18.TabIndex = 11;
             this.button18.Text = "اضافة قراءة";
             this.button18.UseVisualStyleBackColor = false;
@@ -354,7 +382,9 @@
             this.button19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button19.Location = new System.Drawing.Point(0, 0);
             this.button19.Name = "button19";
+
             this.button19.Size = new System.Drawing.Size(253, 44);
+
             this.button19.TabIndex = 10;
             this.button19.Text = "ادارة القراءات";
             this.button19.UseVisualStyleBackColor = false;
@@ -373,7 +403,9 @@
             this.button16.Location = new System.Drawing.Point(0, 920);
             this.button16.Name = "button16";
             this.button16.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+
             this.button16.Size = new System.Drawing.Size(253, 52);
+
             this.button16.TabIndex = 12;
             this.button16.Text = "                  حركة العدادت";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,7 +421,9 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 784);
             this.panel4.Name = "panel4";
+
             this.panel4.Size = new System.Drawing.Size(253, 136);
+
             this.panel4.TabIndex = 11;
             // 
             // button13
@@ -402,7 +436,9 @@
             this.button13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button13.Location = new System.Drawing.Point(0, 88);
             this.button13.Name = "button13";
+
             this.button13.Size = new System.Drawing.Size(253, 44);
+
             this.button13.TabIndex = 12;
             this.button13.Text = "الاصدار السريع للفاتورة";
             this.button13.UseVisualStyleBackColor = false;
@@ -418,7 +454,9 @@
             this.button11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button11.Location = new System.Drawing.Point(0, 44);
             this.button11.Name = "button11";
+
             this.button11.Size = new System.Drawing.Size(253, 44);
+
             this.button11.TabIndex = 11;
             this.button11.Text = "اصدار فاتورة";
             this.button11.UseVisualStyleBackColor = false;
@@ -434,7 +472,9 @@
             this.button12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button12.Location = new System.Drawing.Point(0, 0);
             this.button12.Name = "button12";
+
             this.button12.Size = new System.Drawing.Size(253, 44);
+
             this.button12.TabIndex = 10;
             this.button12.Text = "ادارة الفواتير";
             this.button12.UseVisualStyleBackColor = false;
@@ -453,7 +493,9 @@
             this.button10.Location = new System.Drawing.Point(0, 732);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+
             this.button10.Size = new System.Drawing.Size(253, 52);
+
             this.button10.TabIndex = 10;
             this.button10.Text = "                      الفواتير";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -469,7 +511,9 @@
             this.customer_panal.Dock = System.Windows.Forms.DockStyle.Top;
             this.customer_panal.Location = new System.Drawing.Point(0, 598);
             this.customer_panal.Name = "customer_panal";
+
             this.customer_panal.Size = new System.Drawing.Size(253, 134);
+
             this.customer_panal.TabIndex = 0;
             // 
             // button27
@@ -482,7 +526,9 @@
             this.button27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button27.Location = new System.Drawing.Point(0, 88);
             this.button27.Name = "button27";
+
             this.button27.Size = new System.Drawing.Size(253, 44);
+
             this.button27.TabIndex = 12;
             this.button27.Text = "اضافة رصيد افتتاحي";
             this.button27.UseVisualStyleBackColor = false;
@@ -498,7 +544,9 @@
             this.button9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button9.Location = new System.Drawing.Point(0, 44);
             this.button9.Name = "button9";
+
             this.button9.Size = new System.Drawing.Size(253, 44);
+
             this.button9.TabIndex = 11;
             this.button9.Text = "اصدار غرامة";
             this.button9.UseVisualStyleBackColor = false;
@@ -514,7 +562,9 @@
             this.button8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button8.Location = new System.Drawing.Point(0, 0);
             this.button8.Name = "button8";
+
             this.button8.Size = new System.Drawing.Size(253, 44);
+
             this.button8.TabIndex = 10;
             this.button8.Text = "ادارة العملاء";
             this.button8.UseVisualStyleBackColor = false;
@@ -533,7 +583,9 @@
             this.button2.Location = new System.Drawing.Point(0, 546);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+
             this.button2.Size = new System.Drawing.Size(253, 52);
+
             this.button2.TabIndex = 9;
             this.button2.Text = "                       العملاء";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -553,7 +605,9 @@
             this.panel_system_prepar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_system_prepar.Location = new System.Drawing.Point(0, 231);
             this.panel_system_prepar.Name = "panel_system_prepar";
+
             this.panel_system_prepar.Size = new System.Drawing.Size(253, 315);
+
             this.panel_system_prepar.TabIndex = 8;
             // 
             // button30
@@ -566,7 +620,9 @@
             this.button30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button30.Location = new System.Drawing.Point(0, 264);
             this.button30.Name = "button30";
+
             this.button30.Size = new System.Drawing.Size(253, 44);
+
             this.button30.TabIndex = 15;
             this.button30.Text = "اضافه مستخدم   ";
             this.button30.UseVisualStyleBackColor = false;
@@ -582,7 +638,9 @@
             this.button26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button26.Location = new System.Drawing.Point(0, 220);
             this.button26.Name = "button26";
+
             this.button26.Size = new System.Drawing.Size(253, 44);
+
             this.button26.TabIndex = 14;
             this.button26.Text = "اضافة غرامة";
             this.button26.UseVisualStyleBackColor = false;
@@ -598,7 +656,9 @@
             this.button14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button14.Location = new System.Drawing.Point(0, 176);
             this.button14.Name = "button14";
+
             this.button14.Size = new System.Drawing.Size(253, 44);
+
             this.button14.TabIndex = 13;
             this.button14.Text = "اضافة محصلين";
             this.button14.UseVisualStyleBackColor = false;
@@ -614,7 +674,9 @@
             this.button15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button15.Location = new System.Drawing.Point(0, 132);
             this.button15.Name = "button15";
+
             this.button15.Size = new System.Drawing.Size(253, 44);
+
             this.button15.TabIndex = 12;
             this.button15.Text = "اضافة الاشتراكات";
             this.button15.UseVisualStyleBackColor = false;
@@ -630,7 +692,9 @@
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button4.Location = new System.Drawing.Point(0, 88);
             this.button4.Name = "button4";
+
             this.button4.Size = new System.Drawing.Size(253, 44);
+
             this.button4.TabIndex = 10;
             this.button4.Text = "بيانات المربعات";
             this.button4.UseVisualStyleBackColor = false;
@@ -646,7 +710,9 @@
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button1.Location = new System.Drawing.Point(0, 44);
             this.button1.Name = "button1";
+
             this.button1.Size = new System.Drawing.Size(253, 44);
+
             this.button1.TabIndex = 9;
             this.button1.Text = "بيانات المناطق";
             this.button1.UseVisualStyleBackColor = false;
@@ -663,7 +729,9 @@
             this.button28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.button28.Location = new System.Drawing.Point(0, 0);
             this.button28.Name = "button28";
+
             this.button28.Size = new System.Drawing.Size(253, 44);
+
             this.button28.TabIndex = 0;
             this.button28.Text = "بيانات المحطة";
             this.button28.UseVisualStyleBackColor = false;
@@ -683,7 +751,9 @@
             this.system_prepa.Location = new System.Drawing.Point(0, 180);
             this.system_prepa.Name = "system_prepa";
             this.system_prepa.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
+
             this.system_prepa.Size = new System.Drawing.Size(253, 51);
+
             this.system_prepa.TabIndex = 2;
             this.system_prepa.Text = "                     تهيئة النظام      ";
             this.system_prepa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -706,7 +776,9 @@
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 10, 20);
             this.iconButton5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+
             this.iconButton5.Size = new System.Drawing.Size(253, 61);
+
             this.iconButton5.TabIndex = 3;
             this.iconButton5.Text = "                   تهيئة النظام";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -730,7 +802,9 @@
             this.home_btn.Name = "home_btn";
             this.home_btn.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.home_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+
             this.home_btn.Size = new System.Drawing.Size(253, 49);
+
             this.home_btn.TabIndex = 0;
             this.home_btn.Text = "                 الرئيسية  ";
             this.home_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -747,7 +821,9 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
+
             this.panel2.Size = new System.Drawing.Size(253, 131);
+
             this.panel2.TabIndex = 0;
             // 
             // rjCircularPictureBox1
@@ -789,7 +865,9 @@
             this.lb_user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
             this.lb_user.Location = new System.Drawing.Point(68, 92);
             this.lb_user.Name = "lb_user";
+
             this.lb_user.Size = new System.Drawing.Size(132, 25);
+
             this.lb_user.TabIndex = 2;
             this.lb_user.Text = "اسم المستخدم";
             this.lb_user.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -831,7 +909,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(18, 7);
             this.label2.Name = "label2";
+
             this.label2.Size = new System.Drawing.Size(121, 38);
+
             this.label2.TabIndex = 3;
             this.label2.Text = "الرئيسية";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -844,7 +924,9 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(454, 9);
             this.label3.Name = "label3";
+
             this.label3.Size = new System.Drawing.Size(102, 35);
+
             this.label3.TabIndex = 6;
             this.label3.Text = "الرئيسية";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

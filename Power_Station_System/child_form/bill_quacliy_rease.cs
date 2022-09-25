@@ -251,6 +251,7 @@ namespace Power_Station_System.child_form
         }
 
         private void RjButton3_Click(object sender, EventArgs e)
+
         {
 
         }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -35,10 +36,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+
             this.panel2 = new System.Windows.Forms.Panel();
             this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             this.ourPanel1 = new OurComponent.OurPanel();
+
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -61,6 +64,7 @@
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bill_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.checkedBOX = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -71,21 +75,25 @@
             // 
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Controls.Add(this.dataGridView1);
+
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 66);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1246, 545);
+
             this.panel1.TabIndex = 20;
             // 
             // checkBox1
             // 
+
             this.checkBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(1202, 11);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
+
             this.checkBox1.TabIndex = 24;
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
@@ -94,12 +102,15 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+
             dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -109,6 +120,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.checkedBOX,
             this.bill_id,
@@ -128,6 +140,7 @@
             this.privio_mony,
             this.month_many,
             this.mony_write});
+
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("LBC", 9.749999F);
@@ -140,46 +153,167 @@
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 40;
+
+            this.dataGridView1.RowTemplate.Height = 80;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1246, 545);
+            this.dataGridView1.Size = new System.Drawing.Size(1068, 365);
             this.dataGridView1.TabIndex = 23;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick_1);
+            // 
+            // checkedBOX
+            // 
+            this.checkedBOX.HeaderText = "";
+            this.checkedBOX.Name = "checkedBOX";
+            // 
+            // bill_id
+            // 
+            this.bill_id.DataPropertyName = "Bill_ID";
+            this.bill_id.HeaderText = "رقم الفاتورة";
+            this.bill_id.Name = "bill_id";
+            this.bill_id.ReadOnly = true;
+            // 
+            // name
+            // 
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "اسم العميل";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            // 
+            // meter_number
+            // 
+            this.meter_number.DataPropertyName = "meter_number";
+            this.meter_number.HeaderText = "رقم العداد";
+            this.meter_number.Name = "meter_number";
+            this.meter_number.ReadOnly = true;
+            // 
+            // total_due
+            // 
+            this.total_due.DataPropertyName = "total_due";
+            this.total_due.HeaderText = "المبلغ الاجمالي";
+            this.total_due.Name = "total_due";
+            this.total_due.ReadOnly = true;
+            // 
+            // Subscription_Type
+            // 
+            this.Subscription_Type.DataPropertyName = "Subscription_Type";
+            this.Subscription_Type.HeaderText = "الاشتراك";
+            this.Subscription_Type.Name = "Subscription_Type";
+            this.Subscription_Type.ReadOnly = true;
+            // 
+            // Data_time
+            // 
+            this.Data_time.DataPropertyName = "Data_time";
+            this.Data_time.HeaderText = "التاريخ";
+            this.Data_time.Name = "Data_time";
+            this.Data_time.ReadOnly = true;
+            // 
+            // Subscriber_adress
+            // 
+            this.Subscriber_adress.DataPropertyName = "Subscriber_adress";
+            this.Subscriber_adress.HeaderText = "العنوان";
+            this.Subscriber_adress.Name = "Subscriber_adress";
+            // 
+            // sub_reading_ID
+            // 
+            this.sub_reading_ID.DataPropertyName = "sub_reading_ID";
+            this.sub_reading_ID.HeaderText = "رقم القرءة";
+            this.sub_reading_ID.Name = "sub_reading_ID";
+            this.sub_reading_ID.ReadOnly = true;
+            this.sub_reading_ID.Visible = false;
+            // 
+            // current_Reading
+            // 
+            this.current_Reading.DataPropertyName = "current_Reading";
+            this.current_Reading.HeaderText = "القراءة الحالية ";
+            this.current_Reading.Name = "current_Reading";
+            this.current_Reading.ReadOnly = true;
+            // 
+            // privous_reading
+            // 
+            this.privous_reading.DataPropertyName = "privous_reading";
+            this.privous_reading.HeaderText = "القراءة السابقة";
+            this.privous_reading.Name = "privous_reading";
+            this.privous_reading.ReadOnly = true;
+            // 
+            // Month_fee
+            // 
+            this.Month_fee.DataPropertyName = "Month_fee";
+            this.Month_fee.HeaderText = "رسوم الاشتراك";
+            this.Month_fee.Name = "Month_fee";
+            // 
+            // Kw_used
+            // 
+            this.Kw_used.DataPropertyName = "Kw_used";
+            this.Kw_used.HeaderText = "الاستهلاك";
+            this.Kw_used.Name = "Kw_used";
+            this.Kw_used.ReadOnly = true;
+            // 
+            // kw_price_KW
+            // 
+            this.kw_price_KW.DataPropertyName = "kw_price_KW";
+            this.kw_price_KW.HeaderText = "سعر الكيلو";
+            this.kw_price_KW.Name = "kw_price_KW";
+            this.kw_price_KW.ReadOnly = true;
+            // 
+            // Block_name
+            // 
+            this.Block_name.DataPropertyName = "Block_name";
+            this.Block_name.HeaderText = "المربع";
+            this.Block_name.Name = "Block_name";
+            this.Block_name.ReadOnly = true;
+            // 
+            // privio_mony
+            // 
+            this.privio_mony.DataPropertyName = "privio_mony";
+            this.privio_mony.HeaderText = "المتبقي";
+            this.privio_mony.Name = "privio_mony";
+            this.privio_mony.ReadOnly = true;
+            // 
+            // month_many
+            // 
+            this.month_many.DataPropertyName = "month_many";
+            this.month_many.HeaderText = "الرسوم الشهرية";
+            this.month_many.Name = "month_many";
+            this.month_many.ReadOnly = true;
+            // 
+            // mony_write
+            // 
+            this.mony_write.DataPropertyName = "mony_write";
+            this.mony_write.HeaderText = "المبلغ كتابة";
+            this.mony_write.Name = "mony_write";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel2.Controls.Add(this.rjButton2);
             this.panel2.Controls.Add(this.rjButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 611);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(0, 464);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1246, 81);
+            this.panel2.Size = new System.Drawing.Size(1068, 98);
             this.panel2.TabIndex = 21;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // rjButton2
             // 
-            this.rjButton2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rjButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 7;
+            this.rjButton2.BorderRadius = 0;
             this.rjButton2.BorderSize = 0;
             this.rjButton2.FlatAppearance.BorderSize = 0;
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("LBC", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(491, 25);
-            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.rjButton2.Location = new System.Drawing.Point(229, 12);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(76, 33);
+            this.rjButton2.Size = new System.Drawing.Size(86, 59);
+
             this.rjButton2.TabIndex = 4;
             this.rjButton2.Text = "خروج";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -188,6 +322,7 @@
             // 
             // rjButton1
             // 
+
             this.rjButton1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.rjButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
@@ -202,6 +337,7 @@
             this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
             this.rjButton1.Size = new System.Drawing.Size(76, 33);
+
             this.rjButton1.TabIndex = 3;
             this.rjButton1.Text = "طباعة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -213,9 +349,11 @@
             this.ourPanel1.BackColor = System.Drawing.Color.Transparent;
             this.ourPanel1.BorderRaduis = 5;
             this.ourPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+
             this.ourPanel1.Controls.Add(this.button7);
             this.ourPanel1.Controls.Add(this.button6);
             this.ourPanel1.Controls.Add(this.button3);
+
             this.ourPanel1.Controls.Add(this.label1);
             this.ourPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ourPanel1.ForeColor = System.Drawing.Color.Black;
@@ -223,9 +361,11 @@
             this.ourPanel1.GardientBottomClor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.ourPanel1.GardientTopClor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
             this.ourPanel1.Location = new System.Drawing.Point(0, 0);
+
             this.ourPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ourPanel1.Name = "ourPanel1";
             this.ourPanel1.Size = new System.Drawing.Size(1246, 66);
+
             this.ourPanel1.TabIndex = 19;
             this.ourPanel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.OurPanel1_MouseDown);
             this.ourPanel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.OurPanel1_MouseMove);
@@ -282,6 +422,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+
             this.label1.Location = new System.Drawing.Point(566, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 31);
@@ -438,6 +579,7 @@
             this.Controls.Add(this.ourPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.Name = "pringBill";
             this.Text = "pringBill";
             this.panel1.ResumeLayout(false);
@@ -460,9 +602,11 @@
         private RJCodeAdvance.RJControls.RJButton rjButton2;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         private System.Windows.Forms.CheckBox checkBox1;
+
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+
         private System.Windows.Forms.DataGridViewCheckBoxColumn checkedBOX;
         private System.Windows.Forms.DataGridViewTextBoxColumn bill_id;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
