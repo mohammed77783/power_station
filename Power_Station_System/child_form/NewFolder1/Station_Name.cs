@@ -16,6 +16,8 @@ namespace Power_Station_System.child_form.NewFolder1
         
 
     { DataBase.Station_Data SD = new DataBase.Station_Data();
+        DataBase.users users = new DataBase.users();
+
         string name_station;
         string owner_name;
         string address;
@@ -24,7 +26,34 @@ namespace Power_Station_System.child_form.NewFolder1
         public Station_Name()
         {
             InitializeComponent();
+            Loadpriv();
         }
+
+
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(1, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton3.Enabled = false;
+
+
+            }
+            
+        }
+
 
         public void mod()
         {

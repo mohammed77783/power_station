@@ -15,21 +15,48 @@ namespace Power_Station_System.chid_form
 {
     public partial class Add_Area1 : Form
     {
+        DataBase.users users = new DataBase.users();
+
         DataBase.Block_aned_area aree = new DataBase.Block_aned_area();
         int id;
         string name;
         public Add_Area1()
         {
             InitializeComponent();
-            //try
-            //{
+           
                 dataGridView1.DataSource = aree.get_area();
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
+            Loadpriv();
+
         }
+
+
+        void Loadpriv()
+        {
+          
+
+            DataTable Dt = users.priv_Add_priv_Edit(2,Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
 
         public void Alert(string msg, Form_alert.enmType type)
         {

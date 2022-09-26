@@ -13,13 +13,44 @@ namespace Power_Station_System.chid_form
 {
     public partial class Subscription : Form
     {
+        DataBase.users users = new DataBase.users();
+
         DataBase.subscription_1 sub = new DataBase.subscription_1();
         int id, Kw_price, month_fee;
         string sub_peiod, sub_stype;
         public Subscription()
         {
             InitializeComponent();
+            Loadpriv();
+
         }
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(4, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();
@@ -223,6 +254,11 @@ namespace Power_Station_System.chid_form
         }
 
         private void RjTextBox4__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

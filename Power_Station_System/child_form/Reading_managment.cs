@@ -13,6 +13,8 @@ namespace Power_Station_System.chid_form
 {
     public partial class Reading_managment : Form
     {
+        DataBase.users users = new DataBase.users();
+
         DataBase.reading rea = new DataBase.reading();
         private object dataGridView1;
         string meternum = null;
@@ -33,7 +35,38 @@ namespace Power_Station_System.chid_form
             {
                 MessageBox.Show(ex.Message);
             }
+            Loadpriv();
+
         }
+
+
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(14, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();

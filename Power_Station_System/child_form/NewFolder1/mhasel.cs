@@ -13,6 +13,8 @@ namespace Power_Station_System.chid_form
 {
     public partial class mhasel : Form
     {
+        DataBase.users users = new DataBase.users();
+
         DataBase.mhasell mhasell = new DataBase.mhasell();
         DataBase.Block_aned_area aree = new DataBase.Block_aned_area();
         int id;
@@ -29,10 +31,41 @@ namespace Power_Station_System.chid_form
             comboBox1.ValueMember = "ID";
             comboBox1.Text = "";
 
+            Loadpriv();
 
-        
+
 
         }
+
+
+
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(5, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();

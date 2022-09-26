@@ -30,9 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -45,9 +42,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.meter_ = new RJCodeAdvance.RJControls.RJTextBox();
             this.name_sub = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.privosu_reading = new RJCodeAdvance.RJControls.RJTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.current_reading = new RJCodeAdvance.RJControls.RJTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.datagride_view_customer = new System.Windows.Forms.DataGridView();
@@ -63,44 +63,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagride_view_customer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(715, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 16);
-            this.label3.TabIndex = 64;
-            this.label3.Text = "الأسم :";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(41, 25);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 20);
-            this.dateTimePicker1.TabIndex = 60;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(681, 134);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 16);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "القراءة الحالية :";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // panel1
             // 
@@ -167,7 +129,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(13, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -262,7 +224,7 @@
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.current_reading);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("LBC", 8.25F);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(8, 8);
             this.groupBox1.Name = "groupBox1";
@@ -289,16 +251,16 @@
             // meter_
             // 
             this.meter_.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.meter_.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.meter_.BackColor = System.Drawing.Color.White;
             this.meter_.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.meter_.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.meter_.BorderRadius = 0;
             this.meter_.BorderSize = 1;
             this.meter_.Enabled = false;
-            this.meter_.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.meter_.Font = new System.Drawing.Font("LBC", 8.25F);
             this.meter_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.meter_.Location = new System.Drawing.Point(45, 66);
-            this.meter_.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meter_.Margin = new System.Windows.Forms.Padding(4);
             this.meter_.Multiline = false;
             this.meter_.Name = "meter_";
             this.meter_.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -307,7 +269,7 @@
             this.meter_.PlaceholderText = "";
             this.meter_.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.meter_.SelectionStart = 0;
-            this.meter_.Size = new System.Drawing.Size(229, 33);
+            this.meter_.Size = new System.Drawing.Size(229, 31);
             this.meter_.TabIndex = 66;
             this.meter_.Texts = "";
             this.meter_.UnderlinedStyle = true;
@@ -315,16 +277,16 @@
             // name_sub
             // 
             this.name_sub.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.name_sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.name_sub.BackColor = System.Drawing.Color.White;
             this.name_sub.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.name_sub.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.name_sub.BorderRadius = 0;
             this.name_sub.BorderSize = 1;
             this.name_sub.Enabled = false;
-            this.name_sub.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_sub.Font = new System.Drawing.Font("LBC", 8.25F);
             this.name_sub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.name_sub.Location = new System.Drawing.Point(412, 28);
-            this.name_sub.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.name_sub.Margin = new System.Windows.Forms.Padding(4);
             this.name_sub.Multiline = false;
             this.name_sub.Name = "name_sub";
             this.name_sub.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -333,10 +295,24 @@
             this.name_sub.PlaceholderText = "";
             this.name_sub.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.name_sub.SelectionStart = 0;
-            this.name_sub.Size = new System.Drawing.Size(260, 33);
+            this.name_sub.Size = new System.Drawing.Size(260, 31);
             this.name_sub.TabIndex = 65;
             this.name_sub.Texts = "";
             this.name_sub.UnderlinedStyle = true;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(715, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 16);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "الأسم :";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label5
             // 
@@ -355,16 +331,16 @@
             // privosu_reading
             // 
             this.privosu_reading.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.privosu_reading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.privosu_reading.BackColor = System.Drawing.Color.White;
             this.privosu_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.privosu_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.privosu_reading.BorderRadius = 0;
             this.privosu_reading.BorderSize = 1;
             this.privosu_reading.Enabled = false;
-            this.privosu_reading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.privosu_reading.Font = new System.Drawing.Font("LBC", 8.25F);
             this.privosu_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.privosu_reading.Location = new System.Drawing.Point(42, 117);
-            this.privosu_reading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.privosu_reading.Margin = new System.Windows.Forms.Padding(4);
             this.privosu_reading.Multiline = false;
             this.privosu_reading.Name = "privosu_reading";
             this.privosu_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -373,7 +349,7 @@
             this.privosu_reading.PlaceholderText = "";
             this.privosu_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.privosu_reading.SelectionStart = 0;
-            this.privosu_reading.Size = new System.Drawing.Size(232, 33);
+            this.privosu_reading.Size = new System.Drawing.Size(232, 31);
             this.privosu_reading.TabIndex = 61;
             this.privosu_reading.Texts = "";
             this.privosu_reading.UnderlinedStyle = true;
@@ -391,18 +367,43 @@
             this.label4.TabIndex = 59;
             this.label4.Text = "تاريخ القراءة :";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(41, 25);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(233, 24);
+            this.dateTimePicker1.TabIndex = 60;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(681, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 16);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "القراءة الحالية :";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // current_reading
             // 
             this.current_reading.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.current_reading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
+            this.current_reading.BackColor = System.Drawing.Color.White;
             this.current_reading.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.current_reading.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.current_reading.BorderFocusColor = System.Drawing.Color.White;
             this.current_reading.BorderRadius = 0;
             this.current_reading.BorderSize = 1;
-            this.current_reading.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.current_reading.Font = new System.Drawing.Font("LBC", 8.25F);
             this.current_reading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.current_reading.Location = new System.Drawing.Point(412, 126);
-            this.current_reading.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.current_reading.Margin = new System.Windows.Forms.Padding(4);
             this.current_reading.Multiline = false;
             this.current_reading.Name = "current_reading";
             this.current_reading.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -411,7 +412,7 @@
             this.current_reading.PlaceholderText = "";
             this.current_reading.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.current_reading.SelectionStart = 0;
-            this.current_reading.Size = new System.Drawing.Size(260, 33);
+            this.current_reading.Size = new System.Drawing.Size(260, 31);
             this.current_reading.TabIndex = 21;
             this.current_reading.Texts = "";
             this.current_reading.UnderlinedStyle = true;
@@ -535,15 +536,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label3;
-        private RJCodeAdvance.RJControls.RJTextBox privosu_reading;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label1;
-        private RJCodeAdvance.RJControls.RJTextBox current_reading;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
@@ -553,13 +546,21 @@
         private RJCodeAdvance.RJControls.RJButton rjButton3;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         public System.Windows.Forms.DataGridView datagride_view_customer;
-        private RJCodeAdvance.RJControls.RJTextBox name_sub;
-        private System.Windows.Forms.Label label6;
-        private RJCodeAdvance.RJControls.RJTextBox meter_;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn address;
         private System.Windows.Forms.DataGridViewTextBoxColumn ele_sub_number;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private RJCodeAdvance.RJControls.RJTextBox meter_;
+        private RJCodeAdvance.RJControls.RJTextBox name_sub;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private RJCodeAdvance.RJControls.RJTextBox privosu_reading;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
+        private RJCodeAdvance.RJControls.RJTextBox current_reading;
     }
 }

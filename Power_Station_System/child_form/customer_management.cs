@@ -14,15 +14,44 @@ namespace Power_Station_System.chid_form
     public partial class customer_management : Form
     {
         DataBase.subscriber cus = new DataBase.subscriber();
+        DataBase.users users = new DataBase.users();
+
         int id;
       
        /* string name_upd, phone, addrss, inde_type, tden_num, electronic_number, subscription_id;*/
         public customer_management( )
         {
             InitializeComponent();
-        
+            Loadpriv();
 
         }
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(8, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();

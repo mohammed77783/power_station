@@ -12,6 +12,7 @@ namespace Power_Station_System.child_form
 {
     public partial class Biil_managment : Form
     {
+
         DataBase.bill bill = new DataBase.bill();
         DataBase.reading rea = new DataBase.reading();
         public Biil_managment()

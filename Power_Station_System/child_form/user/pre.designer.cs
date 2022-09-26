@@ -45,7 +45,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.rjButton6 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton5 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton2 = new RJCodeAdvance.RJControls.RJButton();
@@ -239,7 +238,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.rjButton6);
             this.panel2.Controls.Add(this.rjButton5);
             this.panel2.Controls.Add(this.rjButton4);
             this.panel2.Controls.Add(this.rjButton2);
@@ -251,28 +249,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(784, 44);
             this.panel2.TabIndex = 6;
-            // 
-            // rjButton6
-            // 
-            this.rjButton6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton6.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton6.BorderRadius = 7;
-            this.rjButton6.BorderSize = 0;
-            this.rjButton6.FlatAppearance.BorderSize = 0;
-            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.Font = new System.Drawing.Font("LBC", 8.25F);
-            this.rjButton6.ForeColor = System.Drawing.Color.Black;
-            this.rjButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton6.Location = new System.Drawing.Point(12, 6);
-            this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(119, 29);
-            this.rjButton6.TabIndex = 7;
-            this.rjButton6.Text = "صلاحية كاملة للحذف";
-            this.rjButton6.TextColor = System.Drawing.Color.Black;
-            this.rjButton6.UseVisualStyleBackColor = false;
-            this.rjButton6.Click += new System.EventHandler(this.RjButton6_Click);
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
             // rjButton5
             // 
@@ -287,7 +264,7 @@
             this.rjButton5.Font = new System.Drawing.Font("LBC", 8.25F);
             this.rjButton5.ForeColor = System.Drawing.Color.Black;
             this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton5.Location = new System.Drawing.Point(141, 6);
+            this.rjButton5.Location = new System.Drawing.Point(106, 6);
             this.rjButton5.Name = "rjButton5";
             this.rjButton5.Size = new System.Drawing.Size(119, 29);
             this.rjButton5.TabIndex = 6;
@@ -309,7 +286,7 @@
             this.rjButton4.Font = new System.Drawing.Font("LBC", 8.25F);
             this.rjButton4.ForeColor = System.Drawing.Color.Black;
             this.rjButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton4.Location = new System.Drawing.Point(266, 6);
+            this.rjButton4.Location = new System.Drawing.Point(231, 6);
             this.rjButton4.Name = "rjButton4";
             this.rjButton4.Size = new System.Drawing.Size(119, 29);
             this.rjButton4.TabIndex = 6;
@@ -330,7 +307,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 8.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.Black;
-            this.rjButton2.Location = new System.Drawing.Point(518, 6);
+            this.rjButton2.Location = new System.Drawing.Point(483, 6);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(119, 29);
             this.rjButton2.TabIndex = 3;
@@ -352,7 +329,7 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 8.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.Black;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(390, 6);
+            this.rjButton3.Location = new System.Drawing.Point(355, 6);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(119, 29);
             this.rjButton3.TabIndex = 4;
@@ -539,7 +516,6 @@
         private RJCodeAdvance.RJControls.RJButton rjButton5;
         private RJCodeAdvance.RJControls.RJButton rjButton4;
         private System.Windows.Forms.Panel panel3;
-        private RJCodeAdvance.RJControls.RJButton rjButton6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.Button button6;

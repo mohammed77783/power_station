@@ -12,13 +12,15 @@ using System.Windows.Forms;
 
 namespace Power_Station_System.child_form
 {
+
     public partial class receiptt : Form
     {
         DataTable tb;
         int id_catch; string name; float total_Catch; int sub_id; string nots; int ID;
         int val;
         string Data_time;
-        DataBase.Access_layer access = new DataBase.Access_layer();
+        DataBase.users users = new DataBase.users();
+
         DataBase.subscriber su = new DataBase.subscriber();
         DataBase.chatch chatch = new DataBase.chatch();
         public receiptt()
@@ -28,11 +30,12 @@ namespace Power_Station_System.child_form
             comboBox1.DisplayMember = "Subscriber_name";
             comboBox1.ValueMember = "ID_Subscriber";
             comboBox1.DataSource = su.get_subscriber();
-          
-            comboBox1.Text = "";
+            Loadpriv();
+
+
         }
 
-    
+
         private void Receiptt_Load(object sender, EventArgs e)
         {
             try
@@ -47,6 +50,33 @@ namespace Power_Station_System.child_form
                // this.Alert(ex.Message, Form_alert.enmType.Error);
             }
         }
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(21, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void clea()
         {
             comboBox1.Text = String.Empty;

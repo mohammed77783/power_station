@@ -16,25 +16,56 @@ namespace Power_Station_System.chid_form
 
     public partial class fines : Form
     {
+        DataBase.users users = new DataBase.users();
+
         DataBase.fines finess = new DataBase.fines();
         DataBase.subscriber su = new DataBase.subscriber();
 
         int id;
         string fine_data;
-        int fines_type_ID;
-        int ID_Subscriber;
+        string fines_type_ID;
+        string ID_Subscriber;
+        bool pay_it;
         public fines()
         {
             InitializeComponent();
-            comboBox1.DataSource = su.get_subscriber();
+          
             comboBox1.DisplayMember = "Subscriber_name";
             comboBox1.ValueMember = "ID_Subscriber";
-            comboBox1.Text = "";
-            comboBox2.DataSource = finess.get_fines();
-            comboBox2.DisplayMember = "type";
+            comboBox1.DataSource = su.get_subscriber();
+            comboBox2.DisplayMember = "typee";
             comboBox2.ValueMember = "id";
-            comboBox2.Text = "";
+            comboBox2.DataSource = finess.get_fines();
+            Loadpriv();
+
         }
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(9, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();
@@ -149,17 +180,21 @@ namespace Power_Station_System.chid_form
 
         public void mod()
         {
-            if (id != null)
+            if (id  >0)
             {
                 dataGridView1.Enabled = false;
-            
+                //comboBox1.SelectedValue = Convert.ToInt16( ID_Subscriber);
+                //comboBox2.SelectedValue = fines_type_ID;
                 dateTimePicker1.Text = fine_data;
+
 
                 rjButton3.Text = "الغاء";
                 rjButton1.Text = "حقظ التغيرات";
                 rjButton2.Enabled = false;
 
             }
+
+
         }
         public void unmod()
         {
@@ -216,15 +251,50 @@ namespace Power_Station_System.chid_form
 
         private void DataGridView1_Click(object sender, EventArgs e)
         {
-            id = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            fine_data = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            fines_type_ID = Convert.ToInt16(dataGridView1.CurrentRow.Cells[2].Value.ToString());
-            ID_Subscriber = Convert.ToInt16(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+            try
+            {
+
+
+
+               id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                ID_Subscriber =dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                fines_type_ID = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                fine_data = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+             //   pay_it  = Convert.ToBoolean(dataGridView1.CurrentRow.Cells[4].Value.ToString());
+
+            }
+            catch (Exception ex)
+            {
+                // MessageBox.Show(ex.Message);
+                this.Alert(ex.Message, Form_alert.enmType.Error);
+            }
+
+
         }
 
         private void RjButton3_Click(object sender, EventArgs e)
         {
 
+            if (rjButton3.Text == "حذف")
+            {
+                if (id != null)
+                {
+                    if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
+                    {
+                        finess.Delete_fines_reales(this.dataGridView1.CurrentRow.Cells[0].Value.ToString());
+                        // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Alert("تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
+                        this.Fines_Load(null, null);
+                    }
+                }
+            }
+            if (rjButton3.Text == "الغاء")
+            {
+                unmod();
+                Clear();
+                id = -1;
+
+            }
         }
     }
 }

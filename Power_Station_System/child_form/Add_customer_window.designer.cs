@@ -176,7 +176,7 @@
             this.meter_number.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.meter_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.meter_number.Location = new System.Drawing.Point(578, 296);
-            this.meter_number.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meter_number.Margin = new System.Windows.Forms.Padding(4);
             this.meter_number.Multiline = false;
             this.meter_number.Name = "meter_number";
             this.meter_number.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -295,7 +295,7 @@
             this.indenity_number.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.indenity_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.indenity_number.Location = new System.Drawing.Point(578, 245);
-            this.indenity_number.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.indenity_number.Margin = new System.Windows.Forms.Padding(4);
             this.indenity_number.Multiline = false;
             this.indenity_number.Name = "indenity_number";
             this.indenity_number.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -347,7 +347,7 @@
             this.subscr_ph_num.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subscr_ph_num.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.subscr_ph_num.Location = new System.Drawing.Point(578, 125);
-            this.subscr_ph_num.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.subscr_ph_num.Margin = new System.Windows.Forms.Padding(4);
             this.subscr_ph_num.Multiline = false;
             this.subscr_ph_num.Name = "subscr_ph_num";
             this.subscr_ph_num.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -372,7 +372,7 @@
             this.subscriper_name.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subscriper_name.ForeColor = System.Drawing.Color.Black;
             this.subscriper_name.Location = new System.Drawing.Point(128, 126);
-            this.subscriper_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.subscriper_name.Margin = new System.Windows.Forms.Padding(4);
             this.subscriper_name.Multiline = false;
             this.subscriper_name.Name = "subscriper_name";
             this.subscriper_name.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -397,7 +397,7 @@
             this.sub_address.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sub_address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sub_address.Location = new System.Drawing.Point(128, 187);
-            this.sub_address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sub_address.Margin = new System.Windows.Forms.Padding(4);
             this.sub_address.Multiline = false;
             this.sub_address.Name = "sub_address";
             this.sub_address.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
