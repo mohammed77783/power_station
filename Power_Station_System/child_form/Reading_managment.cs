@@ -238,9 +238,15 @@ namespace Power_Station_System.chid_form
 
         private void Datagride_view_customer_Click(object sender, EventArgs e)
         {
+            try{ 
             meternum = datagride_view_customer.CurrentRow.Cells[4].Value.ToString();
             id_res = Convert.ToInt32(datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
             row = datagride_view_customer.CurrentRow;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("يجب تحدبد  المراد اولاالعميل اولأ");
+            }
         }
     }
     }

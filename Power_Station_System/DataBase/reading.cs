@@ -51,7 +51,7 @@ namespace Power_Station_System.DataBase
                 pr[4].Value = id;
                 pr[5] = new SqlParameter("@ID_block", SqlDbType.VarChar, 200);
                 pr[5].Value = block;
-                access.executor("insert_reading_without_bill", pr);
+                access.executor("insert_reading", pr);
                 access.close();
             }
 

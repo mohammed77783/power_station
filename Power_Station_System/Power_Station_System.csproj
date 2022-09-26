@@ -131,7 +131,7 @@
     <Compile Include="child_form\Biil_managment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="child_form\Biil_managment.Designer.cs">
+    <Compile Include="child_form\Biil_managment.designer.cs">
       <DependentUpon>Biil_managment.cs</DependentUpon>
     </Compile>
     <Compile Include="child_form\bill_quacliy_rease.cs">

@@ -38,7 +38,7 @@ namespace Power_Station_System.child_form
                     {
 
                         int reading_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["ID_reading"].Value.ToString());
-                        int sub_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["ID"].Value.ToString());
+                        int sub_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["I_D"].Value.ToString());
                         string name = dataGridView1.Rows[item].Cells["gr_name"].Value.ToString();
                         string meter_number = dataGridView1.Rows[item].Cells["gr_meter"].Value.ToString();
                         string privi_reading = dataGridView1.Rows[item].Cells["gr_privio"].Value.ToString();
@@ -86,6 +86,7 @@ namespace Power_Station_System.child_form
         private void RjButton3_Click(object sender, EventArgs e)
         {
             get_reading();
+            dataGridView1.Enabled = false;
         }
         int id = -1;
         private void RjButton1_Click(object sender, EventArgs e)
@@ -99,7 +100,7 @@ namespace Power_Station_System.child_form
                     for (int item = 0; item < dataGridView1.Rows.Count; item++)
                     {
                         ++j;
-                        int sub_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["ID"].Value.ToString());
+                        int sub_id = Convert.ToInt32(dataGridView1.Rows[item].Cells["I_D"].Value.ToString());
                         string name = dataGridView1.Rows[item].Cells["gr_name"].Value.ToString();
                         string meter_number = dataGridView1.Rows[item].Cells["gr_meter"].Value.ToString();
                         string privi_reading = dataGridView1.Rows[item].Cells["gr_privio"].Value.ToString();
