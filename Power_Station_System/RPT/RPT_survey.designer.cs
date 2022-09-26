@@ -30,20 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RPT_survey));
             this.panel3 = new System.Windows.Forms.Panel();
-            this.rjButton10 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton9 = new RJCodeAdvance.RJControls.RJButton();
+            this.rjButton10 = new RJCodeAdvance.RJControls.RJButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pl_1 = new System.Windows.Forms.Panel();
-            this.pa_bu1 = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.rjButton6 = new RJCodeAdvance.RJControls.RJButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
             this.pl_2 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
@@ -54,17 +43,28 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.pl_1 = new System.Windows.Forms.Panel();
+            this.pa_bu1 = new System.Windows.Forms.Panel();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.rjButton6 = new RJCodeAdvance.RJControls.RJButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker6 = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pl_g = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.pl_1.SuspendLayout();
-            this.pa_bu1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.pl_2.SuspendLayout();
             this.panel5.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.pl_1.SuspendLayout();
+            this.pa_bu1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pl_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -79,27 +79,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(800, 50);
             this.panel3.TabIndex = 5;
-            // 
-            // rjButton10
-            // 
-            this.rjButton10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton10.BorderRadius = 7;
-            this.rjButton10.BorderSize = 0;
-            this.rjButton10.FlatAppearance.BorderSize = 0;
-            this.rjButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton10.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.rjButton10.ForeColor = System.Drawing.Color.White;
-            this.rjButton10.Location = new System.Drawing.Point(599, 10);
-            this.rjButton10.Name = "rjButton10";
-            this.rjButton10.Size = new System.Drawing.Size(173, 34);
-            this.rjButton10.TabIndex = 2;
-            this.rjButton10.Text = "تقرير القراءات الحالية";
-            this.rjButton10.TextColor = System.Drawing.Color.White;
-            this.rjButton10.UseVisualStyleBackColor = false;
-            this.rjButton10.Click += new System.EventHandler(this.RjButton10_Click);
             // 
             // rjButton9
             // 
@@ -122,6 +101,27 @@
             this.rjButton9.UseVisualStyleBackColor = false;
             this.rjButton9.Click += new System.EventHandler(this.RjButton9_Click);
             // 
+            // rjButton10
+            // 
+            this.rjButton10.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton10.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton10.BorderRadius = 7;
+            this.rjButton10.BorderSize = 0;
+            this.rjButton10.FlatAppearance.BorderSize = 0;
+            this.rjButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton10.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton10.ForeColor = System.Drawing.Color.White;
+            this.rjButton10.Location = new System.Drawing.Point(599, 10);
+            this.rjButton10.Name = "rjButton10";
+            this.rjButton10.Size = new System.Drawing.Size(173, 34);
+            this.rjButton10.TabIndex = 2;
+            this.rjButton10.Text = "تقرير القراءات الحالية";
+            this.rjButton10.TextColor = System.Drawing.Color.White;
+            this.rjButton10.UseVisualStyleBackColor = false;
+            this.rjButton10.Click += new System.EventHandler(this.RjButton10_Click);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.pl_2);
@@ -131,152 +131,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(800, 160);
             this.panel4.TabIndex = 7;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Font = new System.Drawing.Font("LBC", 9.749999F);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 210);
-            this.panel1.TabIndex = 7;
-            // 
-            // pl_1
-            // 
-            this.pl_1.Controls.Add(this.pa_bu1);
-            this.pl_1.Controls.Add(this.groupBox4);
-            this.pl_1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pl_1.Location = new System.Drawing.Point(0, 0);
-            this.pl_1.Name = "pl_1";
-            this.pl_1.Size = new System.Drawing.Size(800, 157);
-            this.pl_1.TabIndex = 3;
-            // 
-            // pa_bu1
-            // 
-            this.pa_bu1.Controls.Add(this.iconButton3);
-            this.pa_bu1.Controls.Add(this.rjButton6);
-            this.pa_bu1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pa_bu1.Location = new System.Drawing.Point(0, 118);
-            this.pa_bu1.Name = "pa_bu1";
-            this.pa_bu1.Size = new System.Drawing.Size(800, 39);
-            this.pa_bu1.TabIndex = 1;
-            // 
-            // iconButton3
-            // 
-            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Print;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 25;
-            this.iconButton3.Location = new System.Drawing.Point(351, 8);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(32, 31);
-            this.iconButton3.TabIndex = 28;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.IconButton3_Click);
-            // 
-            // rjButton6
-            // 
-            this.rjButton6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
-            this.rjButton6.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton6.BorderRadius = 7;
-            this.rjButton6.BorderSize = 0;
-            this.rjButton6.FlatAppearance.BorderSize = 0;
-            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton6.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.rjButton6.ForeColor = System.Drawing.Color.White;
-            this.rjButton6.Image = ((System.Drawing.Image)(resources.GetObject("rjButton6.Image")));
-            this.rjButton6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.rjButton6.Location = new System.Drawing.Point(412, 4);
-            this.rjButton6.Name = "rjButton6";
-            this.rjButton6.Size = new System.Drawing.Size(87, 34);
-            this.rjButton6.TabIndex = 26;
-            this.rjButton6.Text = "عرض";
-            this.rjButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton6.TextColor = System.Drawing.Color.White;
-            this.rjButton6.UseVisualStyleBackColor = false;
-            this.rjButton6.Click += new System.EventHandler(this.RjButton6_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.dateTimePicker5);
-            this.groupBox4.Controls.Add(this.dateTimePicker6);
-            this.groupBox4.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(40, 1);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupBox4.Size = new System.Drawing.Size(748, 111);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "تقرير القراءات الحالية";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(358, 56);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 16);
-            this.label3.TabIndex = 71;
-            this.label3.Text = "عرض كشف الحساب حسب كافة المشتركين";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(237, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 20);
-            this.label7.TabIndex = 70;
-            this.label7.Text = "الـــى";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("LBC", 11.25F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(237, 43);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 20);
-            this.label8.TabIndex = 69;
-            this.label8.Text = "مـــــن";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker5.Location = new System.Drawing.Point(68, 39);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(163, 24);
-            this.dateTimePicker5.TabIndex = 8;
-            // 
-            // dateTimePicker6
-            // 
-            this.dateTimePicker6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker6.Location = new System.Drawing.Point(68, 72);
-            this.dateTimePicker6.Name = "dateTimePicker6";
-            this.dateTimePicker6.Size = new System.Drawing.Size(163, 24);
-            this.dateTimePicker6.TabIndex = 7;
             // 
             // pl_2
             // 
@@ -414,6 +268,152 @@
             this.dateTimePicker2.Size = new System.Drawing.Size(189, 24);
             this.dateTimePicker2.TabIndex = 7;
             // 
+            // pl_1
+            // 
+            this.pl_1.Controls.Add(this.pa_bu1);
+            this.pl_1.Controls.Add(this.groupBox4);
+            this.pl_1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pl_1.Location = new System.Drawing.Point(0, 0);
+            this.pl_1.Name = "pl_1";
+            this.pl_1.Size = new System.Drawing.Size(800, 157);
+            this.pl_1.TabIndex = 3;
+            // 
+            // pa_bu1
+            // 
+            this.pa_bu1.Controls.Add(this.iconButton3);
+            this.pa_bu1.Controls.Add(this.rjButton6);
+            this.pa_bu1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pa_bu1.Location = new System.Drawing.Point(0, 118);
+            this.pa_bu1.Name = "pa_bu1";
+            this.pa_bu1.Size = new System.Drawing.Size(800, 39);
+            this.pa_bu1.TabIndex = 1;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Print;
+            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(51)))), ((int)(((byte)(108)))));
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 25;
+            this.iconButton3.Location = new System.Drawing.Point(351, 8);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(32, 31);
+            this.iconButton3.TabIndex = 28;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            this.iconButton3.Click += new System.EventHandler(this.IconButton3_Click);
+            // 
+            // rjButton6
+            // 
+            this.rjButton6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.rjButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
+            this.rjButton6.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.rjButton6.BorderRadius = 7;
+            this.rjButton6.BorderSize = 0;
+            this.rjButton6.FlatAppearance.BorderSize = 0;
+            this.rjButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rjButton6.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.rjButton6.ForeColor = System.Drawing.Color.White;
+            this.rjButton6.Image = ((System.Drawing.Image)(resources.GetObject("rjButton6.Image")));
+            this.rjButton6.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.rjButton6.Location = new System.Drawing.Point(412, 4);
+            this.rjButton6.Name = "rjButton6";
+            this.rjButton6.Size = new System.Drawing.Size(87, 34);
+            this.rjButton6.TabIndex = 26;
+            this.rjButton6.Text = "عرض";
+            this.rjButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rjButton6.TextColor = System.Drawing.Color.White;
+            this.rjButton6.UseVisualStyleBackColor = false;
+            this.rjButton6.Click += new System.EventHandler(this.RjButton6_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.dateTimePicker5);
+            this.groupBox4.Controls.Add(this.dateTimePicker6);
+            this.groupBox4.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
+            this.groupBox4.Location = new System.Drawing.Point(40, 1);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.groupBox4.Size = new System.Drawing.Size(748, 111);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "تقرير القراءات الحالية";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(358, 56);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(224, 16);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "عرض كشف الحساب حسب كافة المشتركين";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(237, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 20);
+            this.label7.TabIndex = 70;
+            this.label7.Text = "الـــى";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("LBC", 11.25F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(237, 43);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 20);
+            this.label8.TabIndex = 69;
+            this.label8.Text = "مـــــن";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateTimePicker5.Location = new System.Drawing.Point(68, 39);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(163, 24);
+            this.dateTimePicker5.TabIndex = 8;
+            // 
+            // dateTimePicker6
+            // 
+            this.dateTimePicker6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dateTimePicker6.Location = new System.Drawing.Point(68, 72);
+            this.dateTimePicker6.Name = "dateTimePicker6";
+            this.dateTimePicker6.Size = new System.Drawing.Size(163, 24);
+            this.dateTimePicker6.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(55)))), ((int)(((byte)(66)))));
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 210);
+            this.panel1.TabIndex = 7;
+            // 
             // pl_g
             // 
             this.pl_g.Controls.Add(this.dataGridView1);
@@ -425,11 +425,19 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeight = 30;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(800, 240);
             this.dataGridView1.TabIndex = 0;
             // 
@@ -445,15 +453,15 @@
             this.Text = "RPT_survey";
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.pl_1.ResumeLayout(false);
-            this.pa_bu1.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.pl_2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.pl_1.ResumeLayout(false);
+            this.pa_bu1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.pl_g.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -487,6 +495,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Panel pl_g;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.DataGridView dataGridView1;
     }
 }

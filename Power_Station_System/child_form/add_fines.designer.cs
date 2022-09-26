@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rjTextBoxy = new RJCodeAdvance.RJControls.RJTextBox();
@@ -104,7 +104,7 @@
             this.rjTextBoxy.ForeColor = System.Drawing.Color.Black;
             this.rjTextBoxy.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.rjTextBoxy.Location = new System.Drawing.Point(58, 53);
-            this.rjTextBoxy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rjTextBoxy.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBoxy.Multiline = false;
             this.rjTextBoxy.Name = "rjTextBoxy";
             this.rjTextBoxy.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
@@ -147,7 +147,7 @@
             this.rjTextBox1.ForeColor = System.Drawing.Color.Black;
             this.rjTextBox1.ImeMode = System.Windows.Forms.ImeMode.Katakana;
             this.rjTextBox1.Location = new System.Drawing.Point(418, 53);
-            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rjTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox1.Multiline = false;
             this.rjTextBox1.Name = "rjTextBox1";
             this.rjTextBox1.Padding = new System.Windows.Forms.Padding(9, 6, 9, 6);
@@ -294,7 +294,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(13, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -362,27 +362,27 @@
             this.datagride_view_fines.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.datagride_view_fines.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagride_view_fines.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagride_view_fines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagride_view_fines.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.datagride_view_fines.ColumnHeadersHeight = 40;
             this.datagride_view_fines.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column4,
             this.name,
             this.Column1});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagride_view_fines.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagride_view_fines.DefaultCellStyle = dataGridViewCellStyle2;
             this.datagride_view_fines.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagride_view_fines.EnableHeadersVisualStyles = false;
             this.datagride_view_fines.GridColor = System.Drawing.SystemColors.ButtonFace;
@@ -411,7 +411,7 @@
             // 
             // name
             // 
-            this.name.DataPropertyName = "type";
+            this.name.DataPropertyName = "typee";
             this.name.HeaderText = "اسم الغرامة";
             this.name.MinimumWidth = 6;
             this.name.Name = "name";

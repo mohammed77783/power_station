@@ -31,7 +31,7 @@ namespace Power_Station_System.chid_form
             comboBox1.ValueMember = "ID_Subscriber";
             comboBox1.Text = "";
             comboBox2.DataSource = finess.get_fines();
-            comboBox2.DisplayMember = "type";
+            comboBox2.DisplayMember = "typee";
             comboBox2.ValueMember = "id";
             comboBox2.Text = "";
         }

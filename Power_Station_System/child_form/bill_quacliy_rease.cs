@@ -49,10 +49,7 @@ namespace Power_Station_System.child_form
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.Text =="كافة المشتركين")
-            {
-                dataGridView1.DataSource = bill.get_togrid();
-            }
+           
         }
         string oldcu;
         private void DataGridView1_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
@@ -220,14 +217,10 @@ namespace Power_Station_System.child_form
                         //MessageBox.Show("Sucsse");
                         //serialPort1.Close();
                         //  send();
-
-
-
                         bill.inset_Bill(name, meter_number, amonut_maony, sub_id, DateTime.Now.ToString(), 
-                            reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,j);
-
-                        //  bill.update_depet(meter_number, amonut_maony);
-
+                            reading_id, privi_reading, current_reading, kw_used, kw_price, block_id, gr_almtikhrat, month_flos, mang_writing,j);                 
+                        dataGridView1.Rows.RemoveAt(item);
+                        dataGridView1.Refresh();
 
                     }
             }
@@ -238,12 +231,9 @@ namespace Power_Station_System.child_form
             }
                 finally
             {
-                for (int item = dataGridView1.Rows.Count - 1; item >= 0; item--)
-                {
-                    dataGridView1.Rows.RemoveAt(item);
-                }
-                MessageBox.Show("done");
-                comboBox1.DataSource = bill.get_subscriber_for_bill();
+                
+              
+
 
             }
 
@@ -251,9 +241,35 @@ namespace Power_Station_System.child_form
         }
 
         private void RjButton3_Click(object sender, EventArgs e)
-
         {
 
+        }
+
+        private void RjButton2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void RjButton2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RjButton2_Click_2(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = bill.get_togrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void Search__TextChanged(object sender, EventArgs e)
+        {
+            (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = String.Format("Subscriber_ElectricMeter_ID + Subscriber_name like '%" + search.Texts + "%'");
         }
     }
 }
