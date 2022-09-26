@@ -216,10 +216,16 @@ namespace Power_Station_System.chid_form
 
         private void DataGridView1_Click(object sender, EventArgs e)
         {
+            try { 
             id = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             fine_data = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             fines_type_ID = Convert.ToInt16(dataGridView1.CurrentRow.Cells[2].Value.ToString());
             ID_Subscriber = Convert.ToInt16(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
 
         private void RjButton3_Click(object sender, EventArgs e)

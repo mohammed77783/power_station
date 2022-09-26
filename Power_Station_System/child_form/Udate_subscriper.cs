@@ -108,6 +108,10 @@ namespace Power_Station_System.chid_form
                    // MessageBox.Show(ex.Message);
                     this.Alert(ex.Message, Form_alert.enmType.Error);
                 }
+                finally
+                {
+                    this.Close();
+                }
             }
         }
 
@@ -185,6 +189,16 @@ namespace Power_Station_System.chid_form
         }
 
         private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Identity_ty_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sub_address_upda__TextChanged(object sender, EventArgs e)
         {
 
         }

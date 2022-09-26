@@ -21,7 +21,7 @@ namespace Power_Station_System.child_form
         {
 
             InitializeComponent();
-            dataGridView1.DataSource = bill.get_bill_to_print();
+           // dataGridView1.DataSource = bill.get_bill_to_print();
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -144,6 +144,10 @@ namespace Power_Station_System.child_form
 
         }
 
+        private void PringBill_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

@@ -14,7 +14,7 @@ namespace Power_Station_System.chid_form
     public partial class customer_management : Form
     {
         DataBase.subscriber cus = new DataBase.subscriber();
-        int id;
+        int id=-1;
       
        /* string name_upd, phone, addrss, inde_type, tden_num, electronic_number, subscription_id;*/
         public customer_management( )
@@ -38,8 +38,15 @@ namespace Power_Station_System.chid_form
 
         private void RjButton2_Click(object sender, EventArgs e)
         {
+            if (id > 0) { 
            chid_form.Udate_subscriper udate = new chid_form.Udate_subscriper(id,this);
             udate.ShowDialog();
+                id = -1;
+            }
+            else
+            {
+                MessageBox.Show("يجب تحديد العميل المقصود اولا");
+            }
         }
 
         private void IconButton1_Click(object sender, EventArgs e)
@@ -122,16 +129,23 @@ namespace Power_Station_System.chid_form
         {
             if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
             {
-                cus.Delete_Sub(this.datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
-               // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK,MessageBoxIcon.Information);
-                this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
+                try
+                {
+                    cus.Delete_Sub(this.datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
+                    // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
 
 
-                datagride_view_customer.DataSource = cus.get_subscriber();
+                    datagride_view_customer.DataSource = cus.get_subscriber();
 
-                datagride_view_customer.Refresh();
-             
+                    datagride_view_customer.Refresh();
+                  
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
 
+                }
 
             }
         }

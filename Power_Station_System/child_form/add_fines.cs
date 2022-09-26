@@ -14,7 +14,7 @@ namespace Power_Station_System.chid_form
     public partial class add_fines : Form
     {
         DataBase.fines fines = new DataBase.fines();
-        int id;
+        int id=-1;
         string type;
         string fines_cost;
 
@@ -263,7 +263,7 @@ namespace Power_Station_System.chid_form
         {
             if (rjButton3.Text == "حذف")
             {
-                if (id != null)
+                if (id >0)
                 {
                     if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                     {
