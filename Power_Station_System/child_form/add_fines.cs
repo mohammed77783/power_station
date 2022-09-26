@@ -14,13 +14,10 @@ namespace Power_Station_System.chid_form
     public partial class add_fines : Form
     {
         DataBase.fines fines = new DataBase.fines();
-<<<<<<< HEAD
         DataBase.users users = new DataBase.users();
 
-        int id;
-=======
         int id=-1;
->>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
+
         string type;
         string fines_cost;
 

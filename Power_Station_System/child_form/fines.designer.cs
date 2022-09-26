@@ -52,11 +52,9 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-<<<<<<< HEAD
+
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-=======
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
+
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();

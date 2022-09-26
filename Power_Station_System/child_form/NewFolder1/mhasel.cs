@@ -28,16 +28,16 @@ namespace Power_Station_System.chid_form
             InitializeComponent();
             comboBox1.DisplayMember = "Block_name";
             comboBox1.ValueMember = "ID";
-<<<<<<< HEAD
+
             comboBox1.Text = "";
 
             Loadpriv();
 
-=======
+
             comboBox1.DataSource = aree.get_Block();
            
           
->>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
+
 
 
         }

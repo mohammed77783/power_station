@@ -14,13 +14,13 @@ namespace Power_Station_System.chid_form
     public partial class customer_management : Form
     {
         DataBase.subscriber cus = new DataBase.subscriber();
-<<<<<<< HEAD
+
+
         DataBase.users users = new DataBase.users();
 
-        int id;
-=======
+
         int id=-1;
->>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
+
       
        /* string name_upd, phone, addrss, inde_type, tden_num, electronic_number, subscription_id;*/
         public customer_management( )

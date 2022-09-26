@@ -425,8 +425,7 @@
         private RJCodeAdvance.RJControls.RJButton rjButton3;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         private System.Windows.Forms.GroupBox groupBox1;
-<<<<<<< HEAD
-=======
+
         private RJCodeAdvance.RJControls.RJButton rjButton4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -434,7 +433,7 @@
         private RJCodeAdvance.RJControls.RJButton rjButton2;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
         private System.Windows.Forms.TextBox textBox1;
->>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
+
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_reading;
