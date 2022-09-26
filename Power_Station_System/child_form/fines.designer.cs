@@ -52,7 +52,11 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
@@ -409,6 +413,32 @@
             this.Column1.HeaderText = "الحالة";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.Color.White;
+            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox5.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(0, 0);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox5.Size = new System.Drawing.Size(247, 33);
+            this.comboBox5.TabIndex = 0;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.BackColor = System.Drawing.Color.White;
+            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox6.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(0, 0);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox6.Size = new System.Drawing.Size(250, 33);
+            this.comboBox6.TabIndex = 0;
             // 
             // comboBox5
             // 

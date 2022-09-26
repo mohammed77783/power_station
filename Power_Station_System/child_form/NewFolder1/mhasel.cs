@@ -17,7 +17,7 @@ namespace Power_Station_System.chid_form
 
         DataBase.mhasell mhasell = new DataBase.mhasell();
         DataBase.Block_aned_area aree = new DataBase.Block_aned_area();
-        int id;
+        int id=-1;
         string Block_name;
         string adres;
         string number;
@@ -26,13 +26,18 @@ namespace Power_Station_System.chid_form
         public mhasel()
         {
             InitializeComponent();
-            comboBox1.DataSource = aree.get_Block();
             comboBox1.DisplayMember = "Block_name";
             comboBox1.ValueMember = "ID";
+<<<<<<< HEAD
             comboBox1.Text = "";
 
             Loadpriv();
 
+=======
+            comboBox1.DataSource = aree.get_Block();
+           
+          
+>>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
 
 
         }
@@ -85,7 +90,7 @@ namespace Power_Station_System.chid_form
         }
         public void mod()
         {
-            if (id != null)
+            if (id >0)
             {
                 dataGridView1.Enabled = false;
                 textBox_name.Texts = name;
@@ -223,7 +228,7 @@ namespace Power_Station_System.chid_form
         {
             if (rjButton3.Text == "حذف")
             {
-                if (id != null)
+                if (id>0)
                 {
                     if (MessageBox.Show("هل أنت متأكد من عملية الحذف؟", "عملية الحذف", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) == DialogResult.Yes)
                     {
@@ -231,6 +236,7 @@ namespace Power_Station_System.chid_form
                        // MessageBox.Show("تمت عملية الحذف بنجاح", "عمليةالحذف", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Alert(" تمت عملية الحذف بنجاح", Form_alert.enmType.Success);
                         this.Mhasel_Load(null, null);
+                    
                     }
                 }
             }
@@ -255,11 +261,17 @@ namespace Power_Station_System.chid_form
 
         private void DataGridView1_Click(object sender, EventArgs e)
         {
+            try { 
             id = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             Block_name = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             adres = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             number = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)

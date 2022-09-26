@@ -443,8 +443,16 @@ namespace Power_Station_System.child_form
 
                         double _manthe_fes = double.Parse(dataGridView1.CurrentRow.Cells["gr_manthe_fes"].Value.ToString());
                         double kwpr = double.Parse(dataGridView1.CurrentRow.Cells["Kw_price"].Value.ToString());
-
-                        double almti = double.Parse(dataGridView1.CurrentRow.Cells["gr_almtikhrat"].Value.ToString());
+                        double almti;
+                        if (dataGridView1.CurrentRow.Cells["gr_almtikhrat"].Value.ToString() == "")
+                        {
+                            almti = 0;
+                        }
+                        else
+                        {
+                            almti = double.Parse(dataGridView1.CurrentRow.Cells["gr_almtikhrat"].Value.ToString());
+                        }
+                        
                         double _hol_mony;
                         double alistih = curre - pri;
                         dataGridView1.CurrentRow.Cells["gr_alistihlak"].Value = alistih.ToString();

@@ -36,7 +36,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.ourPanel3 = new OurComponent.OurPanel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.ourPanel2 = new OurComponent.OurPanel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -54,8 +53,8 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.ourPanel4 = new OurComponent.OurPanel();
             this.identity_ty = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.ourPanel1.SuspendLayout();
-            this.ourPanel3.SuspendLayout();
             this.ourPanel2.SuspendLayout();
             this.ourPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -174,7 +173,7 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(515, 394);
+            this.dateTimePicker1.Location = new System.Drawing.Point(538, 394);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(271, 22);
             this.dateTimePicker1.TabIndex = 9;
@@ -183,7 +182,6 @@
             // 
             this.ourPanel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ourPanel3.BorderRaduis = 20;
-            this.ourPanel3.Controls.Add(this.comboBox2);
             this.ourPanel3.Enabled = false;
             this.ourPanel3.ForeColor = System.Drawing.Color.Black;
             this.ourPanel3.GardientAngle = 90F;
@@ -193,21 +191,6 @@
             this.ourPanel3.Name = "ourPanel3";
             this.ourPanel3.Size = new System.Drawing.Size(301, 26);
             this.ourPanel3.TabIndex = 7;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox2.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.Yellow;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(0, 0);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboBox2.Size = new System.Drawing.Size(301, 25);
-            this.comboBox2.TabIndex = 7;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -422,6 +405,7 @@
             this.sub_address_upda.TabIndex = 3;
             this.sub_address_upda.Texts = "";
             this.sub_address_upda.UnderlinedStyle = true;
+            this.sub_address_upda._TextChanged += new System.EventHandler(this.Sub_address_upda__TextChanged);
             // 
             // checkBox2
             // 
@@ -464,6 +448,15 @@
             this.identity_ty.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.identity_ty.Size = new System.Drawing.Size(292, 25);
             this.identity_ty.TabIndex = 4;
+            this.identity_ty.SelectedIndexChanged += new System.EventHandler(this.Identity_ty_SelectedIndexChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(538, 327);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(303, 22);
+            this.comboBox2.TabIndex = 82;
             // 
             // Udate_subscriper
             // 
@@ -471,8 +464,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(987, 603);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.ourPanel4);
-            this.Controls.Add(this.ourPanel3);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.meter_number_UP);
             this.Controls.Add(this.label10);
@@ -502,7 +495,6 @@
             this.Load += new System.EventHandler(this.Udate_subscriper_Load);
             this.ourPanel1.ResumeLayout(false);
             this.ourPanel1.PerformLayout();
-            this.ourPanel3.ResumeLayout(false);
             this.ourPanel2.ResumeLayout(false);
             this.ourPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -519,8 +511,9 @@
         private RJCodeAdvance.RJControls.RJTextBox meter_number_UP;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+
         private OurComponent.OurPanel ourPanel3;
-        private System.Windows.Forms.ComboBox comboBox2;
+
         private System.Windows.Forms.Label label8;
         private OurComponent.OurPanel ourPanel2;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -538,5 +531,6 @@
         private System.Windows.Forms.CheckBox checkBox2;
         private OurComponent.OurPanel ourPanel4;
         private System.Windows.Forms.ComboBox identity_ty;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

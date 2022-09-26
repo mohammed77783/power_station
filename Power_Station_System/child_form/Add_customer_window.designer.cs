@@ -46,15 +46,17 @@
             this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
             this.indenity_number = new RJCodeAdvance.RJControls.RJTextBox();
-            this.identity_ty = new RJCodeAdvance.RJControls.RJComboBox();
             this.subscr_ph_num = new RJCodeAdvance.RJControls.RJTextBox();
             this.subscriper_name = new RJCodeAdvance.RJControls.RJTextBox();
             this.sub_address = new RJCodeAdvance.RJControls.RJTextBox();
             this.ourPanel1 = new OurComponent.OurPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.ourPanel4 = new OurComponent.OurPanel();
+            this.identity_ty = new System.Windows.Forms.ComboBox();
             this.ourPanel3.SuspendLayout();
             this.ourPanel2.SuspendLayout();
             this.ourPanel1.SuspendLayout();
+            this.ourPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -310,33 +312,6 @@
             this.indenity_number.UnderlinedStyle = true;
             this.indenity_number._TextChanged += new System.EventHandler(this.Indenity_number__TextChanged);
             // 
-            // identity_ty
-            // 
-            this.identity_ty.AutoCompleteCustomSource.AddRange(new string[] {
-            "بطاقة شخصية ",
-            "جواز"});
-            this.identity_ty.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.identity_ty.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.identity_ty.BorderSize = 1;
-            this.identity_ty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.identity_ty.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identity_ty.ForeColor = System.Drawing.Color.Black;
-            this.identity_ty.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.identity_ty.Items.AddRange(new object[] {
-            "جواز",
-            "بطاقة شخصية"});
-            this.identity_ty.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
-            this.identity_ty.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(126)))), ((int)(((byte)(240)))));
-            this.identity_ty.Location = new System.Drawing.Point(128, 245);
-            this.identity_ty.MinimumSize = new System.Drawing.Size(200, 32);
-            this.identity_ty.Name = "identity_ty";
-            this.identity_ty.Padding = new System.Windows.Forms.Padding(2);
-            this.identity_ty.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.identity_ty.Size = new System.Drawing.Size(298, 33);
-            this.identity_ty.TabIndex = 5;
-            this.identity_ty.Texts = "";
-            this.identity_ty.OnSelectedIndexChanged += new System.EventHandler(this.Identity_num_OnSelectedIndexChanged);
-            // 
             // subscr_ph_num
             // 
             this.subscr_ph_num.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -443,12 +418,45 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "إضافة مشترك";
             // 
+            // ourPanel4
+            // 
+            this.ourPanel4.BackColor = System.Drawing.Color.White;
+            this.ourPanel4.BorderRaduis = 20;
+            this.ourPanel4.Controls.Add(this.identity_ty);
+            this.ourPanel4.ForeColor = System.Drawing.Color.Black;
+            this.ourPanel4.GardientAngle = 90F;
+            this.ourPanel4.GardientBottomClor = System.Drawing.Color.MediumSlateBlue;
+            this.ourPanel4.GardientTopClor = System.Drawing.Color.MediumSlateBlue;
+            this.ourPanel4.Location = new System.Drawing.Point(125, 245);
+            this.ourPanel4.Name = "ourPanel4";
+            this.ourPanel4.Size = new System.Drawing.Size(292, 26);
+            this.ourPanel4.TabIndex = 81;
+            // 
+            // identity_ty
+            // 
+            this.identity_ty.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.identity_ty.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.identity_ty.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.identity_ty.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.identity_ty.FormattingEnabled = true;
+            this.identity_ty.Items.AddRange(new object[] {
+            "جواز سفر",
+            "بطاقة شخصية",
+            "بطاقة عائلية",
+            "بطاقة انتحابية"});
+            this.identity_ty.Location = new System.Drawing.Point(0, 0);
+            this.identity_ty.Name = "identity_ty";
+            this.identity_ty.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.identity_ty.Size = new System.Drawing.Size(292, 25);
+            this.identity_ty.TabIndex = 4;
+            // 
             // Add_customer_window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(898, 497);
+            this.Controls.Add(this.ourPanel4);
             this.Controls.Add(this.meter_number);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dateTimePicker1);
@@ -460,7 +468,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.indenity_number);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.identity_ty);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -483,6 +490,7 @@
             this.ourPanel2.ResumeLayout(false);
             this.ourPanel1.ResumeLayout(false);
             this.ourPanel1.PerformLayout();
+            this.ourPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,7 +510,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
-        private RJCodeAdvance.RJControls.RJComboBox identity_ty;
         private System.Windows.Forms.Label label6;
         private RJCodeAdvance.RJControls.RJTextBox indenity_number;
         private System.Windows.Forms.Label label7;
@@ -514,5 +521,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
         private RJCodeAdvance.RJControls.RJTextBox meter_number;
+        private OurComponent.OurPanel ourPanel4;
+        private System.Windows.Forms.ComboBox identity_ty;
     }
 }

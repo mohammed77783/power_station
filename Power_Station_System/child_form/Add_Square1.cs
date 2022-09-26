@@ -297,6 +297,16 @@ namespace Power_Station_System.chid_form
 
         }
 
+        private void Search__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void RjButton2_Click(object sender, EventArgs e)
         {
             mod();

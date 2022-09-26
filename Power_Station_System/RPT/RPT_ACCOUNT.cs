@@ -224,5 +224,10 @@ namespace Power_Station_System.RPT
             dataGridView1.Columns[4].HeaderText = " الملاحظة ";
             dataGridView1.Columns[5].HeaderText = " المنطقة ";
         }
+
+        private void DateTimePicker3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

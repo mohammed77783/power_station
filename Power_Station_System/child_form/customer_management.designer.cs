@@ -65,8 +65,11 @@
             this.panel2.Controls.Add(this.ourPanel2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(792, 54);
+            this.panel2.Size = new System.Drawing.Size(924, 66);
+
             this.panel2.TabIndex = 12;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
             // 
@@ -81,18 +84,20 @@
             this.search.Font = new System.Drawing.Font("LBC", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 
-            this.search.Location = new System.Drawing.Point(618, 15);
-            this.search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-
+            this.search.Location = new System.Drawing.Point(623, 18);
+            this.search.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.search.Multiline = false;
             this.search.Name = "search";
-            this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
+            this.search.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
+
             this.search.PasswordChar = false;
             this.search.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.search.PlaceholderText = "";
             this.search.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.search.SelectionStart = 0;
-            this.search.Size = new System.Drawing.Size(232, 34);
+
+            this.search.Size = new System.Drawing.Size(271, 43);
+
             this.search.TabIndex = 20;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
@@ -111,9 +116,12 @@
             this.ourPanel2.GardientAngle = 90F;
             this.ourPanel2.GardientBottomClor = System.Drawing.Color.MediumSlateBlue;
             this.ourPanel2.GardientTopClor = System.Drawing.Color.MediumSlateBlue;
-            this.ourPanel2.Location = new System.Drawing.Point(477, 10);
+
+            this.ourPanel2.Location = new System.Drawing.Point(556, 12);
+            this.ourPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ourPanel2.Name = "ourPanel2";
-            this.ourPanel2.Size = new System.Drawing.Size(45, 35);
+            this.ourPanel2.Size = new System.Drawing.Size(52, 43);
+
             this.ourPanel2.TabIndex = 17;
             // 
             // iconButton1
@@ -129,9 +137,12 @@
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(0, 3);
+
+            this.iconButton1.Location = new System.Drawing.Point(0, 4);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(45, 35);
+            this.iconButton1.Size = new System.Drawing.Size(52, 43);
+
             this.iconButton1.TabIndex = 7;
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.IconButton1_Click);
@@ -144,9 +155,12 @@
             this.panel1.Controls.Add(this.rjButton2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Font = new System.Drawing.Font("LBC", 8.25F);
-            this.panel1.Location = new System.Drawing.Point(0, 397);
+
+            this.panel1.Location = new System.Drawing.Point(0, 489);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(792, 62);
+            this.panel1.Size = new System.Drawing.Size(924, 76);
+
             this.panel1.TabIndex = 17;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
@@ -162,9 +176,12 @@
             this.rjButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton3.ForeColor = System.Drawing.Color.White;
-            this.rjButton3.Location = new System.Drawing.Point(384, 10);
+
+            this.rjButton3.Location = new System.Drawing.Point(448, 12);
+            this.rjButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton3.Name = "rjButton3";
-            this.rjButton3.Size = new System.Drawing.Size(115, 30);
+            this.rjButton3.Size = new System.Drawing.Size(134, 37);
+
             this.rjButton3.TabIndex = 14;
             this.rjButton3.Text = "حذف";
             this.rjButton3.TextColor = System.Drawing.Color.White;
@@ -183,9 +200,12 @@
             this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton1.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(644, 10);
+
+            this.rjButton1.Location = new System.Drawing.Point(751, 12);
+            this.rjButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(115, 30);
+            this.rjButton1.Size = new System.Drawing.Size(134, 37);
+
             this.rjButton1.TabIndex = 16;
             this.rjButton1.Text = "إضافة";
             this.rjButton1.TextColor = System.Drawing.Color.White;
@@ -204,9 +224,12 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(513, 10);
+
+            this.rjButton2.Location = new System.Drawing.Point(598, 12);
+            this.rjButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(115, 30);
+            this.rjButton2.Size = new System.Drawing.Size(134, 37);
+
             this.rjButton2.TabIndex = 15;
             this.rjButton2.Text = "تعديل";
             this.rjButton2.TextColor = System.Drawing.Color.White;
@@ -253,6 +276,9 @@
             this.datagride_view_customer.EnableHeadersVisualStyles = false;
             this.datagride_view_customer.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.datagride_view_customer.Location = new System.Drawing.Point(0, 0);
+
+            this.datagride_view_customer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.datagride_view_customer.Name = "datagride_view_customer";
             this.datagride_view_customer.ReadOnly = true;
             this.datagride_view_customer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -268,7 +294,9 @@
             this.datagride_view_customer.RowHeadersWidth = 51;
             this.datagride_view_customer.RowTemplate.Height = 40;
             this.datagride_view_customer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagride_view_customer.Size = new System.Drawing.Size(792, 343);
+
+            this.datagride_view_customer.Size = new System.Drawing.Size(924, 423);
+
             this.datagride_view_customer.TabIndex = 18;
             this.datagride_view_customer.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Datagride_view_customer_CellContentClick);
             this.datagride_view_customer.Click += new System.EventHandler(this.Datagride_view_customer_Click);
@@ -359,21 +387,28 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.datagride_view_customer);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 54);
+            this.panel3.Location = new System.Drawing.Point(0, 66);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(792, 343);
+            this.panel3.Size = new System.Drawing.Size(924, 423);
+
             this.panel3.TabIndex = 18;
             this.panel3.BindingContextChanged += new System.EventHandler(this.Panel3_BindingContextChanged);
             // 
             // customer_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 459);
+            this.ClientSize = new System.Drawing.Size(924, 565);
+
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+
             this.Name = "customer_management";
             this.Activated += new System.EventHandler(this.Add_customer_1_Activated);
             this.Load += new System.EventHandler(this.Add_customer_1_Load);

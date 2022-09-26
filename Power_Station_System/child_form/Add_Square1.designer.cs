@@ -248,6 +248,7 @@
             this.iconButton1.Size = new System.Drawing.Size(32, 34);
             this.iconButton1.TabIndex = 22;
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.IconButton1_Click);
             // 
             // search
             // 
@@ -273,6 +274,7 @@
             this.search.TabIndex = 21;
             this.search.Texts = "";
             this.search.UnderlinedStyle = true;
+            this.search._TextChanged += new System.EventHandler(this.Search__TextChanged);
             // 
             // rjButton1
             // 

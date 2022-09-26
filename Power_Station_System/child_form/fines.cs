@@ -32,7 +32,12 @@ namespace Power_Station_System.chid_form
           
             comboBox1.DisplayMember = "Subscriber_name";
             comboBox1.ValueMember = "ID_Subscriber";
+<<<<<<< HEAD
             comboBox1.DataSource = su.get_subscriber();
+=======
+            comboBox1.Text = "";
+            comboBox2.DataSource = finess.get_fines();
+>>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
             comboBox2.DisplayMember = "typee";
             comboBox2.ValueMember = "id";
             comboBox2.DataSource = finess.get_fines();
@@ -251,6 +256,7 @@ namespace Power_Station_System.chid_form
 
         private void DataGridView1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             try
             {
 
@@ -270,6 +276,18 @@ namespace Power_Station_System.chid_form
             }
 
 
+=======
+            try { 
+            id = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            fine_data = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            fines_type_ID = Convert.ToInt16(dataGridView1.CurrentRow.Cells[2].Value.ToString());
+            ID_Subscriber = Convert.ToInt16(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+            }
+            catch(Exception ex)
+            {
+
+            }
+>>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
         }
 
         private void RjButton3_Click(object sender, EventArgs e)

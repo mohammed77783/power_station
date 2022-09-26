@@ -21,7 +21,7 @@ namespace Power_Station_System.child_form
         {
 
             InitializeComponent();
-            dataGridView1.DataSource = bill.get_bill_to_print();
+           // dataGridView1.DataSource = bill.get_bill_to_print();
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -109,6 +109,44 @@ namespace Power_Station_System.child_form
         private void OurPanel1_MouseUp(object sender, MouseEventArgs e)
         {
             move = 0;
+        }
+
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void PringBill_Load(object sender, EventArgs e)
+        {
+
         }
     }
     }

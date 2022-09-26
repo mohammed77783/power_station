@@ -42,7 +42,6 @@
             this.rjButton3 = new RJCodeAdvance.RJControls.RJButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_reading = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gr_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gr_address = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +56,7 @@
             this.gr_hol_mony = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gr_date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.blok = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.I_D = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -223,13 +223,11 @@
             // 
             // panel4
             // 
-            this.panel4.AutoScroll = true;
             this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 172);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1019, 266);
+            this.panel4.Size = new System.Drawing.Size(1019, 290);
             this.panel4.TabIndex = 5;
             // 
             // dataGridView1
@@ -250,7 +248,6 @@
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
             this.ID_reading,
             this.gr_name,
             this.gr_address,
@@ -264,7 +261,8 @@
             this.gr_almtikhrat,
             this.gr_hol_mony,
             this.gr_date,
-            this.blok});
+            this.blok,
+            this.I_D});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
@@ -278,27 +276,21 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 80;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1019, 266);
-            this.dataGridView1.TabIndex = 22;
-            // 
-            // ID
-            // 
-            this.ID.DataPropertyName = "ID_Subscriber";
-            this.ID.HeaderText = "id";
-            this.ID.Name = "ID";
-            this.ID.ReadOnly = true;
-            this.ID.Visible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(1019, 290);
+            this.dataGridView1.TabIndex = 23;
             // 
             // ID_reading
             // 
             this.ID_reading.DataPropertyName = "ID";
             this.ID_reading.HeaderText = "id_reading";
             this.ID_reading.Name = "ID_reading";
+            this.ID_reading.ReadOnly = true;
             this.ID_reading.Visible = false;
             // 
             // gr_name
@@ -307,12 +299,14 @@
             this.gr_name.HeaderText = "الاسم";
             this.gr_name.MinimumWidth = 6;
             this.gr_name.Name = "gr_name";
+            this.gr_name.ReadOnly = true;
             // 
             // gr_address
             // 
             this.gr_address.DataPropertyName = "Subscriber_adress";
             this.gr_address.HeaderText = "العنوان";
             this.gr_address.Name = "gr_address";
+            this.gr_address.ReadOnly = true;
             // 
             // gr_meter
             // 
@@ -327,6 +321,7 @@
             this.gr_current.HeaderText = "القراءة الحالية";
             this.gr_current.MinimumWidth = 6;
             this.gr_current.Name = "gr_current";
+            this.gr_current.ReadOnly = true;
             // 
             // gr_privio
             // 
@@ -334,6 +329,7 @@
             this.gr_privio.HeaderText = "القراءة السابقة";
             this.gr_privio.MinimumWidth = 6;
             this.gr_privio.Name = "gr_privio";
+            this.gr_privio.ReadOnly = true;
             // 
             // gr_manthe_fes
             // 
@@ -341,46 +337,62 @@
             this.gr_manthe_fes.HeaderText = "قيمة الاشتراك";
             this.gr_manthe_fes.MinimumWidth = 6;
             this.gr_manthe_fes.Name = "gr_manthe_fes";
+            this.gr_manthe_fes.ReadOnly = true;
             // 
             // gr_alistihlak
             // 
             this.gr_alistihlak.HeaderText = "الاستهلاك";
             this.gr_alistihlak.Name = "gr_alistihlak";
+            this.gr_alistihlak.ReadOnly = true;
             // 
             // Kw_price
             // 
             this.Kw_price.DataPropertyName = "KW_price";
             this.Kw_price.HeaderText = "سعر الكيلو";
             this.Kw_price.Name = "Kw_price";
+            this.Kw_price.ReadOnly = true;
             // 
             // gr_mony
             // 
             this.gr_mony.HeaderText = "المبلغ";
             this.gr_mony.Name = "gr_mony";
+            this.gr_mony.ReadOnly = true;
             // 
             // gr_almtikhrat
             // 
             this.gr_almtikhrat.HeaderText = "المتاخرات";
             this.gr_almtikhrat.Name = "gr_almtikhrat";
+            this.gr_almtikhrat.ReadOnly = true;
             // 
             // gr_hol_mony
             // 
             this.gr_hol_mony.HeaderText = "المبلغ الاجمالي";
             this.gr_hol_mony.MinimumWidth = 6;
             this.gr_hol_mony.Name = "gr_hol_mony";
+            this.gr_hol_mony.ReadOnly = true;
             // 
             // gr_date
             // 
             this.gr_date.DataPropertyName = "Data_time";
             this.gr_date.HeaderText = "التأريخ";
             this.gr_date.Name = "gr_date";
+            this.gr_date.ReadOnly = true;
             // 
             // blok
             // 
             this.blok.DataPropertyName = "ID_Block";
             this.blok.HeaderText = "المربع";
             this.blok.Name = "blok";
+            this.blok.ReadOnly = true;
             this.blok.Visible = false;
+            // 
+            // I_D
+            // 
+            this.I_D.DataPropertyName = "ID_Subscriber";
+            this.I_D.HeaderText = "id";
+            this.I_D.Name = "I_D";
+            this.I_D.ReadOnly = true;
+            this.I_D.Visible = false;
             // 
             // Biil_managment
             // 
@@ -413,10 +425,18 @@
         private RJCodeAdvance.RJControls.RJButton rjButton3;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         private System.Windows.Forms.GroupBox groupBox1;
+<<<<<<< HEAD
+=======
+        private RJCodeAdvance.RJControls.RJButton rjButton4;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
+        private RJCodeAdvance.RJControls.RJButton rjButton2;
+        private RJCodeAdvance.RJControls.RJButton rjButton5;
+        private System.Windows.Forms.TextBox textBox1;
+>>>>>>> ee46c36d85989259d9cb87b1d6d4743b5edc23dd
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.DataGridView dataGridView1;
-        private RJCodeAdvance.RJControls.RJButton rjButton2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_reading;
         private System.Windows.Forms.DataGridViewTextBoxColumn gr_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn gr_address;
@@ -431,7 +451,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn gr_hol_mony;
         private System.Windows.Forms.DataGridViewTextBoxColumn gr_date;
         private System.Windows.Forms.DataGridViewTextBoxColumn blok;
-        private RJCodeAdvance.RJControls.RJButton rjButton5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn I_D;
     }
 }
