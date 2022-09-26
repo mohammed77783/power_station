@@ -138,7 +138,7 @@
             // rjTextBox1
             // 
             this.rjTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjTextBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.rjTextBox1.BackColor = System.Drawing.Color.White;
             this.rjTextBox1.BorderColor = System.Drawing.Color.MediumTurquoise;
             this.rjTextBox1.BorderFocusColor = System.Drawing.Color.White;
             this.rjTextBox1.BorderRadius = 0;

@@ -39,14 +39,16 @@ namespace Power_Station_System.DataBase
             dt = access.selec_table("select_add_user", null);
             return dt;
         }
-      
+
+        
+
 
         public void Delete_user(String user_ID)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
             SqlParameter[] pr = new SqlParameter[1];
             access.open();
-            pr[0] = new SqlParameter("user_ID", SqlDbType.Int);
+            pr[0] = new SqlParameter("@user_ID", SqlDbType.Int);
             pr[0].Value = user_ID;
 
             access.executor("delet_add_user", pr);
@@ -88,5 +90,34 @@ namespace Power_Station_System.DataBase
             return dt;
 
         }
+    
+
+        public DataTable priv_Dsplay(int user_ID)
+        {
+            DataBase.Access_layer dA = new DataBase.Access_layer();
+            SqlParameter[] pr = new SqlParameter[1];
+            pr[0] = new SqlParameter("@user_ID", SqlDbType.Int);
+            pr[0].Value = user_ID;
+            DataTable dt = new DataTable();
+            dA.open();
+            dt = dA.selec_table("select_priv_Dsplay", pr);
+            dA.close();
+            return dt;
+        }
+        public DataTable priv_Add_priv_Edit(int priv_screen_ID, int user_ID)
+        {
+            DataBase.Access_layer dA = new DataBase.Access_layer();
+            SqlParameter[] pr = new SqlParameter[2];
+            pr[0] = new SqlParameter("@priv_screen_ID", SqlDbType.Int);
+            pr[0].Value = @priv_screen_ID;
+            pr[1] = new SqlParameter("@user_ID", SqlDbType.Int);
+            pr[1].Value = user_ID;
+            DataTable dt = new DataTable();
+            dA.open();
+            dt = dA.selec_table("select_priv_Add_priv_Edit", pr);
+            dA.close();
+            return dt;
+        }
+
     }
 }

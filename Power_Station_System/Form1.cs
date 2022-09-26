@@ -1,14 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace Power_Station_System
+using System.Data.SqlClient;
+using Power_Station_System;
+
+
+
+namespace Power_Station_System 
+
 {
     public partial class form1 : Form
 
     {
-        
 
+
+    
+        DataBase.users users = new DataBase.users();
 
 
 
@@ -34,6 +48,101 @@ namespace Power_Station_System
         public form1()
         {
             InitializeComponent();
+         
+            DataTable Dt = users.priv_Dsplay(Convert.ToInt32(Program.user_ID));
+            if (Dt.Rows[0][0].ToString() == "0")
+            {
+                bt_1.Enabled = false;
+            }
+            if (Dt.Rows[1][0].ToString() == "0")
+            {
+                bt_2.Enabled = false;
+            }
+            if (Dt.Rows[2][0].ToString() == "0")
+            {
+                bt_3.Enabled = false;
+            }
+            if (Dt.Rows[3][0].ToString() == "0")
+            {
+                bt_4.Enabled = false;
+            }
+            if (Dt.Rows[4][0].ToString() == "0")
+            {
+                bt_5.Enabled = false;
+            }
+            if (Dt.Rows[5][0].ToString() == "0")
+            {
+                bt_6.Enabled = false;
+            }
+
+            if (Dt.Rows[6][0].ToString() == "0")
+            {
+                bt_7.Enabled = false;
+            }
+            if (Dt.Rows[7][0].ToString() == "0")
+            {
+                bt_8.Enabled = false;
+            }
+            if (Dt.Rows[8][0].ToString() == "0")
+            {
+                bt_9.Enabled = false;
+            }
+            if (Dt.Rows[9][0].ToString() == "0")
+            {
+                bt_10.Enabled = false;
+            }
+            if (Dt.Rows[10][0].ToString() == "0")
+            {
+                bt_11.Enabled = false;
+            }
+            if (Dt.Rows[11][0].ToString() == "0")
+            {
+                bt_12.Enabled = false;
+            }
+            if (Dt.Rows[12][0].ToString() == "0")
+            {
+                bt_13.Enabled = false;
+            }
+            if (Dt.Rows[13][0].ToString() == "0")
+            {
+                bt_14.Enabled = false;
+            }
+            if (Dt.Rows[14][0].ToString() == "0")
+            {
+                bt_15.Enabled = false;
+            }
+            if (Dt.Rows[15][0].ToString() == "0")
+            {
+                bt_16.Enabled = false;
+            }
+            if (Dt.Rows[16][0].ToString() == "0")
+            {
+                bt_17.Enabled = false;
+            }
+            if (Dt.Rows[17][0].ToString() == "0")
+            {
+                bt_18.Enabled = false;
+            }
+            if (Dt.Rows[18][0].ToString() == "0")
+            {
+                bt_19.Enabled = false;
+            }
+
+            if (Dt.Rows[19][0].ToString() == "0")
+            {
+                bt_20.Enabled = false;
+            }
+            if (Dt.Rows[20][0].ToString() == "0")
+            {
+                bt_21.Enabled = false;
+            }
+            if (Dt.Rows[21][0].ToString() == "0")
+            {
+                bt_22.Enabled = false;
+            }
+
+
+
             panal_width = side_panal.Width;
             iscolapsed = false;
             this.BackColor = Color.FromArgb(240, 245, 249);
@@ -1325,6 +1434,17 @@ namespace Power_Station_System
 
         private void Panel6_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void Button22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void form1_Load_1(object sender, EventArgs e)
+        {
+            hidesubmenu();
 
         }
 

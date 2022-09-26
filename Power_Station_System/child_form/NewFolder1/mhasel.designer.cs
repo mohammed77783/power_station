@@ -154,7 +154,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(404, 6);
+            this.rjButton2.Location = new System.Drawing.Point(528, 5);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(115, 30);
             this.rjButton2.TabIndex = 3;
@@ -176,7 +176,7 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.White;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(529, 6);
+            this.rjButton3.Location = new System.Drawing.Point(403, 4);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(115, 30);
             this.rjButton3.TabIndex = 4;

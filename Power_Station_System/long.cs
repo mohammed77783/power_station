@@ -16,7 +16,7 @@ namespace Power_Station_System
     public partial class @long : Form
     {
         DataBase.users us = new DataBase.users();
-
+        int x, y, move;
         public @long()
         {
             InitializeComponent();
@@ -49,6 +49,8 @@ namespace Power_Station_System
             DataTable DD = us.login_user(comboBox1.Text, rjTextBox2.Texts);
             if (DD.Rows.Count > 0)
             {
+                Program.user_ID = DD.Rows[0][0].ToString();
+
                 form1 main = new form1();
                 main.lb_user.Text = DD.Rows[0][2].ToString();
                 main.Show();
@@ -120,5 +122,11 @@ namespace Power_Station_System
             rjTextBox2.Focus();
         }
 
+        private void Panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move = 1;
+            x = e.X;
+            y = e.Y;
+        }
     }
 }

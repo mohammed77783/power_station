@@ -14,6 +14,8 @@ namespace Power_Station_System.chid_form
     public partial class Add_Square1 : Form
     {
         DataBase.Block_aned_area block = new DataBase.Block_aned_area();
+        DataBase.users users = new DataBase.users();
+
         int id;
         string Blockname, center_meterID;
         public Add_Square1()
@@ -24,8 +26,37 @@ namespace Power_Station_System.chid_form
             comboBox1.DisplayMember = "are_name";
             comboBox1.ValueMember = "ID";
             comboBox1.Text = "";
-          
+
+            Loadpriv();
         }
+
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(3, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();

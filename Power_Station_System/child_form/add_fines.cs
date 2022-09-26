@@ -14,25 +14,48 @@ namespace Power_Station_System.chid_form
     public partial class add_fines : Form
     {
         DataBase.fines fines = new DataBase.fines();
+        DataBase.users users = new DataBase.users();
+
         int id=-1;
+
         string type;
         string fines_cost;
 
         public add_fines()
         {
             InitializeComponent();
-           // try
-            //{
+           
                 datagride_view_fines.DataSource = fines.get_fines();
+            Loadpriv();
 
-           // }
-
-            //catch (Exception ex)
-            //{
-            //   // MessageBox.Show(ex.Message);
-            //    this.Alert(ex.Message, Form_alert.enmType.Error);
-            //}
         }
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(6, Convert.ToInt32(Program.user_ID));
+
+
+            if (Dt.Rows[0][0].ToString() == "0" || Dt.Rows[0][0].ToString() == String.Empty)
+            {
+                rjButton1.Enabled = false;
+
+            }
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
 
         public void clea()
         {

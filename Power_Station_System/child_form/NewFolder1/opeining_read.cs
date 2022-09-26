@@ -15,13 +15,45 @@ namespace Power_Station_System.chid_form
     {
         DataBase.reading cus = new DataBase.reading();
         DataBase.subscriber subs = new DataBase.subscriber();
-        string  meter_id , open_read; 
+        DataBase.users users = new DataBase.users();
+
+        string meter_id , open_read; 
         string name, date;
 
         private void DataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+        public read()
+        {
+            InitializeComponent();
+             Loadpriv();
+
+
+        }
+
+        void Loadpriv()
+        {
+
+
+            DataTable Dt = users.priv_Add_priv_Edit(10, Convert.ToInt32(Program.user_ID));
+
+
+
+
+            if (Dt.Rows[0][1].ToString() == "0" || Dt.Rows[0][1].ToString() == String.Empty)
+            {
+
+                rjButton2.Enabled = false;
+
+
+            }
+            if (Dt.Rows[0][2].ToString() == "0" || Dt.Rows[0][2].ToString() == String.Empty)
+            {
+                rjButton3.Enabled = false;
+            }
+        }
+
         public void Alert(string msg, Form_alert.enmType type)
         {
             Form_alert frm = new Form_alert();
@@ -49,12 +81,7 @@ namespace Power_Station_System.chid_form
             date = dataGridView1.CurrentRow.Cells[4].Value.ToString();
         }
 
-        public read()
-        {
-            InitializeComponent();
-
-           
-        }
+    
 
         public void Clear()
         {

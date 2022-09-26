@@ -52,7 +52,9 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
@@ -172,7 +174,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(404, 6);
+            this.rjButton2.Location = new System.Drawing.Point(530, 6);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(118, 29);
             this.rjButton2.TabIndex = 3;
@@ -194,7 +196,7 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.Transparent;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(530, 6);
+            this.rjButton3.Location = new System.Drawing.Point(406, 8);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(118, 29);
             this.rjButton3.TabIndex = 4;
@@ -242,7 +244,7 @@
             this.groupBox1.Size = new System.Drawing.Size(800, 192);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "الغرامات";
+            this.groupBox1.Text = "اصدار الغرامات";
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // comboBox2
@@ -346,7 +348,7 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn8});
+            this.Column1});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
@@ -373,7 +375,7 @@
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "id";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "ID";
             this.dataGridViewTextBoxColumn3.HeaderText = "الرقم";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
@@ -403,12 +405,38 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn8
+            // Column1
             // 
-            this.dataGridViewTextBoxColumn8.HeaderText = "تاريخ الادخال";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.Column1.DataPropertyName = "pay_it";
+            this.Column1.HeaderText = "الحالة";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.BackColor = System.Drawing.Color.White;
+            this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox5.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(0, 0);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox5.Size = new System.Drawing.Size(247, 33);
+            this.comboBox5.TabIndex = 0;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.BackColor = System.Drawing.Color.White;
+            this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox6.Font = new System.Drawing.Font("LBC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(0, 0);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboBox6.Size = new System.Drawing.Size(250, 33);
+            this.comboBox6.TabIndex = 0;
             // 
             // comboBox5
             // 
@@ -484,6 +512,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

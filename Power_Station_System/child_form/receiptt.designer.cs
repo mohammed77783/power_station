@@ -151,7 +151,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(14, 4);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -177,7 +177,7 @@
             this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rjButton2.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(396, 6);
+            this.rjButton2.Location = new System.Drawing.Point(524, 5);
             this.rjButton2.Name = "rjButton2";
             this.rjButton2.Size = new System.Drawing.Size(118, 29);
             this.rjButton2.TabIndex = 3;
@@ -199,7 +199,7 @@
             this.rjButton3.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton3.ForeColor = System.Drawing.Color.Transparent;
             this.rjButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton3.Location = new System.Drawing.Point(522, 6);
+            this.rjButton3.Location = new System.Drawing.Point(400, 4);
             this.rjButton3.Name = "rjButton3";
             this.rjButton3.Size = new System.Drawing.Size(118, 29);
             this.rjButton3.TabIndex = 4;
@@ -273,10 +273,10 @@
             this.textBox_numbr.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_numbr.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_numbr.Location = new System.Drawing.Point(29, 17);
-            this.textBox_numbr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_numbr.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_numbr.Multiline = false;
             this.textBox_numbr.Name = "textBox_numbr";
-            this.textBox_numbr.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_numbr.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_numbr.PasswordChar = false;
             this.textBox_numbr.Size = new System.Drawing.Size(251, 31);
             this.textBox_numbr.TabIndex = 70;
@@ -307,10 +307,10 @@
             this.textBox_Custom1.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom1.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_Custom1.Location = new System.Drawing.Point(29, 110);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom1.Multiline = false;
             this.textBox_Custom1.Name = "textBox_Custom1";
-            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom1.PasswordChar = false;
             this.textBox_Custom1.Size = new System.Drawing.Size(251, 31);
             this.textBox_Custom1.TabIndex = 74;
@@ -361,10 +361,10 @@
             this.textBox_Custom2.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom2.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_Custom2.Location = new System.Drawing.Point(15, 98);
-            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom2.Multiline = false;
             this.textBox_Custom2.Name = "textBox_Custom2";
-            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom2.PasswordChar = false;
             this.textBox_Custom2.Size = new System.Drawing.Size(251, 31);
             this.textBox_Custom2.TabIndex = 75;

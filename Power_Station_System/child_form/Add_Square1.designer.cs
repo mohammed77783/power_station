@@ -119,7 +119,7 @@
             // 
             this.rjTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rjTextBox2.BackColor = System.Drawing.Color.White;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.MediumTurquoise;
+            this.rjTextBox2.BorderColor = System.Drawing.Color.White;
             this.rjTextBox2.BorderFocusColor = System.Drawing.Color.White;
             this.rjTextBox2.BorderRadius = 0;
             this.rjTextBox2.BorderSize = 2;
@@ -144,7 +144,7 @@
             // 
             this.rjTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rjTextBox1.BackColor = System.Drawing.Color.White;
-            this.rjTextBox1.BorderColor = System.Drawing.Color.MediumTurquoise;
+            this.rjTextBox1.BorderColor = System.Drawing.Color.White;
             this.rjTextBox1.BorderFocusColor = System.Drawing.Color.White;
             this.rjTextBox1.BorderRadius = 0;
             this.rjTextBox1.BorderSize = 2;

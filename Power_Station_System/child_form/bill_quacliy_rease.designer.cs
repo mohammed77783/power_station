@@ -45,7 +45,9 @@ namespace Power_Station_System.child_form
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+
             this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
+
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,7 +94,7 @@ namespace Power_Station_System.child_form
             this.panel2.Controls.Add(this.rjButton3);
             this.panel2.Controls.Add(this.rjButton1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Font = new System.Drawing.Font("LBC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 129);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1003, 43);
@@ -176,8 +178,10 @@ namespace Power_Station_System.child_form
             this.groupBox1.Controls.Add(this.comboBox3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboBox2);
+
             this.groupBox1.Controls.Add(this.rjButton4);
             this.groupBox1.Font = new System.Drawing.Font("LBC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(5, 3);
             this.groupBox1.Name = "groupBox1";
@@ -215,7 +219,7 @@ namespace Power_Station_System.child_form
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(894, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 14);
+            this.label4.Size = new System.Drawing.Size(59, 15);
             this.label4.TabIndex = 102;
             this.label4.Text = "اسم المربع";
             // 
@@ -229,7 +233,7 @@ namespace Power_Station_System.child_form
             "حسب المربع"});
             this.comboBox3.Location = new System.Drawing.Point(684, 78);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(190, 22);
+            this.comboBox3.Size = new System.Drawing.Size(190, 23);
             this.comboBox3.TabIndex = 101;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.ComboBox3_SelectedIndexChanged);
             // 
@@ -238,7 +242,7 @@ namespace Power_Station_System.child_form
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(219, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 14);
+            this.label2.Size = new System.Drawing.Size(72, 15);
             this.label2.TabIndex = 100;
             this.label2.Text = "اسم المنطقة";
             // 
@@ -251,11 +255,11 @@ namespace Power_Station_System.child_form
             "حسب المربع"});
             this.comboBox2.Location = new System.Drawing.Point(18, 25);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(190, 22);
+            this.comboBox2.Size = new System.Drawing.Size(190, 23);
             this.comboBox2.TabIndex = 99;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.ComboBox2_SelectedIndexChanged);
             // 
-            // rjButton4
+    // rjButton4
             // 
             this.rjButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
             this.rjButton4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(100)))), ((int)(((byte)(0)))));
@@ -272,13 +276,14 @@ namespace Power_Station_System.child_form
             this.rjButton4.Text = "اضافة";
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
+
             // 
             // panel4
             // 
             this.panel4.AutoScroll = true;
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F);
+            this.panel4.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(0, 172);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1003, 347);
@@ -292,6 +297,7 @@ namespace Power_Station_System.child_form
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("LBC", 9.749999F);
@@ -300,6 +306,7 @@ namespace Power_Station_System.child_form
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+
             this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -316,6 +323,7 @@ namespace Power_Station_System.child_form
             this.gr_hol_mony,
             this.gr_date,
             this.blok});
+
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("LBC", 9.749999F);
@@ -324,6 +332,7 @@ namespace Power_Station_System.child_form
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace;
@@ -524,7 +533,9 @@ namespace Power_Station_System.child_form
         private RJCodeAdvance.RJControls.RJButton rjButton3;
         private RJCodeAdvance.RJControls.RJButton rjButton1;
         private System.Windows.Forms.GroupBox groupBox1;
+
         private RJCodeAdvance.RJControls.RJButton rjButton4;
+
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label4;
