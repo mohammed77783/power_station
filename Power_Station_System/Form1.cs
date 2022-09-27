@@ -1041,7 +1041,7 @@ namespace Power_Station_System
             {
 
                 page = new RPT.RPT_ACCOUNT();
-               tabCont = new TabPage("");
+               tabCont = new TabPage("تقارير حسابات العملاء");
 
                 label3.Text = ("تقارير  حسابات العملاء");
 
