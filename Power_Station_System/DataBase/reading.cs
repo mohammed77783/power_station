@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -134,11 +134,25 @@ namespace Power_Station_System.DataBase
             access.executor("reading_done", pr);
             access.close();
         }
-        public DataTable get_sub_with_reading()
+        public DataTable get_sub_with_reading(string from,string to)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
             DataTable dt = new DataTable();
-            dt = access.selec_table("select_reading_from_elect_reading", null);
+            SqlParameter[] pr = new SqlParameter[2];
+            access.open();
+            pr[0] = new SqlParameter("@date_from", SqlDbType.Date);
+            pr[0].Value = from;
+            pr[1] = new SqlParameter("@date_to", SqlDbType.Date);
+            pr[1].Value = to;
+            dt = access.selec_table("select_reading_from_elect_reading", pr);
+            return dt;
+        }
+        public DataTable loadded()
+        {
+            DataBase.Access_layer access = new DataBase.Access_layer();
+            DataTable dt = new DataTable();
+            access.open();
+            dt = access.selec_table("Loaddata_to_GV", null);
             return dt;
         }
         //opening readin 

@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(add_user));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -66,9 +65,6 @@
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rjButton4 = new RJCodeAdvance.RJControls.RJButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -77,8 +73,6 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,7 +87,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -109,7 +102,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.textBox_Custom4);
             this.groupBox3.Controls.Add(this.textBox_Custom5);
             this.groupBox3.Controls.Add(this.passw);
@@ -118,9 +112,9 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("LBC", 9.25F);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(134, 26);
+            this.groupBox3.Location = new System.Drawing.Point(21, 26);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(320, 185);
+            this.groupBox3.Size = new System.Drawing.Size(433, 185);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "بيانات الحساب";
@@ -128,20 +122,21 @@
             // 
             // textBox_Custom4
             // 
-            this.textBox_Custom4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Custom4.BackColor = System.Drawing.Color.GhostWhite;
             this.textBox_Custom4.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.textBox_Custom4.BorderFocusColor = System.Drawing.Color.HotPink;
             this.textBox_Custom4.BorderSize = 2;
             this.textBox_Custom4.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom4.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom4.Location = new System.Drawing.Point(5, 134);
-            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom4.Location = new System.Drawing.Point(17, 133);
+            this.textBox_Custom4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom4.Multiline = false;
             this.textBox_Custom4.Name = "textBox_Custom4";
-            this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom4.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom4.PasswordChar = true;
-            this.textBox_Custom4.Size = new System.Drawing.Size(206, 31);
+            this.textBox_Custom4.Size = new System.Drawing.Size(309, 31);
             this.textBox_Custom4.TabIndex = 7;
             this.textBox_Custom4.Texts = "";
             this.textBox_Custom4.UnderlinedStyle = false;
@@ -150,40 +145,42 @@
             // 
             // textBox_Custom5
             // 
-            this.textBox_Custom5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.textBox_Custom5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_Custom5.BackColor = System.Drawing.Color.GhostWhite;
             this.textBox_Custom5.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.textBox_Custom5.BorderFocusColor = System.Drawing.Color.HotPink;
             this.textBox_Custom5.BorderSize = 2;
             this.textBox_Custom5.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom5.ForeColor = System.Drawing.Color.DimGray;
-            this.textBox_Custom5.Location = new System.Drawing.Point(5, 60);
-            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom5.Location = new System.Drawing.Point(17, 59);
+            this.textBox_Custom5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom5.Multiline = false;
             this.textBox_Custom5.Name = "textBox_Custom5";
-            this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom5.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom5.PasswordChar = false;
-            this.textBox_Custom5.Size = new System.Drawing.Size(206, 31);
+            this.textBox_Custom5.Size = new System.Drawing.Size(309, 31);
             this.textBox_Custom5.TabIndex = 5;
             this.textBox_Custom5.Texts = "";
             this.textBox_Custom5.UnderlinedStyle = false;
             // 
             // passw
             // 
-            this.passw.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.passw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.passw.BackColor = System.Drawing.Color.GhostWhite;
             this.passw.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.passw.BorderFocusColor = System.Drawing.Color.HotPink;
             this.passw.BorderSize = 2;
             this.passw.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.passw.ForeColor = System.Drawing.Color.DimGray;
-            this.passw.Location = new System.Drawing.Point(5, 97);
-            this.passw.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passw.Location = new System.Drawing.Point(17, 96);
+            this.passw.Margin = new System.Windows.Forms.Padding(4);
             this.passw.Multiline = false;
             this.passw.Name = "passw";
-            this.passw.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.passw.Padding = new System.Windows.Forms.Padding(7);
             this.passw.PasswordChar = true;
-            this.passw.Size = new System.Drawing.Size(206, 31);
+            this.passw.Size = new System.Drawing.Size(309, 31);
             this.passw.TabIndex = 6;
             this.passw.Texts = "";
             this.passw.UnderlinedStyle = false;
@@ -191,9 +188,9 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(218, 139);
+            this.label4.Location = new System.Drawing.Point(339, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 16);
             this.label4.TabIndex = 11;
@@ -201,9 +198,9 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(234, 100);
+            this.label5.Location = new System.Drawing.Point(355, 95);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 16);
             this.label5.TabIndex = 11;
@@ -211,9 +208,9 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(232, 66);
+            this.label6.Location = new System.Drawing.Point(353, 61);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 16);
             this.label6.TabIndex = 10;
@@ -221,7 +218,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.textBox_Custom7);
             this.groupBox2.Controls.Add(this.textBox_Custom3);
             this.groupBox2.Controls.Add(this.textBox_Custom2);
@@ -250,10 +247,10 @@
             this.textBox_Custom7.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom7.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_Custom7.Location = new System.Drawing.Point(13, 136);
-            this.textBox_Custom7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom7.Multiline = false;
             this.textBox_Custom7.Name = "textBox_Custom7";
-            this.textBox_Custom7.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom7.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom7.PasswordChar = false;
             this.textBox_Custom7.Size = new System.Drawing.Size(224, 31);
             this.textBox_Custom7.TabIndex = 4;
@@ -271,10 +268,10 @@
             this.textBox_Custom3.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom3.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_Custom3.Location = new System.Drawing.Point(93, 20);
-            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom3.Multiline = false;
             this.textBox_Custom3.Name = "textBox_Custom3";
-            this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom3.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom3.PasswordChar = false;
             this.textBox_Custom3.Size = new System.Drawing.Size(142, 31);
             this.textBox_Custom3.TabIndex = 1;
@@ -292,10 +289,10 @@
             this.textBox_Custom2.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom2.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_Custom2.Location = new System.Drawing.Point(13, 97);
-            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom2.Multiline = false;
             this.textBox_Custom2.Name = "textBox_Custom2";
-            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom2.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom2.PasswordChar = false;
             this.textBox_Custom2.Size = new System.Drawing.Size(224, 31);
             this.textBox_Custom2.TabIndex = 3;
@@ -312,10 +309,10 @@
             this.textBox_Custom1.Font = new System.Drawing.Font("Tahoma", 9.5F);
             this.textBox_Custom1.ForeColor = System.Drawing.Color.DimGray;
             this.textBox_Custom1.Location = new System.Drawing.Point(13, 59);
-            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_Custom1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_Custom1.Multiline = false;
             this.textBox_Custom1.Name = "textBox_Custom1";
-            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.textBox_Custom1.Padding = new System.Windows.Forms.Padding(7);
             this.textBox_Custom1.PasswordChar = false;
             this.textBox_Custom1.Size = new System.Drawing.Size(224, 31);
             this.textBox_Custom1.TabIndex = 2;
@@ -391,7 +388,7 @@
             this.rjButton5.Font = new System.Drawing.Font("LBC", 11.25F);
             this.rjButton5.ForeColor = System.Drawing.Color.White;
             this.rjButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rjButton5.Location = new System.Drawing.Point(297, 6);
+            this.rjButton5.Location = new System.Drawing.Point(317, 8);
             this.rjButton5.Name = "rjButton5";
             this.rjButton5.Size = new System.Drawing.Size(119, 29);
             this.rjButton5.TabIndex = 12;
@@ -440,7 +437,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.search.Location = new System.Drawing.Point(13, 5);
-            this.search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.search.Margin = new System.Windows.Forms.Padding(4);
             this.search.Multiline = false;
             this.search.Name = "search";
             this.search.Padding = new System.Windows.Forms.Padding(10, 8, 10, 8);
@@ -536,14 +533,14 @@
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView2.ColumnHeadersHeight = 40;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
@@ -552,14 +549,14 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn6});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("LBC", 9.749999F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("LBC", 9.749999F);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.SystemColors.ButtonFace;
@@ -569,9 +566,9 @@
             this.dataGridView2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView2.RowHeadersVisible = false;
             this.dataGridView2.RowHeadersWidth = 25;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("LBC", 8.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("LBC", 8.25F);
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView2.RowTemplate.Height = 30;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(800, 184);
@@ -628,50 +625,6 @@
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 80);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // rjButton4
-            // 
-            this.rjButton4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.rjButton4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.rjButton4.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.rjButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton4.BorderRadius = 0;
-            this.rjButton4.BorderSize = 0;
-            this.rjButton4.FlatAppearance.BorderSize = 0;
-            this.rjButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton4.ForeColor = System.Drawing.Color.Black;
-            this.rjButton4.Location = new System.Drawing.Point(15, 122);
-            this.rjButton4.Name = "rjButton4";
-            this.rjButton4.Size = new System.Drawing.Size(80, 29);
-            this.rjButton4.TabIndex = 8;
-            this.rjButton4.Text = "اضافة";
-            this.rjButton4.TextColor = System.Drawing.Color.Black;
-            this.rjButton4.UseVisualStyleBackColor = false;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.groupBox4.Controls.Add(this.rjButton4);
-            this.groupBox4.Controls.Add(this.pictureBox1);
-            this.groupBox4.Font = new System.Drawing.Font("LBC", 9.25F);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(19, 26);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(106, 185);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "صورة المستخدم";
-            // 
             // add_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -695,8 +648,6 @@
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -737,8 +688,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private RJCodeAdvance.RJControls.RJButton rjButton5;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private RJCodeAdvance.RJControls.RJButton rjButton4;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

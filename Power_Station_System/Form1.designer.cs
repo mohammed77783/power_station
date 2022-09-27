@@ -41,7 +41,6 @@
             this.bt_18 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.bt_17 = new System.Windows.Forms.Button();
             this.bt_16 = new System.Windows.Forms.Button();
             this.bt_15 = new System.Windows.Forms.Button();
             this.bt_14 = new System.Windows.Forms.Button();
@@ -68,6 +67,7 @@
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.home_btn = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.lb_user = new System.Windows.Forms.Label();
             this.menu_timer = new System.Windows.Forms.Timer(this.components);
@@ -81,7 +81,6 @@
             this.button6 = new System.Windows.Forms.Button();
             this.panel_contener = new System.Windows.Forms.Panel();
             this.tabControlZ1 = new Power_Station_System.TabControlZ.TabControlZ();
-            this.rjCircularPictureBox1 = new RJCodeAdvance.RJControls.RJCircularPictureBox();
             this.side_panal.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -90,10 +89,10 @@
             this.customer_panal.SuspendLayout();
             this.panel_system_prepar.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel_contener.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // side_panal
@@ -128,11 +127,9 @@
             this.panel7.Controls.Add(this.bt_22);
             this.panel7.Controls.Add(this.bt_21);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 1384);
+            this.panel7.Location = new System.Drawing.Point(0, 1340);
             this.panel7.Name = "panel7";
-
-            this.panel7.Size = new System.Drawing.Size(253, 221);
-
+            this.panel7.Size = new System.Drawing.Size(257, 221);
             this.panel7.TabIndex = 20;
             // 
             // bt_22
@@ -166,7 +163,6 @@
             this.bt_21.Text = "سند قبض";
             this.bt_21.UseVisualStyleBackColor = false;
             this.bt_21.Click += new System.EventHandler(this.Button31_Click);
-
             // 
             // button35
             // 
@@ -178,12 +174,10 @@
             this.button35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
             this.button35.Image = ((System.Drawing.Image)(resources.GetObject("button35.Image")));
             this.button35.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button35.Location = new System.Drawing.Point(0, 1342);
+            this.button35.Location = new System.Drawing.Point(0, 1298);
             this.button35.Name = "button35";
             this.button35.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-
-            this.button35.Size = new System.Drawing.Size(253, 42);
-
+            this.button35.Size = new System.Drawing.Size(257, 42);
             this.button35.TabIndex = 19;
             this.button35.Text = "                      الحسابات";
             this.button35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,9 +191,8 @@
             this.panel6.Controls.Add(this.bt_19);
             this.panel6.Controls.Add(this.bt_18);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 1197);
+            this.panel6.Location = new System.Drawing.Point(0, 1153);
             this.panel6.Name = "panel6";
-
             this.panel6.Size = new System.Drawing.Size(257, 145);
             this.panel6.TabIndex = 15;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel6_Paint);
@@ -214,7 +207,7 @@
             this.bt_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
             this.bt_20.Location = new System.Drawing.Point(0, 88);
             this.bt_20.Name = "bt_20";
-            this.bt_20.Size = new System.Drawing.Size(257, 48);
+            this.bt_20.Size = new System.Drawing.Size(257, 54);
             this.bt_20.TabIndex = 12;
             this.bt_20.Text = "اجمالي استهلاك المشتركين";
             this.bt_20.UseVisualStyleBackColor = false;
@@ -251,7 +244,6 @@
             this.bt_18.Text = "تقارير  حسابات العملاء";
             this.bt_18.UseVisualStyleBackColor = false;
             this.bt_18.Click += new System.EventHandler(this.Button25_Click);
-
             // 
             // button21
             // 
@@ -263,12 +255,10 @@
             this.button21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
             this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
             this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 1151);
+            this.button21.Location = new System.Drawing.Point(0, 1107);
             this.button21.Name = "button21";
             this.button21.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-
-            this.button21.Size = new System.Drawing.Size(253, 46);
-
+            this.button21.Size = new System.Drawing.Size(257, 46);
             this.button21.TabIndex = 14;
             this.button21.Text = "                       التقارير";
             this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,34 +268,14 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(57)))));
-            this.panel5.Controls.Add(this.bt_17);
             this.panel5.Controls.Add(this.bt_16);
             this.panel5.Controls.Add(this.bt_15);
             this.panel5.Controls.Add(this.bt_14);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 972);
             this.panel5.Name = "panel5";
-
-            this.panel5.Size = new System.Drawing.Size(253, 179);
-
+            this.panel5.Size = new System.Drawing.Size(257, 135);
             this.panel5.TabIndex = 13;
-            // 
-
-            // bt_17
-            // 
-            this.bt_17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(124)))), ((int)(((byte)(145)))));
-            this.bt_17.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bt_17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(149)))), ((int)(((byte)(151)))), ((int)(((byte)(164)))));
-            this.bt_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bt_17.Font = new System.Drawing.Font("LBC", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.bt_17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(5)))), ((int)(((byte)(19)))));
-            this.bt_17.Location = new System.Drawing.Point(0, 132);
-            this.bt_17.Name = "bt_17";
-            this.bt_17.Size = new System.Drawing.Size(257, 44);
-            this.bt_17.TabIndex = 13;
-            this.bt_17.Text = "اضاقة قراءة مركزية";
-            this.bt_17.UseVisualStyleBackColor = false;
-            this.bt_17.Click += new System.EventHandler(this.Button20_Click);
             // 
             // bt_16
             // 
@@ -354,7 +324,6 @@
             this.bt_14.Text = "ادارة القراءات";
             this.bt_14.UseVisualStyleBackColor = false;
             this.bt_14.Click += new System.EventHandler(this.Button19_Click);
-
             // 
             // button16
             // 
@@ -369,9 +338,7 @@
             this.button16.Location = new System.Drawing.Point(0, 920);
             this.button16.Name = "button16";
             this.button16.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-
-            this.button16.Size = new System.Drawing.Size(253, 52);
-
+            this.button16.Size = new System.Drawing.Size(257, 52);
             this.button16.TabIndex = 12;
             this.button16.Text = "                  حركة العدادت";
             this.button16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -387,12 +354,9 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 784);
             this.panel4.Name = "panel4";
-
-            this.panel4.Size = new System.Drawing.Size(253, 136);
-
+            this.panel4.Size = new System.Drawing.Size(257, 136);
             this.panel4.TabIndex = 11;
             // 
-
             // bt_13
             // 
             this.bt_13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(124)))), ((int)(((byte)(145)))));
@@ -440,7 +404,6 @@
             this.bt_11.Text = "ادارة الفواتير";
             this.bt_11.UseVisualStyleBackColor = false;
             this.bt_11.Click += new System.EventHandler(this.Button12_Click);
-
             // 
             // button10
             // 
@@ -455,9 +418,7 @@
             this.button10.Location = new System.Drawing.Point(0, 732);
             this.button10.Name = "button10";
             this.button10.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-
-            this.button10.Size = new System.Drawing.Size(253, 52);
-
+            this.button10.Size = new System.Drawing.Size(257, 52);
             this.button10.TabIndex = 10;
             this.button10.Text = "                      الفواتير";
             this.button10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -473,12 +434,9 @@
             this.customer_panal.Dock = System.Windows.Forms.DockStyle.Top;
             this.customer_panal.Location = new System.Drawing.Point(0, 598);
             this.customer_panal.Name = "customer_panal";
-
-            this.customer_panal.Size = new System.Drawing.Size(253, 134);
-
+            this.customer_panal.Size = new System.Drawing.Size(257, 134);
             this.customer_panal.TabIndex = 0;
             // 
-
             // bt_10
             // 
             this.bt_10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(124)))), ((int)(((byte)(145)))));
@@ -526,7 +484,6 @@
             this.bt_8.Text = "ادارة العملاء";
             this.bt_8.UseVisualStyleBackColor = false;
             this.bt_8.Click += new System.EventHandler(this.Button8_Click_1);
-
             // 
             // button2
             // 
@@ -541,9 +498,7 @@
             this.button2.Location = new System.Drawing.Point(0, 546);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-
-            this.button2.Size = new System.Drawing.Size(253, 52);
-
+            this.button2.Size = new System.Drawing.Size(257, 52);
             this.button2.TabIndex = 9;
             this.button2.Text = "                       العملاء";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -563,12 +518,9 @@
             this.panel_system_prepar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_system_prepar.Location = new System.Drawing.Point(0, 231);
             this.panel_system_prepar.Name = "panel_system_prepar";
-
-            this.panel_system_prepar.Size = new System.Drawing.Size(253, 315);
-
+            this.panel_system_prepar.Size = new System.Drawing.Size(257, 315);
             this.panel_system_prepar.TabIndex = 8;
             // 
-
             // bt_7
             // 
             this.bt_7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(124)))), ((int)(((byte)(145)))));
@@ -696,9 +648,7 @@
             this.system_prepa.Location = new System.Drawing.Point(0, 180);
             this.system_prepa.Name = "system_prepa";
             this.system_prepa.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
-
-            this.system_prepa.Size = new System.Drawing.Size(253, 51);
-
+            this.system_prepa.Size = new System.Drawing.Size(257, 51);
             this.system_prepa.TabIndex = 2;
             this.system_prepa.Text = "                     تهيئة النظام      ";
             this.system_prepa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -717,13 +667,11 @@
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton5.IconSize = 30;
             this.iconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.iconButton5.Location = new System.Drawing.Point(0, 1605);
+            this.iconButton5.Location = new System.Drawing.Point(0, 1561);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Padding = new System.Windows.Forms.Padding(10, 0, 10, 20);
             this.iconButton5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-
-            this.iconButton5.Size = new System.Drawing.Size(253, 61);
-
+            this.iconButton5.Size = new System.Drawing.Size(257, 61);
             this.iconButton5.TabIndex = 3;
             this.iconButton5.Text = "                   تهيئة النظام";
             this.iconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -747,9 +695,7 @@
             this.home_btn.Name = "home_btn";
             this.home_btn.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.home_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-
-            this.home_btn.Size = new System.Drawing.Size(253, 49);
-
+            this.home_btn.Size = new System.Drawing.Size(257, 49);
             this.home_btn.TabIndex = 0;
             this.home_btn.Text = "                 الرئيسية  ";
             this.home_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -766,10 +712,24 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-
-            this.panel2.Size = new System.Drawing.Size(253, 131);
-
+            this.panel2.Size = new System.Drawing.Size(257, 131);
             this.panel2.TabIndex = 0;
+            // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(79, 3);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(74, 74);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 0;
+            this.rjCircularPictureBox1.TabStop = false;
             // 
             // iconButton1
             // 
@@ -794,9 +754,7 @@
             this.lb_user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(203)))), ((int)(((byte)(226)))));
             this.lb_user.Location = new System.Drawing.Point(68, 92);
             this.lb_user.Name = "lb_user";
-
-            this.lb_user.Size = new System.Drawing.Size(132, 25);
-
+            this.lb_user.Size = new System.Drawing.Size(109, 20);
             this.lb_user.TabIndex = 2;
             this.lb_user.Text = "اسم المستخدم";
             this.lb_user.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -838,9 +796,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(18, 7);
             this.label2.Name = "label2";
-
-            this.label2.Size = new System.Drawing.Size(121, 38);
-
+            this.label2.Size = new System.Drawing.Size(99, 31);
             this.label2.TabIndex = 3;
             this.label2.Text = "الرئيسية";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -853,9 +809,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(454, 9);
             this.label3.Name = "label3";
-
-            this.label3.Size = new System.Drawing.Size(102, 35);
-
+            this.label3.Size = new System.Drawing.Size(80, 27);
             this.label3.TabIndex = 6;
             this.label3.Text = "الرئيسية";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -964,22 +918,6 @@
             this.tabControlZ1.MouseLeave += new System.EventHandler(this.TabControlZ1_MouseLeave);
             this.tabControlZ1.MouseHover += new System.EventHandler(this.TabControlZ1_MouseHover);
             // 
-            // rjCircularPictureBox1
-            // 
-            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.HotPink;
-            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.rjCircularPictureBox1.BorderSize = 2;
-            this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("rjCircularPictureBox1.Image")));
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(79, 3);
-            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(74, 74);
-            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox1.TabIndex = 0;
-            this.rjCircularPictureBox1.TabStop = false;
-            // 
             // form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1010,12 +948,12 @@
             this.panel_system_prepar.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel_contener.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1048,7 +986,6 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button bt_5;
         private System.Windows.Forms.Button bt_4;
-        private System.Windows.Forms.Button bt_17;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button bt_20;
         private System.Windows.Forms.Button bt_19;

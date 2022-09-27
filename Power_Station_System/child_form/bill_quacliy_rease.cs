@@ -271,6 +271,12 @@ namespace Power_Station_System.child_form
         {
             (dataGridView1.DataSource as DataTable).DefaultView.RowFilter = String.Format("Subscriber_ElectricMeter_ID + Subscriber_name like '%" + search.Texts + "%'");
         }
+
+        private void IconButton3_Click(object sender, EventArgs e)
+        {
+            pringBill pringBill = new pringBill();
+            pringBill.ShowDialog();
+        }
     }
 }
 

@@ -18,6 +18,7 @@ namespace Power_Station_System.chid_form
 
         DataBase.users users = new DataBase.users();
 
+        string username=null,meter=null;
 
         int id=-1;
 
@@ -196,6 +197,9 @@ namespace Power_Station_System.chid_form
 
 
                 id = Convert.ToInt16(datagride_view_customer.CurrentRow.Cells[0].Value.ToString());
+                username = datagride_view_customer.CurrentRow.Cells[1].Value.ToString();
+                meter = datagride_view_customer.CurrentRow.Cells[7].Value.ToString();
+
             }
 
             catch (Exception ex)
@@ -212,6 +216,16 @@ namespace Power_Station_System.chid_form
         private void Customer_management_Enter(object sender, EventArgs e)
         {
             
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+           if (meter !=null && username!=null) { 
+            child_form.print_barcode1 print_Bar = new child_form.print_barcode1(meter,username);
+            print_Bar.ShowDialog();
+            meter = null;
+            username = null;
+            }
         }
     }
 }

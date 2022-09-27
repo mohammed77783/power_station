@@ -27,14 +27,7 @@ namespace Power_Station_System.chid_form
         public Reading_managment()
         {
             InitializeComponent();
-            try
-            {
-                datagride_view_customer.DataSource = rea.get_sub_with_reading();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+           
             Loadpriv();
 
         }
@@ -162,6 +155,28 @@ namespace Power_Station_System.chid_form
             unmod();
         }
 
+        private void RjButton6_Click(object sender, EventArgs e)
+        {
+            if (from_taime.Text == to_time.Text) { datagride_view_customer.DataSource = rea.loadded(); }
+            else { 
+            try
+            {
+                datagride_view_customer.DataSource = rea.get_sub_with_reading(from_taime.Text, to_time.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            }
+        }
+
+        private void Search__TextChanged_1(object sender, EventArgs e)
+        {
+            string s = "Subscriber_ElectricMeter_ID + Subscriber_name like '%" + search.Texts + "%'";
+             (datagride_view_customer.DataSource as DataTable).DefaultView.RowFilter = String.Format(s);
+       
+        }
+
         private void RjButton1_Click_1(object sender, EventArgs e)
         {
 
@@ -252,7 +267,7 @@ namespace Power_Station_System.chid_form
         {
             try
             {
-                datagride_view_customer.DataSource = rea.get_sub_with_reading();
+                datagride_view_customer.DataSource = rea.loadded();
             }
             catch (Exception ex)
             {

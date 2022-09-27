@@ -117,7 +117,7 @@ namespace Power_Station_System
             }
             if (Dt.Rows[16][0].ToString() == "0")
             {
-                bt_17.Enabled = false;
+               
             }
             if (Dt.Rows[17][0].ToString() == "0")
             {
@@ -689,42 +689,42 @@ namespace Power_Station_System
 
         private void Button14_Click(object sender, EventArgs e)
         {
-            bool IsOpen = false;
-            foreach (TabPage s in tabControlZ1.TabPages)
-            {
-                if (s.Text == "إضافة محصلين")
-                {
-                    IsOpen = true;
-                    tabControlZ1.SelectTab(s);
-                    label3.Text = "إضافة محصلين";
-                    break;
+            //bool IsOpen = false;
+            //foreach (TabPage s in tabControlZ1.TabPages)
+            //{
+            //    if (s.Text == "إضافة محصلين")
+            //    {
+            //        IsOpen = true;
+            //        tabControlZ1.SelectTab(s);
+            //        label3.Text = "إضافة محصلين";
+            //        break;
 
-                }
-            }
-
-
-            if (IsOpen == false)
-            {
-
-                tabCont = new TabPage("إضافة محصلين");
-
-                page = new chid_form.mhasel();
+            //    }
+            //}
 
 
+            //if (IsOpen == false)
+            //{
 
-                label3.Text = "إضافة محصلين";
-                label2.Hide();
-                label3.Show();
+            //    tabCont = new TabPage("إضافة محصلين");
+
+            //    page = new chid_form.mhasel();
 
 
 
-                tabControlZ1.TabPages.Add(tabCont);
-                tabControlZ1.SelectTab(tabCont);
-                Loadpage(page , tabCont);
+            //    label3.Text = "إضافة محصلين";
+            //    label2.Hide();
+            //    label3.Show();
 
 
 
-            }
+            //    tabControlZ1.TabPages.Add(tabCont);
+            //    tabControlZ1.SelectTab(tabCont);
+            //    Loadpage(page , tabCont);
+
+
+
+            //}
 
         }
 

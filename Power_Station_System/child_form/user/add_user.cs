@@ -333,5 +333,10 @@ namespace Power_Station_System.child_form.user
         {
 
         }
+
+        private void RjButton4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

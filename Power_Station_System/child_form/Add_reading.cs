@@ -93,6 +93,7 @@ namespace Power_Station_System.chid_form
             datagride_view_customer.Enabled = true;
             rjButton2.Enabled = true;
             tb = null;
+            rjButton1.Enabled = false;
         }
         private void RjButton1_Click(object sender, EventArgs e)
         {
@@ -144,6 +145,11 @@ namespace Power_Station_System.chid_form
                 //MessageBox.Show(ex.Message);
                 this.Alert(ex.Message, Form_alert.enmType.Error);
             }
+
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
 
         }
 

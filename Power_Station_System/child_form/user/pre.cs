@@ -14,7 +14,10 @@ namespace Power_Station_System.child_form.user
 {
     public partial class pre : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-1NI3GAJ\SQLEXPRESS;Initial Catalog=power_state_station;Integrated Security=true");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-A7NS7CI;Initial Catalog=power_state_station;Integrated Security=true");
+
+
+
 
 
         // SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-SVQURFVC;Initial Catalog=power_state_station;Integrated Security=true");

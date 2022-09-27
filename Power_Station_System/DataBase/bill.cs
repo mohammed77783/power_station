@@ -168,11 +168,17 @@ namespace Power_Station_System.DataBase
             access.close();
         
         }
-        public DataTable get_bill_to_print()
+        public DataTable get_bill_to_print(string from,string to)
         {
             DataBase.Access_layer access = new DataBase.Access_layer();
             DataTable dt = new DataTable();
-            dt = access.selec_table("slect_bill_to_print", null);
+            SqlParameter[] pr = new SqlParameter[2];
+            access.open();
+            pr[0] = new SqlParameter("@from_date", SqlDbType.Date);
+            pr[0].Value = from;
+            pr[1] = new SqlParameter("@ot_date", SqlDbType.Date);
+            pr[1].Value = to;
+            dt = access.selec_table("slect_bill_to_print", pr);
             return dt;
         }
 

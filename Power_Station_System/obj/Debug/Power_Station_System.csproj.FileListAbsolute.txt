@@ -162,10 +162,8 @@ C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_Syst
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Microsoft.IdentityModel.Logging.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\MySql.Data.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Twilio.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
@@ -180,10 +178,8 @@ C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_Syst
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\stdole.dll
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Microsoft.IdentityModel.Tokens.xml
-C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\MySql.Data.xml
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
-C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Twilio.xml
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.csprojAssemblyReference.cache
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.acconting.resources
 C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.chid_form.Add_Area1.resources
@@ -300,3 +296,5 @@ C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\bin\Debug\Syst
 C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\bin\Debug\Twilio.xml
 C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\obj\Debug\ar-EG\Power_Station_System.resources.dll
 C:\Users\Yasir\Desktop\project\power_station\Power_Station_System\obj\Debug\Power_Station_System.csproj.CopyComplete
+C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\obj\Debug\Power_Station_System.child_form.print_barcode1.resources
+C:\Users\Mohammed\Desktop\project\power_station\power_station\Power_Station_System\bin\Debug\Zen.Barcode.Core.dll

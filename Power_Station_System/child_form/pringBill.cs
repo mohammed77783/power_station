@@ -21,7 +21,7 @@ namespace Power_Station_System.child_form
         {
 
             InitializeComponent();
-           // dataGridView1.DataSource = bill.get_bill_to_print();
+          
         }
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -40,12 +40,18 @@ namespace Power_Station_System.child_form
                 if (checkBox1.Checked)
                 {
 
+                    //Reports.BILL all_bill = new Reports.BILL();
+                    //Reports.reort_viwer Vi = new Reports.reort_viwer();
+                    //all_bill.SetDataSource(bill.get_bill_to_print());
+                    //Vi.crystalReportViewer1.ReportSource = all_bill;
+                    //Vi.ShowDialog();
+                    DataTable DT = other_class.other_function.gridview_to_datatabel(dataGridView1);
+                    //  dataGridView1.DataSource = DT;
                     Reports.BILL all_bill = new Reports.BILL();
                     Reports.reort_viwer Vi = new Reports.reort_viwer();
-                    all_bill.SetDataSource(bill.get_bill_to_print());
+                    all_bill.SetDataSource(DT);
                     Vi.crystalReportViewer1.ReportSource = all_bill;
                     Vi.ShowDialog();
-                  
 
                 }
                 else
@@ -146,6 +152,18 @@ namespace Power_Station_System.child_form
 
         private void PringBill_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void RjButton3_Click(object sender, EventArgs e)
+        {
+            try { 
+             dataGridView1.DataSource = bill.get_bill_to_print(from_taime.Text, to_time.Text);
+            }
+            catch(Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
 
         }
     }
